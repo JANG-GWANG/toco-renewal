@@ -4,14 +4,18 @@
 
 ---
 
-1 main 
+# 페이지 영역 명칭
 
-2 company1 / company2
+1 Main 
 
-3 business
+2 Company1 / Company2
 
-4 yard
+3 Business
 
-5 yard-news
+4 Yard
+
+5 Yard-news
 
 ---
+
+### 2022-07-19

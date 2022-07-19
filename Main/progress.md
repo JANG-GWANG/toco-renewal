@@ -6,7 +6,7 @@
 
 1 main 
 
-2 ompany
+2 company
 
 3 business
 

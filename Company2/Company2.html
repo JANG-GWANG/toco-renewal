@@ -1,1 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script> 
+    <title>Resoft</title>       
+    <link rel="stylesheet" href="./animate.css">
+    <link rel="stylesheet" href="./magic.css">
+    <script src="./wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <style>
+        #myCanvas{
+            border: 0px solid black;
+            font-size: 1px;
+        }
 
+        header a {text-decoration: none; }
+        header .logo {position: absolute; left: 30px; top: 30px; z-index: 100; margin-left: 20%; height: 30px;}
+        header >a  {position:absolute; display: flex; right: 10%; top:30px; width: 50px; z-index: 100; }
+        header #gon {position: absolute; left: 0; top: 0; padding: 10px 232px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; }
+        header #gon nav + div {position:absolute; left: 0; top:85px; width: 100%;height: 200px; background: rgba(24, 75, 159, .7); transition: all 0.5s; z-index: -1;}
+        /* header #gon nav:hover + div{opacity: 1;} */
+        /* header #gon nav > ul:hover ul{opacity: 1;} */
+        header #gon nav > ul >li {display: inline-block; position: relative;}
+        header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
+        header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 8px; background: #184B9F; transition: all 0.5s; border-radius: 18%;}
+        header #gon nav > ul > li:hover > a:after{ width: 50%;}
+        header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px;}
+        header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
+        header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
+        header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
+        #main-nav {text-align: end; padding-right: 5%; }
+        .close{opacity: 0; display: none;}
+        .more{opacity: 1;}
+
+        section{padding-left: 240px; padding-right: 240px;}
+        .top_back{background: rgba(0, 0, 0, 0.3); height: 360px; position:relative; z-index: 5;}
+        .top{background: url(./img/toco-img2/company-header.png)no-repeat center ;  height: 300px; width: 100%; position: absolute; display: flex; justify-content: center; align-items: center; top: 6.6%;}
+        .top > p{text-align: center;  position: absolute; height: 58; font-size: 40px; color: #fff;  z-index: 5;}
+        .section:nth-child(2n){background: #f9f9f9;}
+        .section .title {font-size: 40px; text-align: left; height: 58px;}
+        .section .center {display: inline-block; margin-left:43.5%; background: #184B9F 0% 0% no-repeat padding-box; width: 200px; text-align: center; border-radius: 20px; height: 80px; color: #fff;}    
+        .section .organi {display: flex; align-items: center; justify-content: center; margin-right: -8px;}
+        .section .organi li>p {border:solid 3px #184B9F; width: 194px; margin: 0px 25px 0  25px; text-align: center; border-radius: 20px; height: 74px;}
+        .section .organi_ >li {width: 18.9%; list-style: disc; padding-top: 30px;}
+        .section .organi_ >li li{list-style: disc; line-height: 1.5em;}
+        .section .organi_ >li:last-child{padding-bottom: 50px;}
+        .section .organi_ {margin-left: 7.6%; }
+    </style>
+    
+</head>
+<body>
+    <header id="header">
+        <a class="logo" href="./index.html"><img src="./img/toco-common/logo-Resoft.svg" alt="로고"></a>
+        <div id="gon">
+        <nav>
+            <ul id="main-nav">
+                <li><a href="./Company2.html">회사소개</a>
+                    <ul class="so close">
+                        <li><a href="./Company2.html">REsoft소개</a></li>
+                        <li><a href="./Company2.html">연혁</a></li>
+                        <li><a href="./Company2.html">조직도</a></li>
+                        <li><a href="./Company2.html">특허&인증</a></li>
+                        <li><a href="./Company2.html">오시는 길</a></li>
+                    </ul>
+            </li>
+                <li><a href="./index2.html">사업현황</a>
+                <ul class="so close">
+                    <li><a href="">ECOCE</a></li>
+                    <li><a href="">moaDo</a></li>
+                    <li><a href="">Etc</a></li>
+                </ul>
+            </li>
+                <li><a href="./Yard/yard.html">정보마당</a>
+                <ul class="so close">
+                    <li><a href="./Yard/yard.html">REsoft소식</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>  
+        <div class="so close"></div>
+    </div>
+        <a href="#" class="ham"><img src="./img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>
+    </header>
+<script>
+    $(document).ready(function(){
+        $('.ham').click(function(){
+            if($('.so').hasClass('close')){
+                $('.so').addClass('more').removeClass('close');
+            }else if($('.so').hasClass('more')){
+                $('.so').addClass('close').removeClass('more');
+            }
+        });
+    });
+</script>
+
+    <div class="top_back"></div>
+    <div class="top">
+       <p>회사소개</p>
+    </div>
+
+<section>
+<div class="section "><p>REsoft 소개 <br>ABOUT US</p>
+    <table>
+        <tr>
+            <td>회사명</td>
+            <td>(주)리소프트</td>
+        </tr>
+        <tr>
+            <td>설립일</td>
+            <td>2021년 5월 6일</td>
+        </tr>
+        <tr>
+            <td>대표이사</td>
+            <td>오유나</td>
+        </tr>
+        <tr>
+            <td>주요 사업</td>
+            <td>모바일 플랫폼 개발</td>
+        </tr>
+        <tr>
+            <td>본사</td>
+            <td>대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호</td>
+        </tr>
+        <tr>
+            <td>부설연구소</td>
+            <td>대구광역시 수성구 알파시티1로 160, SW융합테크비즈센터(Dnex) 305호</td>
+        </tr>
+        <tr>
+            <td>연락처</td>
+            <td>TEL. (053) 475-2110 / FAX. (0504) 257-5966 / E-mail. call@resoft.kr</td>
+        </tr>
+</table>
+
+</div>
+<div class="section">연혁</div>
+<div class="section">
+    <p class="title">조직도</p>
+    <p class="title2">ORGANIZATION</p>
+
+<div class="swa">
+    <p class="center"><br><br>대표이사</p>
+   
+    <canvas id="myCanvas" width="1400" height="150"></canvas>
+    <script>
+        // 1. canvas 엘리먼트를 취득한다.
+        const canvas = document.getElementById('myCanvas');
+
+        // 2. 2d모드의 그리기 객체를 취득한다. => 이 객체를 통해 canvas에 그림을 그릴 수 있다.
+        const ctx = canvas.getContext("2d");
+
+        // 3. 새선 그리기 설정
+        ctx.beginPath();
+
+        // 4. 출발점 지정
+        ctx.moveTo(220, 75);
+
+        // 5. 도착점 지정
+        ctx.lineTo(1220, 75);
+
+        // 4. 출발점 지정
+        ctx.moveTo(220, 75);
+
+        // 5. 도착점 지정
+        ctx.lineTo(220, 150);
+
+        
+        // 4. 출발점 지정
+        ctx.moveTo(470, 75);
+
+        // 5. 도착점 지정
+        ctx.lineTo(470, 150);
+
+        
+        // 4. 출발점 지정
+        ctx.moveTo(720, 75);
+
+        // 5. 도착점 지정
+        ctx.lineTo(720, 150);
+
+        
+        // 4. 출발점 지정
+        ctx.moveTo(970, 75);
+
+        // 5. 도착점 지정
+        ctx.lineTo(970, 150);
+
+        
+        // 4. 출발점 지정
+        ctx.moveTo(1220, 75);
+
+        // 5. 도착점 지정
+        ctx.lineTo(1220, 150);
+
+        
+        // 4. 출발점 지정
+        ctx.moveTo(720, 75);
+
+        // 5. 도착점 지정
+        ctx.lineTo(720, 0);
+
+        ctx.lineWidth = 1;
+        // 6. 선 그리기
+        ctx.stroke();
+
+
+    </script>
+
+    
+    <ul class="organi">
+        <li><p><br><br>회사소개</p></li>
+        <li><p><br><br> 개발부</p></li>
+        <li><p><br><br> 디자인부</p></li>
+        <li><p> <br><br>마케팅부</p></li>
+        <li><p><br><br>경영지원부</p></li>
+    </ul>
+</div>
+<script>
+    $('.swa').scrollTop(function () {
+    $(this).addClass('magictime swashIn');
+});
+</script>
+    <ul class="organi_ organi wow fadeInDown delay-5s">
+        <li>
+    <ul>
+        <li>유저 Needs 분석</li>
+        <li>고객 수요 확인</li>
+        <li>BM 설계/기획</li>
+        <li>사업화 전략 수집</li>
+        <li>사업계획서 작성</li>
+    </ul></li>
+    <li>
+    <ul>
+        <li>DB분석/설계</li>
+        <li>Cloud 서버 관리</li>
+        <li>기능 정의</li>
+        <li>기능 구현</li>
+        <li>기능 테스트</li>
+    </ul></li>
+    <li>
+    <ul>
+        <li>디자인 트렌드 분석</li>
+        <li>트렌드 디자인</li>
+        <li>웹사이트 디자인</li>
+        <li>모바일 앱 디자인</li>
+        <li>상품개발 디자인</li>
+    </ul></li>
+    <li>
+    <ul>
+        <li>서비스 시장조사</li>
+        <li>시장동향 분석</li>
+        <li>시장성 검증</li>
+        <li>온라인 채널 운영</li>
+        <li>오프라인 광고</li>
+    </ul>
+</li>
+    <li>
+    <ul>
+        <li>경영 무 지원</li>
+        <li>업무 환경 지원</li>
+        <li>세무 업무 지원</li>
+    </ul>
+</li>
+</ul>
+</div>
+
+
+<div class="section">특허&인증</div>
+<div class="section">오시는길</div>
+</section>
+</body>
+</html>

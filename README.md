@@ -24,7 +24,7 @@
 
 ### reset.css
 
-html {
+html, body {
   margin: 0 auto;
 }
 

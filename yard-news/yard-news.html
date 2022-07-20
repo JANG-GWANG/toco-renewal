@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resoft</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>     
+    <style>
+        
+        header a {text-decoration: none; }
+        header .logo {position: absolute; left: 30px; top: 30px; z-index: 100; margin-left: 20%; height: 30px;}
+        header >a  {position:absolute; display: flex; right: 10%; top:30px; width: 50px; z-index: 100; }
+        header #gon {position: absolute; left: 0; top: 0; padding: 10px 232px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; }
+        header #gon nav + div {position:absolute; left: 0; top:85px; width: 100%;height: 200px; background: rgba(24, 75, 159, .7); transition: all 0.5s; z-index: -1;}
+        /* header #gon nav:hover + div{opacity: 1;} */
+        /* header #gon nav > ul:hover ul{opacity: 1;} */
+        header #gon nav > ul >li {display: inline-block; position: relative;}
+        header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
+        header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 8px; background: #184B9F; transition: all 0.5s; border-radius: 18%;}
+        header #gon nav > ul > li:hover > a:after{ width: 50%;}
+        header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px;}
+        header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
+        header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
+        header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
+        header .visual img{width: 100%; filter: opacity(0.7) drop-shadow(0 0 0 rgb(0, 0, 0));}        
+        #main-nav {text-align: end; padding-right: 5%; }
+        .close{opacity: 0; display: none;}
+        .more{opacity: 1;}
 
+        .top_back{background: rgba(0, 0, 0, 0.3); height: 355px; position:relative; z-index: 5;}
+        .top{background: url(./img/toco-img3/business-header.png) no-repeat center ;  height: 300px; width: 100%; position: absolute; display: flex; justify-content: center; align-items: center; top: 6.6%;}
+        .top > p{text-align: center;  position: absolute; height: 58; font-size: 40px; color: #fff;  z-index: 5;}
+        
+
+
+
+        /* resoft 소식 */
+        .news-box-wrapper{
+            text-align:center;
+        }
+        .news-box-wrapper ul{
+            display:flex;
+            flex-wrap:wrap;            
+        }
+        .news-box-wrapper ul li{
+            width:calc(100%/2);
+            margin-bottom:40px;
+            word-break:break-all;            
+        }
+        .image{
+            background-image:url(./img/toco-common/sample-img.png);
+            background-size:cover;
+        }
+        .news-cont{            
+            text-align:left;
+        }        
+        /* 더보기 */
+        .load{
+            background:transparent;
+            cursor:pointer;
+            border:1px solid #1e1e1e;
+            border-radius:43px;          
+        }
+        .load p{
+            font-size:20px;
+            margin:22px 71px;
+        }        
+        
+         /*------------------------푸터---------------*/
+      .footer{    
+    /* border: solid 2px blue; */
+        width:100%;
+        height: 250px;
+        background: #E9E9E9;    
+        display: table;
+      }
+
+      .footer-wrap {
+        display: table-cell;
+        vertical-align:middle;        
+      }      
+
+      .footer-text{ 
+        /* border: solid 2px red;         */
+        display: flex;
+        flex-direction: row;        
+        justify-content: space-between;        
+      }
+          
+     .footer-text p{                 
+        color:#9e9e9e; 
+      }      
+      .footer .copyright{
+        font-weight:600;
+      }            
+     
+      .footer-left,.footer-right{
+        line-height:25px;
+        flex:1;
+      }
+   </style>
+</head>
+<body>
+    <header id="header">
+        <a class="logo" href="./index.html"><img src="./img/toco-common/logo-Resoft.svg" alt="로고"></a>
+        <div id="gon">
+        <nav>
+            <ul id="main-nav">
+                <li><a href="./Company1/Company1.html">회사소개</a>
+
+            </li>
+                <li><a href="./Business/business.html">사업현황</a>
+                <ul class="so close">
+
+                </ul>
+            </li>
+                <li><a href="#">정보마당</a>
+                <ul class="so close">
+                </ul>
+                </li>
+            </ul>
+        </nav>  
+        <div class="so close"></div>
+    </div>
+         <a href="#" class="ham"><img src="./img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
+    <div class="top_back"></div>
+    <div class="top">
+        <p>정보마당</p>
+    </div>                
+            </ul>
+            <button class="load" onclick="more()"><p>더보기</p></button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-wrap">
+          <img class="footer_logo_img" src="./img/toco-common/logo-Resoft.svg" alt="footer_logo">
+          <span class="copyright">ⓒRESOFT CO.LTD. ALL Rights Reserved.</span>
+          <div class="footer-text">
+              <div class="footer-left">                        
+                  <p>상호 : (주)리소프트</p>                    
+                  <p>사업자등록번호 : 722-81-02219</p>
+                  <p>주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</p>   
+              </div> 
+              <div class="footer-right">
+                  <p>대표이사 : 오유나 &nbsp;&nbsp; 개인정보책임자 : 이현지</p> 
+                  <p>전화 : (053) 475-2110 &nbsp;팩스 : (0504) 257-5966 &nbsp;이메일 : call@resoft.kr</p>       
+              </div>
+          </div>
+        </div>   
+      </footer>    
+<script>
+    $(document).ready(function(){
+        $('.ham').click(function(){
+            if($('.so').hasClass('close')){
+                $('.so').addClass('more').removeClass('close');
+            }else if($('.so').hasClass('more')){
+                $('.so').addClass('close').removeClass('more');
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.news-cont').hide();        
+        $('.news-cont').slice(0,6).show();        
+    }); 
+    function more(){
+        $(".news-cont").slice(6,11).show();
+    }
+</script>
+<script src="../script.js"></script>
+</body>
+</html>

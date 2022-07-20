@@ -20,6 +20,7 @@
         header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
         header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 8px; background: #184B9F; transition: all 0.5s; border-radius: 18%;}
         header #gon nav > ul > li:hover > a:after{ width: 50%;}
+        header #gon nav > ul > li:hover > a{ color: #184B9F;}
         header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px;}
         header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
         header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
@@ -36,13 +37,13 @@
         <div id="gon">
         <nav>
             <ul id="main-nav">
-                <li><a href="./index2.html">회사소개</a>
+                <li><a href="./Company2.html">회사소개</a>
                     <ul class="so close">
-                        <li><a href="">REsoft소개</a></li>
-                        <li><a href="">연혁</a></li>
-                        <li><a href="">조직도</a></li>
-                        <li><a href="">특허&인증</a></li>
-                        <li><a href="">오시는 길</a></li>
+                        <li><a href="./Company2.html">REsoft소개</a></li>
+                        <li><a href="./Company2.html">연혁</a></li>
+                        <li><a href="./Company2.html">조직도</a></li>
+                        <li><a href="./Company2.html">특허&인증</a></li>
+                        <li><a href="./Company2.html">오시는 길</a></li>
                     </ul>
             </li>
                 <li><a href="./index2.html">사업현황</a>
@@ -65,15 +66,25 @@
         <div class="visual"><img src="./img/toco-img1/main-header1.png" alt=""></div>
     </header>
 <script>
+     $(document).ready(function(){
+    $('.ham').click(function () {
+        if($('.so').hasClass('more'))
+    $('.so').addClass('magictime fadeOut');
+    else if($('.so').hasClass('close'))
+    $('.so').removeClass('magictime fadeOut');
+});
+     });
     $(document).ready(function(){
         $('.ham').click(function(){
             if($('.so').hasClass('close')){
+                $('.so').addClass('magictime fadeIn');
                 $('.so').addClass('more').removeClass('close');
             }else if($('.so').hasClass('more')){
-                $('.so').addClass('close').removeClass('more');
+                setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
             }
         });
     });
+
 </script>
 </body>
 </html>

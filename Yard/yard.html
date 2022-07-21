@@ -48,7 +48,7 @@
         /* 정보마당 REsoft 소식 */
         body{
             max-width:1920px;
-            line-height:40px;
+            line-height:40px;            
         }
         .resoft-news{
             max-width:1440px;
@@ -117,6 +117,7 @@
             overflow:hidden;
             text-overflow:ellipsis;
             white-space:nowrap;
+            font-weight:600;
         }
         .news-cont .news-cont-day{
             font-size:16px;
@@ -137,11 +138,9 @@
             transform:scale(1.2);   
              opacity:1;            
         }
-        .news-cont:hover .news-img-wrap{
-            background: rgba(0, 0, 0, 0.3);
-            position:relative; 
-            z-index: 5;
-            opacity:0.8;
+        .news-cont:hover .news-img-wrap{            
+            position:relative;             
+            filter:brightness(50%);
             overflow:hidden;
         }
         

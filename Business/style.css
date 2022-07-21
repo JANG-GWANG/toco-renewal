@@ -56,14 +56,12 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     /* 수직 정렬 */
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .content-ecoce .ecoce-left{
     width: calc(100%/2);
     margin: 0;
     box-sizing: border-box;
-    /* background-color: bisque; */
-    position: relative;
 }
 .content-ecoce .ecoce-left .ecoce-left-top p:nth-child(1){
     font-size: 40px;
@@ -89,81 +87,67 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     /* 패팅값을 %로 줘야 .ecoce-left 영역을 벗어나지 않음 */
     /* padding: 30px 0 0 240px; */
 }
+
 .content-ecoce .ecoce-right{
     width: calc(100%/2);
-    /* height: 100%; */
     margin: 0;
-    /* background-color: aqua; */
-}
-.content-ecoce .ecoce-right{
+    box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
     flex-direction: column;
-    /* justify-content:flex-end; */
-    /* 요소 오른쪽 정렬 */
-    align-items:flex-end;
+}
+.content-ecoce .ecoce-right p{
+    text-align: right;
 }
 .content-ecoce .ecoce-right p:nth-child(1){
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 44px;
-    text-align: right;
+    font-size: 30px; font-weight: bold; line-height: 44px;
     margin-bottom: 15%;
+}
+.content-ecoce .ecoce-right p:nth-child(3){
+    font-size: 22px; font-weight: bold; line-height: 32px;
+    margin-top: 5%;
 }
 .content-ecoce .ecoce-right .ecoce-logo{
     width: 65%;
 }
-.content-ecoce .ecoce-right p:nth-child(3){
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 32px;
-    text-align: right;
-    margin-top: 5%;
-}
-
-.content-ecoce .ecoce-right .ecoce-downapp{
-    width: 100%;
+.content-ecoce .ecoce-right .ecoce-appstore{
     display: flex;
     justify-content: flex-end;
+    margin-top: 15%;
+
 }
-.content-ecoce .ecoce-right .ecoce-downapp input{
-    display: none;
-}
-.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn{
-    width: 190px;
+.content-ecoce .ecoce-right .ecoce-appstore .google-store {
+    width: 188px;
     height: 57px;
+    background-color: #1e1e1e;
+    border-radius: 30px;
+    margin-left: 6%;
+}
+.content-ecoce .ecoce-right .ecoce-appstore .google-store a{
+    display: flex;
+    align-items: center;
+    width: 188px;
+    height: 57px;
+    text-decoration: none;
     cursor: pointer;
-    background-color: #1E1E1E;
-    border-radius: 69px;
-    margin: 15% 0 0 3%;
 }
-.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn label{
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    /* position: relative; */
-}
-.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn .playstore-logo{
+.content-ecoce .ecoce-right .ecoce-appstore .google-store img{
     width: 31px;
     height: 35px;
-    margin: 12px 0 11px 20px;
+    color: #fff;
+    word-break:keep-all;
+    padding: 11px 12px 11px 20px;
 }
-
-.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn .appstore-logo{
-    width: 29px;
-    height: 35px;
-    margin: 10px 0 11px 19px;
-}
-.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn p{
+.content-ecoce .ecoce-right .ecoce-appstore .google-store span{
     display: inline-block;
     width: 93px;
-    height: 100%;
+    height: 42px;
     font-size: 14px; font-weight: normal; line-height: 22px;
-    text-align: left;
     color: #fff;
-    margin-left: 13px;
-    /* position: absolute;
-    top: 6px;*/
+    word-break:keep-all;
 }
+
 
 
 

@@ -7,7 +7,7 @@
     <title>Resoft</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- css 연결 -->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
@@ -57,29 +57,35 @@
     <div class="business-content">
         <!-- 에코스 -->
         <div class="content-ecoce">
-            <div class="ecoce-top">
-                <p>에코스</p>
-                <p>ECO-Clean Earth</p>
-            </div>
             <div class="ecoce-left">
-                <img src="../img/toco-img3/business-ECOCE-screen1.png" alt="ecoce_main">
-                <img src="../img/toco-img3/business-ECOCE-screen2.png" alt="ecoce_background">
+                <div class="ecoce-left-top">
+                    <p>에코스</p>
+                    <p>ECO-Clean Earth</p>
+                </div>
+                <div class="ecoce-left-bottom">
+                    <img src="../img/toco-img3/business-ECOCE-screen1.png" alt="ecoce_main">
+                    <!-- <img src="../img/toco-img3/business-ECOCE-screen2.png" alt="ecoce_background"> -->
+                </div>
             </div>
             <div class="ecoce-right">
                 <p>국내 최초<br> 탄소중립 실천인증 플랫폼</p>
-                <img src="../img/toco-img3/logo-ECOCE.svg" alt="ecoce_logo">
+                <img class="ecoce-logo" src="../img/toco-img3/logo-ECOCE.svg" alt="ecoce_logo">
                 <p>ECO-Clean Earth</p>
                 <div class="ecoce-downapp">
-                    <input type="button" id="playstore">
-                        <label for="playstore">
-                            <img class="playstore-logo" src="../img/toco-img3/logo-google.svg" alt="google_store">
-                            <p>Play Store에서 다운로드</p>
-                        </label>
-                    <input type="button" id="appstore">
-                        <label for="appstore">
-                            <img class="appstore-logo" src="../img/toco-img3/logo-apple.svg" alt="apple_store">
-                            <p>App Store에서 다운로드</p>
-                        </label>
+                    <div class="downapp-btn">
+                        <input type="button" id="playstore">
+                            <label for="playstore">
+                                <img class="playstore-logo" src="../img/toco-img3/logo-google.svg" alt="google_store">
+                                <p>Play Store에서 다운로드</p>
+                            </label>
+                    </div>
+                    <div class="downapp-btn">
+                        <input type="button" id="appstore">
+                            <label for="appstore">
+                                <img class="appstore-logo" src="../img/toco-img3/logo-apple.svg" alt="apple_store">
+                                <p>App Store에서 다운로드</p>
+                            </label>
+                    </div>
                 </div>
             </div>
         </div>

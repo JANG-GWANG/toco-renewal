@@ -43,180 +43,127 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 }
 
 /* ==================== 에코스 ==================== */
-
 .business-content{
     width: 100%;
-    height: 100%;
+    height: 1100px;
 }
 .content-ecoce{
-    width: 75%;
+    max-width: 1440px;
     height: 883px;
-    margin: 100px auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* 수직 정렬 */
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+.content-ecoce .ecoce-left{
+    width: calc(100%/2);
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: bisque; */
     position: relative;
 }
-.content-ecoce .ecoce-top p:nth-child(1){
+.content-ecoce .ecoce-left .ecoce-left-top p:nth-child(1){
     font-size: 40px;
     font-weight: bold;
     line-height: 58px;
+    text-align: left;
 }
-.content-ecoce .ecoce-top p:nth-child(2){
+.content-ecoce .ecoce-left .ecoce-left-top p:nth-child(2){
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 26px;
+    text-align: left;
     color: #C8C8C8;
 }
-.content-ecoce .ecoce-left img:nth-child(1){
-    width: 475px;
-    height: 687px;
-    position: absolute;
-    top: 196px;
-    left: 229px;
-    z-index: 100;
+.content-ecoce .ecoce-left .ecoce-left-bottom{
+    margin-top: 54px;
+    background: url(../img/toco-img3/business-ECOCE-screen2.png) no-repeat;
+    background-size:90%;
 }
-.content-ecoce .ecoce-left img:nth-child(2){
-    width: 679px;
-    height: 592px;
-    position: absolute;
-    top: 138px;
-    z-index: 1;
+.content-ecoce .ecoce-left .ecoce-left-bottom img{
+    width: 60%;
+    padding: 8% 0 0 35%;
+    /* 패팅값을 %로 줘야 .ecoce-left 영역을 벗어나지 않음 */
+    /* padding: 30px 0 0 240px; */
+}
+.content-ecoce .ecoce-right{
+    width: calc(100%/2);
+    /* height: 100%; */
+    margin: 0;
+    /* background-color: aqua; */
+}
+.content-ecoce .ecoce-right{
+    display: flex;
+    flex-direction: column;
+    /* justify-content:flex-end; */
+    /* 요소 오른쪽 정렬 */
+    align-items:flex-end;
 }
 .content-ecoce .ecoce-right p:nth-child(1){
     font-size: 30px;
     font-weight: bold;
     line-height: 44px;
     text-align: right;
-    position: absolute;
-    top: 138px;
-    right: 0;
+    margin-bottom: 15%;
 }
-.content-ecoce .ecoce-right img{
-    width: 452px;
-    height: 125px;
-    position: absolute;
-    top: 366px;
-    right: 0;
+.content-ecoce .ecoce-right .ecoce-logo{
+    width: 65%;
 }
 .content-ecoce .ecoce-right p:nth-child(3){
     font-size: 22px;
     font-weight: bold;
     line-height: 32px;
     text-align: right;
-    position: absolute;
-    top: 523px;
-    right: 0;
+    margin-top: 5%;
+}
+
+.content-ecoce .ecoce-right .ecoce-downapp{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 .content-ecoce .ecoce-right .ecoce-downapp input{
     display: none;
 }
-.content-ecoce .ecoce-right .ecoce-downapp label{
-    display: inline-block;
-    width: 188px;
+.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn{
+    width: 190px;
     height: 57px;
     cursor: pointer;
     background-color: #1E1E1E;
     border-radius: 69px;
-    position: relative;
+    margin: 15% 0 0 3%;
 }
-.content-ecoce .ecoce-right .ecoce-downapp label:nth-child(2){
-    position: absolute;
-    bottom: 131px;
-    right: 220px;
+.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn label{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
 }
-.content-ecoce .ecoce-right .ecoce-downapp label:nth-child(4){
-    position: absolute;
-    bottom: 131px;
-    right: 0;
-}
-.content-ecoce .ecoce-right .ecoce-downapp .playstore-logo{
+.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn .playstore-logo{
     width: 31px;
     height: 35px;
-    position: absolute;
-    top: 11px;
-    left: 20px;
+    margin: 12px 0 11px 20px;
 }
 
-.content-ecoce .ecoce-right .ecoce-downapp .appstore-logo{
+.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn .appstore-logo{
     width: 29px;
     height: 35px;
-    position: absolute;
-    top: 9px;
-    left: 16px;
+    margin: 10px 0 11px 19px;
 }
-.content-ecoce .ecoce-right .ecoce-downapp p{
+.content-ecoce .ecoce-right .ecoce-downapp .downapp-btn p{
+    display: inline-block;
     width: 93px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 22px;
+    height: 100%;
+    font-size: 14px; font-weight: normal; line-height: 22px;
     text-align: left;
-    margin: 6px 0 0 63px;
     color: #fff;
-    word-break: keep-all;
+    margin-left: 13px;
+    /* position: absolute;
+    top: 6px;*/
 }
-
-/* .content-ecoce{
-    width: 75%;
-    height: 883px;
-    margin: 0 auto;
-    position: relative;
-}
-.content-ecoce .ecoce-top{
-    width: 141px;
-    height: 84px;
-    position: absolute;
-    left: 0;
-    top: 100px;
-}
-.content-ecoce .ecoce-top p:nth-child(1){
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 58px;
-}
-.content-ecoce .ecoce-top p:nth-child(2){
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 26px;
-    color: #C8C8C8;
-}
-.content-ecoce .ecoce-left{
-    position: relative;
-}
-.content-ecoce .ecoce-left img:nth-child(2){
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 238px;
-}
-.content-ecoce .ecoce-left img:nth-child(1){
-    position: absolute;
-    z-index: 100;
-    left: 229px;
-    top: 296px;
-}
-.content-ecoce .ecoce-right{
-    position: relative;
-}
-.content-ecoce .ecoce-right p:nth-child(1){
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 44px;
-    text-align: right;
-    position: absolute;
-    right: 0;
-    top: 238px;
-}
-.content-ecoce .ecoce-right img{
-    position: absolute;
-    right: 0;
-    top: 466px;
-}
-.content-ecoce .ecoce-right p:nth-last-child(1){
-    position: absolute;
-    right: 0;
-    top: 623px;
-    font-size: 22px;
-    font-weight: bold;
-    line-height: 32px;
-} */
 
 
 

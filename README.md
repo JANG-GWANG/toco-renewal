@@ -7,7 +7,7 @@
 
 2 company - 회사소개
 
-3 business - 사업현황
+3 business - 사업현황 전유진 16%
 
 4 yard - 정보마당 허제민 20%
 

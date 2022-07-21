@@ -47,15 +47,25 @@
         }
         .main-news-container {
             height: 450px;
+            margin-top: 5rem;
         }
         .main-title {
             font-size: 2rem;
+            padding-bottom: 1rem;
         }
         .sub-title {
             color:#999999;
+            font-weight: 500;
+            margin-bottom: 3rem;
+        }
+        .sub-text {
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.7rem;
         }
         .main-news-container .news-wrap {
             width: 100%;
+            margin-top: 3rem;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -65,16 +75,31 @@
             width: 300px;
             height: 316px;
         }
-        .main-news-container .news-wrap .news-img {
+        .main-news-container .news-img {
             width: 300px;
             height: 200px;
             flex: 1;
         }
+        .main-news-container .news-text {
+            font-weight: 600;
+            line-height:1.2rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowwrap;
+            width:300px;
+            height: 2.5rem;
+        }
+
+        .main-news-container .news-date {
+            color : #AAAAAA;
+            font-weight: 200;
+        }
         /* 프로젝트 섹션 */
         .main-project-container {
             width: 100%;
-            height: 1148px;
-            /* background-color: rgb(201, 201, 201); */
+            height: 1148px; /*픽셀과 차이있음*/
         }
         .main-project-container .main-title {
             text-align: right;
@@ -107,11 +132,13 @@
             align-items: center;
             align-content: flex-start;
         }
-        .main-project-container .project-left-wrap .project-img{
+        .main-project-container .project-img{
             width: 534px;
             height: 393px;
+            background-color: darkslateblue;
         }
-        .main-project-container .project-left-wrap .moado {
+
+        .main-project-container .moado {
             background-image: url('./img/toco-img1/main-moaDo-back.svg');
         }
         /* 프로젝트 섹션 - 오른쪽 */
@@ -126,7 +153,7 @@
             align-items: flex-end;
             align-content: flex-end;
         }
-        .main-project-container .project-right-wrap .project-img2 {
+        .main-project-container .project-img2 {
             width: 680px; /*sample*/
             height: 680px;
         }
@@ -139,13 +166,15 @@
         .main-service-container .service-left-wrap, .service-right-wrap  {
             width: 720px; /*임시박스*/
             height: 100%;
-            flex:1;
         }
         /* 서비스 섹션 - 왼쪽 */
-        .main-service-container .service-left-wrap .service-img1 {
+        .main-service-container .sub-text{
+            margin-bottom: 3.5rem;
+        }
+        .main-service-container .service-img1 {
             width: 680px;
             height: 680px;
-            background-color: rgb(145, 139, 184);
+            background-color: rgb(183, 179, 212);
         }
         /* 서비스 섹션 - 오른쪽 */
         .main-service-container .service-right-wrap{
@@ -156,36 +185,36 @@
             align-items: flex-start;
             align-content: flex-start;
         }
-        .main-service-container .service-right-wrap .service-img-wrap1,.service-img-wrap2 {
-            /* border: solid 1px orange; */
-            /* width: 100%; */
-        }
-        .main-service-container .service-right-wrap .service-img2 {
+        .main-service-container .service-img2 {
+            border: solid 1px blue; */
             width: 300px;
             height: 375px;
         }
-        .main-service-container .service-right-wrap .service-img-wrap2 {
+        .main-service-container .service-img-wrap2 {
             margin-top: 150px;
         }
         /* 레퍼런스 섹션 */
         .main-reference-container {
             width: 100%;
-            height: 734px;
+            height: 800px;
         }
         .main-reference-container .ref-logo-wrap {
-            border: solid 1px red;
-            height: 93%;
+            height: 80%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: flex-start;
-            align-items: stretch;
             align-content: space-between;
         }
         .main-reference-container .ref-logo{
-            border: solid 1px rgb(113, 113, 150);
+            border: solid 1px #DBDBDB;
+            background-color: #fff;
             width: 220px;
             height: 100px;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
             flex:1;
         }
         /* 푸터 */
@@ -196,12 +225,13 @@
             background: #E9E9E9;    
             display: table;
         }
+
         .footer-wrap {
             display: table-cell;
             vertical-align:middle;
         }
         .footer-text{ 
-            margin-top: 30px;
+            margin-top: 1.5rem;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -215,7 +245,7 @@
             font-weight:600;
         }      
         .footer-left,.footer-right{
-            line-height:25px;
+            line-height:1.5rem;
             flex:1;
         }
    </style>
@@ -276,7 +306,7 @@
     });
 </script>
  
-     <!-- 새로운 소식 섹션 -->
+        <!-- 새로운 소식 섹션 -->
     <section class="main-news-container">
         <h1 class="main-title">리소프트의 새로운 소식</h1>
         <p class="sub-title">RESOFT NEWS</p>
@@ -284,22 +314,22 @@
             <div class="news-contents">
                 <img class="news-img" src="./img/toco-common/sample-img.png" alt="">
                 <p class="news-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga inventore quae illum voluptatibus</p>
-                <p>2022-07-20</p>
+                <p class="news-date">2022.07.20</p>
             </div>
             <div class="news-contents">
                 <img class="news-img"  src="./img/toco-common/sample-img.png" alt="">
                 <p class="news-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga inventore quae illum voluptatibus</p>
-                <p>2022-07-20</p>
+                <p class="news-date">2022.07.20</p>
             </div>
             <div class="news-contents">
                 <img class="news-img"  src="./img/toco-common/sample-img.png" alt="">
                 <p class="news-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga inventore quae illum voluptatibus</p>
-                <p>2022-07-20</p>
+                <p class="news-date">2022.07.20</p>
             </div>
             <div class="news-contents">
                 <img class="news-img"  src="./img/toco-common/sample-img.png" alt="">
                 <p class="news-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga inventore quae illum voluptatibus</p>
-                <p>2022-07-20</p>
+                <p class="news-date">2022.07.20</p>
             </div>
         </div>
     </section>
@@ -310,7 +340,7 @@
         <p class="sub-text">쾌적한 서비스 제공을 위해 사용자 입장에서<br>생각하고 항상 새로운 도전을 시도합니다.</p>
         <div class="project-wrap">
             <div class="project-left-wrap">
-                <img class="project-img" src="./img/toco-img1/main-ecoce.png" alt="">
+                <img class="project-img ecoce" src="./img/toco-img1/main-ecoce.png" alt="">
                 <img class="project-img moado" src="./img/toco-common/main_N_business-moaDo.png" alt="">
             </div>
             <div class="project-right-wrap">

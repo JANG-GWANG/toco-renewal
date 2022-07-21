@@ -16,7 +16,7 @@
 
 3 business - 사업현황
 
-4 yard - 정보마당
+4 yard - 정보마당 허제민 20%
 
 5 yard-news - 정보마당 세부 페이지
 

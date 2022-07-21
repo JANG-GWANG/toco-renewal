@@ -43,7 +43,7 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 }
 
 /* ==================== 사업현황 컨텐츠 영역 시작 ==================== */
-.business-content{
+.business-contents{
     width: 100%;
     height: 100%;
 }
@@ -52,6 +52,7 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     max-width: 1440px;
     height: 883px;
     margin: 0 auto;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     /* 수직 정렬 */
@@ -179,13 +180,13 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     margin: 0;
     box-sizing: border-box;
 }
-.moado-left .moado-left-top p:nth-child(1){
+.moado-left .moado-title p:nth-child(1){
     font-size: 40px;
     font-weight: bold;
     line-height: 58px;
     text-align: left;
 }
-.moado-left .moado-left-top p:nth-child(2){
+.moado-left .moado-title p:nth-child(2){
     font-size: 18px;
     font-weight: bold;
     line-height: 26px;
@@ -244,7 +245,56 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     text-align: center;
 }
 
-
+/* ---------- ETC ---------- */
+#content-etc{
+    max-width: 1440px;
+    height: 750px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 왼쪽 정렬 */
+    align-items: left;
+    /* 확인 */
+    flex-wrap: nowrap;
+    /* 모아두 중간이미지 위치 정렬 */
+    position: relative;
+    /* border: 1px solid red; */
+}
+.etc-title p:nth-child(1){
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: left;
+}
+.etc-title p:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: left;
+    color: #C8C8C8;
+}
+.etc-projects{
+    width: 1440px;
+    height: 350px;
+    width: 1440px;
+    height: 350px;
+    margin-top: 5%;
+}
+.etc-projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.etc-projects .etc-project-img{
+    /* width: 15.83%; */
+    height: 100%;
+    background-color: yellow;
+    box-shadow: 1px 1px 15px #C8C8C8;
+    box-sizing: border-box;
+}
 
 
 

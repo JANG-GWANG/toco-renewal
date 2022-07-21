@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0050)file:///C:/Users/reflo/Desktop/toco/yard-news.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resoft</title>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="../style.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>     
+    <script src="./yard-news_files/lottie-player.js.다운로드"></script>
+    <link rel="stylesheet" href="file:///C:/Users/reflo/Desktop/reset.css">
+    <link rel="stylesheet" href="file:///C:/Users/reflo/Desktop/style.css">
+    <script src="./yard-news_files/jquery-latest.js.다운로드"></script>     
     <style>
         
         header a {text-decoration: none; }
@@ -36,20 +36,25 @@
         .top > p{text-align: center;  position: absolute; height: 58; font-size: 40px; color: #fff;  z-index: 5;}
         
 
-
-
         /* resoft 소식 */
-        .news-box-wrapper{
-            text-align:center;
+        body{
+            max-width:1920px;
+            line-height:40px;  
+            margin:0 auto;          
         }
+        .resoft-news{
+            max-width:1440px;
+            margin:0 auto;
+            text-align:left;}
+
         .news-box-wrapper ul{
             display:flex;
             flex-wrap:wrap;            
         }
         .news-box-wrapper ul li{
-            width:calc(100%/2);
+            width:calc(110%/2);
             margin-bottom:40px;
-            word-break:break-all;            
+            text-align:left;         
         }
         .image{
             background-image:url(./img/toco-common/sample-img.png);
@@ -58,18 +63,28 @@
         .news-cont{            
             text-align:left;
         }        
-        /* 더보기 */
+        /* 이전글 */
         .load{
-            background:transparent;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
             cursor:pointer;
-            border:1px solid #1e1e1e;
-            border-radius:43px;          
+            border:1px solid #1E1E1E;
         }
         .load p{
-            font-size:20px;
-            margin:22px 71px;
+            font-size:16px;
+            margin:20px 24px;
         }        
         
+       /* 다음글 */
+       .load{
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            cursor:pointer;
+            border:1px solid #1E1E1E;        
+        }
+        .load p{
+            font-size:16px;
+            margin:20px 24px;
+        }        
+                
          /*------------------------푸터---------------*/
       .footer{    
     /* border: solid 2px blue; */
@@ -106,19 +121,19 @@
 </head>
 <body>
     <header id="header">
-        <a class="logo" href="./index.html"><img src="./img/toco-common/logo-Resoft.svg" alt="로고"></a>
+        <a class="logo" href="file:///C:/Users/reflo/Desktop/toco/index.html"><img src="./yard-news_files/logo-Resoft.svg" alt="로고"></a>
         <div id="gon">
         <nav>
             <ul id="main-nav">
-                <li><a href="./Company1/Company1.html">회사소개</a>
+                <li><a href="file:///C:/Users/reflo/Desktop/toco/Company1/Company1.html">회사소개</a>
 
             </li>
-                <li><a href="./Business/business.html">사업현황</a>
+                <li><a href="file:///C:/Users/reflo/Desktop/toco/Business/business.html">사업현황</a>
                 <ul class="so close">
 
                 </ul>
             </li>
-                <li><a href="#">정보마당</a>
+                <li><a href="file:///C:/Users/reflo/Desktop/toco/yard-news.html#">정보마당</a>
                 <ul class="so close">
                 </ul>
                 </li>
@@ -126,19 +141,38 @@
         </nav>  
         <div class="so close"></div>
     </div>
-         <a href="#" class="ham"><img src="./img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
+         <a href="file:///C:/Users/reflo/Desktop/toco/yard-news.html#" class="ham"><img src="./yard-news_files/company_N_busines_N_yard-menu.svg" alt=""></a>        
     <div class="top_back"></div>
     <div class="top">
         <p>정보마당</p>
-    </div>                
-            </ul>
-            <button class="load" onclick="more()"><p>더보기</p></button>
-        </div>
-    </section>
+    </div>          
+ 
+    
+</header>
+
+<section class="resoft-news">
+    <div class="news-title-wrap">
+        <h1>REsoft 소식</h1>
+        <h4>NEWS</h4>
+    </div>
+    <div class="news-box-wrapper">
+        <ul id="news-box">
+            <li class="news-cont wow fadeInUp" data-wow-delay="0.5s" style="display: list-item;">        
+                <p>1Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                <p class="news-cont-day">2022.01.01</p>            
+                <a href="file:///C:/Users/reflo/Desktop/toco/yard-news/yard-news.html"><div class="news-img-wrap"><img src="./yard-news_files/sample-img.png" alt="" style="height: 10%; width: 100%;"></div>
+                <p>[비즈니스포스트] 현대모비스가 소프트웨어(SW)와 플랫폼 중심 기술 전문 기업으로 도약하기 위해 모빌리티 소프트웨어 경쟁력 강화에 힘을 쏟고 있다. 30일 현대모비스에 따르면 외부적으로는 소프트웨어 전문 회사들과 생태계를 구축해 협력을 확대하고 내부적으로 소프트웨어 전문 인재를 확보하는 '투 트랙' 전략을 펼치며 소프트웨어 기술을 확보하는 데 모든 회사 역량을 집중하고 있다. 현대모비스는 지난해 '중장기 전환(트랜스포매이션) 전략'을 공개하며 소프트웨어와 플랫폼 중심 기술 전문기업으로 도약하겠다는 계획을 세웠다. '글로벌 사업자로의 혁신', '사업모델 혁신', '장기 신성장 사업 발굴'의 세가지 축을 중심으로 추진되는 중장기 전환 전략은 높은 소프트웨어 역량이 바탕 이 되지 않으면 완성될 수 없다는 것이다. 이를 위해 현대모비스는 지난해 국내 13개 전문 개발사들과 차량용 소프트웨어 국산화 개발을 위한 협력 생태계를 구축했다. 소프트웨어 개발을 위해 시 스템 플랫폼을 제공하면 협력사들이 각자 보유한 소프트웨어 기술을 추가해 기술을 완성하는 방식이다. 오픈 플랫폼 방식으로 생태계를 운영하고 있는 만큼 현대모비스는 더 많은 협력사와의 열린 협력을 기대하고 있다. 이밖에도 소프트웨어 전문 개발사와 의 협력을 통해 개발 역량을 강화하는 동시에 개발 시간도 단축시키고자 한다. 현대모비스 내부적으로는 자체적 소프트웨어 역량 확보를 위해 전략적 채용과 육성 프로그램을 운영하고 있다. 지난해 말 소프트웨어 전문 인재를 확보하기 위해 학력과 전공을 구분하지 않는 채용 방식인 '채용 연계형 소프트웨어(SW)아카데미'를 도입했다. 취업 준비생들에게 회사와 연계한 외부기관에서의 소프트웨어 교육 기회를 무료로 제공하고 이 교육을 이수하면 회사에서 채용하는 것이다. 이를 놓고 현대모비스 관계자는 "코딩테스트를 거쳐 우수 소프트웨어 인재를 도입하는데 있어 오로지 실력만 평가하겠다는 취지로 채용 연계형 SW아 카데미를 도입했다"고 말했다. 현대모비스는 채용 연계형 SW아카데미와는 별도로 소프트웨어 우수 인재 확보를 위한 공격적 채용전략도 지속해서 추진하고 있다. 인재 유입경로를 다 양화하고 현업부서에서 필요한 맞춤형 인재를 공급하는 방침을 추진한다. 더불어 기존 연구개발 인력의 소프트웨어 역량강화를 위한 다양한 교육프로그램도 운영하고 있다. 현대모비스는 모두 4단계의 소프트웨어 인증제도를 통해 연구원들이 독자적으로 프로젝트 수행이 가능하도록 교육 프로그램을 구성했다. 앞서 2020년에 이미 비대면에 특화된 소프트웨어 교육시스템을 구축한 바 있으며 프로그래밍 언어, 인공지능, 빅데이터 등 특화된 전문 콘텐츠를 지속 업데이트하고 있다. 직원들이 온-오프라인을 넘나들며 소프트웨어 활용 역량을 강화할 수 있게 지원하기 위한 차원이다. 현대모비스는 직원들을 대상으로 'SW 알고리즘 경진대회'도 개최하고 있다. 모든 과정을 자기주도적으로 실시하는 개발 문화의 정착을 통해 연구원들 을 스스로 프로젝트를 주도할 수 있는 고급 소프트웨어 설계 인력을 육성할 계획을 세웠다. 허원석 기자</p>
+            </a></li><a href="file:///C:/Users/reflo/Desktop/toco/yard-news/yard-news.html">
+    
+            </a></ul><a href="file:///C:/Users/reflo/Desktop/toco/yard-news/yard-news.html">
+            <button class="load" onclick="more()"></button> 
+            <button class="load" onclick="more()"></button>
+        </a></div><a href="file:///C:/Users/reflo/Desktop/toco/yard-news/yard-news.html">
+    </a></section><a href="file:///C:/Users/reflo/Desktop/toco/yard-news/yard-news.html">
 
     <footer class="footer">
         <div class="footer-wrap">
-          <img class="footer_logo_img" src="./img/toco-common/logo-Resoft.svg" alt="footer_logo">
+          <img class="footer_logo_img" src="./yard-news_files/logo-Resoft.svg" alt="footer_logo">
           <span class="copyright">ⓒRESOFT CO.LTD. ALL Rights Reserved.</span>
           <div class="footer-text">
               <div class="footer-left">                        
@@ -173,6 +207,6 @@
         $(".news-cont").slice(6,11).show();
     }
 </script>
-<script src="../script.js"></script>
-</body>
-</html>
+<script src="./yard-news_files/script.js.다운로드"></script>
+
+</a></body></html>

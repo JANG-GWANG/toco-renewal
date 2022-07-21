@@ -45,9 +45,9 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 /* ==================== 에코스 ==================== */
 .business-content{
     width: 100%;
-    height: 1100px;
+    height: 100%;
 }
-.content-ecoce{
+#content-ecoce{
     max-width: 1440px;
     height: 883px;
     margin: 0 auto;
@@ -55,76 +55,78 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     flex-direction: row;
     /* 수직 정렬 */
     align-items: center;
-    flex-wrap: wrap;
+    /* 확인 */
+    flex-wrap: nowrap;
     /* border: 1px solid red; */
 }
-.content-ecoce .ecoce-left{
-    width: calc(100%/2);
+.ecoce-left{
+    width: 50%;
     margin: 0;
     box-sizing: border-box;
 }
-.content-ecoce .ecoce-left .ecoce-left-top p:nth-child(1){
+.ecoce-left .ecoce-left-top p:nth-child(1){
     font-size: 40px;
     font-weight: bold;
     line-height: 58px;
     text-align: left;
 }
-.content-ecoce .ecoce-left .ecoce-left-top p:nth-child(2){
+.ecoce-left .ecoce-left-top p:nth-child(2){
     font-size: 18px;
     font-weight: bold;
     line-height: 26px;
     text-align: left;
     color: #C8C8C8;
 }
-.content-ecoce .ecoce-left .ecoce-left-bottom{
+.ecoce-left .ecoce-left-bottom{
     margin-top: 54px;
     background: url(../img/toco-img3/business-ECOCE-screen2.png) no-repeat;
     background-size:90%;
 }
-.content-ecoce .ecoce-left .ecoce-left-bottom img{
+.ecoce-left .ecoce-left-bottom img{
     width: 60%;
     padding: 8% 0 0 35%;
     /* 패팅값을 %로 줘야 .ecoce-left 영역을 벗어나지 않음 */
     /* padding: 30px 0 0 240px; */
 }
 
-.content-ecoce .ecoce-right{
-    width: calc(100%/2);
+.ecoce-right{
+    width: 50%;
     margin: 0;
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
+    /* 확인 */
+    flex-wrap: nowrap;
     align-items: flex-end;
     flex-direction: column;
 }
-.content-ecoce .ecoce-right p{
+.ecoce-right p{
     text-align: right;
 }
-.content-ecoce .ecoce-right p:nth-child(1){
+.ecoce-right p:nth-child(1){
     font-size: 30px; font-weight: bold; line-height: 44px;
     margin-bottom: 15%;
 }
-.content-ecoce .ecoce-right p:nth-child(3){
+.ecoce-right p:nth-child(3){
     font-size: 22px; font-weight: bold; line-height: 32px;
     margin-top: 5%;
 }
-.content-ecoce .ecoce-right .ecoce-logo{
+.ecoce-right .ecoce-logo{
     width: 65%;
 }
-.content-ecoce .ecoce-right .ecoce-appstore{
+.ecoce-right .ecoce-appstore{
     display: flex;
     justify-content: flex-end;
     margin-top: 15%;
 
 }
-.content-ecoce .ecoce-right .ecoce-appstore .google-store {
+.ecoce-right .ecoce-appstore .google-store {
     width: 188px;
     height: 57px;
     background-color: #1e1e1e;
     border-radius: 30px;
     margin-left: 6%;
 }
-.content-ecoce .ecoce-right .ecoce-appstore .google-store a{
+.ecoce-right .ecoce-appstore .google-store a{
     display: flex;
     align-items: center;
     width: 188px;
@@ -132,14 +134,14 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     text-decoration: none;
     cursor: pointer;
 }
-.content-ecoce .ecoce-right .ecoce-appstore .google-store img{
+.ecoce-right .ecoce-appstore .google-store img{
     width: 31px;
     height: 35px;
     color: #fff;
     word-break:keep-all;
     padding: 11px 12px 11px 20px;
 }
-.content-ecoce .ecoce-right .ecoce-appstore .google-store span{
+.ecoce-right .ecoce-appstore .google-store span{
     display: inline-block;
     width: 93px;
     height: 42px;
@@ -151,39 +153,32 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 
 
 
-/*------------------------푸터---------------*/
+/* ==================== 푸터 ==================== */
 .footer{
-    padding-left: 240px;
-    width: 100%;
+    /* border: solid 2px blue; */
+    width:100%;
     height: 250px;
-    background: #E9E9E9;
+    background: #E9E9E9;    
     display: flex;
-}
-.footer-logo{
-    width: 200px;
-    height: 45px;
-}
-.footer-wrap {
-    margin: 0;
-    width: 1440px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
+.footer-wrap {
+    width: 1440px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
 .footer-text{ 
     /* border: solid 2px red; */
     margin-top: 30px;
     display: flex;
-    flex-direction: row;
-    text-align: left;
-}
-    
-.footer-text p{
-    display: block;
+    gap: 7%;
     color:#9e9e9e;
-    word-break:keep-all;
-}      
+}
+
 .footer .copyright{
     color:#9E9E9E;
     font-weight:600;
@@ -191,5 +186,4 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 
 .footer-left,.footer-right{
     line-height:25px;
-    flex:1;
 }

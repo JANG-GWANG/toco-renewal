@@ -42,11 +42,12 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     line-height: 300px;
 }
 
-/* ==================== 에코스 ==================== */
+/* ==================== 사업현황 컨텐츠 영역 시작 ==================== */
 .business-content{
     width: 100%;
     height: 100%;
 }
+/* ---------- 에코스 ---------- */
 #content-ecoce{
     max-width: 1440px;
     height: 883px;
@@ -149,6 +150,100 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     color: #fff;
     word-break:keep-all;
 }
+
+/* ---------- 모아두 ---------- */
+.moado-bg{
+    width: 100%;
+    height: 820px;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,1), rgba(255,0,0,0) 100%),
+      linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%),
+      linear-gradient(300deg, #e4cde8, rgba(0,0,255,0) 70.71%);
+    margin-top: 80px;
+}
+#content-moado{
+    max-width: 1440px;
+    height: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* 수직 정렬 */
+    align-items: center;
+    /* 확인 */
+    flex-wrap: nowrap;
+    /* 모아두 중간이미지 위치 정렬 */
+    position: relative;
+}
+.moado-left{
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+}
+.moado-left .moado-left-top p:nth-child(1){
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: left;
+}
+.moado-left .moado-left-top p:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: left;
+    color: #C8C8C8;
+}
+.moado-left .moado-left-bottom img{
+    width: 115%;
+    padding: 8% 0 22% 0;
+    /* 패팅값을 %로 줘야 .ecoce-left 영역을 벗어나지 않음 */
+    /* padding: 30px 0 0 240px; */
+}
+.moado-middle{
+    width: 46%;
+    position: absolute;
+    left: 33%;
+    bottom: 0;
+}
+.moado-right{
+    width: 50%;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    /* 확인 */
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.moado-right p:nth-child(1){
+    font-size: 30px; font-weight: bold; line-height: 44px;
+    text-align: right;
+    margin-bottom: 18%;
+}
+.moado-right .moado-logo{
+    width: 62%;
+    margin-bottom: 18%;
+}
+.moado-right .moado-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moado-right .moado-link a{
+    width: 153px;
+    height: 57px;
+    border-radius: 69px;
+    background-color: #1e1e1e;
+    text-decoration: none;
+    color: #fff;
+}
+.moado-right .moado-link span{
+    display: inline-block;
+    width: 153px;
+    height: 57px;
+    font-size: 14px; font-weight:normal; line-height: 57px;
+    text-align: center;
+}
+
 
 
 

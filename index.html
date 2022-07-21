@@ -26,217 +26,62 @@
         header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
         header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: white; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
         /* header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 2px; background: #fff; transition: all 0.5s; border-radius: 18%;} */
-        header #gon nav > ul > li:hover > a{ color: #184B9F;}
+        header #gon nav > ul > li:hover > a{ color: #184B9F; transition: all 0.3s;}
         header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
         header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
         header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
         header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
-        header .visual {max-width: 1920px; max-height: 900px; margin: 0 auto; border: solid 2px red;} /*추가*/
         header .visual img{width: 100%; filter: opacity(0.7) drop-shadow(0 0 0 rgb(0, 0, 0));}
         #main-nav {text-align: end; padding-right: 5%;}
         .close{opacity: 0; display: none;}
         .more{opacity: 1;}
 
-        /* 새로운 소식 섹션 */
-        .main-news-container, .main-project-container, .main-service-container, .main-reference-container {
-            max-width: 1440px;
-            background-color: #b8b8b8;   
-        }
+                  /*------------------------푸터---------------*/
+      .footer{
+        /* border: solid 2px blue; */
+        /* max-width:1440px; */
+        padding-left: 240px;
+        width:100%;
+        height: 250px;
+        background: #E9E9E9;    
+        display: table;
+      }
 
-        .main-news-container {
-            height: 450px;
-        }
+      .footer-wrap {
+        display: table-cell;
+        vertical-align:middle;
+      }
 
-        .main-title {
-            font-size: 2rem;
-        }
-
-        .sub-title {
-            color:#999999;
-        }
-
-        .main-news-container .news-wrap {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            border: solid 2px red;
-        }
-
-        .main-news-container .news-contents {
-            width: 300px;
-            height: 316px;
-            border: solid 2px blue;
-        }
-
-        .main-news-container .news-wrap .news-img {
-            width: 300px;
-            height: 200px;
-            background-color: darkslateblue;
-            flex: 1;
-        }
-        /* 프로젝트 섹션 */
-        .main-project-container {
-            width: 100%;
-            height: 1148px; /*픽셀과 차이있음*/
-            background-color: rgb(201, 201, 201);
-        }
-        .main-project-container .main-title, .sub-title, .sub-text {
-            text-align: right;
-        }
-        .main-project-container .project-wrap {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            align-content: center; 
-        }
-        .main-project-container .project-left-wrap,.project-right-wrap {
-            border: solid 2px red;
-            flex: 1;
-        }
-        /* 프로젝트 섹션 - 왼쪽 */
-        .main-project-container .project-left-wrap {
-            width: 534px; /*임시*/
-            height: 840px;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            align-content: flex-start;
-        }
-        .main-project-container .project-left-wrap .project-img{
-            width: 534px;
-            height: 393px;
-            background-color: darkslateblue;
-        }
-        /* 프로젝트 섹션 - 오른쪽 */
-        .main-project-container .project-right-wrap{
-            width: 534px; /*임시*/
-            height: 840px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: flex-end;
-            align-content: flex-end;
-        }
-        .main-project-container .project-right-wrap .project-img2 {
-            width: 680px; /*sample*/
-            height: 680px;
-            background-color: darkslateblue;
-        }
-        /* 서비스 섹션 */
-        .main-service-container {
-            width: 100%;
-            height: 1140px;
-            display: flex;
-        }
-        .main-service-container .service-left-wrap, .service-right-wrap  {
-            border: solid 2px red;
-            width: 720px; /*임시박스*/
-            height: 100%;
-            flex:1;
-        }
-        /* 서비스 섹션 - 왼쪽 */
-        .main-service-container .service-left-wrap .service-img1 {
-            width: 680px;
-            height: 680px;
-            background-color: darkslateblue;
-        }
-        /* 서비스 섹션 - 오른쪽 */
-        .main-service-container .service-right-wrap{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-            align-content: flex-start;
-        }
-        .main-service-container .service-right-wrap .service-img-wrap1,.service-img-wrap2 {
-            border: solid 2px orange;
-            /* width: 100%; */
-        }
-        .main-service-container .service-right-wrap .service-img2 {
-            background-color: darkslateblue;
-            border: solid 2px blue;
-            width: 300px;
-            height: 375px;
-        }
-        .main-service-container .service-right-wrap .service-img-wrap2 {
-            margin-top: 150px;
-        }
-        /* 레퍼런스 섹션 */
-        .main-reference-container {
-            width: 100%;
-            height: 734px;
-
-        }
-        .main-reference-container .ref-logo-wrap {
-            border: solid 2px red;
-            height: 93%;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-items: stretch;
-            align-content: space-between;
-        }
-        .main-reference-container .ref-logo{
-            border: solid 2px blue;
-            background-color: darkslateblue;
-            width: 220px;
-            height: 100px;
-            flex:1;
-        }
-        /* 푸터 */
-        .common-footer{
-            /* border: solid 2px blue; */
-            max-width:1440px;
-            width:100%;
-            height: 250px;
-            background: #E9E9E9;    
-            display: table;
-        }
-
-        .footer-wrap {
-            display: table-cell;
-            vertical-align:middle;
-        }
-        .footer-text{ 
-            /* border: solid 2px red; */
-            margin-top: 30px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            text-align: left;
-        } 
-        .footer-text p{         
-            color:#9e9e9e;
-        }      
-        .footer .copyright{
-            color:#9E9E9E;
-            font-weight:600;
-        }      
-        .footer-left,.footer-right{
-            line-height:25px;
-            flex:1;
-            /* border: solid 3px orange; */
-        }
+      .footer-text{ 
+        /* border: solid 2px red; */
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+          
+     .footer-text p{         
+        color:#9e9e9e;
+      }      
+      .footer .copyright{
+        color:#9E9E9E;
+        font-weight:600;
+      }      
+     
+      .footer-left,.footer-right{
+        line-height:25px;
+        flex:1;
+      }
    </style>
 </head>
 <body>
-    <!--   헤더   -->
     <header id="header">
         <a class="logo" href="./index.html"><img src="./img/toco-common/logo-Resoft-white.png" alt="로고"></a>
         <div id="gon">
         <nav>
             <ul id="main-nav">
-                <li><a href="./Company2/Company2.html">회사소개</a>
+                <li><a href="./Company2/Company2.html" >회사소개</a>
                     <ul class="so close">
                         <li><a href="./Company2/Company2.html">REsoft소개</a></li>
                         <li><a href="./Company2/Company2.html">연혁</a></li>
@@ -247,9 +92,9 @@
             </li>
                 <li><a href="./Business/business.html">사업현황</a>
                 <ul class="so close">
-                    <li><a href="">ECOCE</a></li>
-                    <li><a href="">moaDo</a></li>
-                    <li><a href="">Etc</a></li>
+                    <li><a href="./Business/business.html">ECOCE</a></li>
+                    <li><a href="./Business/business.html">moaDo</a></li>
+                    <li><a href="./Business/business.html">Etc</a></li>
                 </ul>
             </li>
                 <li><a href="./Yard/yard.html">정보마당</a>
@@ -283,143 +128,24 @@
             }
         });
     });
+
 </script>
-    <!--   메인섹션   -->
-    <!-- 새로운 소식 섹션 -->
-    <section class="main-news-container">
-        <h1 class="main-title">리소프트의 새로운 소식</h1>
-        <p class="sub-title">RESOFT NEWS</p>
-        <div class="news-wrap">
-            <div class="news-contents">
-                <div class="news-img">
-                    box1
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga inventore quae illum voluptatibus</p>
-                <p>2022-07-20</p>
-            </div>
-            <div class="news-contents">
-                <div class="news-img">
-                    box2
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga inventore quae illum voluptatibus</p>
-                <p>2022-07-20</p>
-            </div>
-            <div class="news-contents">
-                <div class="news-img">
-                    box3
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga inventore quae illum voluptatibus</p>
-                <p>2022-07-20</p>
-            </div>
-            <div class="news-contents">
-                <div class="news-img">
-                    box4
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fuga inventore quae illum voluptatibus</p>
-                <p>2022-07-20</p>
-            </div>
-        </div>
-    </section>
-    <!-- 프로젝트 섹션 -->
-    <section class="main-project-container">
-        <h1 class="main-title">프로젝트</h1>
-        <p class="sub-title">RESOFT PROJECT</p>
-        <p class="sub-text">쾌적한 서비스 제공을 위해 사용자 입장에서<br>생각하고 항상 새로운 도전을 시도합니다.</p>
-        <div class="project-wrap">
-            <div class="project-left-wrap">
-                <div class="project-img">
-                    box1
-                </div>
-                <div class="project-img">
-                    box2
-                </div>
-            </div>
-            <div class="project-right-wrap">
-                <div class="project-img2">
-                    box3
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- 서비스 섹션 -->
-    <section class="main-service-container">
-        <div class="service-left-wrap">
-            <h1 class="main-title">서비스</h1>
-            <p class="sub-title">SERVICE</p>
-            <p class="sub-text">다양한 기술플랫폼을 제공하여 가능성을 열어주고<br>의미있는 성공으로 인도하는 서비스를 제공합니다.</p>
-            <div class="service-img1"></div>
-        </div>
-        <div class="service-right-wrap">
-            <div class="service-img-wrap1">
-                <div class="service-img2"></div><div class="service-img2"></div>
-            </div>
-            <div class="service-img-wrap2">
-                <div class="service-img2"></div><div class="service-img2"></div>
-            </div>
-        </div>
-    </section>
-    <!-- 레퍼런스 -->
-    <section class="main-reference-container">
-        <h1 class="main-title">레퍼런스</h1>
-        <p class="sub-title">REFERENCE</p>
-        <div class="ref-logo-wrap">
-            <div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-            </div>
-            <div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-            </div>
-            <div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-            </div>
-            <div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-            </div> 
-            <div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-                <div class="ref-logo"></div>
-            </div>
-        </div>
-    </setion>
-    <!-- 푸터 -->
-    <footer class="common-footer">
-        <div class="footer-wrap">
-            <img class="footer_logo" src="./img/toco-common/logo-Resoft.svg" alt="리소프트 로고 이미지">
-            <span class="copyright">ⓒ RESOFT CO.LTD. ALL Rights Reserved.</span>
-            <div class="footer-text">
-                <div class="footer-left">                        
-                    <p>상호 : (주)리소프트</p>                    
-                    <p>사업자등록번호 : 722-81-02219</p>
-                    <p>주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</p>   
-                </div> 
-                <div class="footer-right">
-                    <p>대표이사 : 오유나 &nbsp;&nbsp; 개인정보책임자 : 이현지</p> 
-                    <p>전화 : (053) 475-2110 &nbsp;팩스 : (0504) 257-5966 &nbsp;이메일 : call@resoft.kr</p>       
-                </div>
-            </div>
-          </div>   
-    </footer>
+<footer class="footer">
+    <div class="footer-wrap">
+      <img class="footer_logo" src="./img/toco-common/logo-Resoft.svg" alt="리소프트 로고 이미지">
+      <span class="copyright">ⓒ RESOFT CO.LTD. ALL Rights Reserved.</span>
+      <div class="footer-text">
+          <div class="footer-left">                        
+              <p>상호 : (주)리소프트</p>                    
+              <p>사업자등록번호 : 722-81-02219</p>
+              <p>주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</p>   
+          </div> 
+          <div class="footer-right">
+              <p>대표이사 : 오유나 &nbsp;&nbsp; 개인정보책임자 : 이현지</p> 
+              <p>전화 : (053) 475-2110 &nbsp;팩스 : (0504) 257-5966 &nbsp;이메일 : call@resoft.kr</p>       
+          </div>
+      </div>
+    </div>   
+  </footer>
+</body>
 </html>

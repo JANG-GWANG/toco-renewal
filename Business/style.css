@@ -50,6 +50,7 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 /* ---------- 에코스 ---------- */
 #content-ecoce{
     max-width: 1440px;
+    width: 75vw;
     height: 883px;
     margin: 0 auto;
     margin-top: 50px;
@@ -129,10 +130,10 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     margin-left: 6%;
 }
 .ecoce-right .ecoce-appstore .google-store a{
-    display: flex;
-    align-items: center;
     width: 188px;
     height: 57px;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     cursor: pointer;
 }
@@ -164,6 +165,7 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 }
 #content-moado{
     max-width: 1440px;
+    width: 75vw;
     height: 820px;
     margin: 0 auto;
     display: flex;
@@ -248,6 +250,7 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 /* ---------- ETC ---------- */
 #content-etc{
     max-width: 1440px;
+    width: 75vw;
     margin: 150px auto 200px auto;
     display: flex;
     flex-direction: column;
@@ -274,29 +277,40 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     text-align: left;
     color: #C8C8C8;
 }
+/* test */
 .etc-projects{
-    width: 1440px;
-    /* height: 350px; */
+    margin: 3% 0;
+    /* border: 1px solid red; */
 }
-.etc-projects{
-    width: 100%;
+.etc-projects div{
+    margin: 10px 0;
+}
+.etc-projects .etc-project-img{
+    max-width: 233px;
+    max-height: 350px;
+    /* width: 100vw; */
+    margin: 0 auto;
+    box-shadow: 1px 1px 15px #C8C8C8;
+    box-sizing: border-box;
+    /* background-color: yellow; */
+}
+
+/* 최종확인하고 지우기 */
+/* .etc-projects{
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
+    justify-content:space-between;
     flex-wrap: wrap;
 }
 .etc-projects .etc-project-img{
-    /* width: 15.83%; */
-    height: 100%;
-    /* background-color: yellow; */
+    max-width: 223px;
+    width: 15.5vw;
+    margin-top: 5%;
     box-shadow: 1px 1px 15px #C8C8C8;
     box-sizing: border-box;
-    margin: 4% 5.2% 0 0;
-}
-.etc-projects .etc-project-img:last-child{
-    margin: 4% 0 0 0;
-}
-
+    background-color: yellow;
+} */
 
 /* ==================== 푸터 ==================== */
 .footer{
@@ -310,7 +324,8 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 }
 
 .footer-wrap {
-    width: 1440px;
+    max-width: 1440px;
+    width: 75vw;
     display: flex;
     justify-content: left;
     flex-direction: column;
@@ -332,3 +347,23 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 .footer-left,.footer-right{
     line-height:25px;
 }
+
+
+
+
+
+/* ==================== 전유진 미어쿼리 작성 ==================== */
+@media screen and (max-width: 1487px) {
+    .etc-projects .etc-project-img{
+        max-width: 223px;
+        /* width: 100vw; */
+    }
+}
+
+
+
+
+
+
+
+

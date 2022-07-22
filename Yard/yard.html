@@ -8,19 +8,19 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>     
+    <script src="https://code.jquery.com/jquery-latest.js"></script>  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">   
     <!-- wow 애니메이션 css -->
     <link rel="stylesheet" href="../animate.css">
     <!-- wow 애니메이션 js -->
     <script src="../wow.min.js"></script>
     <script>new WOW().init();</script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+    <style>      
         
         /* 바디 */
         body{
             max-width:1920px;
-            line-height:40px;  
+            /* line-height:30px;   */
             margin:0 auto;
             font-family:'Noto Sans KR';      
         }
@@ -42,9 +42,9 @@
         header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
         #main-nav {text-align: end; padding-right: 5%; }
         .close{opacity: 0; display: none;}
-        .more{opacity: 1;}
+        /* .more{opacity: 1;} */
         
-        /* 사업현황 배너 */
+        /* 정보마당 배너 */
         .header-title-bg {
         width: 100%;
         height: 300px;
@@ -76,45 +76,14 @@
             text-align:left;
             margin:5% 0 0 0;
         }
-        .news-box-wrapper{
-            text-align:center;
-            
-        }
-        .news-box-wrapper ul{
-            display:flex;
-            flex-wrap:wrap;            
-        }
-        .news-box-wrapper ul li:nth-child(2n-1){
-            width:47%;
-            margin:5% 6% 0 0;           
-            
-            margin-bottom:40px;
-            word-break:break-all;            
-        }
-        .news-box-wrapper ul li:nth-child(2n){
-            width: 47%;
-            margin:5% 0 0 0;           
-            
-            margin-bottom:40px;
-            word-break:break-all; 
-        }
-        .image{
-            background-image:url(./img/toco-common/sample-img.png);
-            background-size:cover;
-        }
-            
-        /* 더보기칸 */
-        .load{
-            background:transparent;
-            cursor:pointer;
-            border:1px solid #1e1e1e;
-            border-radius:43px;  
-            margin:10% 0 10% 0;        
-        }
-        .load p{
-            font-size:20px;
-            margin:22px 71px;
+        .news-title{
+            padding-bottom:1rem;
         }        
+        .sub-title{
+            margin-bottom:3rem;
+            font-weight:500;
+        } 
+        
         /* 정보마당 본문 */
         .resoft-news h1{
             font-size:40px;            
@@ -123,53 +92,86 @@
             font-size:18px;
             color:#c8c8c8;
         }
-        .news-cont{            
+        .news-box-wrapper{
+            text-align:center;            
+        }
+        .news-box-wrapper #news-box{
+            display:flex;
+            flex-wrap:wrap;            
+        }
+        .news-box-wrapper #news-box .news-cont{
+            width: 47%;
+            height:25%;
+            margin-bottom:40px;
+            word-break:break-all; 
             text-align:left;
-        }  
-        .news-cont a{
+        }
+        .news-box-wrapper #news-box .news-cont:nth-child(2n-1){          
+            margin:0 6% 0 0;                       
+        }
+        .news-box-wrapper #news-box .news-cont:nth-child(2n){            
+            margin:0; 
+        }      
+        
+        .news-box-wrapper #news-box .news-cont a{
             text-decoration:none;
             color:#000000;
         }
-        .news-cont:hover a{
+        .news-box-wrapper #news-box .news-cont:hover a{
             color:#184B9F;
-        }
-        .news-cont li{
-            list-style:none;
-        }
+        }        
         .news-cont p{
             font-size:20px;
             overflow:hidden;
             text-overflow:ellipsis;
             white-space:nowrap;
             font-weight:600;
-        }
+            line-height:1.6rem;
+            margin-top:1rem;
+        }        
         .news-cont .news-cont-day{
             font-size:16px;
             color:#aaaaaa;
+            font-weight:300;
+            margin-bottom:2rem;
         }
 
         /* 이미지 확대기능 */
         .news-cont .news-img-wrap{
             width:100%;
             height:100%;
-            border-radius:14px;
+            border-radius:13px;
         }
-        .news-cont img{   
+        .news-cont .news-img-wrap img{   
             position:relative;
         }
-        .news-cont:hover img{     
+        .news-cont:hover .news-img-wrap img{     
             transition : transform 0.3s ease-in-out;      
             transform:scale(1.2);   
              opacity:1;            
         }
-        .news-cont:hover .news-img-wrap{            
+        .news-cont:hover .news-img-wrap{  
             position:relative;             
             filter:brightness(50%);
             overflow:hidden;
+        }       
+        
+        /* 더보기칸 */
+        .load{
+            display:initial;
+            background:transparent;
+            cursor:pointer;
+            border:1px solid #1e1e1e;
+            border-radius:43px;  
+            margin:5% 0 10% 0;        
         }
-        
-        
-         /*------------------------푸터---------------*/
+        .load li{
+            font-size:20px;
+            margin:22px 71px;   
+            list-style:none;         
+        }        
+
+        /*------------------------푸터---------------*/
          .footer{    
             width:100%;
             height: 250px;
@@ -216,7 +218,7 @@
                         <li><a href="../Company2/Company2.html">연혁</a></li>
                         <li><a href="../Company2/Company2.html">조직도</a></li>
                         <li><a href="../Company2/Company2.html">특허&인증</a></li>
-                        <li><a href="../Company2/Company2.html">오시는 길</a></li>
+                        <li><a href="../Company2/Company2.html#map">오시는 길</a></li>
                     </ul>
             </li>
                 <li><a href="../Business/business.html">사업현황</a>
@@ -236,19 +238,18 @@
         <div class="so close"></div>
     </div>
          <a href="#" class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
-         
-        
-
     </header>
+
     <div class="header-title-bg">
         <div class="title-bg-color">
             <p>정보마당</p>
         </div>
     </div>
+
     <section class="resoft-news">
         <div class="news-title-wrap">
-            <h1>REsoft 소식</h1>
-            <h4>NEWS</h4>
+            <h1 class="news-title">REsoft 소식</h1>
+            <h4 class="sub-title">NEWS</h4>
         </div>
         <div class="news-box-wrapper">
             <ul id="news-box">
@@ -269,7 +270,7 @@
                 </li>
                 <li class="news-cont wow fadeInUp" data-wow-delay="0.5s">                    
                     <a href="../yard-news/yard-news.html"><div class="news-img-wrap"><img src="../img/toco-common/sample-img.png" alt="" style="height: 100%; width: 100%;"></div>
-                    <p>4Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae modi, earum explicabo laborum tenetur voluptates delectus corrupti asperiores vero laboriosam repellendus animi optio. Accusantium non cumque illum ullam voluptatum!</p>
+                    <p class="news-cont-info">4Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae modi, earum explicabo laborum tenetur voluptates delectus corrupti asperiores vero laboriosam repellendus animi optio. Accusantium non cumque illum ullam voluptatum!</p>
                     <p class="news-cont-day">2022.01.01</p></a>
                 </li>
                 <li class="news-cont wow fadeInUp" data-wow-delay="0.5s">                    
@@ -301,11 +302,9 @@
                     <a href="../yard-news/yard-news.html"><div class="news-img-wrap"><img src="../img/toco-common/sample-img.png" alt="" style="height: 100%; width: 100%;"></div>
                     <p>10Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae modi, earum explicabo laborum tenetur voluptates delectus corrupti asperiores vero laboriosam repellendus animi optio. Accusantium non cumque illum ullam voluptatum!</p>
                     <p class="news-cont-day">2022.01.01</p></a>
-                </li>
-
-                                         
+                </li>                                         
             </ul>
-            <button class="load" onclick="more()"><p>더보기</p></button>
+            <button class="load" onclick="more()"><li>더보기</li></button>
         </div>
     </section>
 
@@ -346,7 +345,9 @@
     }); 
     function more(){
         $(".news-cont").slice(6,11).show();
-    }
+        $(".load").css('display','none');          
+        $(".footer").css('margin-top',"7%"); 
+    }    
 </script>
 <script src="../script.js"></script>
 </body>

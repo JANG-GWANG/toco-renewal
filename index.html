@@ -40,10 +40,16 @@
         .close{opacity: 0; display: none;}
         .more{opacity: 1;}
         
-        /* 메인 전체  */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        div {
+            margin: 0 auto;
+        }
+        /* 메인 전체 섹션 */
         .main-news-container, .main-project-container, .main-service-container, .main-reference-container {
             max-width: 1440px;
-            margin: 0 auto;
+            margin: 0 auto; 
         }
         .main-title {
             font-size: 2rem;
@@ -59,8 +65,8 @@
             font-weight: 600;
             line-height: 1.7rem;
         }
-                /* 새로운 소식 섹션 */
-         .main-news-container {
+        /* 새로운 소식 섹션 */
+        .main-news-container {
             height: 450px;
             margin-top: 5rem;
             margin-bottom: 5rem;
@@ -89,11 +95,8 @@
             margin-bottom: 2rem;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowwrap;
-            width:300px;
-            height: 2.5rem;
+            white-space: nowrap;
         }
-
         .main-news-container .news-date {
             color : #AAAAAA;
             font-weight: 200;
@@ -138,7 +141,6 @@
             width: 534px;
             height: 393px;
         }
-
         .main-project-container .moado {
             background-image: url('./img/toco-img1/main-moaDo-back.svg');
         }
@@ -161,7 +163,8 @@
         /* 서비스 섹션 */
         .main-service-container {
             width: 100%;
-            height: 1140px;
+            height: 100%;
+            margin-bottom: 5rem;
             display: flex;
         }
         .main-service-container .service-left-wrap, .service-right-wrap  {
@@ -196,10 +199,11 @@
         /* 레퍼런스 섹션 */
         .main-reference-container {
             width: 100%;
-            height: 800px;
+            height: 100%;
+            margin-bottom: 5rem;
         }
         .main-reference-container .ref-logo-wrap {
-            height: 80%;
+            height: 100%;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -215,22 +219,23 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-            flex:1;
-        }
+        }   
         /* 푸터 */
         .common-footer{
-            max-width:1440px;
             width:100%;
             height: 250px;
             background: #E9E9E9;    
             display: table;
         }
-
         .footer-wrap {
             display: table-cell;
             vertical-align:middle;
         }
+        .footer-logo {
+            max-width: 1440px;
+        }
         .footer-text{ 
+            max-width: 1440px;
             margin-top: 1.5rem;
             display: flex;
             flex-direction: row;
@@ -417,11 +422,13 @@
             </div>
         </div>
     </setion>
-    <!-- 푸터 -->
+    <!-- 푸터1 -->
     <footer class="common-footer">
         <div class="footer-wrap">
+            <div class="footer-logo">
             <img class="footer_logo" src="./img/toco-common/logo-Resoft.svg" alt="리소프트 로고 이미지">
             <span class="copyright">ⓒ RESOFT CO.LTD. ALL Rights Reserved.</span>
+            </div>
             <div class="footer-text">
                 <div class="footer-left">                        
                     <p>상호 : (주)리소프트</p>                    
@@ -433,7 +440,7 @@
                     <p>전화 : (053) 475-2110 &nbsp;팩스 : (0504) 257-5966 &nbsp;이메일 : call@resoft.kr</p>       
                 </div>
             </div>
-          </div>   
+        </div>   
     </footer>
 </body>
 </html>

@@ -248,9 +248,7 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 /* ---------- ETC ---------- */
 #content-etc{
     max-width: 1440px;
-    height: 750px;
-    margin: 0 auto;
-    margin-bottom: 150px;
+    margin: 150px auto 200px auto;
     display: flex;
     flex-direction: column;
     /* 수직 정렬 */
@@ -278,24 +276,26 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 }
 .etc-projects{
     width: 1440px;
-    height: 350px;
-    width: 1440px;
-    height: 350px;
-    margin-top: 5%;
+    /* height: 350px; */
 }
 .etc-projects{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 .etc-projects .etc-project-img{
     /* width: 15.83%; */
     height: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     box-shadow: 1px 1px 15px #C8C8C8;
     box-sizing: border-box;
+    margin: 4% 5.2% 0 0;
 }
-
+.etc-projects .etc-project-img:last-child{
+    margin: 4% 0 0 0;
+}
 
 
 /* ==================== 푸터 ==================== */

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../magic.css">
     <script src="../wow.min.js"></script>
     <script>new WOW().init();</script>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c878f6eac0a2c4a708e717a953b9ac76"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c878f6eac0a2c4a708e717a953b9ac76"></script>
     <style>
         body{
             font-family:'Noto Sans KR';
@@ -160,7 +160,7 @@
     </div>
 
 <section>
-<div class="section "><p>REsoft 소개 <br>ABOUT US</p>
+<div class="section"><p>REsoft 소개 <br>ABOUT US</p>
     <table>
         <tr>
             <td>회사명</td>
@@ -197,7 +197,7 @@
 
 
 <div class="section" style="padding-bottom: 640px;" >
-    <p class="title">조직도</p>
+    <p class="title" id="organ">조직도</p>
     <p class="title2">ORGANIZATION</p>
 
     <div class="tong" style="position: absolute;">
@@ -326,7 +326,7 @@
 
 
 <div class="section" style="padding-bottom: 0;">
-    <p class="title">특허&인증</p>
+    <p class="title" id="certi">특허&인증</p>
     <p class="title2">CERTIFICATION & PATENT</p>
     <div class="box">
     <div class="prize"><img src="../img/toco-img2/company-square.svg" alt="" ></div>
@@ -346,7 +346,7 @@
 </div>
 
 <div class="section">
-    <p class="title">오시는길</p>
+    <p class="title" id="map">오시는길</p>
     <p class="title2"> DIRECTIONS</p>
     <div id="map" style="width:75%;height:680px; display: inline-block;"></div>
     <script>

@@ -15,50 +15,66 @@
     <script src="../wow.min.js"></script>
     <script>new WOW().init();</script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
         
+        /* 바디 */
+        body{
+            max-width:1920px;
+            line-height:40px;  
+            margin:0 auto;
+            font-family:'Noto Sans KR';      
+        }
+
+        /* 네비바 */
         header a {text-decoration: none; }
-        header .logo {position: absolute; left: 30px; top: 30px; z-index: 100; 
-            margin-left: 20%;
-            height: 30px;}
+        header .logo {position: absolute; left: 30px; top: 30px; z-index: 100; margin-left: 20%; height: 30px;}
         header >a  {position:absolute; display: flex; right: 10%; top:30px; width: 50px; z-index: 100; }
         header #gon {position: absolute; left: 0; top: 0; padding: 10px 232px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; }
         header #gon nav + div {position:absolute; left: 0; top:85px; width: 100%;height: 200px; background: rgba(24, 75, 159, .7); transition: all 0.5s; z-index: -1;}
-        /* header #gon nav:hover + div{opacity: 1;} */
-        /* header #gon nav > ul:hover ul{opacity: 1;} */
-        header #gon nav > ul >li {display: inline-block; position: relative;}
+        header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
         header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
-        header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 8px; background: #184B9F; transition: all 0.5s; border-radius: 18%;}
+        header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 8px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
         header #gon nav > ul > li:hover > a:after{ width: 50%;}
-        header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px;}
+        header #gon nav > ul > li:hover > a{ color: #184B9F;}
+        header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
         header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
         header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
         header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
-        header .visual img{width: 100%; filter: opacity(0.7) drop-shadow(0 0 0 rgb(0, 0, 0));}        
         #main-nav {text-align: end; padding-right: 5%; }
         .close{opacity: 0; display: none;}
         .more{opacity: 1;}
-
-        .top_back{background: rgba(0, 0, 0, 0.3); height: 359px; position:relative; z-index: 5;}
-        .top{background: url(../img/toco-img3/business-header.png) no-repeat center ;  height: 300px; width: 100%; position: absolute; display: flex; justify-content: center; align-items: center; top: 6.6%;}
-        .top > p{text-align: center;  position: absolute; height: 58; font-size: 40px; color: #fff;  z-index: 5;}
         
+        /* 사업현황 배너 */
+        .header-title-bg {
+        width: 100%;
+        height: 300px;
+        background: url(../img/toco-img4/yard-header.png) center center no-repeat, rgba(0, 0, 0, 0.5);
+        background-size: cover;
+        background-blend-mode:hard-light;
+        margin-top: 80px;
+        }
+        .header-title-bg .title-bg-color{
+        background-color: rgba(0, 0, 0, 0.1);    
+        }
+        .header-title-bg .title-bg-color p{
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        line-height: 300px;
+        }
 
 
 
         /* 정보마당 REsoft 소식 */
-        body{
-            max-width:1920px;
-            line-height:40px;  
-            margin:0 auto;          
-        }
+        
         .resoft-news{
-            max-width:1440px;
+            max-width:1440px;            
             margin:0 auto;
             text-align:center;
         }
         .news-title-wrap{
             text-align:left;
-            margin:10% 0 0 5%;
+            margin:5% 0 0 0;
         }
         .news-box-wrapper{
             text-align:center;
@@ -68,20 +84,25 @@
             display:flex;
             flex-wrap:wrap;            
         }
-        .news-box-wrapper ul li{
-            width:40%;
-            margin:5% 0 5% 0 ;
-            padding: 0 5% 0 5%;
+        .news-box-wrapper ul li:nth-child(2n-1){
+            width:47%;
+            margin:5% 6% 0 0;           
+            
             margin-bottom:40px;
             word-break:break-all;            
+        }
+        .news-box-wrapper ul li:nth-child(2n){
+            width: 47%;
+            margin:5% 0 0 0;           
+            
+            margin-bottom:40px;
+            word-break:break-all; 
         }
         .image{
             background-image:url(./img/toco-common/sample-img.png);
             background-size:cover;
         }
-        .news-cont{            
-            text-align:left;
-        }        
+            
         /* 더보기칸 */
         .load{
             background:transparent;
@@ -102,12 +123,15 @@
             font-size:18px;
             color:#c8c8c8;
         }
-        .news-cont:hover a{
-            color:#184B9F;
-        }
+        .news-cont{            
+            text-align:left;
+        }  
         .news-cont a{
             text-decoration:none;
             color:#000000;
+        }
+        .news-cont:hover a{
+            color:#184B9F;
         }
         .news-cont li{
             list-style:none;
@@ -146,41 +170,40 @@
         
         
          /*------------------------푸터---------------*/
-      .footer{    
-        
-        width:100%;
-        height: 250px;
-        background: #E9E9E9;   
-        /* border: solid 2px blue;         */
-        display: table;
-      }
+         .footer{    
+            width:100%;
+            height: 250px;
+            background: #E9E9E9;    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-      .footer-wrap {
-        max-width:1440px;
-        display: table-cell;
-        vertical-align:middle;        
-      }      
+        .footer-wrap {
+            width: 1440px;
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+        }
 
-      .footer-text{ 
-        /* border: solid 2px red;         */
-        display: flex;
-        flex-direction: row;        
-        justify-content: space-between;        
-      }
-          
-     .footer-text p{                 
-        color:#9e9e9e; 
-      }      
-      .footer .copyright{
-        font-weight:600;
-      }            
-     
-      .footer-left,.footer-right{
-        line-height:25px;
-        flex:1;
-      }      
+        .footer-text{     
+            margin-top: 30px;
+            display: flex;
+            gap: 7%;
+            color:#9e9e9e;
+        }
+
+        .footer .copyright{
+            color:#9E9E9E;
+            font-weight:600;
+        }      
+
+        .footer-left,.footer-right{
+            line-height:25px;
+        }
    </style>
 </head>
+
 <body>
     <header id="header">
         <a class="logo" href="../index.html"><img src="../img/toco-common/logo-Resoft.svg" alt="로고"></a>
@@ -189,8 +212,8 @@
             <ul id="main-nav">
                 <li><a href="../Company1/Company1.html">회사소개</a>
                     <ul class="so close">
-                        <li><a href="../Company1/Company1.html">REsoft소개</a></li>
-                        <li><a href="../Company1/Company1.html">연혁</a></li>
+                        <li><a href="../Company2/Company2.html">REsoft소개</a></li>
+                        <li><a href="../Company2/Company2.html">연혁</a></li>
                         <li><a href="../Company2/Company2.html">조직도</a></li>
                         <li><a href="../Company2/Company2.html">특허&인증</a></li>
                         <li><a href="../Company2/Company2.html">오시는 길</a></li>
@@ -198,9 +221,9 @@
             </li>
                 <li><a href="../Business/business.html">사업현황</a>
                 <ul class="so close">
-                    <li><a href="../Business/business.html">ECOCE</a></li>
-                    <li><a href="../Business/business.html">moaDo</a></li>
-                    <li><a href="../Business/business.html">Etc</a></li>
+                    <li><a href="../Business/business.html/#content-ecoce">ECOCE</a></li>
+                    <li><a href="../Business/business.html/#content-moado">moaDo</a></li>
+                    <li><a href="../Business/business.html/#content-etc">Etc</a></li>
                 </ul>
             </li>
                 <li><a href="#">정보마당</a>
@@ -213,13 +236,15 @@
         <div class="so close"></div>
     </div>
          <a href="#" class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
-    <div class="top_back"></div>
-    <div class="top">
-        <p>정보마당</p>
-    </div>
+         
+        
 
     </header>
-
+    <div class="header-title-bg">
+        <div class="title-bg-color">
+            <p>정보마당</p>
+        </div>
+    </div>
     <section class="resoft-news">
         <div class="news-title-wrap">
             <h1>REsoft 소식</h1>
@@ -286,21 +311,23 @@
 
     <footer class="footer">
         <div class="footer-wrap">
-          <img class="footer_logo_img" src="../img/toco-common/logo-Resoft.svg" alt="footer_logo">
-          <span class="copyright">ⓒRESOFT CO.LTD. ALL Rights Reserved.</span>
-          <div class="footer-text">
-              <div class="footer-left">                        
-                  <p>상호 : (주)리소프트</p>                    
-                  <p>사업자등록번호 : 722-81-02219</p>
-                  <p>주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</p>   
-              </div> 
-              <div class="footer-right">
-                  <p>대표이사 : 오유나 &nbsp;&nbsp; 개인정보책임자 : 이현지</p> 
-                  <p>전화 : (053) 475-2110 &nbsp;팩스 : (0504) 257-5966 &nbsp;이메일 : call@resoft.kr</p>       
-              </div>
-          </div>
+            <div class="footer-top">
+                <img class="footer-logo" src="../img/toco-common/logo-Resoft.svg" alt="리소프트 로고 이미지">
+                <span class="copyright">ⓒ RESOFT CO.LTD. ALL Rights Reserved.</span>
+            </div>
+            <div class="footer-text">
+                <div class="footer-left">                        
+                    <p>상호 : (주)리소프트</p>                    
+                    <p>사업자등록번호 : 722-81-02219</p>
+                    <p>주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</p>   
+                </div> 
+                <div class="footer-right">
+                    <p>대표이사 : 오유나 &nbsp;&nbsp; 개인정보책임자 : 이현지</p> 
+                    <p>전화 : (053) 475-2110 &nbsp;팩스 : (0504) 257-5966 &nbsp;이메일 : call@resoft.kr</p>       
+                </div>
+            </div>
         </div>   
-      </footer>    
+    </footer>       
 <script>
     $(document).ready(function(){
         $('.ham').click(function(){

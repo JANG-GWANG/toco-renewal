@@ -1,8 +1,3 @@
-// 제이쿼리 충돌 오류 방지 
-// script.js:6 Uncaught TypeError: $(...).slick is not a function
-$.noConflict();
-
-
 // 슬릭슬라이더
 $(function(){
     $(".etc-projects").slick({

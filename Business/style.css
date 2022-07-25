@@ -1,26 +1,39 @@
 /* ==================== 헤더 네비게이션바 ==================== */
-body{
-    font-family:'Noto Sans KR';
-}
-header a {text-decoration: none; }
-header .logo {position: absolute; left: 30px; top: 30px; z-index: 100; margin-left: 20%; height: 30px;}
-header >a  {position:absolute; display: flex; right: 10%; top:30px; width: 50px; z-index: 100; }
-header #gon {position: absolute; left: 0; top: 0; padding: 10px 232px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; }
-header #gon nav + div {position:absolute; left: 0; top:85px; width: 100%;height: 200px; background: rgba(24, 75, 159, .7); transition: all 0.5s; z-index: -1;}
+body{font-family:'Noto Sans KR';}
+
+header a {text-decoration: none; cursor: pointer; }
+header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 20%; height: 30px;}
+header >a  {position:fixed; display: flex; right: 10%; top:25px; width: 50px; z-index: 100; }
+header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
+header #gon #main-nav {padding-top: 5px; padding-bottom: 5px;}
+header #gon nav + div {position:absolute; left: 0; top:81px; width: 100%;height: 200px; background: rgba(24, 75, 159, .7); transition: all 0.5s; z-index: -1;}
 header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
 header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
-header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 8px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
+header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
 header #gon nav > ul > li:hover > a:after{ width: 50%;}
 header #gon nav > ul > li:hover > a{ color: #184B9F;}
 header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
 header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
 header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
-header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
+header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
 #main-nav {text-align: end; padding-right: 5%; }
 .close{opacity: 0; display: none;}
 .more{opacity: 1;}
 
 
+
+.top_back{background: rgba(0, 0, 0, 0.3); height: 377px; position:relative; z-index: 5;}
+.top{background: url(../img/toco-img2/company-header.png)no-repeat center ;  height: 300px; width: 100%; position: absolute; display: flex; justify-content: center; align-items: center; top: 77px; background-size: cover;}
+
+/* 현재페이지 글자색 및 밑줄 */
+header #gon nav > ul > li > a > p:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; border-radius: 20px; }
+header #gon nav > ul > li > a > p:after {width: 50%;}
+header #gon nav > ul > li .here{color:#184B9F;}
+
+@media screen and (max-width:768px) {
+    header .logo {margin-left: 20px; top: 25px;}
+    header #gon nav > ul li{display: none;}
+}
 
 /* ==================== 사업현황 헤더 영역 ==================== */
 .header-title-bg {
@@ -29,7 +42,7 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
     background: url(../img/toco-img3/business-header.png) center center no-repeat, rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-blend-mode:hard-light;
-    margin-top: 80px;
+    margin-top: 75px;
 }
 .header-title-bg .title-bg-color{
     background-color: rgba(0, 0, 0, 0.3);

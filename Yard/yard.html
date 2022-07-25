@@ -229,8 +229,7 @@
 
 
         /* 모바일 모드 */
-        @media screen and (max-width:768px){
-                   
+        @media screen and (max-width:768px){                  
 
 
 
@@ -277,12 +276,30 @@
         <div class="so close"></div>
     </div>
          <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
-    </header>
-    <script>
-        
-   
-   </script>
+    </header>   
 
+    <script>    
+
+         $(document).ready(function(){
+       $('.ham').click(function () {
+           if($('.so').hasClass('more'))
+       $('.so').addClass('magictime fadeOut');
+       else if($('.so').hasClass('close'))
+       $('.so').removeClass('magictime fadeOut');
+   });
+        });
+        
+       $(document).ready(function(){
+           $('.ham').click(function(){
+               if($('.so').hasClass('close')){
+                   $('.so').addClass('magictime fadeIn');
+                   $('.so').addClass('more').removeClass('close');
+               }else if($('.so').hasClass('more')){
+                   setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
+               }
+           });
+       });
+    </script>
     <div class="header-title-bg">
         <div class="title-bg-color">
             <p>정보마당</p>
@@ -372,37 +389,6 @@
     </footer>       
 
 <script>
-      
-        $(document).ready(function(){
-       $('.ham').click(function () {
-           if($('.so').hasClass('more'))
-       $('.so').addClass('magictime fadeOut');
-       else if($('.so').hasClass('close'))
-       $('.so').removeClass('magictime fadeOut');
-   });
-        });
-        
-       $(document).ready(function(){
-           $('.ham').click(function(){
-               if($('.so').hasClass('close')){
-                   $('.so').addClass('magictime fadeIn');
-                   $('.so').addClass('more').removeClass('close');
-               }else if($('.so').hasClass('more')){
-                   setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
-               }
-           });
-       });
-
-       $(document).ready(function(){
-            $('.ham').click(function(){
-                if($('.so').hasClass('close')){
-                    $('.so').addClass('more').removeClass('close');
-                }else if($('.so').hasClass('more')){
-                    $('.so').addClass('close').removeClass('more');
-                }
-            });
-        });  
-
       
     $(document).ready(function(){
         $('.news-cont').hide();        

@@ -170,9 +170,12 @@
         }
         .load div{
             font-size:20px;
-            margin:22px 71px;   
-            list-style:none;         
+            margin:22px 71px;                    
         }        
+        .load:hover{
+            color:#ffffff;
+            background-color:#184B9F;            
+        }
 
         /*------------------------푸터---------------*/
          .footer{    
@@ -186,7 +189,7 @@
 
         .footer-wrap {
             width: 1440px;
-            display: flex;
+            display: flex; 
             justify-content: left;
             flex-direction: column;
         }
@@ -208,16 +211,31 @@
         }
 
         /*미디어쿼리 */
+
+
+
+        /* 태블릿 모드 */
          /* @media screen and (max-width:1280px){
             body{
                  background-color:red; 
             }
         } */
-        /*@media screen and (max-width:768px){
-            body{
-                 background-color:blue; 
+
+
+        /* 모바일 모드 */
+        @media screen and (max-width:768px){
+                   
+
+
+
+            /* 모바일 모드일때 배치변경 */
+            .footer-wrap .footer-text{
+                display:block;                
             }
-        }*/
+            .footer-right{
+                margin-top:5%;
+            }
+        } 
    </style>
 </head>
 
@@ -319,7 +337,7 @@
                     <p class="news-cont-day">2022.01.01</p></a>
                 </li>                                         
             </ul>
-            <button class="load" onclick="more()"><div>더보기</div></button>
+            <button type="button" class="load" onclick="more()"><div>더보기</div></button>
         </div>
     </section>
 

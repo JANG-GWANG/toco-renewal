@@ -46,10 +46,12 @@
         div {
             margin: 0 auto;
         }
-        /* 메인 전체 섹션 */
+         /* 메인 전체 섹션 */
         .main-news-container, .main-project-container, .main-service-container, .main-reference-container {
             max-width: 1440px;
             margin: 0 auto; 
+            /* background-color: #b8b8b8;    */
+            /* border: solid 1px rgb(14, 241, 63); */
         }
         .main-title {
             font-size: 2rem;
@@ -67,6 +69,7 @@
         }
         /* 새로운 소식 섹션 */
         .main-news-container {
+            /* max-width: 1440px; */
             height: 450px;
             margin-top: 5rem;
             margin-bottom: 5rem;
@@ -78,17 +81,21 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            /* border: solid 1px red; */
         }
         .main-news-container .news-contents {
             width: 300px;
             height: 316px;
+            /* border: solid 1px blue; */
         }
         .main-news-container .news-img {
             width: 300px;
             height: 200px;
+            /* background-color: darkslateblue; */
             flex: 1;
         }
         .main-news-container .news-text {
+            /* border: solid 1px blue; */
             font-weight: 600;
             line-height:1.2rem;
             margin-top: 1rem;
@@ -96,6 +103,8 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            /* width:300px;
+            height: 2.5rem; */
         }
         .main-news-container .news-date {
             color : #AAAAAA;
@@ -105,6 +114,7 @@
         .main-project-container {
             width: 100%;
             height: 1148px; /*픽셀과 차이있음*/
+            /* background-color: rgb(201, 201, 201); */
         }
         .main-project-container .main-title {
             text-align: right;
@@ -124,6 +134,7 @@
             align-content: center; 
         }
         .main-project-container .project-left-wrap,.project-right-wrap {
+            /* border: solid 1px red; */
             flex: 1;
         }
         /* 프로젝트 섹션 - 왼쪽 */
@@ -140,7 +151,9 @@
         .main-project-container .project-img{
             width: 534px;
             height: 393px;
+            /* background-color: darkslateblue; */
         }
+
         .main-project-container .moado {
             background-image: url('./img/toco-img1/main-moaDo-back.svg');
         }
@@ -159,6 +172,7 @@
         .main-project-container .project-img2 {
             width: 680px; /*sample*/
             height: 680px;
+            /* background-color: darkslateblue; */
         }
         /* 서비스 섹션 */
         .main-service-container {
@@ -168,6 +182,7 @@
             display: flex;
         }
         .main-service-container .service-left-wrap, .service-right-wrap  {
+            /* border: solid 1px red; */
             width: 720px; /*임시박스*/
             height: 100%;
         }
@@ -189,7 +204,12 @@
             align-items: flex-start;
             align-content: flex-start;
         }
+        .main-service-container .service-img-wrap1,.service-img-wrap2 {
+            /* border: solid 1px orange; */
+        }
         .main-service-container .service-img2 {
+            /* background-color: darkslateblue;
+            border: solid 1px blue; */
             width: 300px;
             height: 375px;
         }
@@ -203,6 +223,7 @@
             margin-bottom: 5rem;
         }
         .main-reference-container .ref-logo-wrap {
+            /* border: solid 1px red; */
             height: 100%;
             display: flex;
             flex-direction: row;
@@ -219,6 +240,7 @@
             justify-content: center;
             align-items: center;
             align-content: center;
+            /* flex:1; */
         }   
         /* 푸터 */
         .common-footer{
@@ -350,7 +372,8 @@
             </div>
             <div class="project-right-wrap">
                 <div class="project-img2">
-                    
+                    <!-- code -->
+                    <lottie-player src="./img/toco-img1/json-working.json" background="transparent" speed="1" style="width: 680px; height: 680px;" loop autoplay></lottie-player>
                 </div>
             </div>
         </div>
@@ -361,7 +384,10 @@
             <h1 class="main-title">서비스</h1>
             <p class="sub-title">SERVICE</p>
             <p class="sub-text">다양한 기술플랫폼을 제공하여 가능성을 열어주고<br>의미있는 성공으로 인도하는 서비스를 제공합니다.</p>
-            <div class="service-img1"></div>
+            <div class="service-img1">
+                <!-- code -->
+                <lottie-player src="./img/toco-img1/json-talking.json" background="transparent" speed="1" style="width: 680px; height: 680px;" loop autoplay></lottie-player>
+            </div>
         </div>
         <div class="service-right-wrap">
             <div class="service-img-wrap1">
@@ -421,7 +447,7 @@
                 <div class="ref-logo"><img src="./img/toco-img1/logo-DG-Credit.png" alt="대구신용보증재단"></div>
             </div>
         </div>
-    </setion>
+    </section>
     <!-- 푸터1 -->
     <footer class="common-footer">
         <div class="footer-wrap">

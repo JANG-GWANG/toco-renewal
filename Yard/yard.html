@@ -12,11 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">   
     <!-- wow 애니메이션 css -->
     <link rel="stylesheet" href="../animate.css">
+     <!-- magic.css 연결 -->
+    <link rel="stylesheet" href="../magic.css">
     <!-- wow 애니메이션 js -->
     <script src="../wow.min.js"></script>
     <script>new WOW().init();</script>
-    <!-- magic.css 연결 -->
-    <link rel="stylesheet" href="../magic.css">
+   
+    
     <style>      
         
         /* 바디 */
@@ -276,6 +278,10 @@
     </div>
          <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
     </header>
+    <script>
+        
+   
+   </script>
 
     <div class="header-title-bg">
         <div class="title-bg-color">
@@ -364,18 +370,40 @@
             </div>
         </div>   
     </footer>       
+
 <script>
-    $(document).ready(function(){
-        $('.ham').click(function(){
-            if($('.so').hasClass('close')){
-                $('.so').addClass('more').removeClass('close');
-            }else if($('.so').hasClass('more')){
-                $('.so').addClass('close').removeClass('more');
-            }
+      
+        $(document).ready(function(){
+       $('.ham').click(function () {
+           if($('.so').hasClass('more'))
+       $('.so').addClass('magictime fadeOut');
+       else if($('.so').hasClass('close'))
+       $('.so').removeClass('magictime fadeOut');
+   });
         });
-    });
-</script>
-<script>
+        
+       $(document).ready(function(){
+           $('.ham').click(function(){
+               if($('.so').hasClass('close')){
+                   $('.so').addClass('magictime fadeIn');
+                   $('.so').addClass('more').removeClass('close');
+               }else if($('.so').hasClass('more')){
+                   setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
+               }
+           });
+       });
+
+       $(document).ready(function(){
+            $('.ham').click(function(){
+                if($('.so').hasClass('close')){
+                    $('.so').addClass('more').removeClass('close');
+                }else if($('.so').hasClass('more')){
+                    $('.so').addClass('close').removeClass('more');
+                }
+            });
+        });  
+
+      
     $(document).ready(function(){
         $('.news-cont').hide();        
         $('.news-cont').slice(0,6).show();        

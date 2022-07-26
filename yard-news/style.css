@@ -20,14 +20,99 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 .close{opacity: 0; display: none;}
 .more{opacity: 1;}
 
+.resoft-news{
+    width:100%;
+    display:flex;
+    font-size:20px;
+}
 
-**lorem
-.news-img-wrap{
+.yard-news-img{
     top: 741px;
     left: 620px;
     width: 1060px;
     height: 561px;
 
+}
+
+.yard-news-right{
+    width:75%;
+    text-align:left;
+    padding-top:15%;   
+}
+
+.resoft-news-right h1{
+    font-size:24px;
+    padding-bottom:1rem;
+}
+.resoft-news-right h4{
+    color:#AAAAAA;
+    margin-bottom:3rem;
+}
+
+
+.yard-news-left{
+    text-align:left;
+    margin-top:5%;
+    width:25%;
+}
+.resoft-news .yard-news-info{
+    margin:10%;
+}
+.resoft-news .yard-news-left h1{
+    font-size:40px;
+    padding-bottom:1rem;
+}
+.resoft-news .yard-news-left h4{
+    font-size:18px;
+    color:#c8c8c8;
+    margin-bottom:3rem;
+
+}
+
+.resoft-news .yard-news-right  {
+    margin:3% 0 6% 0;
+}
+.resoft-news-right p{
+    padding-bottom:2%;
+    font-size:16px;
+}
+
+.yard-news-right h1{
+    font-size:24px;
+    padding-bottom:1rem;
+}
+.yard-news-right h4{
+    color:#AAAAAA;
+    margin-bottom:3rem;
+}
+.yard-news-right p{
+    letter-spacing:0.8px;
+    padding-bottom:2%;
+    font-size:16px;
+}
+
+.button-before{
+    position:relative;   
+    left:0;
+    float:left;    
+    text-align:left;
+    display:flex;
+}
+
+.button-before:hover{
+    color:#184b9f;
+}
+
+.button-after{
+    position:relative;
+    right:0;
+    float:right;
+    text-align:right;     
+    display:flex;
+}
+
+.button-after:hover{
+    color:#184b9f;
 }
 
 /* ==================== 푸터 ==================== */

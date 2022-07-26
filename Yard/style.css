@@ -1,0 +1,220 @@
+/* 바디 */
+body{
+    max-width:1920px;            
+    margin:0 auto;
+    font-family:'Noto Sans KR';      
+}
+
+/* 네비바 */
+header a {text-decoration: none; cursor: pointer; }
+header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 20%; height: 30px;}
+header >a  {position:fixed; display: flex; right: 10%; top:25px; width: 50px; z-index: 100; }
+header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
+header #gon #main-nav {padding-top: 5px; padding-bottom: 5px;}
+header #gon nav + div {position:absolute; left: 0; top:81px; width: 100%;height: 200px; background: rgba(24, 75, 159, .7); transition: all 0.5s; z-index: -1;}
+header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
+header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
+header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
+header #gon nav > ul > li:hover > a:after{ width: 50%;}
+header #gon nav > ul > li:hover > a{ color: #184B9F;}
+header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
+header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
+header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
+header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
+#main-nav {text-align: end; padding-right: 5%; }
+.close{opacity: 0; display: none;}
+.more{opacity: 1;}
+
+/* 현재페이지 글자색 및 밑줄 */
+header #gon nav > ul > li > a > p:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F;  border-radius: 20px; }
+header #gon nav > ul > li > a > p:after {width: 50%;} 
+header #gon nav > ul > li .here{color:#184B9F;}
+
+/* 정보마당 배너 */
+.header-title-bg {
+width: 100%;
+height: 300px;
+background: url(../img/toco-img4/yard-header.png) center center no-repeat, rgba(0, 0, 0, 0.5);
+background-size: cover;
+background-blend-mode:hard-light;
+margin-top: 75px;
+}
+.header-title-bg .title-bg-color{
+background-color: rgba(0, 0, 0, 0.1);    
+}
+.header-title-bg .title-bg-color p{
+color: #fff;
+font-size: 40px;
+text-align: center;
+line-height: 300px;
+}
+
+
+
+/* 정보마당 REsoft 소식 */
+
+.resoft-news{
+    max-width:1440px;            
+    margin:0 auto;
+    text-align:center;
+}
+.news-title-wrap{
+    text-align:left;
+    margin:5% 0 0 0;
+}
+.news-title{
+    padding-bottom:1rem;
+}        
+.sub-title{
+    margin-bottom:3rem;
+    font-weight:500;
+} 
+
+/* 정보마당 본문 */
+.resoft-news h1{
+    font-size:40px;            
+}
+.resoft-news h4{
+    font-size:18px;
+    color:#c8c8c8;
+}
+.news-box-wrapper{
+    text-align:center;            
+}
+.news-box-wrapper #news-box{
+    display:flex;
+    flex-wrap:wrap;            
+}
+.news-box-wrapper #news-box .news-cont{
+    width: 47%;
+    height:25%;
+    margin-bottom:40px;
+    word-break:break-all; 
+    text-align:left;
+}
+.news-box-wrapper #news-box .news-cont:nth-child(2n-1){          
+    margin:0 6% 0 0;                       
+}
+.news-box-wrapper #news-box .news-cont:nth-child(2n){            
+    margin:0; 
+}      
+
+.news-box-wrapper #news-box .news-cont a{
+    text-decoration:none;
+    color:#000000;
+}
+.news-box-wrapper #news-box .news-cont:hover a{
+    color:#184B9F;
+}        
+.news-cont p{
+    font-size:20px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    font-weight:600;
+    line-height:1.6rem;
+    margin-top:1rem;
+}        
+.news-cont .news-cont-day{
+    font-size:16px;
+    color:#aaaaaa;
+    font-weight:300;
+    margin-bottom:2rem;
+}
+
+/* 이미지 확대기능 */
+.news-cont .news-img-wrap{
+    width:100%;
+    height:100%;
+    border-radius:13px;
+}
+.news-cont .news-img-wrap img{   
+    position:relative;
+}
+.news-cont:hover .news-img-wrap img{     
+    transition : transform 0.3s ease-in-out;      
+    transform:scale(1.2);   
+     opacity:1;            
+}
+.news-cont:hover .news-img-wrap{  
+    position:relative;             
+    filter:brightness(50%);
+    overflow:hidden;
+}       
+
+/* 더보기칸 */
+.load{
+    display:initial;
+    background:transparent;
+    cursor:pointer;
+    border:1px solid #1e1e1e;
+    border-radius:43px;  
+    margin:5% 0 10% 0; 
+
+    height:6vw;
+    width:18vw;
+    font-size:20px;
+}        
+.load:hover{
+    color:#ffffff;
+    background-color:#184B9F;            
+}
+
+/*------------------------푸터---------------*/
+ .footer{    
+    width:100%;
+    height: 250px;
+    background: #E9E9E9;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrap {
+    width: 1440px;
+    display: flex; 
+    justify-content: left;
+    flex-direction: column;
+}
+
+.footer-text{     
+    margin-top: 30px;
+    display: flex;
+    gap: 7%;
+    color:#9e9e9e;
+}
+
+.footer .copyright{
+    color:#9E9E9E;
+    font-weight:600;
+}      
+
+.footer-left,.footer-right{
+    line-height:25px;
+}
+
+/*미디어쿼리 */
+
+
+
+/* 태블릿 모드 */
+ /* @media screen and (max-width:1280px){
+    body{
+         background-color:red; 
+    }
+} */
+
+
+/* 모바일 모드 */
+@media screen and (max-width:768px){                  
+
+
+
+    /* 모바일 모드일때 배치변경 */
+    .footer-wrap .footer-text{
+        display:block;                
+    }
+    .footer-right{
+        margin-top:5%;
+    }
+} 

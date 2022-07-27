@@ -80,24 +80,7 @@ a{
     color:#000;
 }
 
-.backpage{
-    height:2vw;
-    width:2vw;
-    background:url(../img/toco-img4/yard-back-arrow.svg) center center no-repeat,rgba(0,0,0,1);
-    border-radius:50%;
-    margin-left:10%;
-    text-align:left;
-    font-size:16px;
-}
-.button-wrap{
-    display:flex;
-}
-.button-wrap:hover{
-    color:#184B9F;    
-}
-.button-wrap:hover .backpage{
-    background-color:rgba(24, 75, 159, .7);
-}
+
 /* 우측 페이지 */
 .yard-news-right{
     width:75%;
@@ -128,51 +111,71 @@ a{
 }
 
 
-.button-space{
-    text-align:center;    
-    margin-top:3%; 
+
+
+
+/* 버튼들 모음 */
+
+.button-wrap{
+    display:flex;   
+    line-height:35px;    
 }
+
+.button-wrap:hover{
+    color:#184B9F;    
+}
+.button-wrap:hover .backpage,.button-wrap:hover .before-page-button,.button-wrap:hover .after-page-button{
+    background-color:#184B9F;
+    border: 1px solid #184B9F;
+    
+}
+/* 목록으로 버튼 */
+
+.backpage{
+    width:3vw;
+    height:3vw;
+    background-color:#1e1e1e;
+    border:1px solid #1e1e1e;
+    border-radius:100%;   
+}
+
+.button-wrap:hover .back-arrow{
+    filter:brightness(1.5);
+}
+
+/* 이전글 버튼 */
 .before-page-button-wrap{
+    width:10%;
     position:relative;   
     left:0;
     float:left;    
     text-align:left;
     display:flex;
+    
+    
 }
-.before-page-button{
-    height:2vw;
-    width:2vw;
-    background:url(../img/toco-img4/yard-left-arrow.svg) center center no-repeat,rgba(255,255,255);
+
+.before-page-button,.after-page-button{
+    width:3vw;
+    height:3vw;
+    border:1px solid #1e1e1e;
     border-radius:50%;
+    background-color:#fff;
 }
-.before-page-button-wrap:hover{
-    color:#184B9F;
+
+.button-wrap:hover .left-arrow, .button-wrap:hover .right-arrow{
+    filter:  invert();  
 }
-.before-page-button-wrap:hover .before-page-button{
-    background-color:#184B9F;
-}
+/* 다음글 버튼 */
 .after-page-button-wrap{
+    width:10%;
     position:relative;
     right:0;
     float:right;
     text-align:right;     
-    display:flex;
+    display:flex;    
+    /* background-color:red; */
 }
-.after-page-button{
-    height:2vw;
-    width:2vw;
-    background:url(../img/toco-img4/yard-right-arrow.svg) center center no-repeat,rgba(255,255,255);
-    border-radius:50%;
-}
-.after-page-button-wrap:hover{
-    color:#184b9f;
-}
-.after-page-button-wrap:hover .after-page-button{
-    background-color:#184b9f;
-}
-
-
-
 
 /*------------------------푸터---------------*/
 .footer{    
@@ -182,6 +185,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:5%;
 }
 
 .footer-wrap {

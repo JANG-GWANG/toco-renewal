@@ -22,13 +22,12 @@
             border: 0px solid black;
             font-size: 1px;
         }
-
         header a {text-decoration: none; cursor: pointer; }
         header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 20%; height: 30px;}
         header >a  {position:fixed; display: flex; right: 10%; top:25px; width: 50px; z-index: 100; }
         header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
         header #gon #main-nav {padding-top: 5px; padding-bottom: 5px;}
-        header #gon nav + div {position:absolute; left: 0; top:81px; width: 100%;height: 200px; background: rgba(24, 75, 159, .7); transition: all 0.5s; z-index: -1;}
+        header #gon nav + div {position:absolute; left: 0; top:81px; width: 100%;height: 200px; background: rgba(0, 0, 0, .5); transition: all 0.5s; z-index: -1;}
         header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
         header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
         header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
@@ -37,7 +36,6 @@
         header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
         header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
         header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
-        header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
         #main-nav {text-align: end; padding-right: 5%; }
         .close{opacity: 0; display: none;}
         .more{opacity: 1;}
@@ -45,7 +43,8 @@
         header #gon nav > ul > li > a > p:after {width: 50%;}
         header #gon nav > ul > li .here{color:#184B9F;}
 
-    /* 표 */
+
+            /* 표 */
 
        /* 테이블 1 */
     
@@ -120,23 +119,219 @@
         /* UI Properties */
         opacity: 1;
       }
-        
+
         .top_back{background: rgba(0, 0, 0, 0.3); height: 377px; position:relative; z-index: 5;}
         .top{background: url(../img/toco-img2/company-header.png)no-repeat center ;  height: 300px; width: 100%; position: absolute; display: flex; justify-content: center; align-items: center; top: 77px; background-size: cover;}
         .top > p{text-align: center;  position: absolute; height: 40px; font-size: 40px; color: #fff;  z-index: 5;}
         .section:nth-child(2n){background: #f9f9f9; width: 100%;}
         .section .title {font-size: 40px; text-align: left; height: 58px; padding-left: 13%; font-weight: bold; padding-top: 50px;}
         .section .title2 {text-align: left; padding-left: 13%; padding-bottom: 50px; color: #C8C8C8; font-size: 18px;}
-        .section .center {  background: #184B9F 0% 0% no-repeat padding-box; width: 200px; text-align: center; border-radius: 20px; height: 80px; color: #fff; margin:0 auto; font-size: 26px;}    
-        .section .organi {display: flex; align-items: center; justify-content: center; margin: 0 auto; }
-        .section .organi li>p {border:solid 3px #184B9F; width: 194px; margin: 0px 40px; text-align: center; border-radius: 20px; height: 74px; font-size: 26px;}
-        .section .organi_{display: flex; align-items: center; justify-content: center; padding-left: 3%;}
-        .section .organi_ >li {width: 200px; padding-top: 20px; text-align: left; }
-        .section .organi_ >li li{list-style: disc; line-height: 1.7em; font-size: 22px; }
-        .section .organi_ >li:last-child{padding-bottom: 70px;}
-        .section .organi_ .whwwlreh { padding:30px 40px 0 40px;}
-        .section .prize {display: inline-flex; width: 30%; justify-content: space-evenly; height: 310px;}
-	.section .prize img{border: solid 1px #184B9F;}
+        .rectangle {
+  position: relative;
+  padding: 20px;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); */
+  color: #fff;
+}
+
+
+/* dapyo STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.dapyo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11.1%;
+  margin: 0 auto 140px;
+  background: #184B9F 0% 0% no-repeat padding-box;
+  color: white;
+  font-size: 1.5rem;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.dapyo::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* jojic STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.jojic-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.jojic-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.jojic-wrapper::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: -20px;
+  bottom: -20px;
+  width: calc(100% + 20px);
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.jojic-wrapper li {
+  position: relative;
+}
+
+.jojic-wrapper > li::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+h2{
+  align-items: center;
+}
+
+.jojic {
+  width: 55.5%;
+  height: 34px;
+  margin: 0 auto;
+  background: white;
+  color: black;
+  border:#184B9F solid 3px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.jojic-wrapper li ul li{
+  text-align: left;
+  width: 100%;
+  padding-left: 16%;
+  padding-top: 5%;
+  font-size: 1.3rem;
+}
+
+
+.jojic-wrapper li ul:first-of-type{
+  padding-top: 10%;
+}
+.jojic-wrapper li ul:last-of-type{
+  padding-bottom: 10%;
+}
+
+.jojic-wrapper li ul li::before{
+  content: "• ";
+}
+
+.jojic::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.jojic::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  /* -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%); */
+  width: 20px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* MQ STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 1024px) {
+
+  
+  .jojic-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .jojic-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+ 
+  .jojic-wrapper li ul li{
+    padding-left: 28%;
+    padding-top: 3%;
+    font-size: 1.3rem;
+  }
+
+  .jojic-wrapper li ul:first-of-type{
+    padding-top: 5%;
+  }
+  
+  .jojic-wrapper > li::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 1px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .jojic-wrapper > .ho::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .dapyo, .jojic{
+    width: 200px;
+    font-size: 26px;
+  }
+}
+        .section .prize {display: inline-flex; width: 30%; justify-content: space-evenly; height: 310px; }
+        .section .prize img{border: solid 1px #184B9F;}
         .section .box{padding:0 13% 105px 30%;}
         .section{   align-items: center; text-align: center; padding:55px 0 155px 0; }
         .map_text{ text-align: center; border-bottom:1px solid rgba(0, 0, 0, 0.1); width: 75%; display: inline-block; flex-wrap: wrap; line-height: 115px; color: #959595;}
@@ -175,6 +370,20 @@
 .footer-left,.footer-right{
     line-height:25px;
 }
+
+
+
+@media screen and (max-width: 1024px)
+{
+    .section .line {content: url(../img/toco-img2/company-line-media.png); width: 300px;}
+    .section .organi li {display:inline-block;}
+    .section .organi { flex-wrap: wrap; flex-direction: column;  display:inline-block;}
+    .section .organi li>p {width: 200px;}
+}
+
+@media screen and (max-width: 768px){
+    header #gon nav > ul >li >a {display: none;}
+}
     </style>
     
 </head>
@@ -184,7 +393,7 @@
         <div id="gon">
         <nav>
             <ul id="main-nav">
-                           <li><a href="./Company2.html"  style="cursor: default;"><p class="here">회사소개</p></a>
+                <li><a href="./Company2.html"  style="cursor: default;"><p class="here">회사소개</p></a>
                     <ul class="so close">
                         <li><a href="./Company2.html">REsoft소개</a></li>
                         <li><a href="./Company2.html">연혁</a></li>
@@ -230,7 +439,6 @@
             }
         });
     });
-
 </script>
 
     <div class="top_back"></div>
@@ -239,7 +447,8 @@
     </div>
 
 <section>
-<div class="section">  <div class="company-section"><p>REsoft 소개</p></div>
+<div class="section">
+    <div class="company-section"><p>REsoft 소개</p></div>
   <br>
   <div class="company-section2"><p>ABOUT US</p>
   <table class="tg">
@@ -278,7 +487,8 @@
     </table>
 
 </div>
-<div class="section"> <div class="company-section"><p>연혁</p></div>
+<div class="section">
+    <div class="company-section"><p>연혁</p></div>
     <br>
     <div class="company-section2"><p>HISTORY</p></div>
 
@@ -318,135 +528,70 @@
       </tbody>
       
 
-      </table></div>
+      </table>
+</div>
 
 
 <div class="section" style="padding-bottom: 640px;" >
     <p class="title" id="organ">조직도</p>
     <p class="title2">ORGANIZATION</p>
 
-    <div class="tong" style="position: absolute;">
-<div class="swa wow swashIn">
-    <p class="center"><br>대표이사</p>
-   
-    <canvas id="myCanvas" width="1920" height="150" style="padding-left: 9.3%;"></canvas>
-    <script>
-        // canvas 엘리먼트를 취득한다.
-        const canvas = document.getElementById('myCanvas');
-
-        // 2d모드의 그리기 객체를 취득한다. => 이 객체를 통해 canvas에 그림을 그릴 수 있다.
-        const ctx = canvas.getContext("2d");
-
-        // 새선 그리기 설정
-        ctx.beginPath();
-
-        //  출발점 지정
-        ctx.moveTo(220, 75);
-
-        //  도착점 지정
-        ctx.lineTo(1340, 75);
-
-        //  출발점 지정
-        ctx.moveTo(220, 75);
-
-        //  도착점 지정
-        ctx.lineTo(220, 150);
-
-        
-        // 출발점 지정
-        ctx.moveTo(500, 75);
-
-        //  도착점 지정
-        ctx.lineTo(500, 150);
-
-        
-        // 출발점 지정
-        ctx.moveTo(780, 75);
-
-        // 도착점 지정
-        ctx.lineTo(780, 150);
-
-        
-        // 출발점 지정
-        ctx.moveTo(1060, 75);
-
-        // 도착점 지정
-        ctx.lineTo(1060, 150);
-
-        
-        //  출발점 지정
-        ctx.moveTo(1340, 75);
-
-        // 도착점 지정
-        ctx.lineTo(1340, 150);
-
-        
-        // 출발점 지정
-        ctx.moveTo(780, 75);
-
-        // 도착점 지정
-        ctx.lineTo(780, 0);
-
-        ctx.lineWidth = 1;
-        // 선 그리기
-        ctx.stroke();
-
-
-    </script>
-
-    <ul class="organi">
-        <li><p><br>회사소개</p></li>
-        <li><p><br>개발부</p></li>
-        <li><p><br>디자인부</p></li>
-        <li><p><br>마케팅부</p></li>
-        <li><p><br>경영지원부</p></li>
-    </ul>
-</div>
-
-
-    <ul class="organi_ wow fadeInDown">
-        <li class="whwwlreh">
-    <ul>
-        <li>유저 Needs 분석</li>
-        <li>고객 수요 확인</li>
-        <li>BM 설계/기획</li>
-        <li>사업화 전략 수집</li>
-        <li>사업계획서 작성</li>
-    </ul></li>
-    <li class="whwwlreh">
-    <ul>
-        <li>DB분석/설계</li>
-        <li>Cloud 서버 관리</li>
-        <li>기능 정의</li>
-        <li>기능 구현</li>
-        <li>기능 테스트</li>
-    </ul></li>
-    <li class="whwwlreh">
-    <ul>
-        <li>디자인 트렌드 분석</li>
-        <li>트렌드 디자인</li>
-        <li>웹사이트 디자인</li>
-        <li>모바일 앱 디자인</li>
-        <li>상품개발 디자인</li>
-    </ul></li>
-    <li class="whwwlreh">
-    <ul>
-        <li>서비스 시장조사</li>
-        <li>시장동향 분석</li>
-        <li>시장성 검증</li>
-        <li>온라인 채널 운영</li>
-        <li>오프라인 광고</li>
-    </ul>
-</li>
-    <li class="whwwlreh">
-    <ul>
-        <li>경영 무 지원</li>
-        <li>업무 환경 지원</li>
-        <li>세무 업무 지원</li>
-    </ul>
-</li>
-</ul>
-</div>
+    <div class="con" style=" max-width: 1440px;
+    padding: 0 10px;
+    margin: 0 auto;">
+        <h1 class="dapyo rectangle">대표이사</h1>
+        <ol class="jojic-wrapper">
+          <li>
+            <h2 class="jojic rectangle">전략기획부</h2>
+            <ul>
+              <li>유저 Needs 분석</li>
+              <li>고객 수요 확인</li>
+              <li>BM 설계/기획</li>
+              <li>사업화 전략 수집</li>
+              <li>사업계획서 작성</li>
+          </ul>
+              </li>
+          </li>
+          <li>
+            <h2 class="jojic rectangle">개발부</h2>
+            <ul>
+              <li>DB분석/설계</li>
+              <li>Cloud 서버 관리</li>
+              <li>기능 정의</li>
+              <li>기능 구현</li>
+              <li>기능 테스트</li>
+          </ul>
+          </li>
+          <li class="ho">
+            <h2 class="jojic rectangle">디자인부</h2>
+            <ul>
+              <li>유저 Needs 분석</li>
+              <li>고객 수요 확인</li>
+              <li>BM 설계/기획</li>
+              <li>사업화 전략 수집</li>
+              <li>사업계획서 작성</li>
+          </ul>
+          </li>
+          <li class="ho">
+            <h2 class="jojic rectangle">마케팅부</h2>
+            <ul>
+              <li>서비스 시장조사</li>
+              <li>시장동향 분석</li>
+              <li>시장성 검증</li>
+              <li>온라인 채널 운영</li>
+              <li>오프라인 광고</li>
+          </ul>
+          </li>
+        <li class="ho">
+          <h2 class="jojic rectangle">경영지원부</h2>
+          <ul>
+            <li>경영 무 지원</li>
+            <li>업무 환경 지원</li>
+            <li>세무 업무 지원</li>
+        </ul>
+        </li>
+        </ol>
+      </div>
 </div>
 
 
@@ -471,7 +616,7 @@
 </div>
 
 <div class="section">
-      <p class="title" id="direc">오시는길</p>
+    <p class="title" id="direc">오시는길</p>
     <p class="title2"> DIRECTIONS</p>
     <div id="map" style="width:75%;height:680px; display: inline-block;"></div>
     <script>

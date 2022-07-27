@@ -37,7 +37,7 @@
         .close{opacity: 0; display: none;}
         .more{opacity: 1;}
  
- /* 메인 전체 섹션 */
+        /* 메인 전체 섹션 */
         .main-news-container, .main-project-container, .main-service-container, .main-reference-container {
             max-width: 1440px;
             margin: 0 auto; 
@@ -145,7 +145,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            align-content: flex-start;
+            align-content: flex-start;    
         }
         .main-project-container .project-img1{
             width: 534px;
@@ -153,6 +153,22 @@
             border-radius: 20px;
             overflow: hidden;
             opacity:1;
+            position: relative;
+            /* border: 1px solid red; */
+        }  
+        .main-project-container .text-show {
+            position: absolute;
+            bottom: 1.7rem;
+            left: 1.7rem;
+            color: white;
+            line-height: 1.3rem;
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+        .main-project-container .text-show h3 {
+            font-size: 1.3rem;
+            line-height: 1.8rem;
         }
          /* 프로젝트 마우스 오버 */
         .main-project-container .moado, .ecoce {
@@ -168,15 +184,26 @@
         }
 
         .main-project-container .ecoce:hover {
+            transition: 0.25s;
             transform: scale(1.2);
             filter: brightness(50%);
+         }
+         .main-project-container .ecoce:hover +.text-show {
+            color: white;
+            opacity: 1;
+            z-index: 1;
          }
         
         .main-project-container .moado:hover {
             transform: scale(1.2);
             filter: brightness(50%);
          }
-        
+         .main-project-container .moado:hover +.text-show {
+            color: white;
+            opacity: 1;
+            z-index: 1;
+         }
+
         /* 프로젝트 섹션 - 오른쪽 */
         .main-project-container .project-right-wrap{
             width: 534px; /*임시*/
@@ -202,7 +229,7 @@
         }
         /* 서비스 섹션 - 왼쪽 */
         .main-service-container .service-left-wrap  {
-            width: 50%; /*임시박스*/
+            width: 50%;
             height: 100%;
         }
         .main-service-container .sub-text{
@@ -214,7 +241,7 @@
         }
         /* 서비스 섹션 - 오른쪽 */
         .main-service-container .service-right-wrap{
-            width: 50%; /*임시박스*/
+            width: 50%;
             height: 100%;
 
             display: flex;
@@ -224,33 +251,128 @@
             align-items: flex-start;
             align-content: flex-start;
         }
-        .main-service-container .service-right-wrap .APP {
-            background: url('./img/toco-img1/main-card-APP.png') cover;
-            background-size: 300px 375px;
-        }
         .main-service-container .service-img-wrap2 {
             margin-top: 150px;
         }
-        .main-service-container .service-img0 {
-            border-radius: 20px;
-            position: relative;
-            overflow: hidden;
-            opacity: 1;
-            transition: transform 0.25s ease-in-out;
-            border: solid 1px #505050;
-        }
-        .main-service-container .service-img0 {
+        .main-service-container .service-card {
+            /* position: relative; */
             width: 300px;
             height: 375px;
-            margin-bottom: 5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: solid 1px #AAA;
         }
-        .main-service-container .service-img0:last-child{
-            padding-bottom: 0rem;
+        .main-service-container .service-card:last-child{
+            margin-bottom: 0rem;
+        } 
+        .main-service-container .service-card h1 {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 3.5rem;
         }
-        /* 서비스 섹션 - 오른쪽 : 마우스 오버 */
-        .main-service-container .service-img2:hover {
-            /* transform: scale(1.2); */
-            filter: brightness(25%);
+        .main-service-container .service-card p {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        .main-service-container .service-card .card-hide p {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 3rem;
+            /* background:  rgba(0,0,0,0.7); */
+        }
+        .main-service-container .card-show, .card-hide {
+            /* display:none; */
+            transition: transform 0.35s ease-in-out;
+        }
+        .main-service-container .card-hide {
+            /* display:none; */
+            opacity: 0;
+            position: absolute;
+            /* border: 1px solid yellow; */
+            transform: translate(70px, 100px);
+        }
+        /* 서비스 섹션 - 카드 APP */
+        .main-service-container .APP {
+            background: url('./img/toco-img1/main-card-APP.png');
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+        }
+        /* 서비스 섹션 - 카드 AI */
+        .main-service-container .AI {
+            background: url('./img/toco-img1/main-card-AI.png');
+            position: relative;
+        }    
+        /* 서비스 섹션 - 카드 WEB */
+        .main-service-container .WEB {
+            background: url('./img/toco-img1/main-card-WEB.png');
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        /* 서비스 섹션 - 카드 XR */
+        .main-service-container .XR {
+            background: url('./img/toco-img1/main-card-XR.png');
+            position: relative;
+        }
+        /* 서비스 섹션 - 카드 APP: 마우스 오버 */
+        .main-service-container .APP:hover .card-show{
+           transform: translate(-70px, -100px);
+           transition: 0.35s;
+           opacity: 0;
+        }
+        .main-service-container .APP:hover .card-hide{
+            transform: translate(0, 0);
+            transition: 0.35s;
+            opacity: 1;
+        }
+        /* 서비스 섹션 - 카드 AI: 마우스 오버 */
+        .main-service-container .AI:hover {
+            transition: 0.35s;
+        }
+        .main-service-container .AI:hover .card-show{
+           transform: translate(-70px, -100px);
+           transition: 0.35s;
+           opacity: 0;
+        }
+        .main-service-container .AI:hover .card-hide{
+            transform: translate(0, 0);
+            transition: 0.35s;
+            opacity: 1;
+        }
+        
+        /* 서비스 섹션 - 카드 WEB: 마우스 오버 */
+        .main-service-container .WEB:hover .card-show{
+           transform: translate(-70px, -100px);
+           transition: 0.35s;
+           opacity: 0;
+        }
+        .main-service-container .WEB:hover .card-hide{
+            transform: translate(0, 0);
+            transition: 0.35s;
+            opacity: 1;
+        }
+        /* 서비스 섹션 - 카드 XR: 마우스 오버 */
+        .main-service-container .XR:hover .card-show{
+           transform: translate(-70px, -100px);
+           transition: 0.35s;
+           opacity: 0;
+        }
+        .main-service-container .XR:hover .card-hide{
+            transform: translate(0, 0);
+            transition: 0.35s;
+            opacity: 1;
         }
 
         /* 레퍼런스 섹션 */
@@ -409,9 +531,11 @@
             <div class="project-left-wrap">
                 <div class="project-img1">
                     <img class="ecoce" src="./img/toco-img1/main-ecoce2.png" alt="">
+                    <div class="text-show"><h3>에코스 ECOCE (ECO-Clean Earth)</h3><p>국내 최초</p><p>탄소 중립 실천인증 플랫폼</p></div>
                 </div>
                 <div  class="project-img1">
                     <img class="moado" src="./img/toco-common/main_N_business-moaDo.png" alt="">
+                    <div class="text-show"><h3>모아두 (moaDo)</h3><p>내 손 안의 모바일 회원수첩</p></div>
                 </div>
             </div>
             <div class="project-right-wrap">
@@ -435,12 +559,24 @@
         </div>
         <div class="service-right-wrap">
             <div class="service-img-wrap1">
-                <div class="service-img0 APP"><img class="service-img2" src="./img/toco-img1/main-card-APP.png" alt=""></div>
-                <div class="service-img0 AI"><img class="service-img2" src="./img/toco-img1/main-card-AI.png" alt=""></div>
+                <div class="APP service-card">
+                    <div class="card-show "><h1>앱(APP) 개발</h1><p>ANDROID/IOS</p></div>
+                    <div class="card-hide"><p>Android 앱 개발</p><p>ios 앱 개발</p><p>플랫폼 기획 및 설계</p></div>
+                </div>
+                <div class="AI service-card">
+                    <div class="card-show "><h1>AI 기반 기술개발</h1><p>AI BIGDATA</p></div>
+                    <div class="card-hide"><p>AI 대화형 챗봇</p><p>자동 객체인식 검출기</p><p>딥러닝 학습 모델</p></div>
+                </div>
             </div>
             <div class="service-img-wrap2">
-                <div class="service-img0 WEB"><img class="service-img2" src="./img/toco-img1/main-card-WEB.png" alt=""></div>
-                <div class="service-img0 XR"><img class="service-img2" src="./img/toco-img1/main-card-XR.png" alt=""></div>
+                <div class="WEB service-card">
+                    <div class="card-show "><h1>웹(WEB) 구축</h1><p>RESPONSIVE WEB</p></div>
+                    <div class="card-hide"><p>반응형 홈페이지 구축</p><p>데이터베이스 구축</p><p>빅데이터 구축</p></div>
+                </div>
+                <div class="XR service-card">
+                    <div class="card-show "><h1>XR 콘텐츠 구현</h1><p>META</p></div>
+                    <div class="card-hide"><p>실감형 플랫폼 구축</p><p>가상현실 콘텐츠 제작</p><p>게임콘텐츠 제작</p></div>
+                </div>
             </div>
         </div>
     </section>

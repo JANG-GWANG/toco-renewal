@@ -1,40 +1,255 @@
-/* ==================== 헤더 네비게이션바 ==================== */
-body{font-family:'Noto Sans KR';}
-
-header a {text-decoration: none; cursor: pointer; }
-header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 20%; height: 30px;}
-header >a  {position:fixed; display: flex; right: 10%; top:25px; width: 50px; z-index: 100; }
-header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
-header #gon #main-nav {padding-top: 5px; padding-bottom: 5px;}
-header #gon nav + div {position:absolute; left: 0; top:81px; width: 100%;height: 200px; background: rgba(24, 75, 159, .7); transition: all 0.5s; z-index: -1;}
-header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
-header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
-header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
-header #gon nav > ul > li:hover > a:after{ width: 50%;}
-header #gon nav > ul > li:hover > a{ color: #184B9F;}
-header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
-header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
-header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
-header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
-#main-nav {text-align: end; padding-right: 5%; }
-.close{opacity: 0; display: none;}
-.more{opacity: 1;}
-
-
-
-.top_back{background: rgba(0, 0, 0, 0.3); height: 377px; position:relative; z-index: 5;}
-.top{background: url(../img/toco-img2/company-header.png)no-repeat center ;  height: 300px; width: 100%; position: absolute; display: flex; justify-content: center; align-items: center; top: 77px; background-size: cover;}
-
-/* 현재페이지 글자색 및 밑줄 */
-header #gon nav > ul > li > a > p:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; border-radius: 20px; }
-header #gon nav > ul > li > a > p:after {width: 50%;}
-header #gon nav > ul > li .here{color:#184B9F;}
-
-@media screen and (max-width:768px) {
-    header .logo {margin-left: 20px; top: 25px;}
-    header #gon nav > ul li{display: none;}
+* {
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
+
+/* ==================== main 헤더 ==================== */
+
+/* ----- 헤더 배경 ----- */
+.header-bg{
+    width: 100%;
+    height: 900px;
+    background: url(./img/toco-img1/main-header1.png) center center no-repeat, rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-blend-mode:hard-light;
+    overflow-x: hidden;
+    position: relative;
+}
+.header-bg .bg-color{
+    width: 100%;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ----- 헤더 로고 ----- */
+.nav-gnb{
+    width: 100%;
+    height: 80px;
+    border-bottom: 0.5px solid #fff;
+    opacity: 0.99;
+    position:absolute;
+    left: 0;
+    top: 0;
+    /* box-shadow: 0 4px 4px -4px black; */
+}
+.nav-gnb #main-logo{
+    width: 133px;
+    height: 30px;
+    position: absolute;
+    left: 12.5%;
+    top: 25px;
+}
+
+/* ----- 헤더 메뉴 ----- */
+.nav-gnb .menu{
+    width: 342px;
+    height: 29px;
+    position: absolute;
+    right: 20%;
+    top: 26px;
+}
+.nav-gnb .menu .menu-wrap{
+    display: inline-block;
+    width: 74px;
+    height: 29px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0px;
+    /* transition: all .35s ease; */
+}
+.nav-gnb .menu .menu-wrap a{
+    width: 74px;
+    color: #FFF;
+}
+.nav-gnb .menu .menu-wrap a:hover{
+    color: #184B9F;
+    transition: all .35s ease-in-out;
+}
+.nav-gnb .menu .menu-wrap:nth-child(2){
+    margin: 0 56px;
+}
+
+
+/* ----- 헤더 메뉴더보기 ----- */
+/* ----- 햄버거 아이콘 만들기 ----- */
+input[id="menuicon"]{display: none;}
+input[id="menuicon"] + label{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    right: -86.5%;
+    top: 24px;
+    cursor: pointer;
+}
+input[id="menuicon"] + label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: all .35s;
+}
+input[id="menuicon"] + label span:nth-child(1){top:0;}
+input[id="menuicon"] + label span:nth-child(2){top:50%; transform: translateY(-50%);}
+input[id="menuicon"] + label span:nth-child(3){bottom: 0;}
+
+/* ----- 닫기 아이콘 만들기 ----- */
+input[id="menuicon"]:checked + label span:nth-child(1){top: 50%; transform: translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2){opacity: 0;}
+input[id="menuicon"]:checked + label span:nth-child(3){bottom: 50%; transform: translateY(50%) rotate(-45deg);}
+
+/* ----- 메뉴더보기 나타나기 ----- */
+input[id="menuicon"] + label + div{display: none;}
+input[id="menuicon"]:checked + label + div{
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    /* opacity: 0.9; */
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ----- 전체 메뉴 리스트 ----- */
+.nav-lnb .lnb-menu{
+    width: 342px;
+    position: absolute;
+    right: 20%;
+    text-align: left;
+}
+.nav-lnb .lnb-menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.nav-lnb .lnb-menu ul li{
+    width: 134px;
+    margin-top: 15px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 300;
+}
+.nav-lnb .lnb-menu ul li a{
+    color: #000;
+}
+.nav-lnb .lnb-menu ul li:nth-child(1){
+    margin-top: 25px;
+}
+
+
+/* ----- 해더 텍스트 ----- */
+header .header-text-b{
+    width: 376px;
+    height: 116px;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 58px;
+    vertical-align: center;
+    color: #FFF;
+    position: absolute;
+    left: 12.5%;
+    top: 50%;
+}
+header .header-text-s{
+    width: 618px;
+    height: 52px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    vertical-align: center;
+    color: #FFF;
+    position: absolute;
+    left: 12.5%;
+    top: 70%;
+}
+
+/* ==================== 상세페이지 헤더 ==================== */
+.nav-gnb{
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    box-sizing: border-box;
+}
+.nav-gnb #page-main-logo{
+    width: 133px;
+    height: 30px;
+    position: absolute;
+    left: 12.5%;
+    top: 25px;
+}
+.nav-gnb .menu .menu-wrap .menu-underline:hover{
+    position: absolute;
+    display: inline-block;
+    margin: 0 0;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 35px;
+    background-color: #0f387a;
+}
+.nav-gnb .menu .menu-wrap a{
+    color: #000;
+}
+
+/* ----- 헤더 메뉴더보기 ----- */
+/* ----- 햄버거 아이콘 만들기 ----- */
+input[id="page-menuicon"]{display: none;}
+input[id="page-menuicon"] + label{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    right: -86.5%;
+    top: 24px;
+    cursor: pointer;
+}
+input[id="page-menuicon"] + label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 30px;
+    background-color: #000;
+    transition: all .35s;
+}
+input[id="page-menuicon"] + label span:nth-child(1){top:0;}
+input[id="page-menuicon"] + label span:nth-child(2){top:50%; transform: translateY(-50%);}
+input[id="page-menuicon"] + label span:nth-child(3){bottom: 0;}
+
+/* ----- 닫기 아이콘 만들기 ----- */
+input[id="page-menuicon"]:checked + label span:nth-child(1){top: 50%; transform: translateY(-50%) rotate(45deg);}
+input[id="page-menuicon"]:checked + label span:nth-child(2){opacity: 0;}
+input[id="page-menuicon"]:checked + label span:nth-child(3){bottom: 50%; transform: translateY(50%) rotate(-45deg);}
+
+/* ----- 메뉴더보기 나타나기 ----- */
+input[id="page-menuicon"] + label + div{display: none;}
+input[id="page-menuicon"]:checked + label + div{
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    /* opacity: 0.9; */
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+/* ==================== business 파트(전유진) ==================== */
 /* ==================== 사업현황 헤더 영역 ==================== */
 .header-title-bg {
     width: 100%;
@@ -42,7 +257,7 @@ header #gon nav > ul > li .here{color:#184B9F;}
     background: url(../img/toco-img3/business-header.png) center center no-repeat, rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-blend-mode:hard-light;
-    margin-top: 75px;
+    margin-top: 80px;
 }
 .header-title-bg .title-bg-color{
     background-color: rgba(0, 0, 0, 0.3);
@@ -308,23 +523,6 @@ header #gon nav > ul > li .here{color:#184B9F;}
     /* background-color: yellow; */
 }
 
-/* 최종확인하고 지우기 */
-/* .etc-projects{
-    max-width: 1440px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-.etc-projects .etc-project-img{
-    max-width: 223px;
-    width: 15.5vw;
-    margin-top: 5%;
-    box-shadow: 1px 1px 15px #C8C8C8;
-    box-sizing: border-box;
-    background-color: yellow;
-} */
-
 /* ==================== 푸터 ==================== */
 .footer{
     /* border: solid 2px blue; */
@@ -363,20 +561,22 @@ header #gon nav > ul > li .here{color:#184B9F;}
 
 
 
+/* ==================== 미디어쿼리 작성 ==================== */
 
-
-/* ==================== 전유진 미어쿼리 작성 ==================== */
-@media screen and (max-width: 1487px) {
-    .etc-projects .etc-project-img{
-        max-width: 223px;
-        /* width: 100vw; */
+/* ---------- 모바일용 메뉴 display none ---------- */
+@media screen and (min-width:769px) {
+    .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle{
+        display: none;
     }
 }
 
-
-
-
-
-
-
-
+/* ---------- 모바일 화면 ---------- */
+@media screen and (max-width:768px) {
+    .menu{opacity: 0; transition: all .25s;}
+    .nav-lnb .lnb-menu{margin-top: 0;}
+    .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle {
+        display: inline-block; width: 67px; text-align: center; font-size: 18px; font-weight: 700; margin-bottom: 5px; padding-bottom: 8px; color: #000; border-bottom: 2px solid #E9E9E9;
+    }
+    .nav-lnb .lnb-menu .mobile-menu{margin-left: 10px;}
+    .nav-lnb .lnb-menu .mobile-menu li{margin-top: 13px;}
+}

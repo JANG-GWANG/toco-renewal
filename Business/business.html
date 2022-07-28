@@ -20,38 +20,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <a class="logo" href="../index.html"><img src="../img/toco-common/logo-Resoft.svg" alt="로고"></a>
-        <div id="gon">
-            <nav>
-                <ul id="main-nav">
-                    <li><a href="../Company2/Company2.html" >회사소개</a>
-                        <ul class="so close">
-                            <li><a href="../Company2/Company2.html">REsoft소개</a></li>
-                            <li><a href="../Company2/Company2.html">연혁</a></li>
-                            <li><a href="../Company2/Company2.html#organ">조직도</a></li>
-                            <li><a href="../Company2/Company2.html#certi">특허&인증</a></li>
-                            <li><a href="../Company2/Company2.html#direc">오시는 길</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./Business/business.html" onclick="return false;" style="cursor:default;" ><p class="here">사업현황</p></a>
-                        <ul class="so close">
-                            <li><a href="./Business/business.html#content-ecoce">ECOCE</a></li>
-                            <li><a href="./Business/business.html#content-moado">moaDo</a></li>
-                            <li><a href="./Business/business.html#content-etc">Etc</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../Yard/yard.html">정보마당</a>
-                        <ul class="so close">
-                            <li><a href="../Yard/yard.html">REsoft소식</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>  
-            <div class="so close"></div>
-        </div>
-        <a href="#" class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>
-        <!-- <div class="visual"><img src="./img/toco-img1/main-header1.png" alt=""></div> -->
+    <header>
+        <!-- <div class="header-bg"><div class="bg-color"></div></div> -->
+        <!-- 네비게이션바 -->
+        <nav class="nav-gnb">
+            <!-- 로고 -->
+            <a href="../index.html">
+                <img id="page-main-logo" src="../img/toco-common/logo-Resoft.svg" alt="resoft_logo">
+            </a>
+
+            <!-- 메뉴 -->
+            <div class="menu">
+                <span class="menu-wrap">
+                    <a href="../Company2/Company2.html">회사소개</a>
+                </span>
+                <span class="menu-wrap">
+                    <a href="../Business/business.html">사업현황</a>
+                </span>
+                <span class="menu-wrap">
+                    <a href="../Yard/yard.html">정보마당</a>
+                </span>
+            </div>
+
+            <!-- 메뉴더보기 아이콘-->
+            <input type="checkbox" id="page-menuicon">
+            <label for="page-menuicon">
+                <span class="menuicon-color"></span>
+                <span class="menuicon-color"></span>
+                <span class="menuicon-color"></span>
+            </label>
+            <div class="nav-lnb">
+                <div class="lnb-menu">
+                    <ul class="company-intro mobile-menu">
+                        <li class="mobile-menuTitle">회사소개</li>
+                        <li><a class="page-menu-text" href="../Company2/Company2.html">REsoft소개</a></li>
+                        <li><a class="page-menu-text" href="../Company2/Company2.html">연혁</a></li>
+                        <li><a class="page-menu-text" href="../Company2/Company2.html">조직도</a></li>
+                        <li><a class="page-menu-text" href="../Company2/Company2.html">특허&인증</a></li>
+                        <li><a class="page-menu-text" href="../Company2/Company2.html">오시는 길</a></li>
+                    </ul>
+                    <ul class="business-status mobile-menu">
+                        <li class="mobile-menuTitle">사업현황</li>
+                        <li><a class="page-menu-text" href="../Business/business.html#content-ecoce">ECOCE</a></li>
+                        <li><a class="page-menu-text" href="../Business/business.html#content-moado">moaDo</a></li>
+                        <li><a class="page-menu-text" href="../Business/business.html#content-etc">Etc</a></li>
+                    </ul>
+                    <ul class="information-yard mobile-menu">
+                        <li class="mobile-menuTitle">정보마당</li>
+                        <li><a class="page-menu-text" href="../Yard/yard.html">REsoft소식</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- 사업현황 헤더 영역 -->

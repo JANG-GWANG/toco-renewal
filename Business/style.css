@@ -178,6 +178,7 @@ header .header-text-s{
     position: fixed;
     z-index: 100;
     box-sizing: border-box;
+    border-bottom: 1px solid #E9E9E9;
 }
 .nav-gnb #page-main-logo{
     width: 133px;

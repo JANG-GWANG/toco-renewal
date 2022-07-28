@@ -18,138 +18,208 @@
         body{
             font-family:'Noto Sans KR';
         }
-        #myCanvas{
-            border: 0px solid black;
-            font-size: 1px;
-        }
-        header a {text-decoration: none; cursor: pointer; }
-        header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 20%; height: 30px;}
-        header >a  {position:fixed; display: flex; right: 10%; top:25px; width: 50px; z-index: 100; }
-        header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
-        header #gon #main-nav {padding-top: 5px; padding-bottom: 5px;}
-        header #gon nav + div {position:absolute; left: 0; top:-121px; width: 100%;height: 200px; background: white; transition: all 0.5s; z-index: 15; border-bottom: 1px solid #C8C8C8;}
-        header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
-        header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 16; text-align: center; }
-        header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px;  }
-        header #gon nav > ul > li:hover > a:after{ width: 50%;}
-        header #gon nav > ul > li:hover > a{ color: #184B9F;}
-        header #gon nav > ul ul { position: absolute; width: 100%; text-align: left; height: 230px; top: -140px; padding-left: 40px; font-size: 18px; font-weight: 400; z-index: 16; }
-        header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
-        header #gon nav > ul ul a {font-size: 20px; color: #000; z-index: 16;}
-        header #gon nav > ul ul a:hover{color: #184B9F;}
-        #main-nav {text-align: end; padding-right: 5%; }
-        .close{opacity: 0; display: none; }
-        .more{opacity: 1; transition: opacity 1s;}
-        header #gon nav > ul > li > a > p:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F;  border-radius: 20px; }
-        header #gon nav > ul > li > a > p:after {width: 50%;}
-        header #gon nav > ul > li .here{color:#184B9F;}
+   /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
-
-            /* 표 */
-
-       /* 테이블 1 */
-    
-      .tg  {border-collapse:collapse;border-spacing:0;}
-        .tg td{
-        overflow:hidden;padding:10px 14px;word-break:normal;}
-        .tg th{
-        overflow:hidden;padding:10px 14px;word-break:normal; font-weight: regular;}
-   
-  
-      .tg-01 { color: #1E1E1E; text-align: left; font: normal normal bold 24px/50px Noto Sans KR; letter-spacing: 1.2px; opacity: 1;}
-      .tg-02 { text-align: left; font: normal normal normal 20px/30px Noto Sans KR; letter-spacing: 0px; color: #959595; opacity: 1;}
-
-      .company-section{ color: #1E1E1E; text-align: left; font-size: 40px; margin: 1px;}
-      .company-section2{ color:#C8C8C8; text-align: left; font-size: 18px; margin: 1px;}
-
-      .tg{
-          /* Layout Properties */
-          top: 614px;
-          left: 240px;
-          width: 1440px;
-          height: 522px;
-          /* UI Properties */
-          opacity: 1;
-        
-        
-      }
-      
-      /* 테이블 2 */
-
-      .tg2{border-collapse:collapse;border-spacing:0;}
-      .tg2 td{overflow:hidden;padding:8px 15px;word-break:normal;}
-      .tg2 th{overflow:hidden;padding:8px 15px;word-break:normal;}
-      .tg-03{border-color:inherit; vertical-align:top; text-align: right;
-            font: normal normal bold 32px/46px Noto Sans KR;
-            letter-spacing: 1.6px;
-            color: #184B9F;
-            opacity: 1;}
-
-     .tg-04{border-color:inherit;vertical-align:top;
-          text-align: left;
-          font: normal normal normal 20px/50px Noto Sans KR;
-          letter-spacing: 0px;
-          color: #1E1E1E;
-          opacity: 1;
-
-     }
-     .tg-05{text-align: left;
-            font: normal normal bold 50px/72px Noto Sans KR;
-            letter-spacing: 2.5px;
-            color: #000000;
-            opacity: 1;
-     }
-     .tg-06{
-      top: 1635px;
-      left: 840px;
-      width: 39px;
-      height: 46px;
-      text-align: left;
-      font: normal normal bold 32px/46px Noto Sans KR;
-      letter-spacing: 1.6px;
-      color: #184B9F;
-      opacity: 1;
-     }
-
-      .tg2{
-        /* Layout Properties */
-        top: 1470px;
-        left: 540px;
-        width: 1140px;  
-        height: 980px;
-        /* UI Properties */
-        opacity: 1;
-      }
-
-        .top_back{background: rgba(0, 0, 0, 0.3); height: 377px; position:relative; z-index: 5;}
-        .top{background: url(../img/toco-img2/company-header.png)no-repeat center ;  height: 300px; width: 100%; position: absolute; display: flex; justify-content: center; align-items: center; top: 77px; background-size: cover;}
-        .top > p{text-align: center;  position: absolute; height: 40px; font-size: 40px; color: #fff;  z-index: 5;}
-        .section:nth-child(2n){background: #f9f9f9; width: 100%;}
-        .section .title {font-size: 40px; text-align: left; height: 58px; padding-left: 13%; font-weight: bold; padding-top: 50px;}
-        .section .title2 {text-align: left; padding-left: 13%; padding-bottom: 50px; color: #C8C8C8; font-size: 18px;}
-        .rectangle {
-  position: relative;
-  padding: 20px;
-  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); */
-  color: #fff;
+   header a {
+    text-decoration: none;
+     cursor: pointer;
+}
+ header .logo {
+    position: fixed;
+     left: 30px;
+     top: 25px;
+     z-index: 100;
+     margin-left: 20%;
+     height: 30px;
+}
+ header >a {
+    position:fixed;
+     display: flex;
+     right: 10%;
+     top:25px;
+     width: 50px;
+     z-index: 100;
+}
+ header #gon {
+    position: fixed;
+     left: 0;
+     top: 0;
+     padding: 0px 232px 0px 5px;
+     width: 100%;
+     height: 80px;
+     box-sizing: border-box;
+     background: #fff;
+     z-index: 10;
+     border-bottom: 1px solid #DBDBDB;
+}
+ header #gon #main-nav {
+    padding-top: 5px;
+     padding-bottom: 5px;
+}
+ header #gon nav + div {
+    position:absolute;
+     left: 0;
+     top:-121px;
+     width: 100%;
+    height: 200px;
+     background: white;
+     transition: all 0.5s;
+     z-index: 15;
+     border-bottom: 1px solid #C8C8C8;
+}
+ header #gon nav > ul >li {
+    display: inline-block;
+     position: relative;
+     font-weight: bold;
+     font-size: 20px;
+}
+ header #gon nav > ul > li > a{
+    display: block;
+     position:relative;
+     width:160px;
+     height: 70px;
+     font-size: 20px;
+     color: #000;
+     line-height: 70px;
+     text-decoration: none;
+     top: 0px;
+     z-index: 16;
+     text-align: center;
+}
+ header #gon nav > ul > li > a:after {
+    content: "";
+     position: absolute;
+     bottom: 10px;
+     left: 40px;
+     width: 0;
+     height: 6px;
+     background: #184B9F;
+     transition: all 0.5s;
+     border-radius: 20px;
+}
+ header #gon nav > ul > li:hover > a:after{
+     width: 50%;
+}
+ header #gon nav > ul > li:hover > a{
+     color: #184B9F;
+}
+ header #gon nav > ul ul {
+     position: absolute;
+     width: 100%;
+     text-align: left;
+     height: 230px;
+     top: -140px;
+     padding-left: 40px;
+     font-size: 18px;
+     font-weight: 400;
+     z-index: 16;
+}
+ header #gon nav > ul ul li{
+    line-height: 25px;
+     padding-left: 0px;
+}
+ header #gon nav > ul ul a {
+    font-size: 20px;
+     color: #000;
+     z-index: 16;
+}
+ header #gon nav > ul ul a:hover{
+    color: #184B9F;
+}
+ #main-nav {
+    text-align: end;
+     padding-right: 5%;
+}
+ .close{
+    opacity: 0;
+     display: none;
+}
+ .more{
+    opacity: 1;
+     transition: opacity 1s;
+}
+ header #gon nav > ul > li > a > p:after {
+    content: "";
+     position: absolute;
+     bottom: 10px;
+     left: 40px;
+     width: 0;
+     height: 6px;
+     background: #184B9F;
+     border-radius: 20px;
+}
+ header #gon nav > ul > li > a > p:after {
+    width: 50%;
+}
+ header #gon nav > ul > li .here{
+    color:#184B9F;
 }
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.top_back{
+    background: rgba(0, 0, 0, 0.3);
+     height: 377px;
+     position:relative;
+     z-index: 5;
+}
+ .top{
+    background: url(../img/toco-img2/company-header.png)no-repeat center ;
+     height: 300px;
+     width: 100%;
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top: 77px;
+     background-size: cover;
+}
+ .top > p{
+    text-align: center;
+     position: absolute;
+     height: 40px;
+     font-size: 40px;
+     color: #fff;
+     z-index: 5;
+}
+ .section:nth-child(2n){
+    background: #f9f9f9;
+     width: 100%;
+}
+ .section .title {
+    font-size: 2em;
+     text-align: left;
+     height: 58px;
+     padding-left: 13%;
+     font-weight: bold;
+     padding-top: 50px;
+}
+ .section .title2 {
+    text-align: left;
+     padding-left: 13%;
+     padding-bottom: 50px;
+     color: #C8C8C8;
+     font-size: 1em;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.rectangle {position: relative;padding: 20px;/* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); */ color: #fff;}
 /* dapyo STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .dapyo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 11.1%;
-  margin: 0 auto 140px;
-  background: #184B9F 0% 0% no-repeat padding-box;
-  color: white;
-  font-size: 1.5rem;
-  height: 40px;
-  border-radius: 20px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11.1%;
+    margin: 0 auto 140px;
+    background: #184B9F 0% 0% no-repeat padding-box;
+    color: white;
+    font-size: 1.5rem;
+    height: 40px;
+     border-radius: 20px;
 }
-
+ 
 .dapyo::before {
   content: "";
   position: absolute;
@@ -227,7 +297,7 @@ h2{
 
 .jojic-wrapper li ul li{
   text-align: left;
-  width: 100%;
+  width: 88%;
   padding-left: 16%;
   padding-top: 5%;
   font-size: 1.3rem;
@@ -270,95 +340,96 @@ h2{
 }
 
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
-
-/* MQ STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 1024px) {
-  .dapyo{
-    width: 150px;
-  }
-  
-  .jojic-wrapper {
-    position: relative;
+.section .box{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .jojic-wrapper::before {
-    content: "";
-    position: absolute;
-    top: -70px;
-    left: 25%;
-    width: 50%;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.5);
-  }
- 
-  .jojic-wrapper li ul li{
-    padding-left: 17%;
-    padding-top: 3%;
-    font-size: 1rem;
-  }
-
-  .jojic-wrapper li ul:first-of-type{
-    padding-top: 5%;
-  }
-  
-  .jojic-wrapper > li::before{
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 1px;
-    height: 70px;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .jojic-wrapper > .ho::before{
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 0px;
-    height: 70px;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  .dapyo, .jojic{
-    /* width: 200px; */
-    font-size: 1.3rem;
-  }
+    grid-template-columns: repeat(3, 1fr);
+     place-items: center;
+     max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15% 5% 25%;
 }
-        .section .prize {display: inline-flex; width: 30%; justify-content: space-evenly; height: 310px; }
-        .section .prize img{border: solid 1px #184B9F;}
-        .section .box{padding:0 13% 105px 30%;}
-        .section{   align-items: center; text-align: center; padding:55px 0 155px 0; }
-        .map_text{ text-align: center; border-bottom:1px solid rgba(0, 0, 0, 0.1); width: 75%; display: inline-block; flex-wrap: wrap; line-height: 115px; color: #959595;}
-        .map_text .hoho{font-size: 24px; color: #000; font-weight: bold;}
-                /*------------------------푸터---------------*/
-                .footer{
-    /* border: solid 2px blue; */
-    width:100%;
-    height: 250px;
+ .section span img{
+    border: solid 1px #184B9F;
+     width: 218px;
+     height: 308px;
+     margin-bottom: 10%;
+}
+ .section{
+     align-items: center;
+     text-align: center;
+     padding:55px 0 155px 0;
+}
+ #map {
+    width:75%;
+     height:680px;
+     display: inline-block;
+}
+ table{
+    margin: 0 25% 0 20%;
+}
+ .section .border-b {
+    margin: 0 auto;
+     width: 75%;
+     border-bottom: 1px solid #DBDBDB;
+     display: block;
+}
+ .section .border-b2 {
+    margin: 0 auto;
+     width: 75%;
+     border-bottom: 1px solid #000;
+     display: block;
+}
+ .map-text-title{
+    font-size: 1.5rem;
+     color: #000;
+     font-weight: bold;
+     text-align: right;
+     line-height: 5em;
+     width: 93px;
+     vertical-align:middle;
+}
+ .map-text-sub{
+    float: left;
+     margin-left: 15%;
+     width: 100%;
+     text-align: left;
+     color: #959595;
+     font-size: 1.1rem;
+     height: 7.5rem;
+    display:flex;
+    align-items:center;
+}
+ .map-text-sub2{
+    float: left;
+     margin-left: 13%;
+     width: 100%;
+     text-align: left;
+     color: #959595;
+     font-size: 1.1rem;
+     height: 7.5rem;
+    display:flex;
+    align-items:center;
+}       
+/*------------------------푸터---------------*/
+.footer{    
+    width:100%;   
     background: #E9E9E9;    
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:3% 0 3% 0;
 }
 
 .footer-wrap {
     width: 1440px;
-    display: flex;
+    display: flex; 
     justify-content: left;
     flex-direction: column;
 }
 
-.footer-text{ 
-    /* border: solid 2px red; */
+.footer-text{     
     margin-top: 30px;
     display: flex;
     gap: 7%;
@@ -376,22 +447,184 @@ h2{
 
 
 
+
 @media screen and (max-width: 1024px)
 {
-    .section .line {content: url(../img/toco-img2/company-line-media.png); width: 300px;}
-    .section .organi li {display:inline-block;}
-    .section .organi { flex-wrap: wrap; flex-direction: column;  display:inline-block;}
-    .section .organi li>p {width: 200px;}
+
+  
+    header #gon nav > ul >li >a {
+      display: none;
+    }
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    .dapyo{
+    width: 150px;
+    margin: 0 auto 80px;
+  }
+  .dapyo::before {
+  height: 40px;
+}
+  
+  .jojic-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .jojic-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+ 
+  .jojic-wrapper li ul li{
+    padding-left: 17%;
+    padding-top: 3%;
+    font-size: 1rem;
+    width: 150px;
+  }
+  .jojic-wrapper li ul{
+    margin-left: 15%;
+  }
+
+  .jojic-wrapper li ul:first-of-type{
+    padding-top: 5%;
+  }
+  
+  .jojic-wrapper > li::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 1px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .jojic-wrapper > .ho::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .dapyo, .jojic{
+    width: 144px;
+    font-size: 1.3rem;
+  }
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.section .box{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     place-items: center;
+     max-width: 1440px;
+     margin: 0 auto;
+     padding: 0 6% 0 6%;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+ .section .title {
+    padding-left: 8%;
+}
+ .section .title2 {
+    padding-left: 8%;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+ #map {
+     height:400px;
+}
+ table{
+    margin: 0 25% 0 11%;
+}
+ .map-text-sub{
+    font-size: 0.9rem;
+}
+ .map-text-sub2{
+    font-size: 0.9rem;
+}
+ 
 }
 
 @media screen and (max-width: 768px){
-    header #gon nav > ul >li >a {display: none;}
+
+  .jojic-wrapper li ul{
+    margin-left: 10%;
+  }
+  .jojic{
+    width: 144px;
+    font-size: 1rem;
+    }
+    .jojic-wrapper li ul li{
+    font-size: 0.8rem;
+    width: 80%;
+  }
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.section .box{
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 5%;
+}
+
+#map { 
+  height:300px;
+  }
+
+  /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+  .footer-wrap{        
+        padding-top:5%;
+        word-break: break-all; 
+        word-wrap:break-word;
+        background-size:cover;
+    }
+    .footer-wrap .footer-text{
+        display:block;                
+    }
+    .footer-right{
+        margin-top:5%;        
+    }
+}
+
+@media screen and (max-width: 430px){
+
+  .jojic{
+    width: 60%;
+   }
+
+   .jojic-wrapper li ul{
+    margin-left: 5%;
+  }
+  /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.section .box{
+  grid-template-columns: repeat(1 , 1fr);
+  padding-left: 5%;
+  }
+}
+@media screen and (max-width: 300px){
+  #map {
+     height:200px;
+  }
 }
     </style>
     
 </head>
 <body>
-    <header id="header" style="width: 1660px;">
+    <header id="header" style="max-width: 1440px;">
         <a class="logo" href="../index.html"><img src="../img/toco-common/logo-Resoft.svg" alt="로고"></a>
         <div id="gon">
         <nav>
@@ -453,15 +686,17 @@ h2{
         }
         });
   });
+
+
 </script>
 
-    <div class="top_back"></div>
+    <div class="top_back" style="width:100%"></div>
     <div class="top">
        <p style="font-size: 40px; font-weight: bold;">회사소개</p>
     </div>
 
 <section>
-<div class="section">
+<!-- <div class="section">
     <div class="company-section"><p>REsoft 소개</p></div>
   <br>
   <div class="company-section2"><p>ABOUT US</p>
@@ -543,7 +778,7 @@ h2{
       
 
       </table>
-</div>
+</div> -->
 
 
 <div class="section" >
@@ -612,27 +847,23 @@ h2{
 <div class="section" style="padding-bottom: 0;">
     <p class="title" id="certi">특허&인증</p>
     <p class="title2">CERTIFICATION & PATENT</p>
-    <div class="box">
-    <div class="prize"><img src="../img/toco-img2/company-patent2.jfif" alt="" ></div>
-    <div class="prize"><img src="../img/toco-img2/company-patent.png" alt=""></div>
-    <div class="prize"><img src="../img/toco-img2/company-patent2.jfif" alt=""></div>    
-    </div>
-    <div class="box">
-    <div class="prize"><img src="../img/toco-img2/company-patent2.jfif" alt="" ></div>
-    <div class="prize"><img src="../img/toco-img2/company-patent2.jfif" alt="" ></div>
-    <div class="prize"><img src="../img/toco-img2/company-patent2.jfif" alt=""></div>
-    </div>
-    <div class="box">
-    <div class="prize"><img src="../img/toco-img2/company-patent2.jfif" alt="" ></div>
-    <div class="prize"><img src="../img/toco-img2/company-patent2.jfif" alt="" ></div>
-    <div class="prize"><img src="../img/toco-img2/company-patent2.jfif" alt="" ></div>
-    </div>
+    <span class="box">
+<img src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img src="../img/toco-img2/company-patent.png" alt="">
+<img src="../img/toco-img2/company-patent2.jfif" alt=""> 
+<img src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img src="../img/toco-img2/company-patent2.jfif" alt="">
+<img src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img src="../img/toco-img2/company-patent2.jfif" alt="" >
+    </span>
 </div>
 
 <div class="section">
     <p class="title" id="direc">오시는길</p>
     <p class="title2"> DIRECTIONS</p>
-    <div id="map" style="width:75%;height:680px; display: inline-block;"></div>
+    <div id="map"></div>
     <script>
 var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
     var options = { //지도를 생성할 때 필요한 기본 옵션
@@ -666,14 +897,20 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
 
 	</script>
 
-        <p class="map_text">
-            <span class="hoho" style="padding-left: 30px;">연락처</span>
-            <span style="padding-right: 120px; padding-left: 50px; font-size: 20px;">TELL. (053) 475-2110 FAX. (0504) 257-5966 E-MAIL. call@resoft.kr</span>
-        </p>
-        <p class="map_text" style="border-bottom: 1px solid;">
-            <span class="hoho" style="padding-left: 40px;">주소</span>
-            <span style="padding-left: 65px; font-size: 20px;">(41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (주)리소프트</span>
-        </p>
+          <table>
+            <tr class="map-text">
+              <td class="map-text-title">연락처</td>
+              <td class="map-text-sub">TELL. (053) 475-2110 FAX. (0504) 257-5966 E-MAIL. call@resoft.kr</td>
+          </tr>
+        </table>
+          <span class="border-b"></span>
+          <table>
+            <tr class="map-text2">
+              <td class="map-text-title">주소</td>
+              <td class="map-text-sub2">(41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (주)리소프트</td>
+            </tr>
+        </table>
+          <span class="border-b2"></span>
 </div>
 </section>
 

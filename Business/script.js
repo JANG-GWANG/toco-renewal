@@ -86,3 +86,24 @@ $(function(){
         ]
     });
 });
+
+
+
+$(document).ready(function(){
+    $('#page-menuicon').click(function () {
+        if($('.nav-lnb').hasClass('more'))
+    $('.nav-lnb').addClass('magictime slideDownReturn');
+    else if($('.nav-lnb').hasClass('close'))
+    $('.nav-lnb').removeClass('magictime slideDownReturn');
+});
+     });
+$(document).ready(function(){
+    $('#page-menuicon').click(function(){
+        if($('.nav-lnb').hasClass('close')){
+            $('.nav-lnb').addClass('magictime slideDown');
+            $('.nav-lnb').addClass('more').removeClass('close');
+        }else if($('.nav-lnb').hasClass('more')){
+            setTimeout(function() { $('.nav-lnb').addClass('close').removeClass('more');}, 800);
+        }
+    });
+});

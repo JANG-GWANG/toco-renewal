@@ -14,7 +14,7 @@ $('#menuicon').on('click', function() {
         });
     } else {
         // 메뉴더보기 닫힌 후
-        $('.nav-gnb').css({'background-color':'','border-bottom':'','transition':''});
+        $('.nav-gnb').css({'background-color':'','border-bottom':''});
         $('.menu-text').css({'color':''});
         $('.menuicon').css({'background-color':''});
         $('.menuicon-color').css({'background-color':'', 'transition':'all .35s'});
@@ -33,7 +33,9 @@ $('#menuicon').on('click', function() {
 $('#page-menuicon').on('click', function() {
     if ( $(this).prop('checked') ) {
         // 메뉴더보기 열릴 때
-        $('.nav-gnb').css({'border-bottom':'1px solid #E9E9E9', 'box-sizing':"border-box"});
+        $('.nav-gnb').css({'border-bottom':'1px solid #E9E9E9', 'box-sizing':'border-box', 'z-index': '100'});
+        $('.nav-lnb').css({'z-index': '-10'});
+        $('.page-menu-text').css({'z-index': '-10'});
         $('.page-menu-text').hover(function(){
             $(this).css('color','#184B9F');
         }, function(){
@@ -103,7 +105,7 @@ $(document).ready(function(){
             $('.nav-lnb').addClass('magictime slideDown');
             $('.nav-lnb').addClass('more').removeClass('close');
         }else if($('.nav-lnb').hasClass('more')){
-            setTimeout(function() { $('.nav-lnb').addClass('close').removeClass('more');}, 800);
+            setTimeout(function(){$('.nav-lnb').addClass('close').removeClass('more');}, 500);
         }
     });
 });

@@ -14,7 +14,7 @@ $('#menuicon').on('click', function() {
         });
     } else {
         // 메뉴더보기 닫힌 후
-        $('.nav-gnb').css({'background-color':'','border-bottom':''});
+        $('.nav-gnb').css({'background-color':'','border-bottom':'','transition':''});
         $('.menu-text').css({'color':''});
         $('.menuicon').css({'background-color':''});
         $('.menuicon-color').css({'background-color':'', 'transition':'all .35s'});

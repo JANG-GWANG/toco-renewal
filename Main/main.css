@@ -28,6 +28,58 @@ section {
     font-weight: 600;
     line-height: 1.7rem;
 }
+/* 헤더 */
+.main-header {
+    margin: 0 auto;
+    width: 1920px;
+    height: 900px;
+    position: relative;
+}
+.main-header .slick-header-wrap{
+    width: 1920px;
+    height: 900px;
+}
+.main-header .head-box img {
+    position: relative;
+    filter: brightness(55%);
+}
+.main-header .head-box h1, .head-box p {
+    position: absolute;
+    z-index: 1;
+    bottom: 350px;
+    color: white;
+    margin-left: 9rem;
+}
+.main-header .head-box h1 {
+    width: 450px;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 4rem;
+}
+.main-header .head-box p {
+    width: 700px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    bottom: 250px;
+}
+/* <-> 버튼 */
+.main-header .slick-button-wrap {
+    position: absolute;
+    z-index: 1;
+    top: 750px;
+    margin-left: 8rem;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.main-header .slick-button-wrap img{
+    padding: 1rem;
+    cursor: pointer;
+}
 /* 새로운 소식 (뉴스) 섹션 */
 .main-news-container {
     max-width: 1440px;

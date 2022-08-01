@@ -67,7 +67,6 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 29px;
-    letter-spacing: 0px;
     /* transition: all .35s ease; */
 }
 .gnb-wrap .menu .menu-wrap a{
@@ -247,6 +246,7 @@ header .header-text-s{
 .page-gnb-wrap .menu .menu-wrap a{
     width: 74px;
     color: #000;
+    letter-spacing: -1px;
 }
 .page-gnb-wrap .menu .menu-wrap a:hover{
     color: #184B9F;
@@ -341,9 +341,9 @@ input[id="page-menuicon"]:checked + label + div{
 #content-ecoce{
     max-width: 1440px;
     width: 75vw;
-    height: 883px;
+    height: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     /* 수직 정렬 */
@@ -446,7 +446,7 @@ input[id="page-menuicon"]:checked + label + div{
 /* ---------- 모아두 ---------- */
 .moado-bg{
     width: 100%;
-    height: 820px;
+    height: 100%;
     background:
       linear-gradient(180deg, rgba(255,255,255,1), rgba(255,0,0,0) 100%),
       linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%),
@@ -455,6 +455,7 @@ input[id="page-menuicon"]:checked + label + div{
     /* 모아두 중간이미지 배치 및 우선순위 설정(네비바를 가리지 않도록) */
     position: relative;
     z-index: -1;
+    /* border: 1px solid red; */
 }
 #content-moado{
     max-width: 1440px;
@@ -543,7 +544,8 @@ input[id="page-menuicon"]:checked + label + div{
 #content-etc{
     max-width: 1440px;
     width: 75vw;
-    margin: 150px auto 200px auto;
+    height: 100%;
+    margin: 100px auto 200px auto;
     display: flex;
     flex-direction: column;
     /* 수직 정렬 */
@@ -567,8 +569,9 @@ input[id="page-menuicon"]:checked + label + div{
     text-align: left;
     color: #C8C8C8;
 }
-/* test */
 .etc-projects{
+    position: absolute;
+    z-index: -1;
     margin: 3% 0;
     /* border: 1px solid red; */
 }
@@ -584,6 +587,16 @@ input[id="page-menuicon"]:checked + label + div{
     box-sizing: border-box;
     /* background-color: yellow; */
 }
+
+
+
+
+
+
+
+
+
+
 
 /* ==================== 푸터 ==================== */
 .footer{
@@ -624,6 +637,20 @@ input[id="page-menuicon"]:checked + label + div{
 
 
 /* ==================== 미디어쿼리 작성 ==================== */
+
+/* ---------- 1440px ---------- */
+@media screen and (max-width:1440px) {
+    #content-ecoce{height: 645px;}
+    #content-moado{height: 645px;}
+    #content-etc{margin-bottom: 150px;}
+}
+
+/* ---------- 1280px ---------- */
+@media screen and (max-width:1280px) {
+    #content-ecoce{height: 565px;}
+    #content-moado{height: 565px;}
+    #content-etc{margin-bottom: 150px;}
+}
 
 /* ---------- 모바일용 메뉴 display none ---------- */
 @media screen and (min-width:769px) {

@@ -451,7 +451,7 @@ input[id="page-menuicon"]:checked + label + div{
       linear-gradient(180deg, rgba(255,255,255,1), rgba(255,0,0,0) 100%),
       linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%),
       linear-gradient(300deg, #e4cde8, rgba(0,0,255,0) 70.71%);
-    margin-top: 80px;
+    margin-top: 100px;
     /* 모아두 중간이미지 배치 및 우선순위 설정(네비바를 가리지 않도록) */
     position: relative;
     z-index: -1;
@@ -460,7 +460,7 @@ input[id="page-menuicon"]:checked + label + div{
 #content-moado{
     max-width: 1440px;
     width: 75vw;
-    height: 820px;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -640,15 +640,11 @@ input[id="page-menuicon"]:checked + label + div{
 
 /* ---------- 1440px ---------- */
 @media screen and (max-width:1440px) {
-    #content-ecoce{height: 645px;}
-    #content-moado{height: 645px;}
     #content-etc{margin-bottom: 150px;}
 }
 
 /* ---------- 1280px ---------- */
 @media screen and (max-width:1280px) {
-    #content-ecoce{height: 565px;}
-    #content-moado{height: 565px;}
     #content-etc{margin-bottom: 150px;}
 }
 

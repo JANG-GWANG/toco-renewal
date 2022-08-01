@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./magic.css">
     <script src="./wow.min.js"></script>
      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 슬릭 슬라이더 -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <style>
         body{
             font-family: 'Noto Sans KR', sans-serif;
@@ -42,7 +45,7 @@
    </style>
 </head>
 <body>
-    <!--   헤더   -->
+    <!--   네비바   -->
     <header id="header">
         <a class="logo" href="./index.html"><img src="./img/toco-common/logo-Resoft-white.png" alt="로고"></a>
         <div id="gon">
@@ -74,7 +77,7 @@
         <div class="so close"></div>
     </div>
         <a href="#" class="ham"><img src="./img/toco-img1/icon-menu.svg" alt=""></a>
-        <div class="visual"><img src="./img/toco-img1/main-header1.png" alt=""></div>
+<!--         <div class="visual"><img src="./img/toco-img1/main-header1.png" alt=""></div> -->
     </header>
 <script>
      $(document).ready(function(){
@@ -96,7 +99,44 @@
         });
     });
 </script>
+
+  <!-- 헤더 -->
  
+    <header class="main-header">
+        <nav>
+        </nav>
+    <div class="slick-button-wrap">
+        <img class="" src="./img/toco-img1/icon-left-arrow.svg">
+        <img class="" src="./img/toco-img1/icon-play.svg">
+        <img class="" src="./img/toco-img1/icon-right-arrow.svg">
+    </div>
+    <div class="slick-header-wrap">
+        <div class="head-box">
+            <div class="head-cont">
+                <h1>Evolution<br>With New Software</h1>
+                <p>Mobile APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, Responsive WEBsite, Brand Design Launch, ICT Consulting</p>
+                <img src="./img/toco-img1/main-header1.png">
+            </div>
+        </div>
+
+        <div class="head-box">
+            <div class="head-cont">
+                <h1>Evolution<br>With New Software</h1>
+                <p>Mobile APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, Responsive WEBsite, Brand Design Launch, ICT Consulting</p>
+                <img src="./img/toco-img1/main-header2.png">
+            </div>
+        </div>
+
+        <div class="head-box">
+            <div class="head-cont">
+                <h1>Evolution<br>With New Software</h1>
+                <p>Mobile APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, Responsive WEBsite, Brand Design Launch, ICT Consulting</p>
+                <img src="./img/toco-img1/main-header3.png">
+            </div>
+        </div>
+    </div>
+    </header>
+    
 <!-- 새로운 소식 섹션 -->
     <section class="main-news-container">
         <h1 class="main-title">리소프트의 새로운 소식</h1>

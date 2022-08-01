@@ -47,6 +47,18 @@
        /* 표 */
 
        /* 테이블 1 */
+
+      .company-section{ color: #1E1E1E; text-align: left; 
+        font: normal normal bold 40px/58px Noto Sans KR; }
+      .company-section2{ color:#C8C8C8; text-align: left;
+        font: normal normal medium 18px/26px Noto Sans KR; }
+      .company-section3{
+        position: relative; margin-top: 100px; margin-left: 220px; margin-bottom: 60px;
+      }
+      .company-section4{
+        position: relative; margin-top: 100px; margin-left: 220px; margin-bottom: 20px;
+      }
+
     
       .tg  {border-collapse:collapse;border-spacing:0; border-top: 1px solid #C8C8C8; border-bottom: 1px solid #C8C8C8;}
         .tg td{
@@ -58,9 +70,7 @@
       .tg-01 { color: #1E1E1E; text-align: left; font: normal normal bold 24px/50px Noto Sans KR; letter-spacing: 1.2px; opacity: 1; }              
       .tg-02 { text-align: left; font: normal normal normal 20px/30px Noto Sans KR; letter-spacing: 0px; color: #959595; opacity: 1; }
 
-      .company-section{ color: #1E1E1E; text-align: left; font-size: 40px; margin: 1px;}
-      .company-section2{ color:#C8C8C8; text-align: left; font-size: 18px; margin: 1px;}
-
+     
       .tg{
           /* Layout Properties */
           top: 614px;
@@ -69,61 +79,19 @@
           height: 522px;
           /* UI Properties */
           opacity: 1;
-         
         
         
       }
       
-      /* 테이블 2 */
-
-      .tg2{border-collapse:collapse;border-spacing:0;}
-      .tg2 td{overflow:hidden;padding:8px 15px;word-break:normal;}
-      .tg2 th{overflow:hidden;padding:8px 15px;word-break:normal;}
-      .tg-03{border-color:inherit; vertical-align:top; text-align: right;
-            font: normal normal bold 32px/46px Noto Sans KR;
-            letter-spacing: 1.6px;
-            color: #184B9F;
-            opacity: 1;}
-
-     .tg-04{border-color:inherit;vertical-align:top;
-          text-align: left;
-          font: normal normal normal 20px/50px Noto Sans KR;
-          letter-spacing: 0px;
-          color: #1E1E1E;
-          opacity: 1;
-
-     }
-     .tg-05{text-align: left;
-            font: normal normal bold 50px/72px Noto Sans KR;
-            letter-spacing: 2.5px;
-            color: #000000;
-            opacity: 1;
-     }
-     .tg-06{
-      top: 1635px;
-      left: 840px;
-      width: 39px;
-      height: 46px;
-      text-align: left;
-      font: normal normal bold 32px/46px Noto Sans KR;
-      letter-spacing: 1.6px;
-      color: #184B9F;
-      opacity: 1;
-     }
-
-      .tg2{
-        /* Layout Properties */
-        top: 1470px;
-        left: 540px;
-        width: 1140px;  
-        height: 980px;
-        /* UI Properties */
-        opacity: 1;
-      }
-     
 
 /* time line*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.timeline{
+  position: relative;
+  margin-left: 910px;
+
+}
 
 
 .timeline{
@@ -140,13 +108,8 @@
 	color:#fff;
 	padding:30px 20px;
 }
-.timeline ul{
-	list-style-type:none;
-	border-left: 6px solid #C8C8C8;
-	padding:0px;
-	margin: 0pxs;
-}
-.timeline ul li{
+
+.timeline ul {
 	padding:20px 20px;
 	position:relative;
 	cursor:pointer;
@@ -154,8 +117,8 @@
 }
 .timeline ul li span{
 
-	background-color:#1685b8;
-	border-radius:25px;
+	background-color:#184B9F;
+	border-radius: 50px;
 	padding:2px 5px;
 	font-size:15px;
 	text-align:center;
@@ -164,28 +127,10 @@
 	font-size:17px;
 	padding-top:5px;
 }
-.timeline ul li .content p{
-	color:black;
-	padding:5px 0px 15px 0px;
-	font-size:15px;
-}
-.timeline ul li:before{
-	position:absolute;
-	content:'';
-	width:10px;
-	height:10px;
-	background-color:#184B9F;
-	border-radius: 500px;
-	left:-8px;
-	top:28px;
-	transition:.5s;
-}
 
 
-.timeline ul li:hover:before{
-	
-	box-shadow:0px 0px 10px 2px #C8C8C8;
-}
+
+
 @media (max-width:300px){
 	.timeline{
 		width:100%;
@@ -198,16 +143,147 @@
 
 }
 
-.event{
+.event {
 	color: #184B9F;
-	position: relative;
-	left: -12%;
-	bottom: 10px;
+  position: relative;
+	left: -90px;
+	bottom: 18px;
+  padding: 0px;
 	font: normal normal bold 32px/46px Noto Sans KR;
 	opacity: 1;
+
+
 }
 
- 
+.event2 {
+	color: #184B9F;
+  position: relative;
+  left: 6px;
+	top: -6px;
+  padding: 10px;
+	font: normal normal bold 32px/46px Noto Sans KR;
+	opacity: 1;
+
+}
+
+.event3{
+  color: #184B9F;
+  position: relative;
+  left: -85px;
+	top: 45px;
+  padding: 10px;
+	font: normal normal bold 32px/46px Noto Sans KR;
+	opacity: 1;
+
+}
+
+
+
+
+.content1{
+  position: relative;
+  text-align: left;
+  font: normal normal normal 20px/50px Noto Sans KR;
+  letter-spacing: 0px;
+  color: #1E1E1E;
+  opacity: 1;
+  padding: 40px;
+  bottom: 150px;
+  
+}
+
+.content2{
+  position: relative;
+  text-align: left;
+  font: normal normal normal 20px/50px Noto Sans KR;
+  letter-spacing: 0px;
+  color: #1E1E1E;
+  opacity: 1;
+  padding: 40px;
+  bottom: 90px;
+  
+}
+
+.content3{
+  position: relative;
+  text-align: left;
+  font: normal normal normal 20px/50px Noto Sans KR;
+  letter-spacing: 0px;
+  color: #1E1E1E;
+  opacity: 1;
+  padding: 40px;
+  bottom: 20px;
+  
+}
+
+
+.go{
+  width: 200%;
+  border-bottom: solid 1px #C8C8C8;
+  height: 1px;
+  display: block;
+  margin-right: 500px;
+  
+  
+
+}
+
+
+
+.number1{
+  position: relative;
+  left: -40%;
+  bottom: 60px;
+  font: normal normal bold 50px/72px Noto Sans KR;
+  letter-spacing: 2.5px;
+  color: #000000;
+  opacity: 1;
+  border-width: 1px; 
+}
+
+.number2{
+  position: relative;
+  left: -40%;
+  bottom: 75px;
+  font: normal normal bold 50px/72px Noto Sans KR;
+  letter-spacing: 2.5px;
+  color: #000000;
+  opacity: 1;
+}
+
+.number3::after{content: ""; width: 140%; height: 1px; left: 0px; background-color:#C8C8C8; bottom: -30px; position: absolute;}
+
+.timeline ul li:before{
+	position:absolute;
+	content:'';
+	width:17px;
+	height:17px;
+	background-color:#184B9F;
+	border-radius: 500px;
+  left:-11px;
+	transition:.5s;
+  top:0px;
+}
+
+
+
+.timeline ul{
+	list-style-type:none;
+	border-left: 6px solid #C8C8C8;
+	padding:0px;
+	margin: 0px;
+}
+
+.timeline .last{
+	list-style-type:none;
+  border-left: 0px solid #C8C8C8;
+	padding:0px;
+	margin: 0px;
+  left: 5px;
+  bottom: 8px;
+}
+
+
     </style>
     </head>
     <body>
@@ -277,10 +353,12 @@
  </script>
   
     <!-- 테이블 1 -->
-<section>
+    <section>
+  <div class="company-section3">
   <div class="company-section"><p>REsoft 소개</p></div>
   <br>
-  <div class="company-section2"><p>ABOUT US</p>
+  <div class="company-section2"><p>ABOUT US</p></div>
+  </div>
   <table class="tg">
   <thead>
   <tr>
@@ -317,122 +395,144 @@
     </table>
     </section>
 
-<!-- 테이블 2 -->    
+<!--  2 -->    
     <section>
-      <div class="company-section"><p>연혁</p></div>
-      <br>
-      <div class="company-section2"><p>HISTORY</p></div>
+  <div class="company-section4">
+  <div class="company-section"><p>연혁</p></div>
+  <br>
+  <div class="company-section2"><p>HISTORY</p></div>
+  </div>
 
+  <div class="timeline">
+  <ul>
+  <li>
+  <div class="event" >
+  <p class="event2">
+  1
+  </p>
+  <p class="number2 number3">
+  2022
+  </p>
+  </div>
+  </li>
+  </ul>
 
-      <div class="timeline">
-        <ul>
-          <li>
-            <div class="event">
-              <p>
-                1
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="event">
-              <p>
-                12
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="content">
-              <p>
-                대구여성인력개발센터 MOU 협약 (여성IT인재 현장실습)<br>대구가톨릭대학교 계약학과 MOU 협약 (ICTAI융합학과)<br>기업부설연구소(연구개발전담부서) 등록<br><br>
-              </p>
-            </div>
-          </li>
+  <ul>
+  <li>
+  <div class="event">
+  <p>
+  12
+  </p>
+  <p class="number1">
+  2021
+  </p>
+  </div>
+  </li>
+  </ul>
+
+  <ul>
+  <div class="content1">
+  <p>
+  대구여성인력개발센터 MOU 협약 (여성IT인재 현장실습)<br>대구가톨릭대학교 계약학과 MOU 협약 (ICTAI융합학과)<br>기업부설연구소(연구개발전담부서) 등록<br><br>
+  </p>
+  </div>
+  </ul>    
         
-          <li>
-            <div class="event">
-              <p>
-                11
-              </p>
-            </div>
-          </li>
-          <li>
+  <ul>
+  <li>
+  <div class="event">
+  <p>
+  11
+  </p>
+  </div>
+  </li>
+  <li>
     
-            <div class="content">
-            
-              <p>
-                제 38류, 제 45류 상표등록 출원 (Mmate : 제 40-1799224호, 제 40-1799225호)
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="event">
-              <p>
-                10
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="content">
-              <p>
-                서울특별시 송파구청 앱 개발 (제8회 한성백제마라톤 비대면 대회)<br>대구광역시체육회 앱 개발 (2021 대구 마스크쓰햬 컬러풀 핫플 걷기)<br>대구광역시 달서구체육회 앱 개발 (제15회 언택트 달서 하프마라톤 대회)<br>
-              </p>
-            </div>
-          </li>
-    
-            <li>
-              <div class="event">
-                <p>
-                  9
-                </p>
-              </div>
-            </li>
-            <div class="content">
-              
-              <p>
-                대구 경북지방중소벤처기업청 여성기업 등록
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="event">
-              <p>
-                8
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="content">
-              
-              <p>
-                구미대학교 MOU 협약 (현장실습학기제)
-              </p>
-            </div>
-    
-          </li>
-          <li>
-            <div class="event">
-              <p>
-                5
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="content">
-              
-              <p>
-                (주)리소프트 회사 설립
-              </p>
-            </div>
-    
-    
-    
-          </li>
-    
-    
-        </ul>
-      </div>
+  <div class="content2">
+  <p>
+   제 38류, 제 45류 상표등록 출원 (Mmate : 제 40-1799224호, 제 40-1799225호)
+  </p>
+  </div>
+  </li>
+  </ul>
 
-    </section>
-    </body>
+  <ul>
+  <li>
+  <div class="event">
+  <p>
+   10
+  </p>
+  </div>
+  </li>
+  </ul>
+
+  <ul>
+  <div class="content2">
+  <p>
+   서울특별시 송파구청 앱 개발 (제8회 한성백제마라톤 비대면 대회)<br>대구광역시체육회 앱 개발 (2021 대구 마스크쓰햬 컬러풀 핫플 걷기)<br>대구광역시 달서구체육회 앱 개발 (제15회 언택트 달서 하프마라톤 대회)<br>
+  </p>
+  </div>
+  </ul>
+
+  <ul>  
+  <li>
+  <div class="event">
+  <p class="event2">
+   9
+  </p>
+  </div>
+  </li>
+  <div class="content2">
+  <p>
+   대구 경북지방중소벤처기업청 여성기업 등록
+  </p>
+  </div>
+  </li>
+  </ul>
+
+  <ul>
+  <li>
+  <div class="event">
+  <p class="event2">
+   8
+  </p>
+  </div>
+  </li>
+
+  <li>
+  <div class="content2">
+  <p>
+   구미대학교 MOU 협약 (현장실습학기제)
+  </p>
+  </div>
+  </li>
+   </ul>
+
+  <ul>
+          
+  <div class="event3">
+  <p>
+   5
+  </p>
+  </div>
+  </li>
+  </ul>
+
+  <ul class="last">
+  <li>
+  <div class="content3">
+  <p>
+  (주)리소프트 회사 설립
+  </p>
+  </div>
+  </li>
+  </ul>
+
+  </li>    
+  </ul>
+  </div>
+
+  </section>
+  </body>
 
 </html>

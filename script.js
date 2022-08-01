@@ -33,19 +33,14 @@ $('#menuicon').on('click', function() {
 $('#page-menuicon').on('click', function() {
     if ( $(this).prop('checked') ) {
         // 메뉴더보기 열릴 때
-        $('.nav-gnb').css({'border-bottom':'1px solid #E9E9E9', 'box-sizing':"border-box"});
+        $('.nav-gnb').css({'border-bottom':'1px solid #E9E9E9', 'box-sizing':'border-box'});
         $('.page-menu-text').hover(function(){
-            $(this).css('color','#184B9F');
+            $(this).css({'color':'#a0f3ed','transition':'all .35s'});
         }, function(){
-            $(this).css('color','#000');
+            $(this).css({'color':'#fff','transition':'all .35s'});
         });
     } else {
         // 메뉴더보기 닫힌 후
-        $('.page-menu-text').hover(function(){
-            $(this).css('color','#184B9F');
-        }, function(){
-            $(this).css('color','#fff');
-        });
     }
   });
 
@@ -89,21 +84,21 @@ $(function(){
 
 
 
-$(document).ready(function(){
-    $('#page-menuicon').click(function () {
-        if($('.nav-lnb').hasClass('more'))
-    $('.nav-lnb').addClass('magictime slideDownReturn');
-    else if($('.nav-lnb').hasClass('close'))
-    $('.nav-lnb').removeClass('magictime slideDownReturn');
-});
-     });
-$(document).ready(function(){
-    $('#page-menuicon').click(function(){
-        if($('.nav-lnb').hasClass('close')){
-            $('.nav-lnb').addClass('magictime slideDown');
-            $('.nav-lnb').addClass('more').removeClass('close');
-        }else if($('.nav-lnb').hasClass('more')){
-            setTimeout(function() { $('.nav-lnb').addClass('close').removeClass('more');}, 800);
-        }
-    });
-});
+// $(document).ready(function(){
+//     $('#page-menuicon').click(function () {
+//         if($('.nav-lnb').hasClass('more'))
+//     $('.nav-lnb').addClass('magictime slideDownReturn');
+//     else if($('.nav-lnb').hasClass('close'))
+//     $('.nav-lnb').removeClass('magictime slideDownReturn');
+// });
+//      });
+// $(document).ready(function(){
+//     $('#page-menuicon').click(function(){
+//         if($('.nav-lnb').hasClass('close')){
+//             $('.nav-lnb').addClass('magictime slideDown');
+//             $('.nav-lnb').addClass('more').removeClass('close');
+//         }else if($('.nav-lnb').hasClass('more')){
+//             setTimeout(function(){$('.nav-lnb').addClass('close').removeClass('more');}, 500);
+//         }
+//     });
+// });

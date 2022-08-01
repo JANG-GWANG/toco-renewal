@@ -22,34 +22,44 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* ----- 헤더 로고 ----- */
+/* ----- 네비게이션 로고 및 메뉴바 ----- */
 .nav-gnb{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 80px;
+    /* background-color: grey;*/
     border-bottom: 0.5px solid #fff;
+}
+.nav-gnb .page-gnb-wrap{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
     opacity: 0.99;
-    position:absolute;
+    position:fixed;
     left: 0;
     top: 0;
-    /* box-shadow: 0 4px 4px -4px black; */
+    z-index: 100;
+    /* box-shadow: 0 4px 4px -4px black;*/
 }
-.nav-gnb #main-logo{
+.gnb-wrap #main-logo{
     width: 133px;
     height: 30px;
     position: absolute;
     left: 12.5%;
     top: 25px;
+    z-index: 100;
 }
-
-/* ----- 헤더 메뉴 ----- */
-.nav-gnb .menu{
+.gnb-wrap .menu{
     width: 342px;
     height: 29px;
     position: absolute;
     right: 20%;
     top: 26px;
+    z-index: 100;
 }
-.nav-gnb .menu .menu-wrap{
+.gnb-wrap .menu .menu-wrap{
     display: inline-block;
     width: 74px;
     height: 29px;
@@ -60,20 +70,20 @@
     letter-spacing: 0px;
     /* transition: all .35s ease; */
 }
-.nav-gnb .menu .menu-wrap a{
+.gnb-wrap .menu .menu-wrap a{
     width: 74px;
     color: #FFF;
 }
-.nav-gnb .menu .menu-wrap a:hover{
+.gnb-wrap .menu .menu-wrap a:hover{
     color: #184B9F;
     transition: all .35s ease-in-out;
 }
-.nav-gnb .menu .menu-wrap:nth-child(2){
+.gnb-wrap .menu .menu-wrap:nth-child(2){
     margin: 0 56px;
 }
 
 
-/* ----- 헤더 메뉴더보기 ----- */
+/* ----- 메뉴더보기 ----- */
 /* ----- 햄버거 아이콘 만들기 ----- */
 input[id="menuicon"]{display: none;}
 input[id="menuicon"] + label{
@@ -84,6 +94,7 @@ input[id="menuicon"] + label{
     right: -86.5%;
     top: 24px;
     cursor: pointer;
+    z-index: 999;
 }
 input[id="menuicon"] + label span{
     display: block;
@@ -93,6 +104,7 @@ input[id="menuicon"] + label span{
     border-radius: 30px;
     background-color: #fff;
     transition: all .35s;
+    z-index: 999;
 }
 input[id="menuicon"] + label span:nth-child(1){top:0;}
 input[id="menuicon"] + label span:nth-child(2){top:50%; transform: translateY(-50%);}
@@ -104,25 +116,16 @@ input[id="menuicon"]:checked + label span:nth-child(2){opacity: 0;}
 input[id="menuicon"]:checked + label span:nth-child(3){bottom: 50%; transform: translateY(50%) rotate(-45deg);}
 
 /* ----- 메뉴더보기 나타나기 ----- */
-input[id="menuicon"] + label + div{display: none;}
-input[id="menuicon"]:checked + label + div{
-    display: block;
+input[id="menuicon"] + label + div[class="nav-lnb"]{opacity: 0;}
+input[id="menuicon"]:checked + label + div[class="nav-lnb"]{
     width: 100%;
     height: 250px;
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 80px;
-    /* opacity: 0.9; */
+    opacity: .9;
     box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
-}
-
-.close{
-    opacity: 0;
-    display: none;
-}
-.more{
-    opacity: 1;
-    transition: opacity 1s;
+    transition: all .35s ease-out;
 }
 
 
@@ -142,12 +145,12 @@ input[id="menuicon"]:checked + label + div{
 .nav-lnb .lnb-menu ul li{
     width: 134px;
     margin-top: 15px;
-    color: #000;
+    color: #fff;
     font-size: 17px;
     font-weight: 300;
 }
 .nav-lnb .lnb-menu ul li a{
-    color: #000;
+    color: #fff;
 }
 .nav-lnb .lnb-menu ul li:nth-child(1){
     margin-top: 25px;
@@ -182,33 +185,75 @@ header .header-text-s{
     top: 70%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==================== 상세페이지 헤더 ==================== */
-.nav-gnb{
-    background-color: #fff;
+.page-nav-gnb{
     position: fixed;
-    z-index: 100;
-    box-sizing: border-box;
-    border-bottom: 1px solid #E9E9E9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    /* background-color: grey; */
+    border-bottom: 0.5px solid #9e9e9e;
 }
-.nav-gnb #page-main-logo{
+.page-nav-gnb .page-gnb-wrap{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    opacity: 0.99;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    /* box-shadow: 0 4px 4px -4px black; */
+}
+.page-gnb-wrap #page-main-logo{
     width: 133px;
     height: 30px;
     position: absolute;
     left: 12.5%;
     top: 25px;
 }
-.nav-gnb .menu .menu-wrap .menu-underline:hover{
+.page-gnb-wrap .menu{
+    width: 342px;
+    height: 29px;
     position: absolute;
-    display: inline-block;
-    margin: 0 0;
-    width: 100%;
-    height: 5px;
-    left: 0;
-    top: 35px;
-    background-color: #0f387a;
+    right: 20%;
+    top: 26px;
+    z-index: 100;
 }
-.nav-gnb .menu .menu-wrap a{
+.page-gnb-wrap .menu .menu-wrap{
+    display: inline-block;
+    width: 74px;
+    height: 29px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0px;
+    /* transition: all .35s ease; */
+}
+.page-gnb-wrap .menu .menu-wrap a{
+    width: 74px;
     color: #000;
+}
+.page-gnb-wrap .menu .menu-wrap a:hover{
+    color: #184B9F;
+    transition: all .35s ease-in-out;
+}
+.page-gnb-wrap .menu .menu-wrap:nth-child(2){
+    margin: 0 56px;
 }
 
 /* ----- 헤더 메뉴더보기 ----- */
@@ -222,6 +267,7 @@ input[id="page-menuicon"] + label{
     right: -86.5%;
     top: 24px;
     cursor: pointer;
+    z-index: 999;
 }
 input[id="page-menuicon"] + label span{
     display: block;
@@ -231,6 +277,7 @@ input[id="page-menuicon"] + label span{
     border-radius: 30px;
     background-color: #000;
     transition: all .35s;
+    z-index: 999;
 }
 input[id="page-menuicon"] + label span:nth-child(1){top:0;}
 input[id="page-menuicon"] + label span:nth-child(2){top:50%; transform: translateY(-50%);}
@@ -242,16 +289,20 @@ input[id="page-menuicon"]:checked + label span:nth-child(2){opacity: 0;}
 input[id="page-menuicon"]:checked + label span:nth-child(3){bottom: 50%; transform: translateY(50%) rotate(-45deg);}
 
 /* ----- 메뉴더보기 나타나기 ----- */
-input[id="page-menuicon"] + label + div{display: none;}
-input[id="page-menuicon"]:checked + label + div{
-    display: block;
+input[id="page-menuicon"] + label + div{
     width: 100%;
     height: 250px;
-    background-color: #fff;
-    position: absolute;
-    top: 80px;
-    /* opacity: 0.9; */
+    background-color: #184B9F;
+    position: fixed;
+    top: -330px;
     box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: all .55s ease-out;
+    z-index: 1;
+}
+input[id="page-menuicon"]:checked + label + div{
+    top: 80px;
+    opacity: 1;
 }
 
 
@@ -401,6 +452,9 @@ input[id="page-menuicon"]:checked + label + div{
       linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%),
       linear-gradient(300deg, #e4cde8, rgba(0,0,255,0) 70.71%);
     margin-top: 80px;
+    /* 모아두 중간이미지 배치 및 우선순위 설정(네비바를 가리지 않도록) */
+    position: relative;
+    z-index: -1;
 }
 #content-moado{
     max-width: 1440px;
@@ -413,8 +467,6 @@ input[id="page-menuicon"]:checked + label + div{
     align-items: center;
     /* 확인 */
     flex-wrap: nowrap;
-    /* 모아두 중간이미지 위치 정렬 */
-    position: relative;
 }
 .moado-left{
     width: 50%;
@@ -441,10 +493,11 @@ input[id="page-menuicon"]:checked + label + div{
     /* padding: 30px 0 0 240px; */
 }
 .moado-middle{
-    width: 46%;
+    width: 36%;
     position: absolute;
-    left: 33%;
+    left: 38%;
     bottom: 0;
+    z-index: 1;
 }
 .moado-right{
     width: 50%;
@@ -499,8 +552,6 @@ input[id="page-menuicon"]:checked + label + div{
     align-items: left;
     /* 확인 */
     flex-wrap: nowrap;
-    /* 모아두 중간이미지 위치 정렬 */
-    position: relative;
     /* border: 1px solid red; */
 }
 .etc-title p:nth-child(1){
@@ -586,8 +637,10 @@ input[id="page-menuicon"]:checked + label + div{
     .menu{opacity: 0; transition: all .25s;}
     .nav-lnb .lnb-menu{margin-top: 0;}
     .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle {
-        display: inline-block; width: 67px; text-align: center; font-size: 18px; font-weight: 700; margin-bottom: 5px; padding-bottom: 8px; color: #000; border-bottom: 2px solid #E9E9E9;
+        display: inline-block; width: 67px; text-align: center; font-size: 18px; font-weight: 700; margin-bottom: 5px; padding-bottom: 8px; color: #fff; border-bottom: 2px solid #E9E9E9;
     }
     .nav-lnb .lnb-menu .mobile-menu{margin-left: 10px;}
     .nav-lnb .lnb-menu .mobile-menu li{margin-top: 13px;}
 }
+
+/* #a0f3ed #ff5a93 */

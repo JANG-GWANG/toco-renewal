@@ -7,7 +7,7 @@
 
 2 company - 회사소개 - 백인홍 30%
 
-3 company - 회사소개 - 정명환 60%
+3 company - 회사소개 - 정명환 80%
 
 4 business - 사업현황 - 전유진 50%
 

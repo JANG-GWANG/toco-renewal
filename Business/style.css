@@ -640,15 +640,11 @@ input[id="page-menuicon"]:checked + label + div{
 
 /* ---------- 1440px ---------- */
 @media screen and (max-width:1440px) {
-    #content-ecoce{height: 645px;}
-    #content-moado{height: 645px;}
     #content-etc{margin-bottom: 150px;}
 }
 
 /* ---------- 1280px ---------- */
 @media screen and (max-width:1280px) {
-    #content-ecoce{height: 565px;}
-    #content-moado{height: 565px;}
     #content-etc{margin-bottom: 150px;}
 }
 

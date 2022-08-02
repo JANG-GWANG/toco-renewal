@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    
+     $('.slick-header-wrap').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false
+    });
+    
     $(".service-card").on({
         "mouseover":function(){
             $(this).children(".card-show").css({'transform':'translate(-70px, -100px)', 'opacity':'0', 'transition':'0.35s', 'pointer-events':'none'});

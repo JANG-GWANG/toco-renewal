@@ -5,50 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resoft</title>
     <link rel="stylesheet" href="../reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>  
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">     
-
 </head>
+
 <body>
+    <!-- navi bar -->
     <header id="header">
         <a class="logo" href="../index.html"><img src="../img/toco-common/logo-Resoft.svg" alt="로고"></a>
         <div id="gon">
         <nav>
             <ul id="main-nav">
                 <li><a href="../Company2/Company2.html">회사소개</a>
+                    <ul class="so close">
+                    <li><a href="../Company2/Company2.html">REsoft소개</a></li>
+                    <li><a href="../Company2/Company2.html">연혁</a></li>
+                    <li><a href="../Company2/Company2.html">조직도</a></li>
+                    <li><a href="../Company2/Company2.html">특허&인증</a></li>
+                    <li><a href="../Company2/Company2.html">오시는 길</a></li>
+                </ul>
                 <li><a href="../Business/business.html">사업현황</a>
-                <ul class="so close">
+                    <ul class="so close">
+                    <li><a href="../Business/business.html">ECOCE</a></li>
+                    <li><a href="../Business/business.html">moaDo</a></li>
+                    <li><a href="../Business/business.html">Etc</a></li>
                 </ul>
             </li>
-                <li><a href="../yard.html">정보마당</a>
-                <ul class="so close">
+                <li><a href="../yard/yard.html">정보마당</a>
+                    <ul class="so close">
+                    <li><a href="../yard/yard.html">REsoft소식</a></li>
                 </ul>
                 </li>
             </ul>
         </nav>  
         <div class="so close"></div>
     </div>
-         <a href="../yard-news.html" class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt=""></a>        
+         <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt=""></a>     
+    </header>      
+         
     <div class="top_back"></div>
     <div class="top">
         <p>정보마당</p>
     </div>          
  
-    
-</header>
+
 <section class="resoft-news">
     <div class="yard-news-left">
         <h1>REsoft 소식</h1>
         <h4>NEWS</h4>
-    <div class="button-left">
-            <button type="button"
-            style="border: 1px solid #1e1e1e;
-    	cursor:pointer; cursor:hand;
-  	background-color: #1E1E1E;
-  	color: black;
-  	padding: 9px;
-  	border-radius: 50%;"><img src="../img/toco-img4/yard-back-arrow.svg"></button>&nbsp&nbsp&nbsp목록으로</div>
+        <a herf="../yard/yard.html" class="button-left"><img src="../img/toco-img4/yard-back-arrow.svg">&nbsp&nbsp&nbsp목록으로</a>
     </div>
 
 <div class="yard-news-right">
@@ -71,22 +77,15 @@
     <p>현대모비스는 직원들을 대상으로 'SW 알고리즘 경진대회'도 개최하고 있다. 모든 과정을 자기주도적으로 실시하는 개발 문화의 정착을 통해 연구원들 을 스스로 프로젝트를 주도할 수 있는 고급 소프트웨어 설계 인력을 육성할 계획을 세웠다. 허원석 기자</p>
     <hr align="left"style="border:solid 1px #184B9F;width:1060px;">   
                 
-     <div class="button-before"><button type="button"
-        style="border: 1px solid #1e1e1e;
-    	cursor:pointer; cursor:hand;
-  	background-color: #FFFFFF;
-  	color: white;
-  	padding: 9px;
-  	border-radius: 100%;"><img src="../img/toco-img4/yard-left-arrow.svg"></button>&nbsp&nbsp&nbsp이전글</div>
-    
-    <div class="button-after">
-         다음글&nbsp&nbsp&nbsp<button type="button"
-         style="border: 1px solid #1e1e1e;
-         cursor:pointer; cursor:hand;
-       background-color: #FFFFFF;
-       color: white;
+    <a herf="../yard/yard.html" class="button-before"><img src="../img/toco-img4/yard-left-arrow.svg" style="border: 1px solid #1e1e1e;
+         cursor:pointer;
+       padding: 9px;
+       border-radius: 100%;">&nbsp&nbsp&nbsp이전글</a>
+
+    <a herf="#" class="button-after">다음글&nbsp&nbsp&nbsp<img src="../img/toco-img4/yard-right-arrow.svg" style="border: 1px solid #1e1e1e;
+         cursor:pointer;
        padding: 9px;    
-       border-radius: 100%;"><img src="../img/toco-img4/yard-right-arrow.svg"></button></div>
+       border-radius: 100%;"></a>
     </form>
 </a></div>
 </a></section>
@@ -109,4 +108,7 @@
             </div>
         </div>
     </div>   
-</footer>   
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>

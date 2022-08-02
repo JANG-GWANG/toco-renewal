@@ -1,11 +1,12 @@
-/* ==================== 헤더 네비게이션바 ==================== */
+/* body */
 body{
     font-family:'Noto Sans KR';
     max-width:1920px;
     line-height:40px;  
     margin:0 auto;  
 }
-header a {text-decoration: none; }
+/* navi bar */
+header a {text-decoration: none; cursor: pointer; }
 header .logo {position: absolute; left: 30px; top: 30px; z-index: 100; margin-left: 20%; height: 30px;}
 header >a  {position:absolute; display: flex; right: 10%; top:30px; width: 50px; z-index: 100; }
 header #gon {position: absolute; left: 0; top: 0; padding: 10px 232px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; }
@@ -22,8 +23,11 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 #main-nav {text-align: end; padding-right: 5%; }
 .close{opacity: 0; display: none;}
 .more{opacity: 1;}
+
+.close{opacity: 0; display: none;}
+.more{opacity: 1;}
 .top_back{background: rgba(0, 0, 0, 0.3); height: 355px; position:relative; z-index: 5;}
-.top{background: url(../img/toco-img4/yard-header.png) no-repeat center ;  height: 300px; width: 100%; position: absolute; display: flex; justify-content: center; align-items: center; top: 6.6%;}
+.top{background: url(./img/toco-img4/yard-header.png) no-repeat center ;  height: 300px; width: 100%; position: absolute; display: flex; justify-content: center; align-items: center; top: 6.6%;}
 .top > p{text-align: center;  position: absolute; height: 58; font-size: 40px; color: #fff;  z-index: 5;}
 
 .resoft-news{
@@ -105,38 +109,57 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 
 /* 버튼 */
 .button-left{
-    position:relative;   
     left:0;
-    float:left;    
-    text-align:left;
     display:flex;
-    font-size:16px;
+    font-size: 16px;
+    font-family:'Noto Sans KR';
+    border : none;
+    background: #ffff;
+    color:#1e1e1e;
+    cursor: pointer;
+}
+.button-left:hover{
+    color: #184B9F;
 }
 
+/* 이전글 버튼 */
 .button-before{
     position:relative;   
     left:0;
     float:left;    
     text-align:left;
     display:flex;
-    font-size:16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-style:normal;
+    font-family:'Noto Sans KR';
 }
 
 .button-before:hover{
     color:#184b9f;
 }
+.button-before img:hover{
+    background-color: #184B9F;
+    }
 
+/* 다음글 버튼 */
 .button-after{
     position:relative;
-    right:0;
+    right:15px;
     float:right;
     text-align:right;     
     display:flex;
     font-size:16px;
+    cursor: pointer;
+    font-family:'Noto Sans KR';
 }
 
 .button-after:hover{
     color:#184b9f;
+}
+
+.button-after img:hover{
+    background-color:#184B9F;
 }
 
 /*------------------------푸터---------------*/

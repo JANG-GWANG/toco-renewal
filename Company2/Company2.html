@@ -931,7 +931,7 @@ h2{
 <div class="section">
     <p class="title" id="direc">오시는길</p>
     <p class="title2"> DIRECTIONS</p>
-    <div id="map"></div>
+    <div class="wow fadeIn" id="map"></div>
     <script>
 var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
     var options = { //지도를 생성할 때 필요한 기본 옵션
@@ -1014,8 +1014,12 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
      if(window.matchMedia("screen and (max-width: 430px)").matches)
      {
       $('.box img').slice(1,10).hide();
+      $('html,body').animate({scrollTop:1400},800);
      }else
+     {
      $('.box img').slice(4,10).hide();
+     $('html,body').animate({scrollTop:1580},800);
+     }
        }
      else if($('.up').hasClass('close')){
      $('.up').removeClass('close').addClass('more');
@@ -1024,6 +1028,7 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
       $('.box img').slice(1,10).show();
      }else
      $('.box img').slice(4,10).show();
+     
      }
      });
     });

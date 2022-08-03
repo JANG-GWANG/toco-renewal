@@ -108,58 +108,121 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 }
 
 /* 버튼 */
-.button-left{
-    left:0;
+.back-button{
     display:flex;
+    left:0;
     font-size: 16px;
+    border:none;
+    outline:none;
+    background-color: white;
     font-family:'Noto Sans KR';
-    border : none;
-    background: #ffff;
-    color:#1e1e1e;
     cursor: pointer;
+    align-items: center;
 }
-.button-left:hover{
+.back-arrow{
+    width:42px;
+    margin: 0px auto;
+    position: relative;
+}
+.back-arrow-b{
+    position:absolute;
+    top:0px;
+    left:0px;
+    display: none;
+}
+.back-arrow:hover .back-arrow-b{
+    display: block;
+}
+.back-button:hover{
     color: #184B9F;
+
 }
 
 /* 이전글 버튼 */
-.button-before{
-    position:relative;   
+.before-button{
     left:0;
-    float:left;    
-    text-align:left;
+    cursor:pointer;
+    background-color: white;
+    position: relative;
+    text-align: left;
+    float:left;
     display:flex;
-    cursor: pointer;
-    font-size: 16px;
-    font-style:normal;
+    font-size: medium;
     font-family:'Noto Sans KR';
+    border: 0;
+    outline: 0;
+    align-items: center;
 }
 
-.button-before:hover{
-    color:#184b9f;
+.left-arrow{
+    width: 20px;
+    margin: 0px auto;
+    top:3px;
+    position: relative; 
 }
-.button-before img:hover{
+
+.left-arrow-b{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+
+}
+.before-button img:hover{
     background-color: #184B9F;
-    }
+}
+
+.left-arrow:hover .left-arrow-b{
+    display: block;
+    
+}
+
+
+.before-button:hover{
+    color: #184B9F;
+}
 
 /* 다음글 버튼 */
-.button-after{
-    position:relative;
-    right:15px;
+.after-button{
+    right:30px;
+    cursor:pointer;
+    background-color: white;
+    position: relative;
+    text-align:right; 
     float:right;
-    text-align:right;     
     display:flex;
-    font-size:16px;
-    cursor: pointer;
+    font-size: medium;
     font-family:'Noto Sans KR';
+    border: 0;
+    outline: 0;
+    align-items: center;
 }
 
-.button-after:hover{
-    color:#184b9f;
+.right-arrow{
+    width: 20px;
+    margin: 0px auto;
+    top:3px;
+    position: relative; 
 }
 
-.button-after img:hover{
-    background-color:#184B9F;
+.right-arrow-b{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+
+}
+.after-button img:hover{
+    background-color: #184B9F;
+}
+
+.right-arrow:hover .right-arrow-b{
+    display: block;
+    
+}
+
+.after-button:hover{
+    color: #184B9F;
 }
 
 /*------------------------푸터---------------*/

@@ -141,7 +141,7 @@ section {
     height: 200px;
     border-radius: 20px;
     position:relative;
-    background: url('./img/toco-common/sample-img.png') no-repeat center / cover;
+    background: url('../img/toco-common/sample-img.png') no-repeat center / cover;
     transition: transform 0.25s ease-in-out;
     opacity:1;
 }   
@@ -218,7 +218,7 @@ section {
 }
 .main-project-container .moado {
     object-position: 5rem 1rem;
-    background-image: url('./img/toco-img1/main-moaDo-back.svg');
+    background-image: url('../img/toco-img1/main-moaDo-back.svg');
 }
 
 .main-project-container .project-img1:hover .ecoce{
@@ -358,7 +358,7 @@ section {
 }
 /* 서비스 섹션 - 카드 APP */
 .main-service-container .APP {
-    background: url('./img/toco-img1/main-card-APP.png');
+    background: url('../img/toco-img1/main-card-APP.png');
     position: relative;
     display: flex;
     flex-direction: column;
@@ -366,19 +366,19 @@ section {
 }
 /* 서비스 섹션 - 카드 AI */
 .main-service-container .AI {
-    background: url('./img/toco-img1/main-card-AI.png');
+    background: url('../img/toco-img1/main-card-AI.png');
     position: relative;
 }    
 /* 서비스 섹션 - 카드 WEB */
 .main-service-container .WEB {
-    background: url('./img/toco-img1/main-card-WEB.png');
+    background: url('../img/toco-img1/main-card-WEB.png');
     position: relative;
     display: flex;
     flex-direction: column;
 }
 /* 서비스 섹션 - 카드 XR */
 .main-service-container .XR {
-    background: url('./img/toco-img1/main-card-XR.png');
+    background: url('../img/toco-img1/main-card-XR.png');
     position: relative;
 }
 

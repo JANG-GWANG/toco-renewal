@@ -128,10 +128,8 @@ line-height: 300px;
 /* 이미지 확대기능 */
 
 .news-cont .news-img-wrap{
-    width:100%;    
-    height:21vw;     
-    /* height:20rem; */
-    /* height:360px; */
+    width:40vw;    
+    height:21vw; 
     border-radius:13px;    
     position:relative;
     overflow:hidden;
@@ -143,6 +141,7 @@ line-height: 300px;
     border:1px solid #707070; 
     border-radius:13px; 
 } 
+
 .news-cont .news-img-wrap .news-img#img1{    
     background: url('../img/toco-common/sample-img.png') no-repeat center center /cover;   
 }
@@ -249,14 +248,20 @@ line-height: 300px;
 
 /*미디어쿼리 */
 
-
-
+/* 1440 이상 */
+ @media screen and (min-width:1440px){
+    /* 이미지 크기 고정 */
+     .news-cont .news-img-wrap{
+        width:580px;
+        height:300px;
+    } 
+ }
 
 /* 태블릿 모드 */
 
 /* 1280px */
 @media screen and (max-width:1280px){
-
+    /* 푸터 배열 */
     .footer-text .footer-right .spanWrap{
         display:block;
         margin-left:0;
@@ -266,46 +271,29 @@ line-height: 300px;
 
 /* 1024px */
   @media screen and (max-width:1024px){
-
-    .news-cont{
-        height:240px;        
-    }
+    
+    /* REsoft 소식 글씨 중앙정렬 */
     .resoft-news .news-title-wrap{
         text-align:center;
         margin:5% 0 0 0;
     }
+    /* 푸터 문단 크기 지정 */
     .footer-wrap .footer-left{
         width:50%;
     }
-    
-    
     
 } 
 
 
 /* 모바일 모드 */
 /* 768px */
-@media screen and (max-width:768px){                  
-    .news-box-wrapper #news-box .news-cont{        
-        width:70%;
-        margin:0 auto;
-    }
-    .news-box-wrapper #news-box .news-cont:nth-child(2n-1){
-        margin:0;
-    }
-    .news-cont .news-img-wrap img{
-        height:100%;
-    }
-    .footer-wrap{
-        margin-left:5%;
-    }
-    .footer-wrap .footer-left, .footer-wrap .footer-right{
-        width:100%;
-    }
-   
-
+@media screen and (max-width:768px){ 
+    
+    /* 이미지 배열 1줄로 */
+    
 
     /* 모바일 모드일때 푸터 배치변경 */
+    
     
 
     .footer-wrap{        
@@ -313,6 +301,7 @@ line-height: 300px;
         word-break: break-all; 
         word-wrap:break-word;
         background-size:cover;
+        margin-left:5%;
     }
     .footer-wrap .footer-top .copyright{
         display:block;
@@ -324,6 +313,9 @@ line-height: 300px;
     .footer-wrap .footer-right{
         margin-top:5%;
     }
+    .footer-wrap .footer-left, .footer-wrap .footer-right{
+        width:100%;
+    }
     .footer-wrap .footer-text .spanWrap{
         display:block;                
         margin-left:0;
@@ -333,5 +325,20 @@ line-height: 300px;
 
 /* 430px */
 @media screen and (max-width:430px){
-
+    .news-box-wrapper #news-box{
+        width:80%; 
+        justify-content: center;
+        text-align:center; 
+        margin:0 auto;
+    }
+    .news-box-wrapper #news-box .news-cont{        
+        width:80%;
+    }
+    .news-box-wrapper #news-box .news-cont .news-img-wrap{
+        width:100%;
+        height:12rem;
+    }
+    .news-box-wrapper #news-box .news-cont:nth-child(2n-1){
+        margin:0;
+    }  
 }

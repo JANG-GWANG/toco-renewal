@@ -132,7 +132,8 @@
 }
  .close{
     opacity: 0;
-     display: none;
+    display: none;
+    transition: opacity 1s;
 }
  .more{
     opacity: 1;
@@ -154,6 +155,7 @@
  header #gon nav > ul > li .here{
     color:#184B9F;
 }
+.ham{z-index: 99;}
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -361,6 +363,20 @@ h2{
      text-align: center;
      padding:55px 0 155px 0;
 }
+
+.section .arrow{
+  display: none;
+  cursor: pointer;
+}
+
+.section .arrow .up{
+  position: absolute;
+  background-color: #F9F9F9;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
  #map {
     width:75%;
      height:680px;
@@ -549,6 +565,7 @@ h2{
      margin: 0 auto;
      padding: 0 6% 0 6%;
 }
+
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
  .section .title {
@@ -591,12 +608,22 @@ h2{
     font-size: 0.8rem;
     width: 80%;
   }
+
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .section .box{
   grid-template-columns: repeat(2, 1fr);
   padding-left: 5%;
 }
+
+.section .arrow{
+  display: block;
+  border-top: #E9E9E9 solid 1px; 
+  height: 75px;
+  position: relative;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 #map { 
   height:300px;
@@ -694,37 +721,35 @@ h2{
         </nav>  
         <div class="so close"></div>
     </div>
-        <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>
+        <a><img class="ham" src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ><img style="position: absolute;" src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>
     </header>
 <script>
       $(document).ready(function(){
       $('.ham').click(function () {
-          if($('.so').hasClass('more'))
+          if($('.so').hasClass('more')){
       $('.so').addClass('magictime slideDownReturn');
-      else if($('.so').hasClass('close'))
-      $('.so').removeClass('magictime slideDownReturn');
-  });
-  
-      $('.ham').click(function(){
-          if($('.so').hasClass('close')){
-              $('.so').addClass('magictime slideDown');
-              $('.so').addClass('more').removeClass('close');
-          }else if($('.so').hasClass('more')){
-              setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
+      setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
           }
-        });
-    });
+      else if($('.so').hasClass('close'))
+      {
+        $('.so').removeClass('magictime slideDownReturn');
+        $('.so').addClass('magictime slideDown');
+        $('.so').addClass('more').removeClass('close');
+      }
 
-    $(document).ready(function(){
-        $('.ham').click(function(){
-          if($('.dpdl').hasClass('close')){
-          $('.dpdl').addClass('magictime fadeIn');
-          setTimeout(function() { $('.dpdl').addClass('more').removeClass('close');}, 600);
+      if($('.dpdl').hasClass('close')){
+      $('.dpdl').addClass('magictime fadeIn');
+      setTimeout(function() { $('.dpdl').addClass('more').removeClass('close');}, 600);
+      $(".ham").css('display',"none");
+      setTimeout(function() {  $(".ham").css('display',"block");}, 600);
         }else if($('.dpdl').hasClass('more')){
-    $('.dpdl').removeClass('more').addClass('close');
+          $('.dpdl').removeClass('more').addClass('close');
+          $(".ham").css('display',"none");
+      setTimeout(function() {  $(".ham").css('display',"block");}, 600);
         }
-        });
+      });
   });
+
 </script>
 
     <div class="top_back" style="width:100%"></div>
@@ -885,16 +910,22 @@ h2{
     <p class="title" id="certi">특허&인증</p>
     <p class="title2">CERTIFICATION & PATENT</p>
     <span class="box">
-<img src="../img/toco-img2/company-patent2.jfif" alt="" >
-<img src="../img/toco-img2/company-patent.png" alt="">
-<img src="../img/toco-img2/company-patent2.jfif" alt=""> 
-<img src="../img/toco-img2/company-patent2.jfif" alt="" >
-<img src="../img/toco-img2/company-patent2.jfif" alt="" >
-<img src="../img/toco-img2/company-patent2.jfif" alt="">
-<img src="../img/toco-img2/company-patent2.jfif" alt="" >
-<img src="../img/toco-img2/company-patent2.jfif" alt="" >
-<img src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img class="wow fadeIn" src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img class="wow fadeIn" src="../img/toco-img2/company-patent.png" alt="">
+<img class="wow fadeIn" src="../img/toco-img2/company-patent2.jfif" alt=""> 
+<img class="wow fadeIn" src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img class="wow fadeIn" src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img class="wow fadeIn" src="../img/toco-img2/company-patent2.jfif" alt="">
+<img class="wow fadeIn" src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img class="wow fadeIn" src="../img/toco-img2/company-patent2.jfif" alt="" >
+<img class="wow fadeIn" src="../img/toco-img2/company-patent2.jfif" alt="" >
     </span>
+    <div class="arrow">
+      <!-- <img src="../img/toco-img2/short.png" alt="">
+      <img src="../img/toco-img2/more.png" alt=""> -->
+      <img class="up close"src="../img/toco-img2/short_blue.png" alt="">
+      <img class="down"src="../img/toco-img2/more_blue.png" alt="">
+    </div>
 </div>
 
 <div class="section">
@@ -970,6 +1001,42 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
       </div>
   </div>   
 </footer>         
-     
+<script>
+  $(document).ready(function(){
+    if(window.matchMedia("screen and (max-width: 768px)").matches)
+    $(function () {
+     $('.box img').hide();        
+     $('.box img').slice(0,4).show();
+   
+     $('.arrow').click(function(){
+       if($('.up').hasClass('more')){
+     $('.up').addClass('close').removeClass('more');
+     if(window.matchMedia("screen and (max-width: 430px)").matches)
+     {
+      $('.box img').slice(1,10).hide();
+     }else
+     $('.box img').slice(4,10).hide();
+       }
+     else if($('.up').hasClass('close')){
+     $('.up').removeClass('close').addClass('more');
+     if(window.matchMedia("screen and (max-width: 430px)").matches)
+     {
+      $('.box img').slice(1,10).show();
+     }else
+     $('.box img').slice(4,10).show();
+     }
+     });
+    });
+
+
+    if(window.matchMedia("screen and (max-width: 430px)").matches)
+    $(function () {
+     $('.box img').hide();        
+     $('.box img').slice(0,1).show();
+
+    });
+   });
+
+</script>
 </body>
 </html>

@@ -17,26 +17,33 @@
         }
     });
 
-    //  페이지 동작시 기본 설정
+    //  페이지 동작시 콘텐츠 갯수 및 클래스 지정
 
     if(window.matchMedia("screen and (max-width: 768px)").matches){
         $(function(){
             $('.news-cont').hide(); 
+            $('.saveButton').hide();
             $('.news-cont').slice(0,4).show();  
-            $('.load').addClass('firstClick')                       
+            $('.loadButton').addClass('firstLoad')   ;                    
         });
     }else if(window.matchMedia("screen and (max-width: 1024px)").matches){
         $(function(){
             $('.news-cont').hide(); 
             $('.news-cont').slice(0,6).show(); 
-            $('.load').addClass('secondClick')
+            $('.loadButton').addClass('secondLoad');
+            $('.saveButton').addClass('thirdSave');
         });   
     }else if(window.matchMedia("screen and (max-width: 1920px)").matches){
         $(function(){
             $('.news-cont').hide(); 
             $('.news-cont').slice(0,8).show(); 
-            $('.load').addClass('thirdClick')
+            $('.loadButton').addClass('thirdLoad');
+            $('.saveButton').addClass('secondSave');
         });       
+    }else{
+        $('.loadButton').hide();        
+        $(".footer").css({'margin-top':"7%"});  
+        $('.saveButton').addClass('firstSave');
     }
 
           
@@ -44,26 +51,65 @@
     
 
     // 더보기 버튼을 눌렀을때 작동
-    $('.load').click(function() {
-        if($('.load').hasClass('firstClick')){
-            const firstClicked = document.getElementById('firstClicked');            
+    $('.loadButton').click(function() {
+        if($('.loadButton').hasClass('firstLoad')){
+            const secondPoint = document.getElementById('secondPoint');            
             $(".news-cont").slice(4,6).show();              
-            window.scrollBy({top: firstClicked.getBoundingClientRect().top,behavior:'smooth'});       
-            $('.load').removeClass('firstClick').addClass('secondClick');            
-        }else if($('.load').hasClass('secondClick')){
-            const secondClicked = document.getElementById('secondClicked');
+            $(".saveButton").show();
+            window.scrollBy({top: secondPoint.getBoundingClientRect().top,behavior:'smooth'});       
+            $('.loadButton').removeClass('firstLoad').addClass('secondLoad');   
+            $('.saveButton').addClass('thirdSave');               
+
+        }else if($('.loadButton').hasClass('secondLoad')){
+            const thirdPoint = document.getElementById('thirdPoint');
             $(".news-cont").slice(6,8).show();
-            window.scrollBy({top: secondClicked.getBoundingClientRect().top,behavior:'smooth'});
-            $(".load").removeClass('secondClick').addClass('thirdClick');  
-        }else if($('.load').hasClass('thirdClick')){
-            const thirdClicked = document.getElementById('thirdClicked');
+            $(".saveButton").show();
+            window.scrollBy({top: thirdPoint.getBoundingClientRect().top,behavior:'smooth'});
+            $(".loadButton").removeClass('secondLoad').addClass('thirdLoad'); 
+            $('.saveButton').addClass('secondSave').removeClass('thirdSave');  
+        }else if($('.loadButton').hasClass('thirdLoad')){
+            const fourthPoint = document.getElementById('fourthPoint');
             $(".news-cont").slice(8,10).show();
-            window.scrollBy({top: thirdClicked.getBoundingClientRect().top,behavior:'smooth'});
-            $(".load").removeClass('thirdClick');    
-            $(".load").css({'display':'none'}); 
-            $(".footer").css({'margin-top':"7%"});     
-        }    
-    });    
+            $(".saveButton").show();
+            window.scrollBy({top: fourthPoint.getBoundingClientRect().top,behavior:'smooth'});
+            $(".loadButton").removeClass('thirdLoad');  
+            $('.saveButton').addClass('firstSave').removeClass('secondSave');   
+            $(".loadButton").hide();
+        if(window.matchMedia("screen and (min-width: 430px)").matches){
+            $(".footer").css({'margin-top':"7%"}); 
+            }  
+        };
+    });  
+    // 접기 버튼을 눌렀을때 작동
+    $('.saveButton').click(function() {
+        if($('.saveButton').hasClass('firstSave')){
+            const thirdPoint = document.getElementById('thirdPoint');
+            window.scrollBy({top: thirdPoint.getBoundingClientRect().top,behavior:'smooth'});
+            $(".news-cont").slice(8,10).hide();
+            $(".loadButton").show();            
+            $(".saveButton").removeClass('firstSave').addClass('secondSave');
+            $(".loadButton").addClass('thirdLoad').removeClass('secondLoad');
+            $(".footer").css({'margin-top':"0"});
+            
+        }else if($('.saveButton').hasClass('secondSave')){
+            const secondPoint = document.getElementById('secondPoint'); 
+            window.scrollBy({top: secondPoint.getBoundingClientRect().top,behavior:'smooth'}); 
+            $(".news-cont").slice(6,8).hide();
+            $(".loadButton").show();            
+            $(".saveButton").removeClass('secondSave').addClass('thirdSave');  
+            $(".loadButton").addClass('secondLoad').removeClass('firstLoad');                    
+        }else if($('.saveButton').hasClass('thirdSave')){
+            const firstPoint = document.getElementById('firstPoint'); 
+            window.scrollBy({top: firstPoint.getBoundingClientRect().top,behavior:'smooth'});   
+            $(".news-cont").slice(4,6).hide();
+            $(".loadButton").show();
+            $(".saveButton").hide();
+            $(".saveButton").removeClass('thirdSave');  
+            $(".loadButton").addClass('firstLoad');  
+                      
+                    
+        };
+    });  
 });    
 
 

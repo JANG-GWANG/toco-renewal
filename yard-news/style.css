@@ -140,7 +140,7 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 
 /* 이전글 버튼 */
 .before-button{
-    left:0;
+    left:-6px;
     cursor:pointer;
     background-color: white;
     position: relative;
@@ -184,7 +184,7 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 
 /* 다음글 버튼 */
 .after-button{
-    right:30px;
+    right:32px;
     cursor:pointer;
     background-color: white;
     position: relative;

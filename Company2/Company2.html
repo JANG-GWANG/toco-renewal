@@ -192,13 +192,11 @@
     font-size: 2em;
      text-align: left;
      height: 58px;
-     padding-left: 13%;
      font-weight: bold;
      padding-top: 50px;
 }
  .section .title2 {
     text-align: left;
-     padding-left: 13%;
      padding-bottom: 50px;
      color: #C8C8C8;
      font-size: 1em;
@@ -348,20 +346,26 @@ h2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
      place-items: center;
-     max-width: 1440px;
+     max-width: 900px;
     margin: 0 auto;
-    padding: 0 15% 5% 25%;
+    padding: 0 15% 0 25%;
+    grid-gap: 0 15%;
 }
  .section span img{
     border: solid 1px #184B9F;
      width: 218px;
      height: 308px;
-     margin-bottom: 10%;
+     margin-bottom:35%;
 }
  .section{
      align-items: center;
      text-align: center;
-     padding:55px 0 155px 0;
+     margin: 0 auto;
+    max-width: 1440px;
+}
+
+.backg{
+  background-color: #F9F9F9;
 }
 
 .section .arrow{
@@ -378,7 +382,7 @@ h2{
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
  #map {
-    width:75%;
+    width:100%;
      height:680px;
      display: inline-block;
 }
@@ -387,13 +391,13 @@ h2{
 }
  .section .border-b {
     margin: 0 auto;
-     width: 75%;
+     width: 100%;
      border-bottom: 1px solid #DBDBDB;
      display: block;
 }
  .section .border-b2 {
     margin: 0 auto;
-     width: 75%;
+     width: 100%;
      border-bottom: 1px solid #000;
      display: block;
 }
@@ -468,6 +472,16 @@ h2{
     color:#9E9E9E;
     font-weight:600;
 } 
+
+@media screen and (max-width: 1440px){
+.title,.title2{
+  padding-left: 5%;
+}
+
+.section .box{
+  padding: 0 6% 0 6%;
+}
+}
 
 @media screen and (max-width: 1280px)
 {
@@ -558,6 +572,7 @@ h2{
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 .section .box{
+    grid-gap: 0 1%;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
      place-items: center;
@@ -579,7 +594,13 @@ h2{
 
  #map {
      height:400px;
+     width: 75%;
 }
+
+.section .border-b , .section .border-b2{
+     width: 75%;
+}
+
  table{
     margin: 0 25% 0 11%;
 }
@@ -614,6 +635,10 @@ h2{
 .section .box{
   grid-template-columns: repeat(2, 1fr);
   padding-left: 5%;
+}
+
+.section span img{
+margin-bottom: 10%;
 }
 
 .section .arrow{
@@ -905,20 +930,20 @@ h2{
       </div>
 </div>
 
-
+<div class="backg">
 <div class="section" style="padding-bottom: 0;">
     <p class="title" id="certi">특허&인증</p>
     <p class="title2">CERTIFICATION & PATENT</p>
     <span class="box">
-<img class="wow fadeIn" src="../img/toco-img2/company-patent2.jpg" alt="" >
-<img class="wow fadeIn" src="../img/toco-img2/company-patent.png" alt="">
-<img class="wow fadeIn" src="../img/toco-img2/company-patent3.jpg" alt=""> 
-<img class="wow fadeIn" src="../img/toco-img2/company-patent4.jpg" alt="" >
-<img class="wow fadeIn" src="../img/toco-img2/company-patent5.jpg" alt="" >
-<img class="wow fadeIn" src="../img/toco-img2/company-patent6.jpg" alt="">
-<img class="wow fadeIn" src="../img/toco-img2/company-patent7.jpg" alt="" >
-<img class="wow fadeIn" src="../img/toco-img2/company-patent8.jpg" alt="" >
-<img class="wow fadeIn" src="../img/toco-img2/company-patent9.jpg" alt="" >
+      <img class="wow fadeIn" src="../img/toco-img2/company-patent2.jpg" alt="" >
+      <img class="wow fadeIn" src="../img/toco-img2/company-patent.png" alt="">
+      <img class="wow fadeIn" src="../img/toco-img2/company-patent3.jpg" alt=""> 
+      <img class="wow fadeIn" src="../img/toco-img2/company-patent4.jpg" alt="" >
+      <img class="wow fadeIn" src="../img/toco-img2/company-patent5.jpg" alt="" >
+      <img class="wow fadeIn" src="../img/toco-img2/company-patent6.jpg" alt="">
+      <img class="wow fadeIn" src="../img/toco-img2/company-patent7.jpg" alt="" >
+      <img class="wow fadeIn" src="../img/toco-img2/company-patent8.jpg" alt="" >
+      <img class="wow fadeIn" src="../img/toco-img2/company-patent9.jpg" alt="" >
     </span>
     <div class="arrow">
       <!-- <img src="../img/toco-img2/short.png" alt="">
@@ -927,8 +952,9 @@ h2{
       <img class="down"src="../img/toco-img2/more_blue.png" alt="">
     </div>
 </div>
+</div>
 
-<div class="section">
+<div class="section" style="margin-bottom: 200px;">
     <p class="title" id="direc">오시는길</p>
     <p class="title2"> DIRECTIONS</p>
     <div class="wow fadeIn" id="map"></div>
@@ -1014,31 +1040,28 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
      if(window.matchMedia("screen and (max-width: 430px)").matches)
      {
       $('.box img').slice(1,10).hide();
-      $('html,body').animate({scrollTop:1400},800);
+      $('html,body').animate({scrollTop:1200},800);
      }else
      {
      $('.box img').slice(4,10).hide();
-     $('html,body').animate({scrollTop:1580},800);
+     $('html,body').animate({scrollTop:1350},800);
      }
        }
      else if($('.up').hasClass('close')){
      $('.up').removeClass('close').addClass('more');
+
      if(window.matchMedia("screen and (max-width: 430px)").matches)
-     {
       $('.box img').slice(1,10).show();
-     }else
+      else
      $('.box img').slice(4,10).show();
-     
      }
      });
     });
-
 
     if(window.matchMedia("screen and (max-width: 430px)").matches)
     $(function () {
      $('.box img').hide();        
      $('.box img').slice(0,1).show();
-
     });
    });
 

@@ -1,8 +1,9 @@
 /* 바디 */
-body{    
+html body{    
     margin:0 auto;
     font-family:'Noto Sans KR'; 
 }
+
 
 /* 네비바 */
 header a {text-decoration: none; cursor: pointer; }
@@ -63,7 +64,7 @@ line-height: 300px;
 }
 .news-title-wrap{
     text-align:left;
-    margin:5% 0 0 0;
+    margin:5% 0 0 7%;
 }
 .news-title{
     padding-bottom:1rem;
@@ -87,7 +88,8 @@ line-height: 300px;
 .news-box-wrapper #news-box{
     display:flex;
     flex-wrap:wrap;  
-    justify-content: center;          
+    justify-content: center; 
+           
 }
 .news-box-wrapper #news-box .news-cont{
     width: 40%;   
@@ -193,23 +195,78 @@ line-height: 300px;
     display:initial;
     background:transparent;
     cursor:pointer;
-    border:1px solid #9e9e9e;
-    border-radius:43px;    
-
+    /* border:1px solid #9e9e9e;  */
+    border-radius:43px;      
     height:73px;
     width:200px;
-    font-size:20px;    
+    font-size:20px;   
+    
    
 }   
+.loadButton img,.saveButton img{
+    object-fit:scale-down;
+}
 .loadButton{
     margin-top:1%;    
 }      
 .saveButton{    
     margin-bottom:1%
 }
-.loadButton:hover,.saveButton:hover{
+.button-wrap .loadButton:hover,.button-wrap .saveButton:hover, .button-wrap .btn-check:checked+.btn:hover{
     color:#ffffff;
-    background-color:#184B9F;            
+    background-color:#184B9F; 
+    --bs-btn-bg:#184b9f;           
+}
+
+
+/* 부트스트랩 기능 수정 */
+div ol,div ul{
+    padding:0;
+}
+div ol,div ul{
+    padding:0;
+}
+
+.button-wrap{
+    width: 10%;
+} 
+.btn-group-vertical>.btn{
+    justify-content: center;
+    text-align:center;
+}
+
+.button-wrap .btn{
+    --bs-btn-border-radius:100%;
+    padding:0;   
+    
+}
+.button-wrap .btn:hover{
+    --bs-btn-bg:#184b9f;
+}
+
+.button-wrap .btn-outline-primary {
+    --bs-btn-color: #184b9f;
+    --bs-btn-border-color: #184b9f;  
+    --bs-btn-hover-bg: #184b9f;
+    --bs-btn-hover-border-color: #184b9f;     
+    --bs-btn-active-bg: #184b9f;
+    --bs-btn-active-border-color: #184b9f;   
+    --bs-btn-disabled-color: #184b9f;
+    --bs-btn-disabled-border-color: #184b9f;    
+} 
+
+/* 클릭시 배경색변경 제거 */
+
+/*, .button-wrap .btn:active */
+.button-wrap .btn-check:active+.btn, .button-wrap .btn-check:checked+.btn, .button-wrap .btn.active,.button-wrap .btn.show{
+    color:#184B9F;
+    background-color:#ffffff;
+    border-color: #184B9F;
+} 
+
+/* 클릭시 박스쉐도우 제거 */
+.button-wrap .btn-check:focus+.btn, .btn:focus{
+    box-shadow:none;
 }
 
 /*------------------------푸터---------------*/
@@ -262,6 +319,7 @@ line-height: 300px;
     /* 이미지 크기 고정 */
      .news-cont .news-img-wrap{
         width:580px;
+        
         height:300px;
     } 
  }
@@ -280,7 +338,9 @@ line-height: 300px;
 
 /* 1024px */
   @media screen and (max-width:1024px){
-    
+    .news-box-wrapper #news-box{
+        justify-content: center;
+    }
     /* REsoft 소식 글씨 중앙정렬 */
     .resoft-news .news-title-wrap{
         text-align:center;
@@ -296,14 +356,9 @@ line-height: 300px;
 
 /* 모바일 모드 */
 /* 768px */
-@media screen and (max-width:768px){ 
-    
-    /* 이미지 배열 1줄로 */
-    
+@media screen and (max-width:768px){     
 
-    /* 모바일 모드일때 푸터 배치변경 */
-    
-    
+    /* 모바일 모드일때 푸터 배치변경 */    
 
     .footer-wrap{        
         padding-top:5%;

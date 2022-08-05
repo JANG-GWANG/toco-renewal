@@ -41,8 +41,8 @@
             $('.saveButton').addClass('secondSave');
         });       
     }else{
-        $('.loadButton').hide();        
-        $(".footer").css({'margin-top':"7%"});  
+        $('.loadButton').hide();    
+        // $(".footer").css({'margin-top':"7%"});  
         $('.saveButton').addClass('firstSave');
     }
 
@@ -50,16 +50,16 @@
    
     
 
-    // 더보기 버튼을 눌렀을때 작동
+    // 펼치기 버튼을 눌렀을때 작동
     $('.loadButton').click(function() {
         if($('.loadButton').hasClass('firstLoad')){
             const secondPoint = document.getElementById('secondPoint');            
             $(".news-cont").slice(4,6).show();              
-            $(".saveButton").show();
+            $(".saveButton").show();            
             window.scrollBy({top: secondPoint.getBoundingClientRect().top,behavior:'smooth'});       
             $('.loadButton').removeClass('firstLoad').addClass('secondLoad');   
-            $('.saveButton').addClass('thirdSave');               
-
+            $('.saveButton').addClass('thirdSave');     
+            $('.btn-group-vertical>.btn-group:not(:first-child)>.btn, .btn-group-vertical>.btn~.btn').css({'border-top-left-radius':'0','border-top-right-radius':'0'}) 
         }else if($('.loadButton').hasClass('secondLoad')){
             const thirdPoint = document.getElementById('thirdPoint');
             $(".news-cont").slice(6,8).show();
@@ -73,11 +73,12 @@
             $(".saveButton").show();
             window.scrollBy({top: fourthPoint.getBoundingClientRect().top,behavior:'smooth'});
             $(".loadButton").removeClass('thirdLoad');  
-            $('.saveButton').addClass('firstSave').removeClass('secondSave');   
+            $('.saveButton').addClass('firstSave').removeClass('secondSave');              
             $(".loadButton").hide();
-        if(window.matchMedia("screen and (min-width: 430px)").matches){
-            $(".footer").css({'margin-top':"7%"}); 
-            }  
+            $('.btn-group-vertical>.btn-group:not(:last-child)>.btn, .btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle)').css({'border-bottom-left-radius':'100%','border-bottom-right-radius':'100%'});
+        // if(window.matchMedia("screen and (min-width: 430px)").matches){
+        //     $(".footer").css({'margin-top':"7%"}); 
+        //     }  
         };
     });  
     // 접기 버튼을 눌렀을때 작동
@@ -90,7 +91,7 @@
             $(".saveButton").removeClass('firstSave').addClass('secondSave');
             $(".loadButton").addClass('thirdLoad').removeClass('secondLoad');
             $(".footer").css({'margin-top':"0"});
-            
+            $('.btn-group-vertical>.btn-group:not(:last-child)>.btn, .btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle)').css({'border-bottom-left-radius':'0','border-bottom-right-radius':'0'});
         }else if($('.saveButton').hasClass('secondSave')){
             const secondPoint = document.getElementById('secondPoint'); 
             window.scrollBy({top: secondPoint.getBoundingClientRect().top,behavior:'smooth'}); 
@@ -106,9 +107,8 @@
             $(".saveButton").hide();
             $(".saveButton").removeClass('thirdSave');  
             $(".loadButton").addClass('firstLoad');  
-                      
-                    
-        };
+            $('.btn-group-vertical>.btn-group:not(:first-child)>.btn, .btn-group-vertical>.btn~.btn').css({'border-top-left-radius':'100%','border-top-right-radius':'100%'})                                         
+         };
     });  
 });    
 

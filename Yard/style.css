@@ -220,9 +220,7 @@ line-height: 300px;
 
 
 /* 부트스트랩 기능 수정 */
-div ol,div ul{
-    padding:0;
-}
+
 div ol,div ul{
     padding:0;
 }
@@ -230,15 +228,14 @@ div ol,div ul{
 .button-wrap{
     width: 10%;
 } 
-.btn-group-vertical>.btn{
+/* .btn-group-vertical>.btn{
     justify-content: center;
     text-align:center;
-}
+} */
 
 .button-wrap .btn{
     --bs-btn-border-radius:100%;
-    padding:0;   
-    
+    padding:0;       
 }
 .button-wrap .btn:hover{
     --bs-btn-bg:#184b9f;

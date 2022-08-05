@@ -42,6 +42,10 @@
         #main-nav {text-align: end; padding-right: 5%;}
         .close{opacity: 0; display: none;}
         .more{opacity: 1;}
+         header .active {
+             background: #fff;
+             border-bottom: 1px solid #DBDBDB !important;
+        }
    </style>
 </head>
 <body>
@@ -80,12 +84,47 @@
 <!--         <div class="visual"><img src="./img/toco-img1/main-header1.png" alt=""></div> -->
     </header>
 <script>
+      $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('#gon').addClass('active');
+                const logo = document.querySelector('.logo img');
+                logo.src = "./img/toco-common/logo-Resoft.svg"
+                const ham = document.querySelector('.ham img');
+                ham.src = "./img/toco-common/company_N_busines_N_yard-menu.svg"
+                $("#gon").css('transition',".5s");
+            }else{
+                if($('.so').hasClass('close')){
+                $('#gon').removeClass('active');
+                const logo = document.querySelector('.logo img');
+                logo.src = "./img/toco-common/logo-Resoft-white.png"
+                const ham = document.querySelector('.ham img');
+                ham.src = "./img/toco-img1/icon-menu.svg"}
+            }
+        });
+    
      $(document).ready(function(){
     $('.ham').click(function () {
         if($('.so').hasClass('more'))
     $('.so').addClass('magictime fadeOut');
+           if($(window).scrollTop()==0){
+        setTimeout(function() {  $('#gon').removeClass('active');
+        $('.logo').attr('src','./img/toco-common/logo-Resoft-white.png');
+        const logo = document.querySelector('.logo img');
+        logo.src = "./img/toco-common/logo-Resoft-white.png"
+        const ham = document.querySelector('.ham img');
+        ham.src = "./img/toco-img1/icon-menu.svg"}, 500);
+        $("#gon").css('transition',".5s");
+        }
     else if($('.so').hasClass('close'))
     $('.so').removeClass('magictime fadeOut');
+         $('#gon').addClass('active');
+                $('.logo').attr('src','./img/toco-common/logo-Resoft.svg');
+                const logo = document.querySelector('.logo img');
+                logo.src = "./img/toco-common/logo-Resoft.svg"
+                const ham = document.querySelector('.ham img');
+                ham.src = "./img/toco-common/company_N_busines_N_yard-menu.svg"
+                $("#gon").css('transition',"0s");
+        }
 });
      });
     $(document).ready(function(){

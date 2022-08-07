@@ -74,10 +74,15 @@ $(function(){
                 breakpoint: 1300,
                 settings: {slidesToShow: 3}
             },
-            {   // 화면크기 960px 일때
-                breakpoint: 960,
+            {   // 화면크기 668px 일때
+                breakpoint: 668,
                 settings: {slidesToShow: 2}
+            },
+            {   // 화면크기 468px 일때
+                breakpoint: 668,
+                settings: {slidesToShow: 1}
             }
+
         ]
     });
 });

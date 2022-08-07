@@ -446,7 +446,7 @@ input[id="page-menuicon"]:checked + label + div{
     color: #fff;
     word-break:keep-all;
 }
-.mobile-ecoce{display: none; opacity: 0; transition: all .35s;}
+.mobile-ecoce{display: none;}
 
 /* ---------- 모아두 ---------- */
 .moado-bg{
@@ -551,6 +551,8 @@ input[id="page-menuicon"]:checked + label + div{
 
 /* ---------- ETC ---------- */
 #content-etc{
+    position: relative;
+    z-index: -1;
     max-width: 1440px;
     width: 75vw;
     height: 100%;
@@ -589,10 +591,11 @@ input[id="page-menuicon"]:checked + label + div{
 }
 .etc-projects .etc-project-img{
     max-width: 233px;
+    width: 98%;
     max-height: 350px;
     /* width: 100vw; */
     margin: 0 auto;
-    box-shadow: 1px 1px 15px #C8C8C8;
+    box-shadow: 1px 1px 10px #C8C8C8;
     box-sizing: border-box;
     /* background-color: yellow; */
 }
@@ -680,13 +683,9 @@ input[id="page-menuicon"]:checked + label + div{
 /* ---------- 1024px ---------- */
 @media screen and (max-width:1024px) {
     /* 에코스 */
-    .ecoce-wrap, .ecoce-title{display: none;}
-    .mobile-ecoce{
-        display: block;
-        margin-top: 54px;
-        opacity: 1;
-        transition: all .35s;
-    }
+    .ecoce-title, .ecoce-wrap{display: none;}
+    .mobile-ecoce{display: block;}
+    #content-ecoce{max-width: 600px; width: 75vw; /*border: 1px solid red;*/}
     .mobile-ecoce .m-ecoce-title p:nth-child(1){
         font-size: 40px;
         font-weight: bold;
@@ -701,103 +700,80 @@ input[id="page-menuicon"]:checked + label + div{
         color: #C8C8C8;
         margin-bottom: 54px;
     }
-    .mobile-ecoce .m-ecoce-top{
-        max-width: 600px;
-        width: 75vw;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    .mobile-ecoce .m-ecoce-top p{
-        display: flex;
-        align-items: center;
-        text-align: left;
+    .m-ecoce-wrap .ecoce-text{
         font-size: 27px;
         font-weight: bold;
         line-height: 44px;
         width: 100%;
+        text-align: center;
     }
-    .mobile-ecoce .m-ecoce-top .ecoce-logo-wrap{
-        display: flex;
-        flex-direction: column;
+    .m-ecoce-wrap .ecoce-logo-wrap{
+        width: 55%;
+        margin: 10% auto 0 auto;
+        /* border: 1px solid red; */
     }
-    .mobile-ecoce .m-ecoce-top .ecoce-logo-wrap p{
-        display: flex;
-        justify-content: end;
-        text-align: right;
+    .m-ecoce-wrap .ecoce-logo-wrap img{
+        width: 100%
+        /* border: 1px solid blue; */
+    }
+    .m-ecoce-wrap .ecoce-logo-wrap p{
         font-size: 15px;
         font-weight: bold;
+        text-align: right;
         line-height: 32px;
-        margin-bottom: 10px;
     }
-    .mobile-ecoce .m-ecoce-top .ecoce-logo-wrap span{
-        display: flex;
-        justify-content: end;
-        align-items: flex-end;
-        margin: 0;
+    .m-ecoce-wrap .ecoce-img-bg{
+        width: 80%;
+        margin: 10% auto 10% auto;
+        background: url(../img/toco-img3/business-ECOCE-screen2.png) no-repeat;
+        background-size: 90%;
+        /* border: 1px solid green; */
     }
-    .mobile-ecoce .m-ecoce-top .ecoce-logo-wrap img{
-        width: 90%;
+    .m-ecoce-wrap .ecoce-img-bg img{
+        width: 60%;
+        margin: 10% 0px 0px 35%;
     }
-
-
-    .mobile-ecoce .m-ecoce-bottom {
-        max-width: 600px;
-        width: 75vw;
+    
+    .m-ecoce-wrap .ecoce-appstore{
+        width: 80%;
         margin: 0 auto;
         display: flex;
-        justify-content: space-between;
-        margin-top: 50px;
-    }
-    .mobile-ecoce .m-ecoce-bottom .ecoce-left-img{
-        background: url(../img/toco-img3/business-ECOCE-screen2.png) no-repeat;
-        background-size:70%;    
-    }
-    .mobile-ecoce .m-ecoce-bottom .ecoce-left-img img{
-        width: 50%;
-        padding: 8% 0 0 30%;
-
-    }
-
-    .mobile-ecoce .m-ecoce-bottom .ecoce-appstore{
-        display: flex;
-        flex-direction: column;
         justify-content: center;
+        /* border: 1px solid darkmagenta; */
+        gap: 25px;
     }
-    .mobile-ecoce .m-ecoce-bottom .ecoce-appstore .google-store {
-        width: 188px;
+    .m-ecoce-wrap .ecoce-appstore .google-store{
+        width: 160px;
         height: 57px;
         background-color: #1e1e1e;
         border-radius: 30px;
-        margin-bottom: 40px;
     }
-    .mobile-ecoce .m-ecoce-bottom .ecoce-appstore .google-store a{
-        width: 188px;
+    .m-ecoce-wrap .ecoce-appstore .google-store a{
+        width: 160px;
         height: 57px;
         display: flex;
         align-items: center;
         text-decoration: none;
         cursor: pointer;
     }
-    .mobile-ecoce .m-ecoce-bottom .ecoce-appstore .google-store img{
-        width: 31px;
-        height: 35px;
+    .m-ecoce-wrap .ecoce-appstore .google-store img{
+        width: 28px;
         color: #fff;
         word-break:keep-all;
         padding: 11px 12px 11px 20px;
     }
-    .mobile-ecoce .m-ecoce-bottom .ecoce-appstore .google-store span{
+    .m-ecoce-wrap .ecoce-appstore .google-store span{
         display: inline-block;
         width: 93px;
         height: 42px;
-        font-size: 14px; font-weight: normal; line-height: 22px;
+        font-size: 12px; font-weight: normal; line-height: 22px;
         color: #fff;
         word-break:keep-all;
     }
 
     /* 모아두 */
-    .moado-bg{height: 660px;}
-    #content-moado{max-width: 600px; width: 75vw;}
+    .moado-bg{height: 100%; margin-top: 200px; /*border: 1px solid red;*/}
+    #content-moado{max-width: 600px; width: 75vw; /*border: 1px solid red;*/}
     #content-moado .moado-title, .moado-wrap{display: none;}
 
     .mobile-moado-wrap{
@@ -825,63 +801,70 @@ input[id="page-menuicon"]:checked + label + div{
         font-size: 27px;
         font-weight: bold;
         text-align: center;
-        margin-top: 54px;
+        margin-top: 60px;
     }
     .mobile-moado-wrap .moado-top .moado-logo{
         width: 55%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 8% auto 8% auto;
+        margin: 10% auto 10% auto;
     }
     .mobile-moado-wrap .moado-img-wrap{
-        width: 80%;
+        width: 85%;
         height: 100%;
         margin: 0 auto;
-        /* border: 1px solid blue; */
-        background: url(../img/toco-img3/business-moaDo-screen.png) no-repeat;
-        background-size:contain;
-    }
-    .mobile-moado-wrap .moado-img-wrap .img-right{
-        width: 330px;
-        padding-top: 20%;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-    .mobile-moado-wrap .moado-link{
         display: flex;
-        position: absolute;
-        right: 16%;
-        bottom: 80px;
+        flex-direction: center;
+        margin-bottom: 10%;
+        gap: 2%;
+        /* border: 1px solid red; */
+    }
+    .mobile-moado-wrap .moado-img-wrap .moado-img-1{
+        width: 58%;
+    }
+    .mobile-moado-wrap .moado-img-wrap .link-wrap{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        flex-direction: center;
+        align-items: center;
+        gap: 30%;
+    }
+    .mobile-moado-wrap .moado-img-wrap .link-wrap .moado-img-2{
+        width: 100%;
     }
     .mobile-moado-wrap .moado-link a{
+        display: inline-block;
         width: 125px;
         height: 40px;
         border-radius: 69px;
         background-color: #1e1e1e;
         text-decoration: none;
         color: #fff;
+        /* position: absolute;
+        right: 7%;
+        bottom: 7%; */
     }
     .mobile-moado-wrap .moado-link span{
         display: inline-block;
         width: 125px;
-        height: 57px;
+        height: 40px;
         font-size: 10px; font-weight:normal; line-height: 40px;
         text-align: center;
     }
+    /* etc */
+    #content-etc{
+        max-width: 600px; width: 75vw; /*border: 1px solid red;*/
+    }
+    .etc-projects .etc-project-img{
+        max-width: 170px;
+    }    
+
 }   
 
 
-
-/* ---------- 모바일용 메뉴 display none ---------- */
-@media screen and (min-width:769px) {
-    .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle{
-        display: none;
-    }
-}
-
-/* ---------- 모바일 화면 ---------- */
+/* ---------- 768px ---------- */
 @media screen and (max-width:768px) {
     .menu{opacity: 0; transition: all .25s;}
     .nav-lnb .lnb-menu{margin-top: 0;}
@@ -890,6 +873,79 @@ input[id="page-menuicon"]:checked + label + div{
     }
     .nav-lnb .lnb-menu .mobile-menu{margin-left: 10px;}
     .nav-lnb .lnb-menu .mobile-menu li{margin-top: 13px;}
+
+
+    /* 에코스 */
+    .m-ecoce-wrap .ecoce-text{font-size: 24px;}
+    .m-ecoce-wrap .ecoce-logo-wrap{width: 70%;}
+    .m-ecoce-wrap .ecoce-img-bg{width: 75%;}
+    .m-ecoce-wrap .ecoce-appstore .google-store{height: 50px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store a{height: 50px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store img{width: 22px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store span{height: 40px; line-height: 20px;}
+
+    /* 모아두 */
+    .mobile-moado-wrap .moado-top p{font-size: 24px;}
+    .mobile-moado-wrap .moado-link a{right: 7%; bottom: 40%;}
+
+    /* etc */
+    .etc-projects .etc-project-img{max-width: 170px; width: 90%;}    
+
 }
+
+
+/* ---------- 사업현황 파트 기타 범위 ---------- */
+@media screen and (max-width:668px) {
+    .etc-projects .etc-project-img{max-width: 188px; width: 95%; box-shadow: 1px 1px 5px #C8C8C8;
+    }    
+}
+@media screen and (max-width:568px) {
+    .m-ecoce-wrap .ecoce-text{font-size: 20px;}
+    .m-ecoce-wrap .ecoce-logo-wrap p{font-size: 12px;}
+    .m-ecoce-wrap .ecoce-appstore{gap: 10px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store{width: 135px; height: 44px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store a{height: 44px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store img{width: 18px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store span{font-size: 10px; height: 32px; line-height: 16px;}
+    
+    .moado-bg{height: 100%; margin-top: 150px; /*border: 1px solid red;*/}
+    .mobile-moado-wrap .moado-top p{font-size: 20px;}
+    .mobile-moado-wrap .moado-img-wrap{flex-direction: column;}
+    .mobile-moado-wrap .moado-img-wrap .moado-img-1{width: 90%; margin: 0 auto;}
+    .mobile-moado-wrap .moado-img-wrap .link-wrap{width: 100%;}
+    .mobile-moado-wrap .moado-img-wrap .link-wrap .moado-img-2{width: 90%; margin: 5% 0 10% 0;}
+    .mobile-moado-wrap .moado-link a{width: 95px; height: 35px;}
+    .mobile-moado-wrap .moado-link span{width: 95px; line-height: 35px;}
+
+    .etc-projects .etc-project-img{max-width: 170px; width: 95%; box-shadow: 1px 1px 5px #C8C8C8;}    
+    #content-etc{margin: 100px auto 100px auto;}
+}
+@media screen and (max-width:468px) {
+    .m-ecoce-wrap .ecoce-text{font-size: 18px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store{width: 125px; height: 44px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store img{width: 18px; padding: 10px 10px 10px 15px;}
+    .mobile-moado-wrap .moado-top p{font-size: 18px;}
+    .etc-projects .etc-project-img{max-width: 188px; width: 95%; box-shadow: 1px 1px 5px #C8C8C8;}    
+}
+
+
+
+
+
+
+
+
+
+/* 모바일용 메뉴 display none */
+@media screen and (min-width:768px) {
+    .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle{
+        display: none;
+    }
+}
+
+
+
+
+
 
 /* #a0f3ed #ff5a93 */

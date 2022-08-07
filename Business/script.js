@@ -79,7 +79,7 @@ $(function(){
                 settings: {slidesToShow: 2}
             },
             {   // 화면크기 468px 일때
-                breakpoint: 668,
+                breakpoint: 468,
                 settings: {slidesToShow: 1}
             }
 

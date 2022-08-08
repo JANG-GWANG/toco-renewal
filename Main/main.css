@@ -581,9 +581,6 @@ section .media1280 {
     .main-news-container .news-contents:last-child {
         display: none;
     }
-    .main-news-container .news-content:last-child {
-        
-    }
     .main-news-container .news-img-wrap {
         width: 300px;
         height: 200px;
@@ -591,15 +588,6 @@ section .media1280 {
         position:relative;
         overflow: hidden;
     }
-    .main-news-container .news-img {
-        width: 300px;
-        height: 200px;
-        border-radius: 20px;
-        position:relative;
-        background: url('./img/toco-common/sample-img.png') no-repeat center / cover;
-        transition: transform 0.25s ease-in-out;
-        opacity:1;
-    }   
     /* 프로젝트 */
 
     .main-project-container lottie-player {

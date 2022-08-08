@@ -100,7 +100,6 @@ section .media1280 {
 }
 .main-header .slick-button-wrap img{
     padding: 1rem;
-    /* border: 1px solid red; */
     cursor: pointer;
 }
 /* 새로운 소식 (뉴스) 섹션 */
@@ -274,7 +273,6 @@ section .media1280 {
 }
 .main-project-container lottie-player {
     margin-top: 60px;
-    /* border: 1px solid blue; */
 }
 .main-project-container .media1280 {
     display: none;
@@ -363,7 +361,6 @@ section .media1280 {
     /* display:none; */
     opacity: 0;
     position: absolute;
-    /* border: 1px solid yellow; */
     transform: translate(70px, 100px);
 }
 /* 서비스 섹션 - 카드 APP */
@@ -373,7 +370,6 @@ section .media1280 {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
 }
 /* 서비스 섹션 - 카드 AI */
 .main-service-container .AI {
@@ -516,7 +512,6 @@ section .media1280 {
         flex-direction:row;
         flex-wrap: wrap;
         justify-content: space-between;
-        /* border: solid 1px red; */
     }
     /* 서비스 섹션 - 왼쪽 */
     .main-service-container .service-left-wrap .media1440 {
@@ -639,7 +634,6 @@ section .media1280 {
     }
     .main-service-container .service {
         justify-content:center;
-        /* border: 1px solid red; */
     }
     .main-service-container .service-left-wrap {
         max-width: 1000px;
@@ -647,7 +641,6 @@ section .media1280 {
     }
     .main-service-container .service-left-wrap .media1280 {
         margin: 0 auto;
-        /* border: 1px solid blue; */
     }
     .main-service-container .media1440 {
         display: none;
@@ -832,14 +825,11 @@ section .media1280 {
     section {
         padding-top: 50px;
         padding-bottom: 50px;
-        border: 1px solid orange; 
     }
     .main-news-container, .project, .service, .reference  {
         max-width: 420px;
-        border: 1px solid orangered; 
     }
     .all-margin {
-        border: 1px solid blue; 
     }
     .sub-text {
         font-size: 16px;
@@ -854,7 +844,6 @@ section .media1280 {
     }
     .main-header .slick-header-wrap{
         height: 600px; 
-        border: 1px solid red; 
     }
     .main-header .header-text-wrap {
         top:270px;

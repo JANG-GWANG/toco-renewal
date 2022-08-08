@@ -829,8 +829,6 @@ section .media1280 {
     .main-news-container, .project, .service, .reference  {
         max-width: 420px;
     }
-    .all-margin {
-    }
     .sub-text {
         font-size: 16px;
         line-height: 27px;
@@ -873,11 +871,7 @@ section .media1280 {
     /* 프로젝트 섹션 */
     .main-project-container .project-img1:first-child{
         margin-bottom: 30px;
-       } 
-    .main-project-container .project-right-wrap lottie-player {
-        /* width: 200px; */
-    }
-     
+       }      
     /* 서비스 섹션 */
     .main-service-container .service-card h1 {
         font-size: 18px;

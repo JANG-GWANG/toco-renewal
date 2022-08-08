@@ -905,7 +905,7 @@ input[id="page-menuicon"]:checked + label + div{
     .m-ecoce-wrap .ecoce-logo-wrap p{font-size: 12px;}
     .m-ecoce-wrap .ecoce-appstore{gap: 10px;}
     .m-ecoce-wrap .ecoce-appstore .google-store{width: 135px; height: 44px;}
-    .m-ecoce-wrap .ecoce-appstore .google-store a{height: 44px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store a{width: 135px; height: 44px;}
     .m-ecoce-wrap .ecoce-appstore .google-store img{width: 18px;}
     .m-ecoce-wrap .ecoce-appstore .google-store span{font-size: 10px; height: 32px; line-height: 16px;}
     
@@ -921,7 +921,8 @@ input[id="page-menuicon"]:checked + label + div{
     .etc-projects .etc-project-img{max-width: 170px; box-shadow: 1px 1px 5px #C8C8C8;}    
 }
 @media screen and (max-width:468px) {
-    .m-ecoce-wrap .ecoce-appstore .google-store{width: 125px; height: 44px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store{width: 125px;}
+    .m-ecoce-wrap .ecoce-appstore .google-store a{width: 125px;}
     .m-ecoce-wrap .ecoce-appstore .google-store img{width: 18px; padding: 10px 10px 10px 15px;}
     .etc-projects .etc-project-img{max-width: 188px; width: 95%; box-shadow: 1px 1px 5px #C8C8C8;}    
 }

@@ -4,6 +4,7 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
+
 a {  text-decoration: none; }
 /* 메인 전체 섹션 */
 section {
@@ -11,24 +12,37 @@ section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+section .media1440 {
+    display: block;
+}
+section .media1280 {
+    display: none;
+}
+.all-margin {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
 .main-news-container, .project, .service, .reference  {
     max-width: 1440px;
     margin: 0 auto;
 }
 
 .main-title {
-    font-size: 2rem;
-    padding-bottom: 1rem;
+    font-size: 40px;
+    line-height: 58px;
 }
+
 .sub-title {
+    font-size: 18px;
     color:#999999;
-    font-weight: 500;
-    margin-bottom: 3rem;
+    font-weight: medium;
+    margin-bottom: 80px;
+    line-height: 26px;
 }
 .sub-text {
-    font-size: 1.3rem;
+    font-size: 26px;
     font-weight: 600;
-    line-height: 1.7rem;
+    line-height: 45px;
 }
 /* 헤더 */
 .main-header {
@@ -105,6 +119,7 @@ section {
     height: 100%;
 }
 .main-news-container .news-text {
+    font-size: 18px;
     font-weight: 600;
     line-height:1.2rem;
     margin-top: 1rem;
@@ -115,7 +130,7 @@ section {
 }
 .main-news-container .news-date {
     color : #AAAAAA;
-    font-weight: 200;
+    font-weight: 300;
 }
 .main-news-container .news-wrap {
     width: 100%;
@@ -242,7 +257,7 @@ section {
  }
 /* 프로젝트 섹션 - 오른쪽 */
 .main-project-container .project-right-wrap{
-    width: 534px; /*임시*/
+    width: 680px; /*임시*/
     height: 840px;
     flex: 1;
     display: flex;
@@ -254,7 +269,7 @@ section {
     position: relative;
     /* border: 1px solid red; */
 }
-.main-project-container .project-right-wrap > .project-title-wrap {
+.main-project-container .project-right-wrap .project-title-wrap {
     text-align: right;
     position: absolute;
     top: 0;
@@ -266,6 +281,9 @@ section {
 .main-project-container lottie-player {
     margin-top: 60px;
     /* border: 1px solid blue; */
+}
+.main-project-container .media1280 {
+    display: none;
 }
 /* 서비스 섹션 */
 .main-service-container {
@@ -288,7 +306,7 @@ section {
 }
 .main-service-container .service-img1 {
     width: 100%;
-    height: 680px;
+    /* height: 680px; */
 }
 .main-service-container .service-left-wrap lottie-player {
     margin-top: 110px;
@@ -441,8 +459,7 @@ section {
     height: 100%;
     background-color: #F9F9F9;
 }
-.main-reference-container .ref-logo-wrap {
-    margin: 0 auto;
+/* .main-reference-container .ref-logo-wrap {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -462,7 +479,30 @@ section {
     justify-content: center;
     align-items: center;
     align-content: center;
-}   
+}    */
+
+.main-reference-container .ref-logo-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main-reference-container .ref-logo {
+    border: solid 1px #DBDBDB;
+    background-color: #fff;
+    width: 220px;
+    height: 100px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;;
+}
+.main-reference-container #hidden {
+    visibility: hidden;
+}
+
 /* 푸터 */
 .common-footer{
     width:100%;
@@ -499,34 +539,40 @@ section {
     flex:1;
 }
 
-/* 미디어 쿼리 1440 */
+
+/* 미디어 쿼리 1440 - PC */
 @media (max-width: 1440px) {
     /* 메인 섹션 전체 */
-    
+    .all-margin {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
     /* 헤더 */
     .main-header .header-wrap {
         /* width: 1024px; */
-
     }
+    
     .main-news-container, .project, .service, .reference  {
         max-width: 1440px;
         /* border:  solid 1px red; */
-        margin-left: 3rem;
-        margin-right: 3rem;
+    }
+    .all-margin {
+        margin-left: 3vw;
+        margin-right: 3vw;
     }
     .main-header .header-text-wrap, .main-header .slick-button-wrap {
-        margin-left: 3rem;
+        margin-left: 3vw;
     }
     /* 뉴스 (새소식) */
     
     .main-news-container .news-wrap {
-        /* margin: 0 auto; */
         max-width: 1440px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         align-content: center;
+        /* border: 1px solid red; */
     }
     .main-news-container .news-contents {
         width: 300px;
@@ -534,6 +580,9 @@ section {
     }
     .main-news-container .news-contents:last-child {
         display: none;
+    }
+    .main-news-container .news-content:last-child {
+        
     }
     .main-news-container .news-img-wrap {
         width: 300px;
@@ -559,21 +608,20 @@ section {
 
     /* 서비스 */
     .main-service-container .service {
+        /* max-width: 1000px; */
         display: flex;
         flex-direction:row;
         flex-wrap: wrap;
         justify-content: space-between;
+        /* border: solid 1px red; */
     }
     /* 서비스 섹션 - 왼쪽 */
     .main-service-container .service-left-wrap  {
         /* width: 50%; */
-        height: 100%;
+        /* height: 100%; */
+        /* width: 1000px; */
+        /* border: solid 1px orange; */
     }
-
-    .main-service-container .sub-text{
-        margin-bottom: 3.5rem;
-    }
-  
     .main-service-container .service-img1 {
         /* width: 400px; */
         /* height: 680px; */
@@ -594,42 +642,22 @@ section {
         justify-content: center;
         align-items: flex-start;
         align-content: flex-start;
+        /* border: solid 1px orange; */
     }
     .main-service-container .service-left-wrap lottie-player {
-        /* max-width: 600px; */
+
         margin-top: 130px;
         
     }
     /* 레퍼런스 섹션 */
-    .main-reference-container {
-        width: 100%;
-        height: 100%;
-        background-color: #F9F9F9;
-    }
+
     .main-reference-container .ref-logo-wrap {
-        margin: 0 auto;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .main-reference-container .logo-wrap {
-        margin: 0 auto;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between ;
+
+        justify-content:center; 
     }
 
     .main-reference-container .ref-logo{
-        width: 220px;
-        height: 100px;
-        margin-top: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        margin: 10px;
     }   
 
     /* 푸터 */
@@ -639,65 +667,132 @@ section {
 }
 
 
-/* 미디어 쿼리 1280 */
+/* 미디어 쿼리 1280 - PC */
 @media (max-width: 1280px) {
     /* 메인 전체 */
-    section {
-        margin: 0 auto; 
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
 
-    .main-title, .sub-title{
-        text-align: center;
-    }
-    
     /* 헤더 */
     .main-header .header-wrap {
-        width: 768px;
+        max-width: 1000px;
     }
     .main-header .header-text-wrap, .main-header .slick-button-wrap {
         margin-left: 0rem;
     }
     .main-news-container, .project, .service, .reference  {
-        max-width: 768px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    /* 뉴스 (새소식) */
+    
+    .main-news-container .news-wrap {
+        max-width: 1000px;
+        justify-content:center;
+    }
+    .main-news-container .news-contents:last-child {
+        display: block;
+    }
+    /* 프로젝트 섹션 */
+
+    .main-project-container {
+        background-color: #F9F8FF;
+    }
+    .main-project-container .project-wrap {
+        position: static;
+    }
+    /* 프로젝트 섹션 - 오른쪽 */
+    .main-project-container .project-right-wrap {
+        max-width: 1000px;
+        /* border: 1px solid red; */
+    }
+    .main-project-container .project-title-wrap {
+        position: static;
+        /* border: 1px solid blue; */
+    }
+    .main-project-container .project-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-project-container .project-img2 {
+        /* border: 1px solid blue; */
     }
 
-    .main-news-container {
-        
+    .main-project-container .media1440 {
+        display: none;
     }
-    .main-news-container .news-wrap {
+    .main-project-container .media1280 {
+        display: block;
+    }
+    
+    /* 프로젝트 섹션 - 왼쪽 */
+    .main-project-container .project-left-wrap {
+        /* border: 1px solid red; */
+    }
+    .main-project-container .project-img1:first-child{
+     margin-bottom: 50px;
+    }  
+
+    /* 서비스 섹션 */
+    .main-service-container {
+        background-color: #F2F6FC;
+    }
+    .main-service-container .service {
+        max-width: 1000px;
+        justify-content:center;
+        /* border: 1px solid red; */
+    }
+    .main-service-container .service-title-wrap {
+
+        /* border: 1px solid blue; */
+    }
+    .main-service-container .service-img1 {
+        /* border: 1px solid blue; */
+
+    }
+    .main-service-container .service-left-wrap lottie-player {
         margin: 0 auto;
-        width: 768px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: center;
+        /* border: 1px solid blue; */
     }
-    .main-news-container .news-contents {
-        width: 300px;
+    .main-service-container .media1440 {
+        display: none;
     }
-    .main-news-container .news-img-wrap {
-        width: 300px;
-        height: 200px;
-        border-radius: 20px;
-        position:relative;
-        overflow: hidden;
+    .main-service-container .media1280 {
+        display: block;
     }
-    .main-news-container .news-img {
-        width: 300px;
-        height: 200px;
-        border-radius: 20px;
-        position:relative;
-        background: url('./img/toco-common/sample-img.png') no-repeat center / cover;
-        transition: transform 0.25s ease-in-out;
-        opacity:1;
+      /* 레퍼런스 섹션 */
+      .main-reference-container {
+        width: 100%;
+        height: 100%;
+    }
+    .main-reference-container .ref-logo-wrap {
+
+        /* border: 1px solid orange; */
+    }
+    .main-reference-container .logo-wrap {
+
+    }
+
+    .main-reference-container .ref-logo{
+        margin: 10px;
     }   
 
+    /* 푸터 */
+    .footer-logo, .footer-text{
+        margin-left: 3rem;
+    }
 }
 
-/* 미디어 쿼리 768 */
+/* 미디어 쿼리 1024 - 태블릿  */
+@media (max-width: 1024px) {
+    
+    .main-title {
+        font-size: 35px;
+    }
+    .news-contents .news-wrap {
+        
+    }
+}
+
+/* 미디어 쿼리 768 - 태블릿 */
 @media (max-width: 768px) {
 
     .main-header .header-wrap {
@@ -740,7 +835,15 @@ section {
     }
 }
 
-/* 미디어 쿼리 430 */
+/* 미디어 쿼리 430 - 모바일*/
 @media (max-width: 430px) {
+    
+    .main-title {
+        font-size: 28px;
+        padding-bottom: 1rem;
+    }
 
+    .sub-title {
+        font-size: 14px;
+    }
 }

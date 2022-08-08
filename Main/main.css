@@ -486,7 +486,6 @@ section .media1280 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid red;
 }
 .main-reference-container .ref-logo {
     

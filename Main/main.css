@@ -486,19 +486,24 @@ section .media1280 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    border: 1px solid red;
 }
 .main-reference-container .ref-logo {
+    
     border: solid 1px #DBDBDB;
     background-color: #fff;
     width: 220px;
     height: 100px;
-    margin-top: 1rem;
+    margin: 8.5px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;;
 }
+/* .main-reference-container .ref-logo-wrap:last-child {
+    margin: 0;
+    border: 1px solid red;
+} */
 .main-reference-container #hidden {
     visibility: hidden;
 }
@@ -587,7 +592,7 @@ section .media1280 {
         border-radius: 20px;
         position:relative;
         overflow: hidden;
-    }
+    } 
     /* 프로젝트 */
 
     .main-project-container lottie-player {
@@ -640,13 +645,12 @@ section .media1280 {
     /* 레퍼런스 섹션 */
 
     .main-reference-container .ref-logo-wrap {
-
-        justify-content:center; 
+        justify-content:flex-start; 
     }
-
-    .main-reference-container .ref-logo{
-        margin: 10px;
-    }   
+    .main-reference-container #hidden {
+        display: none;
+    }
+ 
 
     /* 푸터 */
     .footer-logo, .footer-text{
@@ -755,14 +759,6 @@ section .media1280 {
 
         /* border: 1px solid orange; */
     }
-    .main-reference-container .logo-wrap {
-
-    }
-
-    .main-reference-container .ref-logo{
-        margin: 10px;
-    }   
-
     /* 푸터 */
     .footer-logo, .footer-text{
         margin-left: 3rem;
@@ -770,7 +766,7 @@ section .media1280 {
 }
 
 /* 미디어 쿼리 1024 - 태블릿  */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     
     .main-title {
         font-size: 35px;
@@ -778,7 +774,7 @@ section .media1280 {
     .news-contents .news-wrap {
         
     }
-}
+} */
 
 /* 미디어 쿼리 768 - 태블릿 */
 @media (max-width: 768px) {

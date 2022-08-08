@@ -794,7 +794,7 @@ section .media1280 {
     }
       /* 레퍼런스 섹션 */
     .main-reference-container .ref-logo {
-        width: 28vw;
+        width: 27.5vw;
         height: 13vw;
         margin: 1vw;
     }
@@ -883,5 +883,15 @@ section .media1280 {
     .main-service-container .service-card .card-hide p {
         font-size: 14px;
         line-height: 28px;
+    }
+    /* 레퍼런스 섹션 */
+    .main-reference-container .ref-logo {
+    width: 27.5vw;
+    height: 13vw;
+    margin: 1vw;
+    /* border: 1px solid red; */
+    }
+    .main-reference-container img {
+        width: 22vw;
     }
 }

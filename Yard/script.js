@@ -41,8 +41,7 @@
             $('.saveButton').addClass('secondSave');
         });       
     }else{
-        $('.loadButton').hide();    
-        // $(".footer").css({'margin-top':"7%"});  
+        $('.loadButton').hide();            
         $('.saveButton').addClass('firstSave');
     }
 
@@ -76,9 +75,6 @@
             $('.saveButton').addClass('firstSave').removeClass('secondSave');              
             $(".loadButton").hide();
             $('.btn-group-vertical>.btn-group:not(:last-child)>.btn, .btn-group-vertical>.btn:not(:last-child):not(.dropdown-toggle)').css({'border-bottom-left-radius':'100%','border-bottom-right-radius':'100%'});
-        // if(window.matchMedia("screen and (min-width: 430px)").matches){
-        //     $(".footer").css({'margin-top':"7%"}); 
-        //     }  
         };
     });  
     // 접기 버튼을 눌렀을때 작동

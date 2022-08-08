@@ -23,6 +23,7 @@
 }
 
 /* ----- 네비게이션 로고 및 메뉴바 ----- */
+header{position: relative; z-index: 100;}
 .nav-gnb{
     position: absolute;
     top: 0;
@@ -32,7 +33,7 @@
     /* background-color: grey;*/
     border-bottom: 0.5px solid #fff;
 }
-.nav-gnb .page-gnb-wrap{
+.page-gnb-wrap{
     width: 100%;
     height: 80px;
     background-color: #fff;
@@ -40,7 +41,6 @@
     position:fixed;
     left: 0;
     top: 0;
-    z-index: 100;
     /* box-shadow: 0 4px 4px -4px black;*/
 }
 .gnb-wrap #main-logo{
@@ -49,7 +49,6 @@
     position: absolute;
     left: 12.5%;
     top: 25px;
-    z-index: 100;
 }
 .gnb-wrap .menu{
     width: 342px;
@@ -57,7 +56,6 @@
     position: absolute;
     right: 20%;
     top: 26px;
-    z-index: 100;
 }
 .gnb-wrap .menu .menu-wrap{
     display: inline-block;
@@ -214,7 +212,6 @@ header .header-text-s{
     position:fixed;
     left: 0;
     top: 0;
-    z-index: 100;
     /* box-shadow: 0 4px 4px -4px black; */
 }
 .page-gnb-wrap #page-main-logo{
@@ -230,7 +227,6 @@ header .header-text-s{
     position: absolute;
     right: 20%;
     top: 26px;
-    z-index: 100;
 }
 .page-gnb-wrap .menu .menu-wrap{
     display: inline-block;
@@ -316,7 +312,7 @@ input[id="page-menuicon"]:checked + label + div{
 .header-title-bg {
     width: 100%;
     height: 300px;
-    background: url(../img/toco-img3/business-header.png) center center no-repeat, rgba(0, 0, 0, 0.5);
+    background: url(../img/toco-img3/business-header.png) center center no-repeat;
     background-size: cover;
     background-blend-mode:hard-light;
     margin-top: 80px;
@@ -328,24 +324,27 @@ input[id="page-menuicon"]:checked + label + div{
 .header-title-bg .title-bg-color p{
     color: #fff;
     font-size: 40px;
+    font-weight: bold;
     text-align: center;
     line-height: 300px;
 }
 
 /* ==================== 사업현황 컨텐츠 영역 시작 ==================== */
 .business-contents{
+    position: relative;
+    z-index: 10;
     width: 100%;
     height: 100%;
 }
 /* ---------- 에코스 ---------- */
 #content-ecoce{
     position: relative;
-    z-index: -1;
+    z-index: 10;
     max-width: 1440px;
     width: 75vw;
     height: 100%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 .ecoce-wrap{
     display: flex;
@@ -447,6 +446,7 @@ input[id="page-menuicon"]:checked + label + div{
     word-break:keep-all;
 }
 .mobile-ecoce{display: none;}
+.phone-ecoce-text{display: none;}
 
 /* ---------- 모아두 ---------- */
 .moado-bg{
@@ -456,7 +456,7 @@ input[id="page-menuicon"]:checked + label + div{
       linear-gradient(180deg, rgba(255,255,255,1), rgba(255,0,0,0) 100%),
       linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%),
       linear-gradient(300deg, #e4cde8, rgba(0,0,255,0) 70.71%);
-    margin-top: 150px;
+    margin-top: 120px;
     /* 모아두 중간이미지 배치 및 우선순위 설정(네비바를 가리지 않도록) */
     position: relative;
     z-index: -1;
@@ -556,7 +556,7 @@ input[id="page-menuicon"]:checked + label + div{
     max-width: 1440px;
     width: 75vw;
     height: 100%;
-    margin: 100px auto 100px auto;
+    margin: 120px auto 120px auto;
     display: flex;
     flex-direction: column;
     /* 수직 정렬 */
@@ -679,23 +679,23 @@ input[id="page-menuicon"]:checked + label + div{
 
 /* ---------- 1024px ---------- */
 @media screen and (max-width:1024px) {
+    .header-title-bg .title-bg-color p{font-size: 35px;}
     /* 에코스 */
     .ecoce-title, .ecoce-wrap{display: none;}
     .mobile-ecoce{display: block;}
     #content-ecoce{max-width: 600px; width: 75vw; /*border: 1px solid red;*/}
     .mobile-ecoce .m-ecoce-title p:nth-child(1){
-        font-size: 40px;
+        font-size: 35px;
         font-weight: bold;
         line-height: 58px;
         text-align: center;
     }
     .mobile-ecoce .m-ecoce-title p:nth-child(2){
-        font-size: 18px;
+        font-size: 15px;
         font-weight: bold;
         line-height: 26px;
         text-align: center;
         color: #C8C8C8;
-        margin-bottom: 54px;
     }
     .m-ecoce-wrap .ecoce-text{
         font-size: 27px;
@@ -703,6 +703,7 @@ input[id="page-menuicon"]:checked + label + div{
         line-height: 44px;
         width: 100%;
         text-align: center;
+        margin-top: 15%;
     }
     .m-ecoce-wrap .ecoce-logo-wrap{
         width: 55%;
@@ -769,7 +770,7 @@ input[id="page-menuicon"]:checked + label + div{
     }
 
     /* 모아두 */
-    .moado-bg{height: 100%; margin-top: 150px; /*border: 1px solid red;*/}
+    .moado-bg{height: 100%; /*border: 1px solid red;*/}
     #content-moado{max-width: 600px; width: 75vw; /*border: 1px solid red;*/}
     #content-moado .moado-title, .moado-wrap{display: none;}
 
@@ -782,13 +783,13 @@ input[id="page-menuicon"]:checked + label + div{
         /* border: 1px solid red; */
     }
     .mobile-moado-wrap .mobile-moado-title p:nth-child(1){
-        font-size: 40px;
+        font-size: 35px;
         font-weight: bold;
         line-height: 58px;
         text-align: center;
     }
     .mobile-moado-wrap .mobile-moado-title p:nth-child(2){
-        font-size: 18px;
+        font-size: 15px;
         font-weight: bold;
         line-height: 26px;
         text-align: center;
@@ -798,7 +799,7 @@ input[id="page-menuicon"]:checked + label + div{
         font-size: 27px;
         font-weight: bold;
         text-align: center;
-        margin-top: 60px;
+        margin-top: 15%;
     }
     .mobile-moado-wrap .moado-top .moado-logo{
         width: 55%;
@@ -854,6 +855,8 @@ input[id="page-menuicon"]:checked + label + div{
     #content-etc{
         max-width: 600px; width: 75vw; /*border: 1px solid red;*/
     }
+    .etc-title p:nth-child(1){font-size: 35px;}
+    .etc-title p:nth-child(2){font-size: 15px;}
     .etc-projects .etc-project-img{
         max-width: 170px;
     }    
@@ -874,7 +877,6 @@ input[id="page-menuicon"]:checked + label + div{
 
     /* 에코스 */
     .m-ecoce-wrap .ecoce-text{font-size: 24px;}
-    .m-ecoce-wrap .ecoce-logo-wrap{width: 70%;}
     .m-ecoce-wrap .ecoce-img-bg{width: 75%;}
     .m-ecoce-wrap .ecoce-appstore .google-store{height: 50px;}
     .m-ecoce-wrap .ecoce-appstore .google-store a{height: 50px;}
@@ -891,6 +893,8 @@ input[id="page-menuicon"]:checked + label + div{
 }
 
 
+
+
 /* ---------- 사업현황 파트 기타 범위 ---------- */
 @media screen and (max-width:668px) {
     .etc-projects .etc-project-img{max-width: 188px; width: 95%; box-shadow: 1px 1px 5px #C8C8C8;
@@ -905,7 +909,7 @@ input[id="page-menuicon"]:checked + label + div{
     .m-ecoce-wrap .ecoce-appstore .google-store img{width: 18px;}
     .m-ecoce-wrap .ecoce-appstore .google-store span{font-size: 10px; height: 32px; line-height: 16px;}
     
-    .moado-bg{height: 100%; margin-top: 150px; /*border: 1px solid red;*/}
+    .moado-bg{height: 100%; /*border: 1px solid red;*/}
     .mobile-moado-wrap .moado-top p{font-size: 20px;}
     .mobile-moado-wrap .moado-img-wrap{flex-direction: column;}
     .mobile-moado-wrap .moado-img-wrap .moado-img-1{width: 90%; margin: 0 auto;}
@@ -917,12 +921,30 @@ input[id="page-menuicon"]:checked + label + div{
     .etc-projects .etc-project-img{max-width: 170px; box-shadow: 1px 1px 5px #C8C8C8;}    
 }
 @media screen and (max-width:468px) {
-    .m-ecoce-wrap .ecoce-text{font-size: 18px;}
     .m-ecoce-wrap .ecoce-appstore .google-store{width: 125px; height: 44px;}
     .m-ecoce-wrap .ecoce-appstore .google-store img{width: 18px; padding: 10px 10px 10px 15px;}
-    .mobile-moado-wrap .moado-top p{font-size: 18px;}
     .etc-projects .etc-project-img{max-width: 188px; width: 95%; box-shadow: 1px 1px 5px #C8C8C8;}    
 }
+
+
+/* ---------- 430px ---------- */
+@media screen and (max-width:430px) {
+    .mobile-ecoce .m-ecoce-title p:nth-child(1), 
+    .mobile-moado-wrap .mobile-moado-title p:nth-child(1),
+    .etc-title p:nth-child(1){
+        font-size: 28px;
+    }
+    .mobile-ecoce .m-ecoce-title p:nth-child(2),
+    .mobile-moado-wrap .mobile-moado-title p:nth-child(2),
+    .etc-title p:nth-child(2){
+        font-size: 14px;
+    }
+    .m-ecoce-wrap .ecoce-text{display: none;}
+    .phone-ecoce-text{display: block; font-size:16px; font-weight: bold; line-height: 28px; width: 100%; text-align: center; margin-top: 15%;}
+    .mobile-moado-wrap .moado-top p{font-size: 16px;}
+
+}
+
 
 
 

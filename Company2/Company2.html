@@ -1485,8 +1485,14 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
     $(function () {
      $('.box img').hide();        
      $('.box img').slice(0,4).show();
-   
-     $('.arrow').click(function(){
+    });
+    if(window.matchMedia("screen and (max-width: 480px)").matches)
+    $(function () {
+     $('.box img').hide();        
+     $('.box img').slice(0,1).show();
+    });
+    
+     $('.arrow').click(function (){
        if($('.up').hasClass('more')){
      $('.up').addClass('close').removeClass('more');
      if(window.matchMedia("screen and (max-width: 480px)").matches)
@@ -1509,15 +1515,7 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
       else
      $('.box img').slice(4,10).show();
      }
-     });
     });
-
-    if(window.matchMedia("screen and (max-width: 480px)").matches)
-    $(function () {
-     $('.box img').hide();        
-     $('.box img').slice(0,1).show();
-    });
-
 
     $(window).resize(function() {
    if($(window).width() > 768){
@@ -1526,6 +1524,7 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
    }else
    $(".arrow").css('display',"block");
   });
+
   $(window).resize(function() {
    if($(window).width() < 768){
       $('.box img').slice(4,10).hide();
@@ -1538,13 +1537,14 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
       $('.box img').slice(0,4).show();
    }
   });
+  
   $(window).resize(function() {
    if($(window).width() < 480){
       $('.box img').slice(1,4).hide();
       $('.up').addClass('close').removeClass('more');
    }
   });
-   });
+});
 
 </script>
 </body>

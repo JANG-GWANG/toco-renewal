@@ -605,6 +605,7 @@ section .media1280 {
         flex-direction: column-reverse;
     }
     .main-project-container .project-right-wrap {
+	max-width: 1000px;
         width: 100%;
         flex-direction: row-reverse;
         justify-content: center;

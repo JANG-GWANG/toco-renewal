@@ -469,23 +469,13 @@ section .media1280 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        align-content: center;
     }
     .main-news-container .news-contents {
-        width: 300px;
         margin-right: 5vw;
     }
     .main-news-container .news-contents:last-child {
         display: none;
     }
-    .main-news-container .news-img-wrap {
-        width: 300px;
-        height: 200px;
-        border-radius: 20px;
-        position:relative;
-        overflow: hidden;
-    } 
     /* 프로젝트 */
     .main-project-container lottie-player {
         max-width: 600px;
@@ -710,10 +700,12 @@ section .media1280 {
     .main-news-container .news-img-wrap {
         width: 40vw;
         height: 26.8vw;
+        border-radius: 12px;
     }
     .main-news-container .news-img {
         width: 40vw;
         height: 26.8vw;
+        border-radius: 12px;
     }
     .main-news-container .news-text {
         font-size: 15px;
@@ -735,14 +727,17 @@ section .media1280 {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    
     .main-project-container .project-img1{
         width: 80vw;
         height: 57vw;
+        border-radius: 12px;
     }  
     /* 프로젝트 마우스 오버 */
     .main-project-container .moado, .ecoce {
         width: 80vw;
         height: 57vw;
+        border-radius: 12px;
     }
     .main-project-container .text-show h3{
         font-size: 1.3em;
@@ -764,6 +759,7 @@ section .media1280 {
         width: 39vw;
         height: 49vw;
         margin-bottom:4vw;
+        border-radius: 12px;
     }
     .main-service-container .service-card:last-child{
         margin-bottom: 0;
@@ -864,7 +860,20 @@ section .media1280 {
     .main-header .slick-button-wrap #stop-btn{
         width: 12px;
     }
+    /* 뉴스 */
+    .main-news-container .news-img-wrap {
+        border-radius: 10px;
+    }
+    .main-news-container .news-img {
+        border-radius: 10px;
+    }
     /* 프로젝트 섹션 */
+    .main-project-container .project-img1 {
+        border-radius: 10px;
+    }
+    .main-project-container .moado, .ecoce {
+        border-radius: 10x;
+    }
     .main-project-container .project-img1:first-child{
         margin-bottom: 30px;
        } 
@@ -877,6 +886,9 @@ section .media1280 {
     }
  
     /* 서비스 섹션 */
+    .main-service-container .service-card {
+        border-radius: 10px;
+    }
     .main-service-container .service-card h3 {
         font-size: 18px;
         line-height: 43px;
@@ -890,9 +902,9 @@ section .media1280 {
     }
     /* 레퍼런스 섹션 */
     .main-reference-container .ref-logo {
-    width: 27.5vw;
-    height: 13vw;
-    margin: 1vw;
+        width: 27.5vw;
+        height: 13vw;
+        margin: 1vw;
     }
     .main-reference-container img {
         width: 22vw;

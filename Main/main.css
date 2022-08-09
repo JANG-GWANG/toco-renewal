@@ -6,7 +6,7 @@ body {
 
 a {  text-decoration: none; }
 /* 메인 전체 섹션 */
-section {
+section { 
     margin: 0 auto; 
     padding-top: 120px;
     padding-bottom: 120px;
@@ -25,12 +25,10 @@ section .media1280 {
     max-width: 1440px;
     margin: 0 auto;
 }
-
 .main-title {
     font-size: 40px;
     line-height: 58px;
 }
-
 .sub-title {
     font-size: 18px;
     color:#999999;
@@ -62,8 +60,7 @@ section .media1280 {
     position: static;
     z-index: 1;
     width: 100%;
-    height: 900px;
-    
+    height: 900px;   
 }
 .main-header .header-wrap h1, .main-header .header-wrap p{
     color: rgb(240, 240, 240);  
@@ -100,7 +97,6 @@ section .media1280 {
 }
 .main-header .slick-button-wrap img{
     padding: 1rem;
-    /* border: 1px solid red; */
     cursor: pointer;
 }
 /* 새로운 소식 (뉴스) 섹션 */
@@ -172,7 +168,6 @@ section .media1280 {
 .main-project-container .project {
     background-color: #F9F9F9;
 }
-
 .main-project-container .project-wrap {
     display: flex;
     flex-direction: row;
@@ -210,8 +205,6 @@ section .media1280 {
     color: white;
     line-height: 1.3rem;
     opacity: 0;
-    /* display: none; */
-    /* transition: opacity 0.25s ease; */
 }
 .main-project-container .text-show h3 {
     font-size: 1.3rem;
@@ -299,8 +292,6 @@ section .media1280 {
 }
 .main-service-container .service-img1 {
     width: 100%;
-
-    /* height: 680px; */
 }
 .main-service-container .service-left-wrap lottie-player {
     margin-top: 110px;
@@ -352,14 +343,11 @@ section .media1280 {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 3rem;
-    /* background:  rgba(0,0,0,0.7); */
 }
 .main-service-container .card-show, .card-hide {
-    /* display:none; */
     transition: transform 0.35s ease-in-out;
 }
 .main-service-container .card-hide {
-    /* display:none; */
     opacity: 0;
     position: absolute;
     transform: translate(70px, 100px);
@@ -468,7 +456,6 @@ section .media1280 {
         margin-right: 3vw;
     }
     /* 헤더 */
-
     .main-news-container, .project, .service, .reference  {
         max-width: 1440px;
     }
@@ -503,7 +490,6 @@ section .media1280 {
     .main-project-container lottie-player {
         max-width: 600px;
     }
-
     /* 서비스 */
     .main-service-container .service {
         display: flex;
@@ -531,7 +517,6 @@ section .media1280 {
         margin-left: 2.5rem;
     }
     /* 레퍼런스 섹션 */
-
     .main-reference-container .ref-logo-wrap {
         justify-content:flex-start; 
     }
@@ -571,7 +556,6 @@ section .media1280 {
         margin: 0 auto;
     }
     /* 뉴스 (새소식) */
-    
     .main-news-container .news-wrap {
         justify-content:center;
     }
@@ -585,7 +569,6 @@ section .media1280 {
         margin-bottom: 3vw;
     }
     /* 프로젝트 섹션 */
-
     .main-project-container {
         background-color: #F9F8FF;
     }
@@ -662,10 +645,15 @@ section .media1280 {
 /* 미디어 쿼리 768 - 태블릿 */
 @media screen and (max-width: 768px) {
     /* 메인 전체 */
+    
     section {
         margin: 0 auto; 
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+    .all-margin {
+        margin-left: 4vw;
+        margin-right: 4vw;
     }
     .main-header .header-wrap {
         max-width: 700px;
@@ -687,7 +675,6 @@ section .media1280 {
         font-weight: 600;
         line-height: 35px;
     }
-    /* 헤더 */
 
     /* 헤더 텍스트 */
     .main-header .head-box img{
@@ -757,6 +744,12 @@ section .media1280 {
         width: 80vw;
         height: 57vw;
     }
+    .main-project-container .text-show h3{
+        font-size: 1.3em;
+    }
+    .main-project-container .text-show p{
+        font-size: 1em;
+    }
     /* 서비스 섹션 */
     .main-service-container .media1280 {
         max-width: 85vw;
@@ -770,9 +763,10 @@ section .media1280 {
     .main-service-container .service-card {
         width: 39vw;
         height: 49vw;
+        margin-bottom:4vw;
     }
     .main-service-container .service-card:last-child{
-        margin-bottom: 0rem;
+        margin-bottom: 0;
         
     } 
     .main-service-container .service-card h3 {
@@ -824,6 +818,10 @@ section .media1280 {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .all-margin {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
     .main-news-container, .project, .service, .reference  {
         max-width: 420px; 
     }
@@ -870,6 +868,13 @@ section .media1280 {
     .main-project-container .project-img1:first-child{
         margin-bottom: 30px;
        } 
+    .main-project-container .text-show h3{
+        font-size: 14.5px;
+    }
+    .main-project-container .text-show p{
+        font-size: 12px;
+        line-height: 17px;
+    }
  
     /* 서비스 섹션 */
     .main-service-container .service-card h3 {
@@ -888,7 +893,6 @@ section .media1280 {
     width: 27.5vw;
     height: 13vw;
     margin: 1vw;
-    /* border: 1px solid red; */
     }
     .main-reference-container img {
         width: 22vw;

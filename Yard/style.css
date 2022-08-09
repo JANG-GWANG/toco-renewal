@@ -380,6 +380,17 @@ div ol,div ul{
 /* 768px */
 @media screen and (max-width:768px){     
 
+    .news-cont .news-cont-title{
+        font-weight:500;
+        font-size:15px;     
+        margin-top:1.5vw;
+        margin-bottom:1vw;
+    }
+    
+    .news-cont .news-cont-day{
+        font-size:13px;
+        
+    }
     /* 모바일 모드일때 푸터 배치변경 */    
 
     .footer-wrap{        
@@ -418,7 +429,7 @@ div ol,div ul{
         font-size:14px;
     }
     .news-box-wrapper #news-box{
-        width:80%; 
+        width:80vw; 
         justify-content: center;
         text-align:center; 
         margin:0 auto;

@@ -134,7 +134,7 @@
                 z-index: 5;
             }
             .company-top {
-                background: url(/img/toco-img2/company-header.png)no-repeat center;
+                background: url(./toco-renewal/toco-img-2/company-header.png)no-repeat center;
                 height: 300px;
                 width: 100%;
                 position:absolute;
@@ -157,21 +157,21 @@
             .company-section {
                 color: #1E1E1E;
                 text-align: left;
-                font: normal normal bold 40px / 58px Noto Sans KR;
+                font: normal bold 35px Noto Sans KR;
             }
             .company-section2 {
                 color: #C8C8C8;
                 text-align: left;
-                font: normal normal medium 18px / 26px Noto Sans KR;
+                font: normal 15px Noto Sans KR  ;
             }
             .company-section3 {
                 position: relative;
-                margin-top: 100px;
+                margin-top: 120px;
                 margin-bottom: 40px;
             }
             .company-section4 {
                 position: relative;
-                margin-top: 100px;
+                margin-top: 120px;
                 margin-bottom: 20px;
             }
             .tg {
@@ -381,7 +381,11 @@
 
             @media screen and (max-width: 1280px)
                 {
-             
+                    body{
+                    overflow-x:hidden;
+                }   
+
+
                 .company-section3{
                   margin-left: 100px;
                 }
@@ -398,13 +402,17 @@
                .company-section4{
                 margin-left: 100px;
 
-               }
+               }    
             }
             @media screen and (max-width: 1024px)
                 {
+                    body{
+                    overflow-x:hidden;
+                }
 
                   .timeline{
-                    width: 50%; 
+                    width: 50%;
+                    margin-left: 320px; 
                 
 
 
@@ -413,6 +421,12 @@
 
             @media screen and (max-width: 768px)
               { 
+               body{
+                overflow-x:hidden 
+
+               }
+
+
                .timeline{
                    margin-left: 370px;
                    width: 40%;
@@ -437,7 +451,19 @@
 
             }
             @media screen and (max-width: 430px)
-                {
+            { 
+               body{
+                overflow-x:hidden;
+               }
+               .tg-01{
+                font-size: 18px;
+
+               }
+               .tg-02{
+                font-size: 14px;
+
+               }
+
                 .tg{
                     width: 90%; margin-left:50px;
                 }
@@ -459,6 +485,16 @@
                 font-size: 30px;
                 margin-left: -85px;
                }
+               .company-section {
+                color: #1E1E1E;
+                text-align: left;
+                font: normal bold 28px Noto Sans KR;
+            }
+              .company-section2 {
+                color: #C8C8C8;
+                text-align: left;
+                font: normal 14px Noto Sans KR  ;
+            }
             }
 
 
@@ -487,9 +523,9 @@
     </head>
     <body>
 
-        <!-- 헤더 태그 -->
+        <!-- NAV바 태그 -->
         <header id="header">
-            <a class="compnay-logo" href="/index.html"><img src="/img/toco-common/logo-Resoft.svg" alt="logo"></a>
+            <a class="compnay-logo" href="./index.html"><img src="./toco-renewal/toco-img-2/logo-1Resoft.svg" alt="logo"></a>
             <div id="company">
                 <nav>
                     <ul id="company-nav">
@@ -514,7 +550,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="/index.html">사업현황</a>
+                            <a href="index.html">사업현황</a>
                             <ul class="so close">
                                 <li>
                                     <a href="/index.html">ECODE</a>
@@ -540,14 +576,14 @@
             </nav>
             <div class="so close"></div>
         </div>
-        <a href="./index.html" class="company_go"><img src="/img/toco-common/company_N_busines_N_yard-menu.svg" alt="img"></a>
+        <a href="./index.html" class="company_go"><img src="/toco-renewal/toco-img-2/company_N_busines_N_yard-menu.svg" alt="img"></a>
 </header>
 
 <div class="company-back"></div><div class="company-top">
 <p>회사소개</p>
 </div>
 
-<!-- 헤더부분 스크립트 --><script>
+<!-- NAV바 스크립트 --><script>
 $(document).ready(function () {
     $('.comapany_go').click(function () {
         if ($('.so').hasClass('more')) 

@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="../reset.css">
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-latest.js"></script> 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <title>Resoft</title>       
     <link rel="stylesheet" href="../animate.css">
     <link rel="stylesheet" href="../magic.css">
@@ -184,27 +185,236 @@
      color: #fff;
      z-index: 5;
 }
- .section:nth-child(2n){
-    background: #f9f9f9;
-     width: 100%;
-}
+
  .section .title {
-    font-size: 2em;
+    font-size: 40px;
      text-align: left;
      height: 58px;
-     font-weight: bold;
-     padding-top: 50px;
+     font-weight: 700;
+     width:75vw;
+     margin: 0 auto;
 }
  .section .title2 {
     text-align: left;
      padding-bottom: 50px;
+     font-weight: 400;
+     font-size: 18px;
      color: #C8C8C8;
      font-size: 1em;
+     width:75vw;
+     margin: 0 auto;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
+            /* REsoft 세부소개 */
+
+            .company-section {
+                color: #1E1E1E;
+                text-align: left;
+                font: normal bold 35px "Noto Sans KR";
+            }
+            .tg {
+                border-collapse: collapse;
+                border-spacing: 0;
+                border-top: 1px solid #C8C8C8;
+                border-bottom: 1px solid #C8C8C8;
+                width:75vw;
+                margin: 0 auto;
+            }
+            .tg td {
+                overflow: hidden;
+                padding: 10px 14px;
+                word-break: normal;
+                border-bottom: 1px solid #C8C8C8;
+            }
+            .tg th {
+                overflow: hidden;
+                padding: 10px 14px;
+                word-break: normal;
+                border-bottom: 1px solid #C8C8C8;
+            }
+            .tg-01 {
+                color: #1E1E1E;
+                text-align: left;
+                font: normal normal bold 24px / 50px "Noto Sans KR";
+                letter-spacing: 1.2px;
+                opacity: 1;
+            }
+            .tg-02 {
+                text-align: left;
+                font: normal normal normal 20px / 30px "Noto Sans KR";
+                letter-spacing: 0;
+                color: #959595;
+                opacity: 1;
+            }
+
+
+            /* 타임라인*/
+            .timeline {
+                position: relative;
+                min-height: 100vh;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                background-color: #f9f9f9;
+                width: 800px;
+                color: #fff;
+                padding: 30px 20px;
+                margin: 0 auto;
+                margin-left: 600px;
+                width: 50%;
+            }
+
+            .timeline ul {
+                padding: 20px;
+                position: relative;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .timeline ul li span {
+                background-color: #184B9F;
+                border-radius: 50px;
+                padding: 2px 5px;
+                font-size: 15px;
+                text-align: center;
+            }
+            .timeline ul li .content h3 {
+                font-size: 17px;
+                padding-top: 5px;
+            }
+            .event {
+                color: #184B9F;
+                position: relative;
+                left: -80px;
+                bottom: 18px;
+                padding: 0;
+                font: normal normal bold 32px / 46px "Noto Sans KR";
+                opacity: 1;
+                text-align: left;
+            }
+
+            .event1 {
+                color: #184B9F;
+                position: relative;
+                left: 20px;
+                margin-bottom: 16px;
+                font: normal normal bold 32px / 46px "Noto Sans KR";
+                opacity: 1;
+                text-align: left;
+            }
+
+            .event2 {
+                color: #184B9F;
+                position: relative;
+                left: 20px;
+                font: normal normal bold 32px / 46px "Noto Sans KR";
+                opacity: 1;
+                text-align: left;
+            }
+
+            .content1 {
+                position: relative;
+                text-align: left;
+                font: normal normal normal 20px / 50px "Noto Sans KR";
+                letter-spacing: 0;
+                color: #1E1E1E;
+                opacity: 1;
+                margin-top: -90px;
+                margin-left: 30px;
+            }
+            .content2 {
+                position: relative;
+                text-align: left;
+                font: normal normal normal 20px / 50px "Noto Sans KR";
+                letter-spacing: 0;
+                color: #1E1E1E;
+                opacity: 1;
+                margin-top: -30px;
+                margin-left: 30px;
+            }
+            .content3 {
+                position: relative;
+                text-align: left;
+                font: normal normal normal 20px / 50px "Noto Sans KR";
+                letter-spacing: 0;
+                color: #1E1E1E;
+                opacity: 1;
+                margin-top: -35px;
+                margin-left: 30px;
+            }
+            .go {
+                width: 200%;
+                border-bottom: solid 1px #C8C8C8;
+                height: 1px;
+                display: block;
+                margin-right: 500px;
+            }
+            .number1 {
+                position: relative;
+                left: -270px;
+                bottom: 60px;
+                font: normal normal bold 50px / 72px "Noto Sans KR";
+                letter-spacing: 2.5px;
+                color: #000000;
+                opacity: 1;
+                border-width: 1px;
+                height: 60px;
+            }
+            .number2 {
+                position: relative;
+                left: -270px;
+                bottom: 75px;
+                font: normal normal bold 50px / 72px "Noto Sans KR";
+                letter-spacing: 2.5px;
+                color: #000000; 
+                opacity: 1;
+                width: 163%;
+            }
+            .number2::after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                left: 0;
+                background-color: #C8C8C8;
+                bottom: -55px;
+                position: absolute;
+            }
+
+
+            .timeline ul li:before {
+                position: absolute;
+                content: '';
+                width: 17px;
+                height: 17px;
+                background-color: #184B9F;
+                border-radius: 500px;
+                left: -11px;
+                transition: 0.5s;
+                top: 0;
+            }
+            .timeline ul {
+                list-style-type: none;
+                border-left: 6px solid #C8C8C8;
+                padding: 0;
+                margin: 0;
+                padding-bottom: 37px;
+            }
+            .timeline .last {
+                list-style-type: none;
+                border-left: 0 solid #C8C8C8;
+                padding: 0;
+                margin: 0;
+                left: 5px;
+                bottom: 8px;
+            }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
 .rectangle {position: relative;padding: 20px;/* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); */ color: #fff;}
+
+.con {max-width: 1440px;
+    margin: 0 auto}
 /* dapyo STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .dapyo {
@@ -215,7 +425,8 @@
     margin: 0 auto 140px;
     background: #184B9F 0% 0% no-repeat padding-box;
     color: white;
-    font-size: 1.5rem;
+    font-size: 26px;
+    font-weight: 500;
     height: 40px;
      border-radius: 20px;
 }
@@ -289,18 +500,20 @@ h2{
   background: white;
   color: black;
   border:#184B9F solid 3px;
-  font-size: 1.5rem;
+  font-size: 26px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
+  font-weight: 500;
 }
 
 .jojic-wrapper li ul li{
   text-align: left;
-  width: 88%;
+  width: 80%;
   padding-left: 16%;
   padding-top: 5%;
-  font-size: 1.3rem;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 
@@ -362,6 +575,7 @@ h2{
      text-align: center;
      margin: 0 auto;
     max-width: 1440px;
+    padding: 120px 0;
 }
 
 .backg{
@@ -382,29 +596,27 @@ h2{
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
  #map {
-    width:100%;
+    width:75vw;
      height:680px;
      display: inline-block;
 }
- table{
-    margin: 0 25% 0 20%;
-}
  .section .border-b {
     margin: 0 auto;
-     width: 100%;
+    width:75vw;
      border-bottom: 1px solid #DBDBDB;
      display: block;
 }
  .section .border-b2 {
     margin: 0 auto;
-     width: 100%;
+    width:75vw;
      border-bottom: 1px solid #000;
      display: block;
+     margin-bottom: 80px;
 }
  .map-text-title{
-    font-size: 1.5rem;
+    font-size: 24px;
      color: #000;
-     font-weight: bold;
+     font-weight: 700;
      text-align: right;
      line-height: 5em;
      width: 93px;
@@ -412,11 +624,12 @@ h2{
 }
  .map-text-sub{
     float: left;
-     margin-left: 15%;
+     margin-left: 13%;
      width: 100%;
      text-align: left;
      color: #959595;
-     font-size: 1.1rem;
+     font-size: 20px;
+     font-weight: 300;
      height: 7.5rem;
     display:flex;
     align-items:center;
@@ -474,43 +687,51 @@ h2{
 } 
 
 @media screen and (max-width: 1440px){
-.title,.title2{
-  padding-left: 5%;
+
+.timeline{
+  width: 40.5%;
+}
+.number2{
+  width: 176%;
 }
 
+.tg {
+  width: 78.125%;
+  height: 78.125%;
+}
 .section .box{
-  padding: 0 6% 0 6%;
+  padding: 0 6%;
 }
 
-#map{
-  width: 75%;
+.section .map-text-sub2{
+  width: 81%;
 }
-.section .border-b , .section .border-b2{
-  width: 75%;
-}
-	
 }
 
 @media screen and (max-width: 1280px)
 {
+
+
+  
   header #gon nav > ul >li >a {
       display: none;
     }
-  /* --------------------------------------------------------------------------------------- */
-  .footer-text .footer-right .spanWrap{
-        display:block;
-        margin-left:0;
-    }    
-    
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.timeline{
+  margin-left: 465px;
+  width: 43%;
 }
 
+.number2{
+  width: 187%;
+}
 
-@media screen and (max-width: 1024px)
-{
-
-  
-/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
-
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.con{
+  max-width: 500px;
+}
     .dapyo{
     width: 150px;
     margin: 0 auto 80px;
@@ -536,10 +757,9 @@ h2{
   }
  
   .jojic-wrapper li ul li{
-    padding-left: 17%;
+    padding-left: 0;
     padding-top: 3%;
-    font-size: 1rem;
-    width: 150px;
+    width: 187px;
   }
   .jojic-wrapper li ul{
     margin-left: 15%;
@@ -574,7 +794,92 @@ h2{
   }
   .dapyo, .jojic{
     width: 144px;
-    font-size: 1.3rem;
+  }
+
+
+  /* --------------------------------------------------------------------------------------- */
+  .footer-text .footer-right .spanWrap{
+        display:block;
+        margin-left:0;
+    }    
+    
+}
+
+
+@media screen and (max-width: 1024px)
+{
+
+.tg-01{
+  width: 22vw;
+}
+
+.timeline{
+  width: 33%;
+}
+
+.number2{
+  width: 218%;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+    .dapyo{
+    width: 150px;
+    margin: 0 auto 80px;
+  }
+  .dapyo::before {
+  height: 40px;
+}
+  
+  .jojic-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .jojic-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+ 
+  .jojic-wrapper li ul{
+    margin-left: 15%;
+  }
+
+  .jojic-wrapper li ul:first-of-type{
+    padding-top: 5%;
+  }
+  
+  .jojic-wrapper > li::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 1px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .jojic-wrapper > .ho::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .dapyo, .jojic{
+    width: 144px;
   }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -589,31 +894,24 @@ h2{
      padding: 0 6% 0 6%;
 }
 
-/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
-
- .section .title {
-    padding-left: 8%;
-}
- .section .title2 {
-    padding-left: 8%;
-}
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
- #map {
-     height:400px;
+
+.section .border-b , .section .border-b2{
+     width: 75%;
 }
-
-
 
  table{
     margin: 0 25% 0 11%;
 }
  .map-text-sub{
     font-size: 0.9rem;
+    width: 90%;
 }
  .map-text-sub2{
     font-size: 0.9rem;
+    width: 90%;
 }
  /*-------------------------------------------------------------------------------------------------------------------------------------------------  */
 .footer-wrap .footer-left{
@@ -623,15 +921,34 @@ h2{
 
 @media screen and (max-width: 768px){
 
+  .tg-01{
+    font-size: 4vw;
+}
+
+
+.timeline{
+  margin-left: 0px;
+  width: 40%;
+}
+
+.number2{
+  width: 202%;
+}
+
+.number1 , .number2{
+  left: -180px;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
   .jojic-wrapper li ul{
     margin-left: 10%;
   }
   .jojic{
     width: 144px;
-    font-size: 1rem;
     }
     .jojic-wrapper li ul li{
-    font-size: 0.8rem;
     width: 80%;
   }
 
@@ -654,10 +971,9 @@ margin-bottom: 10%;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
-
-#map { 
-  height:300px;
-  }
+#map{
+  height:75vw;
+}
 
   /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -696,14 +1012,22 @@ margin-bottom: 10%;
    
 } 
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 480px){
 
   .jojic{
     width: 60%;
-   }
+    font-size: 5.5vw;
+    height: 7vw;
+    }
+  
 
    .jojic-wrapper li ul{
     margin-left: 5%;
+  }
+
+  .jojic-wrapper li ul li{
+    padding-left: 5%;
+  font-size: 4vw;
   }
   /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -787,99 +1111,178 @@ margin-bottom: 10%;
        <p style="font-size: 40px; font-weight: bold;">회사소개</p>
     </div>
 
-<section>
-<!-- <div class="section">
-    <div class="company-section"><p>REsoft 소개</p></div>
-  <br>
-  <div class="company-section2"><p>ABOUT US</p>
-  <table class="tg">
-  <thead>
-  <tr>
-  <th class="tg-01">회사명</th>
-  <th class="tg-02">(주)리소프트</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td class="tg-01" >설립일</td>
-  <td class="tg-02" td style="border-left: none;">2021년 05월 06일</td>
-  </tr>
-  <tr>
-  <td class="tg-01">대표이사</td>
-  <td class="tg-02">오유나</td>
-  </tr>
-  <tr>
-  <td class="tg-01">주요사업</td>
-  <td class="tg-02">모바일 플랫폼 개발</td>
-  </tr>
-  <tr>
-  <td class="tg-01">본사</td>
-  <td class="tg-02">대구광역시 동구 동대구로 465호, 대구 스케일업허브(DASH)713호</td>
-  </tr>
-  <tr>
-  <td class="tg-01">부설 연구소</td>
-  <td class="tg-02">대구광역시 수성구 알파시티1로, SW융합비즈니스센터(DNEX) 305호</td>
-  </tr>
-  <tr>
-  <td class="tg-01">연락처</td>
-  <td class="tg-02">TEL.(053)-475-2110 / FAX. (0504) 257-5966/ E-mail. call@resoft.kr </td>
-  </tr>
-     </div>
-    </table>
-
-</div>
-<div class="section">
-    <div class="company-section"><p>연혁</p></div>
-    <br>
-    <div class="company-section2"><p>HISTORY</p></div>
-
-      <table class="tg2">
+  <div class="section">
+            <p class="title">REsoft 소개</p>
+            <p class="title2">ABOUT US</p>
+    
+    <!-- 리소프트 세부소개-->
+    <table class="tg">
         <thead>
-        <tr>
-          <th class="tg-05">2022</th>
-          <th class="tg-06" colspan="2">1</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="tg-05" rowspan="6">2021<br></td>
-          <td class="tg-03">12</td>
-          <td class="tg-04">대구여성인력개발센터 MOU 협약 (여성IT인재 현장실습)<br>대구가톨릭대학교 계약학과 MOU 협약 (ICTAI융합학과)<br>기업부설연구소(연구개발전담부서) 등록<br><br></td>
-        </tr>
-        <tr>
-          <td class="tg-03">11</td>
-          <td class="tg-04">제 38류, 제 45류 상표등록 출원 (Mmate : 제 40-1799224호, 제 40-1799225호)</td>
-        </tr>
-        <tr>
-          <td class="tg-03">10</td>
-          <td class="tg-04">서울특별시 송파구청 앱 개발 (제8회 한성백제마라톤 비대면 대회)<br>대구광역시체육회 앱 개발 (2021 대구 마스크쓰햬 컬러풀 핫플 걷기)<br>대구광역시 달서구체육회 앱 개발 (제15회 언택트 달서 하프마라톤 대회)<br></td>
-        </tr>
-        <tr>
-          <td class="tg-03">9</td>
-          <td class="tg-04">대구 경북지방중소벤처기업청 여성기업 등록</td>
-        </tr>
-        <tr>
-          <td class="tg-03">8</td>
-          <td class="tg-04">구미대학교 MOU 협약 (현장실습학기제)</td>
-        </tr>
-        <tr>
-          <td class="tg-03">5</td>
-          <td class="tg-04">(주)리소프트 회사 설립</td>
-        </tr>
-      </tbody>
-      
+            <tr>
+                <th class="tg-01">회사명</th>
+                <th class="tg-02">(주)리소프트</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-01">설립일</td>
+                <td class="tg-02" style="border-left: none;">2021년 05월 06일</td>
+            </tr>
+            <tr>
+                <td class="tg-01">대표이사</td>
+                <td class="tg-02">오유나</td>
+            </tr>
+            <tr>
+                <td class="tg-01">주요사업</td>
+                <td class="tg-02">모바일 플랫폼 개발</td>
+            </tr>
+            <tr>
+                <td class="tg-01">본사</td>
+                <td class="tg-02">대구광역시 동구 동대구로 465호, 대구 스케일업허브(DASH)713호</td>
+            </tr>
+            <tr>
+                <td class="tg-01">부설 연구소</td>
+                <td class="tg-02">대구광역시 수성구 알파시티1로, SW융합비즈니스센터(DNEX) 305호</td>
+            </tr>
+            <tr>
+                <td class="tg-01">연락처</td>
+                <td class="tg-02">TEL.(053)-475-2110 / FAX. (0504) 257-5966/ E-mail. call@resoft.kr
+                </td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+    
+    <!-- 연혁 -->
+    <div class="backg">
+    <div class="section">
+        <p class="title">연혁</p>
+        <p class="title2">HISTORY</p>
+    
+    <!-- 타임라인 적용-->
+    <div class="timeline">
+    <ul>
+        <li>
+            <div class="event">
+                <p class="event1">
+                    1
+                </p>
+                <p class="number2">
+                    2022
+                </p>
+            </div>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <div class="event">
+                <p>
+                    12
+                </p>
+                <p class="number1 ">
+                    2021
+                </p>
+            </div>
+        </li>
+        <li>
+          <div class="content1">
+              <p>
+                  대구여성인력개발센터 MOU 협약 (여성IT인재 현장실습)<br>대구가톨릭대학교 계약학과 MOU 협약 (ICTAI융합학과)<br>기업부설연구소(연구개발전담부서) 등록
+              </p>
+          </div>
+        </li>
+    </ul>
 
-      </table>
-</div> -->
+    <ul>
+        <li>
+            <div class="event">
+                <p>
+                    11
+                </p>
+            </div>
+        </li>
+        <li>
+            <div class="content2">
+                <p>
+                    제 38류, 제 45류 상표등록 출원 (Mmate : 제 40-1799224호, 제 40-1799225호)
+                </p>
+            </div>
+        </li>
+    </ul>
+
+    <ul>
+      <li>
+        <div class="event">
+            <p>
+                10
+            </p>
+        </div>
+    </li>
+    <li><div class="content2">
+            <p>
+                서울특별시 송파구청 앱 개발 (제8회 한성백제마라톤 비대면 대회)<br>대구광역시체육회 앱 개발 (2021 대구 마스크쓰햬 컬러풀 핫플 걷기)<br>대구광역시 달서구체육회 앱 개발 (제15회 언택트 달서 하프마라톤 대회)<br>
+            </p>
+        </div>
+      </li>
+      </ul>
+    <ul>
+        <li>
+            <div class="event">
+                <p class="event2">
+                    9
+                </p>
+            </div>
+        </li>
+        <li>
+        <div class="content2">
+            <p>
+                대구 경북지방중소벤처기업청 여성기업 등록
+            </p>
+        </div>
+    </li>
+  </ul>
+    <ul>
+    <li>
+        <div class="event">
+            <p class="event2">
+                8
+            </p>
+        </div>
+    </li>
+    <li>
+        <div class="content2">
+            <p>
+                구미대학교 MOU 협약 (현장실습학기제)
+            </p>
+        </div>
+    </li>
+  </ul>
+   <ul class="last ">
+      <li>
+        <div class="event">
+          <p class="event2">
+            5
+        </p>
+        </div>
+      </li>
+      <li>
+      <div class="content3">
+          <p>
+              (주)리소프트 회사 설립
+          </p>
+      </div>
+      </li>
+    </ul>
+    </div>
+  </div>
+  </div>
 
 
 <div class="section" >
     <p class="title" id="organ">조직도</p>
     <p class="title2">ORGANIZATION</p>
 
-    <div class="con" style=" max-width: 1440px;
-    padding: 0 10px;
-    margin: 0 auto;">
+    <div class="con">
         <h1 class="dapyo rectangle wow fadeIn" data-wow-delay=".5s">대표이사</h1>
         <ol class="jojic-wrapper wow fadeIn " data-wow-delay="1s">
           <li class=" wow fadeInRightBig">
@@ -891,8 +1294,7 @@ margin-bottom: 10%;
               <li>사업화 전략 수집</li>
               <li>사업계획서 작성</li>
           </ul>
-              </li>
-          </li>
+            </li>
           <li class=" wow fadeInRightBig">
             <h2 class="jojic rectangle wow fadeInRightBig">개발부</h2>
             <ul class="wow fadeInDown" data-wow-delay="1.2s">
@@ -936,7 +1338,7 @@ margin-bottom: 10%;
 </div>
 
 <div class="backg">
-<div class="section" style="padding-bottom: 0;">
+<div class="section" style="padding-bottom: 50px;">
     <p class="title" id="certi">특허&인증</p>
     <p class="title2">CERTIFICATION & PATENT</p>
     <span class="box">
@@ -953,13 +1355,13 @@ margin-bottom: 10%;
     <div class="arrow">
       <!-- <img src="../img/toco-img2/short.png" alt="">
       <img src="../img/toco-img2/more.png" alt=""> -->
-      <img class="up close"src="../img/toco-img2/short_blue.png" alt="">
-      <img class="down"src="../img/toco-img2/more_blue.png" alt="">
+      <img class="up close" src="../img/toco-img2/short_blue.png" alt="">
+      <img class="down" src="../img/toco-img2/more_blue.png" alt="">
     </div>
 </div>
 </div>
 
-<div class="section" style="margin-bottom: 200px;">
+<div class="section">
     <p class="title" id="direc">오시는길</p>
     <p class="title2"> DIRECTIONS</p>
     <div class="wow fadeIn" id="map"></div>
@@ -996,14 +1398,14 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
 
 	</script>
 
-          <table>
+          <table style="margin: 0 auto; width:70%">
             <tr class="map-text">
               <td class="map-text-title">연락처</td>
               <td class="map-text-sub">TELL. (053) 475-2110 FAX. (0504) 257-5966 E-MAIL. call@resoft.kr</td>
           </tr>
         </table>
           <span class="border-b"></span>
-          <table>
+          <table style="margin: 0 auto; width:70%">
             <tr class="map-text2">
               <td class="map-text-title">주소</td>
               <td class="map-text-sub2">(41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (주)리소프트</td>
@@ -1011,7 +1413,6 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
         </table>
           <span class="border-b2"></span>
 </div>
-</section>
 
 <footer class="footer">
   <div class="footer-wrap">
@@ -1042,7 +1443,7 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
      $('.arrow').click(function(){
        if($('.up').hasClass('more')){
      $('.up').addClass('close').removeClass('more');
-     if(window.matchMedia("screen and (max-width: 430px)").matches)
+     if(window.matchMedia("screen and (max-width: 480px)").matches)
      {
       $('.box img').slice(1,10).hide();
       $('html,body').animate({scrollTop:1200},800);
@@ -1055,7 +1456,7 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
      else if($('.up').hasClass('close')){
      $('.up').removeClass('close').addClass('more');
 
-     if(window.matchMedia("screen and (max-width: 430px)").matches)
+     if(window.matchMedia("screen and (max-width: 480px)").matches)
       $('.box img').slice(1,10).show();
       else
      $('.box img').slice(4,10).show();
@@ -1063,12 +1464,40 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
      });
     });
 
-    if(window.matchMedia("screen and (max-width: 430px)").matches)
+    if(window.matchMedia("screen and (max-width: 480px)").matches)
     $(function () {
      $('.box img').hide();        
      $('.box img').slice(0,1).show();
     });
+
+
+    $(window).resize(function() {
+   if($(window).width() > 768){
+      $(".arrow").css('display',"none");
+      $('.box img').slice(0,10).show();
+   }else
+   $(".arrow").css('display',"block");
+  });
+  $(window).resize(function() {
+   if($(window).width() < 768){
+      $('.box img').slice(4,10).hide();
+     $('.up').addClass('close').removeClass('more');
+   }
+  });
+
+  $(window).resize(function() {
+   if($(window).width() > 480){
+      $('.box img').slice(0,4).show();
+   }
+  });
+  $(window).resize(function() {
+   if($(window).width() < 480){
+      $('.box img').slice(1,4).hide();
+      $('.up').addClass('close').removeClass('more');
+   }
+  });
    });
+
 </script>
 </body>
 </html>

@@ -193,6 +193,8 @@
      font-weight: 700;
      width:75vw;
      margin: 0 auto;
+     display: grid;
+     align-content: center;
 }
  .section .title2 {
     text-align: left;
@@ -625,26 +627,37 @@ h2{
  .map-text-sub{
     float: left;
      margin-left: 13%;
-     width: 100%;
+     width: 92%;
      text-align: left;
      color: #959595;
      font-size: 20px;
-     font-weight: 300;
+     font-weight: 400;
      height: 7.5rem;
-    display:flex;
-    align-items:center;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
 }
+.map-text-sub p{
+display: inline-block;
+}
+
  .map-text-sub2{
     float: left;
      margin-left: 13%;
      width: 100%;
      text-align: left;
      color: #959595;
-     font-size: 1.1rem;
+     font-size: 20px;
+     font-weight: 400;
      height: 7.5rem;
-    display:flex;
-    align-items:center;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
 }       
+
+.map-text-sub2 p{
+  display: inline-block;
+}
 /*------------------------푸터---------------*/
 .footer{    
     width:100%;   
@@ -809,6 +822,14 @@ h2{
 @media screen and (max-width: 1024px)
 {
 
+  .section .title {
+    font-size: 35px;
+
+}
+ .section .title2 {
+     font-size: 15px;
+
+}
 .tg-01{
   width: 22vw;
 }
@@ -906,11 +927,11 @@ h2{
     margin: 0 25% 0 11%;
 }
  .map-text-sub{
-    font-size: 0.9rem;
+    font-size: 20px;
     width: 90%;
 }
  .map-text-sub2{
-    font-size: 0.9rem;
+    font-size: 20px;
     width: 90%;
 }
  /*-------------------------------------------------------------------------------------------------------------------------------------------------  */
@@ -975,11 +996,22 @@ margin-bottom: 10%;
   height:75vw;
 }
 
+  
+.map-text-sub p, .map-text-sub2 p{
+    font-size: 17px;
+    display: block;
+}
+.map-text-title{
+  font-size: 20px;
+  text-align: center;
+}
+
   /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
   .footer-wrap{
         margin-left:5%;
     }
+  
     .footer-wrap .footer-left, .footer-wrap .footer-right{
         width:100%;
     }
@@ -1014,6 +1046,13 @@ margin-bottom: 10%;
 
 @media screen and (max-width: 480px){
 
+  .section .title{
+    font-size: 28px;
+  }
+
+  .section .title2{
+    font-size: 14px;
+  }
   .jojic{
     width: 60%;
     font-size: 5.5vw;
@@ -1035,10 +1074,17 @@ margin-bottom: 10%;
   grid-template-columns: repeat(1 , 1fr);
   padding-left: 5%;
   }
+
+
+  
+  .map-text-sub p, .map-text-sub2 p{
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 300px){
-  #map {
-     height:200px;
+
+  .map-text-sub p, .map-text-sub2 p{
+    font-size: 10px;
   }
 }
     </style>
@@ -1338,7 +1384,7 @@ margin-bottom: 10%;
 </div>
 
 <div class="backg">
-<div class="section" style="padding-bottom: 50px;">
+<div class="section" style="padding-bottom: 0px;">
     <p class="title" id="certi">특허&인증</p>
     <p class="title2">CERTIFICATION & PATENT</p>
     <span class="box">
@@ -1401,14 +1447,14 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
           <table style="margin: 0 auto; width:70%">
             <tr class="map-text">
               <td class="map-text-title">연락처</td>
-              <td class="map-text-sub">TELL. (053) 475-2110 FAX. (0504) 257-5966 E-MAIL. call@resoft.kr</td>
+              <td class="map-text-sub"><spen><p>TELL. (053) 475-2110 </p> <p> FAX. (0504) 257-5966</p> <p> E-MAIL. call@resoft.kr</p> </spen></td>
           </tr>
         </table>
           <span class="border-b"></span>
           <table style="margin: 0 auto; width:70%">
             <tr class="map-text2">
               <td class="map-text-title">주소</td>
-              <td class="map-text-sub2">(41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (주)리소프트</td>
+              <td class="map-text-sub2"><span><p> (41260) 대구광역시</p> <p> 동구 동대구로 465,</p> <p> 대구스케일업허브(DASH) <p>713호 (주)리소프트</p></spen></td>
             </tr>
         </table>
           <span class="border-b2"></span>
@@ -1446,11 +1492,13 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
      if(window.matchMedia("screen and (max-width: 480px)").matches)
      {
       $('.box img').slice(1,10).hide();
-      $('html,body').animate({scrollTop:1200},800);
+      var location = document.querySelector('#certi').offsetTop;
+      $('html,body').animate({scrollTop:location},800);
      }else
      {
      $('.box img').slice(4,10).hide();
-     $('html,body').animate({scrollTop:1350},800);
+     var location = document.querySelector('#certi').offsetTop;
+     $('html,body').animate({scrollTop:location},800);
      }
        }
      else if($('.up').hasClass('close')){

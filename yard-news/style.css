@@ -55,12 +55,12 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 /* 왼쪽 페이지 */
 .yard-news-left{
     text-align:left;
-    margin-top:5%;
+    margin-top:0px;
     width:25%;
 }
 .resoft-news .yard-news-left h1{
     font-size:40px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .resoft-news .yard-news-left h4{
     font-size:18px;
@@ -72,7 +72,8 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 
 /* 오른쪽 페이지 */
 .resoft-news .yard-news-right  {
-    margin:3% 0 6% 0;
+    margin-bottom:200px;
+    padding-top:234px;
 }
 .resoft-news-right p{
     padding-bottom:2%;
@@ -82,9 +83,11 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
 .yard-news-right h1{
     font-weight: bold;
     font-size:24px;
+    height:35px;
 }
 .yard-news-right h4{
     font-size:16px;
+    height:24px;
     font-weight: lighter;
     color:#AAAAAA;
     margin-bottom:30px;

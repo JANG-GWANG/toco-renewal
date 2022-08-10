@@ -212,6 +212,7 @@ header .header-text-s{
     position:fixed;
     left: 0;
     top: 0;
+    z-index: 100;
     /* box-shadow: 0 4px 4px -4px black; */
 }
 .page-gnb-wrap #page-main-logo{
@@ -227,6 +228,7 @@ header .header-text-s{
     position: absolute;
     right: 20%;
     top: 26px;
+    z-index: 100;
 }
 .page-gnb-wrap .menu .menu-wrap{
     display: inline-block;

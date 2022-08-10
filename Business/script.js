@@ -25,7 +25,7 @@ $('#menuicon').on('click', function() {
             $(this).css('color','#fff');
         });
     }
-  });
+});
 
 
 
@@ -42,7 +42,7 @@ $('#page-menuicon').on('click', function() {
     } else {
         // 메뉴더보기 닫힌 후
     }
-  });
+});
 
 
 

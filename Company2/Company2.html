@@ -20,7 +20,31 @@
             font-family:'Noto Sans KR';
         }
    /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+   header a {text-decoration: none; cursor: pointer; }
+header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 11%; height: 30px;}
+header >div >a  {position:fixed; display: flex; right: 12%; top:25px; width: 50px; z-index: 100; }
+header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; height: 80px; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
+header #gon #main-nav {padding-top: 5px; padding-bottom: 5px; text-align: end; padding-right: 7%;}
+header #gon nav + div {position:absolute; left: 0; top:80px; width: 100%;height: 296px; background: rgba(24, 75, 159, .9); transition: all 0.5s; z-index: -1;}
+header #gon nav > ul >li {display: inline-block; position: relative; font-weight: 700; font-size: 20px;}
+header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
+header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
+header #gon nav > ul > li:hover > a:after{ width: 50%;}
+header #gon nav > ul > li:hover > a{ color: #184B9F;}
+header #gon nav > ul ul {padding-top: 30px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
+header #gon nav > ul ul li{line-height: 2; padding-left: 0px; }
+header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
+header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
+.close{opacity: 0; display: none;}
+header #gon nav > ul > li .menu{ display:none;}
+.more{opacity: 1;}
+.won{max-width: 1440px;
+margin: 0 auto;}
 
+header #gon nav > ul > li > .here:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F;  border-radius: 20px; width: 50%; }
+header #gon nav > ul > li .here{color:#184B9F;}
+
+   /* 
    header a {
     text-decoration: none;
      cursor: pointer;
@@ -156,7 +180,7 @@
  header #gon nav > ul > li .here{
     color:#184B9F;
 }
-.ham{z-index: 99;}
+.ham{z-index: 99;} */
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -613,7 +637,7 @@ h2{
     width:85vw;
      border-bottom: 1px solid #000;
      display: block;
-     margin-bottom: 80px;
+     margin-bottom: 50px;
 }
  .map-text-title{
     font-size: 24px;
@@ -725,11 +749,6 @@ display: inline-block;
 @media screen and (max-width: 1280px)
 {
 
-
-  
-  header #gon nav > ul >li >a {
-      display: none;
-    }
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -821,6 +840,13 @@ display: inline-block;
 
 @media screen and (max-width: 1024px)
 {
+  header #gon{padding: 0 5%;}
+        header #gon #main-nav{text-align: center; display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: baseline;align-content: stretch;}
+        header #gon nav > ul > li .dpdl{opacity: 0; width: 100px; pointer-events : none;}
+        header #gon nav > ul > li .menu{ display:block; color: white; border-bottom: 1px solid white; line-height: 2;}
+        header #gon nav > ul ul >a{text-align: center; }
+        header #gon nav > ul ul a{ font-size: 17px;}
+        header #gon nav > ul ul{width: 83px; padding-left:6vw ; text-align: center;}
 
   .section .title {
     font-size: 35px;
@@ -888,6 +914,27 @@ display: inline-block;
 
 @media screen and (max-width: 768px){
 
+  header .logo {position: fixed; left: -15px; top: 15px; z-index: 100; margin-left: 11%; height: 20px;}
+    header >div >a  {position:fixed; display: flex; right: 1%; top:15px; width: 50px; z-index: 100; height: 20px;}
+    header #gon nav > ul ul >a{height: 60px; }
+    header #gon {height: 50px;}
+    header #gon nav + div{top: 50px; height: 230px;}
+    header #gon nav > ul ul{padding-top: 0;}
+    header #gon nav > ul ul a{ font-size: 13px;}
+    header #gon nav > ul > li > a{height: 55px;}
+
+.top{
+top:50px;
+height: 229px;
+}
+
+.top_back{
+height:279px;
+}
+.section{
+  padding: 10vw 0;
+}
+
   .tg-01{
     font-size: 4vw;
 }
@@ -951,6 +998,9 @@ margin-bottom: 10%;
   text-align: center;
 }
 
+.section .border-b2 {
+  margin-bottom: 10vw;
+}
   /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
   .common-footer .footer-logo img {
@@ -1063,7 +1113,47 @@ margin-bottom: 10%;
     
 </head>
 <body>
-    <header id="header" style="max-width: 1440px;">
+  <header id="header">
+    <div class="won">
+    <a class="logo" href="../index.html"><img src="../img/toco-common/logo-Resoft.svg" alt="로고"></a>
+    <div id="gon">
+    <nav>
+        <ul id="main-nav">
+            <li><a class="dpdl here" href="../Company2/Company2.html">회사소개</a>
+                <ul class="so close">
+                    <li><a class="menu" href="../Company2/Company2.html">회사소개</a></li>
+                    <li><a href="../Company2/Company2.html">REsoft소개</a></li>
+                    <li><a href="../Company2/Company2.html">연혁</a></li>
+                    <li><a href="../Company2/Company2.html#organ">조직도</a></li>
+                    <li><a href="../Company2/Company2.html#certi">특허&인증</a></li>
+                    <li><a href="../Company2/Company2.html#direc">오시는 길</a></li>
+                </ul>
+        </li>
+            <li><a class="dpdl" href="../Business/business.html">사업현황</a>
+              
+            <ul class="so close">
+                <li><a class="menu" href="../Business/business.html">사업현황</a></li>
+                <li><a href="../Business/business.html#content-ecoce">ECOCE</a></li>
+                <li><a href="../Business/business.html#content-moado">moaDo</a></li>
+                <li><a href="../Business/business.html#content-etc">Etc</a></li>
+            </ul>
+        </li>
+                <li><a class="dpdl" href="../Yard/yard.html">정보마당</a>
+                
+            <ul class="so close">
+                <li><a class="menu" href="../Yard/yard.html">정보마당</a></li>
+                <li><a href="../yard-news/yard-news.html">REsoft소식</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>  
+    <div class="so close"></div>
+</div>
+     <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
+    </div>
+</header>   
+
+    <!-- <header id="header" style="max-width: 1440px;">
         <a class="logo" href="../index.html"><img src="../img/toco-common/logo-Resoft.svg" alt="로고"></a>
         <div id="gon">
         <nav>
@@ -1094,33 +1184,52 @@ margin-bottom: 10%;
         <div class="so close"></div>
     </div>
         <a><img class="ham" src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ><img style="position: absolute;" src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>
-    </header>
+    </header> -->
 <script>
-      $(document).ready(function(){
-      $('.ham').click(function () {
-          if($('.so').hasClass('more')){
-      $('.so').addClass('magictime slideDownReturn');
-      setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
-          }
-      else if($('.so').hasClass('close'))
-      {
-        $('.so').removeClass('magictime slideDownReturn');
-        $('.so').addClass('magictime slideDown');
-        $('.so').addClass('more').removeClass('close');
-      }
+  //     $(document).ready(function(){
+  //     $('.ham').click(function () {
+  //         if($('.so').hasClass('more')){
+  //     $('.so').addClass('magictime slideDownReturn');
+  //     setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
+  //         }
+  //     else if($('.so').hasClass('close'))
+  //     {
+  //       $('.so').removeClass('magictime slideDownReturn');
+  //       $('.so').addClass('magictime slideDown');
+  //       $('.so').addClass('more').removeClass('close');
+  //     }
 
-      if($('.dpdl').hasClass('close')){
-      $('.dpdl').addClass('magictime fadeIn');
-      setTimeout(function() { $('.dpdl').addClass('more').removeClass('close');}, 600);
-      $(".ham").css('display',"none");
-      setTimeout(function() {  $(".ham").css('display',"block");}, 600);
-        }else if($('.dpdl').hasClass('more')){
-          $('.dpdl').removeClass('more').addClass('close');
-          $(".ham").css('display',"none");
-      setTimeout(function() {  $(".ham").css('display',"block");}, 600);
+  //     if($('.dpdl').hasClass('close')){
+  //     $('.dpdl').addClass('magictime fadeIn');
+  //     setTimeout(function() { $('.dpdl').addClass('more').removeClass('close');}, 600);
+  //     $(".ham").css('display',"none");
+  //     setTimeout(function() {  $(".ham").css('display',"block");}, 600);
+  //       }else if($('.dpdl').hasClass('more')){
+  //         $('.dpdl').removeClass('more').addClass('close');
+  //         $(".ham").css('display',"none");
+  //     setTimeout(function() {  $(".ham").css('display',"block");}, 600);
+  //       }
+  //     });
+  // });
+
+  $(document).ready(function(){
+    //  네비바 햄버거
+    $('.ham').click(function() {
+        if($('.so').hasClass('more'))
+    $('.so').addClass('magictime fadeOut');
+    else if($('.so').hasClass('close'))
+    $('.so').removeClass('magictime fadeOut');
+    });
+    // 
+    $('.ham').click(function(){
+        if($('.so').hasClass('close')){
+            $('.so').addClass('magictime fadeIn');
+            $('.so').addClass('more').removeClass('close');
+        }else if($('.so').hasClass('more')){
+            setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
         }
-      });
-  });
+    });
+});
 
 </script>
 

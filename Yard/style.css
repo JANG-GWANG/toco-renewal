@@ -45,16 +45,18 @@ header #gon nav > ul ul li:hover > a{color:#DBDBDB;}
 header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
 header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
 
+header #gon nav > ul > li > .here:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F;  border-radius: 20px; width: 50%; }
+header #gon nav > ul > li .here{color:#184B9F;}
+
+
+
+
+
 .close{opacity: 0; display: none;}
 header #gon nav > ul > li .menu{ display:none;}
 .more{opacity: 1;}
 .won{max-width: 1440px;
 margin: 0 auto;}
-.wall{
-        height: 5000px;
-        width: 100%;
-        background-color: burlywood;
-    }
 
 
 /* 정보마당 배너 */
@@ -469,6 +471,13 @@ font-weight:500;
     header #gon nav > ul ul{padding-top: 0;}
     header #gon nav > ul ul a{ font-size: 13px;}
     header #gon nav > ul > li > a{height: 55px;}
+
+    .header-title-bg{
+        margin-top:50px;       
+    }
+    header #gon nav + div{
+        height:300px;
+    }
     
 
 

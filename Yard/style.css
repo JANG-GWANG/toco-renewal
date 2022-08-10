@@ -3,8 +3,6 @@ html body{
     margin:0 auto;
     font-family:'Noto Sans KR'; 
 }
-
-
 /* 네비바 */
 header a {text-decoration: none; cursor: pointer; }
 header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 20%; height: 30px;}
@@ -55,6 +53,7 @@ font-weight:500;
 .resoft-news{
     width:100%;
     height:100%;
+    padding-top:120px;
 }
 
 
@@ -133,8 +132,7 @@ font-weight:500;
     height:360px; 
     border-radius:13px;    
     position:relative;
-    overflow:hidden;     
-
+    overflow:hidden;  
     margin:0 auto;       
 }
 
@@ -234,7 +232,6 @@ font-weight:500;
     width: 15%;
     height:73px;
 }  
-
 
 .button-wrap .btn{
     --bs-btn-border-radius:100%;
@@ -395,6 +392,11 @@ font-weight:500;
     .resoft-news{
         padding-top:120px;        
     }
+    /* REsoft 소식 글씨 중앙정렬 */
+    .resoft-news .news-title-wrap{
+        text-align:center;
+         margin:0;
+    } 
 
     .news-title{
         font-size:35px;
@@ -402,31 +404,18 @@ font-weight:500;
     .sub-title{
         font-size:15px;
     }
-    /* 푸터 배열 */
-  
+      
      /* 푸터 */
     .footer-logo, .footer-text{
         margin-left: 3rem;
         margin-right: 3rem;
     }
-
-    }
-    
-   
-   
-    /* REsoft 소식 글씨 중앙정렬 */
-    .resoft-news .news-title-wrap{
-        text-align:center;
-         margin:0;
-    } 
     /* 푸터 문단 크기 지정 */
     .footer-wrap .footer-left{
         width:50%;
     }
     
-
-
-
+}
 
 
 /* 모바일 모드 */

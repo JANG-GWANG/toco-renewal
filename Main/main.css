@@ -461,7 +461,7 @@ section .media1280 {
 }
 /* 미디어 쿼리 1536 --------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 1540px) {
+@media screen and (max-width: 1555px) {
     .main-news-container .news-contents:last-child {
         display: none;
     }

@@ -17,128 +17,144 @@
     <!-- 슬릭 슬라이더 -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <style>
-        body{
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-        a {text-decoration: none; }
-        
-        header .logo {position: fixed; left: 30px; top: 30px; z-index: 100; margin-left: 20%; height: 30px;}
-        header >a  {position:fixed; display: flex; right: 10%; top:30px; width: 50px; z-index: 100; }
-        header #gon {position: fixed; left: 0; top: 0; padding: 10px 232px 5px; width: 100%; box-sizing: border-box; border-bottom: 1px solid white;  z-index: 10;}
-        header #gon nav + div {position:absolute; left: 0; top:85px; width: 100%;height: 200px; background: rgba(24, 75, 159, .7); transition: all 0.5s; z-index: -1;}
-        /* header #gon nav:hover + div{opacity: 1;} */
-        /* header #gon nav > ul:hover ul{opacity: 1;} */
-        header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
-        header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: white; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
-        /* header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 2px; background: #fff; transition: all 0.5s; border-radius: 18%;} */
-        header #gon nav > ul > li:hover > a{ color: #184B9F; transition: all 0.3s;}
-        header #gon nav > ul ul {padding-top: 15px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
-        header #gon nav > ul ul li{line-height: 25px; padding-left: 0px; }
-        header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
-        header #gon nav > ul ul a:hover :after {left: 0; width: 100%;}
-        /* header .visual {max-width: 1920px; max-height: 900px; margin: 0 auto;} 추가 */
-        header .visual img{width: 100%; filter: opacity(0.7) drop-shadow(0 0 0 rgb(0, 0, 0));}
-        #main-nav {text-align: end; padding-right: 5%;}
-        .close{opacity: 0; display: none;}
-        .more{opacity: 1;}
-         header .active {
-             background: #fff;
-             border-bottom: 1px solid #DBDBDB !important;
-        }
-   </style>
+     <style>
+    /* 네비바 */
+    header a {text-decoration: none; cursor: pointer; }
+    header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 11%; height: 30px;}
+    header >div >a  {position:fixed; display: flex; right: 12%; top:25px; width: 50px; z-index: 100; }
+    header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; height: 80px; background: transparent; z-index: 10; border-bottom: 1px solid #fff;}
+    header #gon #main-nav {padding-top: 5px; padding-bottom: 5px; text-align: end; padding-right: 7%;}
+    header #gon nav + div {position:absolute; left: 0; top:80px; width: 100%;height: 296px; background: rgba(24, 75, 159, .9); transition: all 0.5s; z-index: -1;}
+    header #gon nav > ul >li {display: inline-block; position: relative; font-weight: 700; font-size: 20px;}
+    header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #fff; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
+    header .active nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px;}
+    header .active nav > ul > li:hover > a:after{ width: 50%;}
+    header #gon nav > ul > li:hover > a{ color: #184B9F; transition: .5s;}
+    header .active nav > ul > li:hover > a{ color: #184B9F !important; transition: .5s;}
+    header #gon nav > ul ul {padding-top: 30px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
+    header #gon nav > ul ul li{line-height: 2; padding-left: 0px; }
+    header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
+    header .active nav > ul ul a:hover {color: #DBDBDB !important;}
+    header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
+    header .active {
+        background: #fff !important;
+        border-bottom: 1px solid #DBDBDB !important;
+    }
+    header .active nav > ul > li > a{  color: #000 !important;}
+    .close{opacity: 0; display: none;}
+    header #gon nav > ul > li .menu{ display:none;}
+    .more{opacity: 1;}
+    .won{max-width: 1440px; height: max-height: 80px;}
+
+    @media screen and (max-width: 1024px){
+        header #gon{padding: 0 5%;}
+        header #gon #main-nav{text-align: center; display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: baseline;align-content: stretch;}
+        header #gon nav > ul > li .dpdl{opacity: 0; width: 100px; pointer-events : none;}
+        header #gon nav > ul > li .menu{ display:block; color: white; border-bottom: 1px solid white; line-height: 2;}
+        header #gon nav > ul ul >a{text-align: center; }
+        header #gon nav > ul ul a{ font-size: 17px;}
+        header #gon nav > ul ul{width: 83px; padding-left:6vw ; text-align: center;}
+    }
+    @media screen and (max-width: 768px){
+    header .logo {position: fixed; left: -15px; top: 15px; z-index: 100; margin-left: 11%; height: 20px;}
+    header >div >a  {position:fixed; display: flex; right: 1%; top:15px; width: 50px; z-index: 100; height: 20px;}
+    header #gon nav > ul ul >a{height: 60px; }
+    header #gon {height: 50px;}
+    header #gon nav + div{top: 50px; height: 230px;}
+    header #gon nav > ul ul{padding-top: 0;}
+    header #gon nav > ul ul a{ font-size: 13px;}
+    header #gon nav > ul > li > a{height: 55px;}
+    }
+    </style>
 </head>
 <body>
     <!--   네비바   -->
     <header id="header">
+        <div class="won">
         <a class="logo" href="./index.html"><img src="./img/toco-common/logo-Resoft-white.png" alt="로고"></a>
-        <div id="gon">
-        <nav>
-            <ul id="main-nav">
-                <li><a href="./Company2/Company2.html" >회사소개</a>
-                    <ul class="so close">
-                        <li><a href="./Company2/Company2.html">REsoft소개</a></li>
-                        <li><a href="./Company2/Company2.html">연혁</a></li>
-                        <li><a href="./Company2/Company2.html">조직도</a></li>
-                        <li><a href="./Company2/Company2.html">특허&인증</a></li>
-                        <li><a href="./Company2/Company2.html">오시는 길</a></li>
+            <div id="gon">
+                <nav>
+                    <ul id="main-nav">
+                        <li><a class="dpdl" href="./Company2/Company2.html">회사소개</a>
+                            <ul class="so close">
+                                <li><a class="menu" href="./Company2/Company2.html">회사소개</a></li>
+                                <li><a href="./Company2/Company2.html">REsoft소개</a></li>
+                                <li><a href="./Company2/Company2.html">연혁</a></li>
+                                <li><a href="./Company2/Company2.html#organ">조직도</a></li>
+                                <li><a href="./Company2/Company2.html#certi">특허&인증</a></li>
+                                <li><a href="./Company2/Company2.html#direc">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dpdl" href="./Business/business.html">사업현황</a>
+                            <ul class="so close">
+                                <li><a class="menu" href="./Business/business.html">사업현황</a></li>
+                                <li><a href="./Business/business.html#content-ecoce">ECOCE</a></li>
+                                <li><a href="./Business/business.html#content-moado">moaDo</a></li>
+                                <li><a href="./Business/business.html#content-etc">Etc</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dpdl" href="./Yard/yard.html">정보마당</a>  
+                        <ul class="so close">
+                            <li><a class="menu" href="./Yard/yard.html">정보마당</a></li>
+                            <li><a href="./yard-news/yard-news.html">REsoft소식</a></li>
+                        </ul>
+                        </li>
                     </ul>
-            </li>
-                <li><a href="./Business/business.html">사업현황</a>
-                <ul class="so close">
-                    <li><a href="./Business/business.html">ECOCE</a></li>
-                    <li><a href="./Business/business.html">moaDo</a></li>
-                    <li><a href="./Business/business.html">Etc</a></li>
-                </ul>
-            </li>
-                <li><a href="./Yard/yard.html">정보마당</a>
-                <ul class="so close">
-                    <li><a href="./Yard/yard.html">REsoft소식</a></li>
-                </ul>
-                </li>
-            </ul>
-        </nav>  
-        <div class="so close"></div>
-    </div>
-        <a href="#" class="ham"><img src="./img/toco-img1/icon-menu.svg" alt=""></a>
-<!--         <div class="visual"><img src="./img/toco-img1/main-header1.png" alt=""></div> -->
-    </header>
-<script>
-      $(window).on('scroll',function(){
-            if($(window).scrollTop()){
-                $('#gon').addClass('active');
-                const logo = document.querySelector('.logo img');
-                logo.src = "./img/toco-common/logo-Resoft.svg"
-                const ham = document.querySelector('.ham img');
-                ham.src = "./img/toco-common/company_N_busines_N_yard-menu.svg"
-                $("#gon").css('transition',".5s");
-            }else{
-                if($('.so').hasClass('close')){
+                </nav>  
+                <div class="so close"></div>
+            </div>
+            <a class="ham"><img src="./img/toco-img1/icon-menu.svg" alt="" ></a>        
+        </div>
+    </header>   
+    <div class="wall"></div>
+    <script>
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('#gon').addClass('active');
+            const logo = document.querySelector('.logo img');
+            logo.src = "./img/toco-common/logo-Resoft.svg"
+            const ham = document.querySelector('.ham img');
+            ham.src = "./img/toco-common/company_N_busines_N_yard-menu.svg"
+            $("#gon").css('transition',".5s");
+        }else{
+            if($('.so').hasClass('close')){
                 $('#gon').removeClass('active');
                 const logo = document.querySelector('.logo img');
                 logo.src = "./img/toco-common/logo-Resoft-white.png"
                 const ham = document.querySelector('.ham img');
-                ham.src = "./img/toco-img1/icon-menu.svg"}
+                ham.src = "./img/toco-img1/icon-menu.svg"
             }
-        });
-    
-     $(document).ready(function(){
-    $('.ham').click(function () {
-        if($('.so').hasClass('more'))
-    $('.so').addClass('magictime fadeOut');
-           if($(window).scrollTop()==0){
-        setTimeout(function() {  $('#gon').removeClass('active');
-        $('.logo').attr('src','./img/toco-common/logo-Resoft-white.png');
-        const logo = document.querySelector('.logo img');
-        logo.src = "./img/toco-common/logo-Resoft-white.png"
-        const ham = document.querySelector('.ham img');
-        ham.src = "./img/toco-img1/icon-menu.svg"}, 500);
-        $("#gon").css('transition',".5s");
         }
-    else if($('.so').hasClass('close'))
-    $('.so').removeClass('magictime fadeOut');
-         $('#gon').addClass('active');
-                $('.logo').attr('src','./img/toco-common/logo-Resoft.svg');
-                const logo = document.querySelector('.logo img');
-                logo.src = "./img/toco-common/logo-Resoft.svg"
-                const ham = document.querySelector('.ham img');
-                ham.src = "./img/toco-common/company_N_busines_N_yard-menu.svg"
-                $("#gon").css('transition',"0s");
-        }
-});
-     });
-    $(document).ready(function(){
-        $('.ham').click(function(){
-            if($('.so').hasClass('close')){
-                $('.so').addClass('magictime fadeIn');
-                $('.so').addClass('more').removeClass('close');
-            }else if($('.so').hasClass('more')){
-                setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
-            }
-        });
     });
-</script>
 
+ $(document).ready(function(){
+    //  네비바 햄버거
+    $('.ham').click(function() {
+        if($('.so').hasClass('more')){
+    $('.so').addClass('magictime fadeOut');
+    setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
+    if($(window).scrollTop()==0){
+    $('#gon').removeClass('active');
+                const logo = document.querySelector('.logo img');
+                logo.src = "./img/toco-common/logo-Resoft-white.png"
+                const ham = document.querySelector('.ham img');
+                ham.src = "./img/toco-img1/icon-menu.svg"}
+        }
+    else if($('.so').hasClass('close')){
+    $('.so').removeClass('magictime fadeOut');
+    $('.so').addClass('magictime fadeIn');
+    $('.so').addClass('more').removeClass('close');
+    $('#gon').addClass('active');
+            const logo = document.querySelector('.logo img');
+            logo.src = "./img/toco-common/logo-Resoft.svg"
+            const ham = document.querySelector('.ham img');
+            ham.src = "./img/toco-common/company_N_busines_N_yard-menu.svg"
+            $("#gon").css('transition',".5s");
+    }
+    });
+    });
+    </script>
+    
      <!-- 헤더 -->
     <header class="main-header">
     <div class="slick-header-wrap">

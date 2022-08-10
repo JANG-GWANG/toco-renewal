@@ -635,11 +635,9 @@ section .media1280 {
 /* 미디어 쿼리 768 - 태블릿 ---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
     /* 메인 전체 */
-    
     section {
-        margin: 0 auto; 
         padding-top: 10vw;
-        padding-bottom: 15vw;
+        padding-bottom: 10vw;
     }
     .all-margin {
         margin-left: 4vw;
@@ -785,7 +783,7 @@ section .media1280 {
     }
       /* 레퍼런스 섹션 */
     .main-reference-container .ref-logo {
-        width: 27.5vw;
+        width: 26vw;
         height: 13vw;
         margin: 1vw;
     }
@@ -809,17 +807,13 @@ section .media1280 {
         width: 14vw;
     }
     .main-reference-container .ref-logo-wrap {
-        margin-left: 1vw;
+        margin-left: 1.2vw;
     }
 }
 
 /* 미디어 쿼리 430 - 모바일---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 430px) {
     /* 메인 전체 */
-    section {
-        padding-top: 10vw;
-        padding-bottom: 10vw;
-    }
     .all-margin {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -928,7 +922,7 @@ section .media1280 {
         margin-left: 2vw;
     }
     .main-reference-container .ref-logo {
-        width: 25.5vw;
+        width: 25vw;
         height: 13vw;
         margin: 1vw;
     }

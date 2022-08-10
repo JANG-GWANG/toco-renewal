@@ -459,10 +459,6 @@ section .media1280 {
     .main-news-container, .project, .service, .reference  {
         max-width: 1440px;
     }
-    .all-margin {
-        margin-left: 3vw;
-        margin-right: 3vw;
-    }
     /* 뉴스 (새소식) */
     .main-news-container .news-wrap {
         max-width: 1440px;
@@ -629,6 +625,7 @@ section .media1280 {
     /* 푸터 */
     .footer-logo, .footer-text{
         margin-left: 3rem;
+        margin-right: 3rem;
     }
 }
 
@@ -809,6 +806,26 @@ section .media1280 {
     .main-reference-container .ref-logo-wrap {
         margin-left: 1.2vw;
     }
+    /* 푸터 */
+    .common-footer .footer-logo img {
+        /* margin-top: ; */
+        max-width : 128px;
+    }
+    .common-footer .copyright {
+        font-size: 13px;
+        color: #9E9E9E;
+    }
+    .common-footer .footer-left, .common-footer .footer-right {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .common-footer .footer-text{ 
+        max-width: 768px;
+        margin-top: 3vw;
+        gap:1.5vw;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
 }
 
 /* 미디어 쿼리 430 - 모바일---------------------------------------------------------------------------------------------*/
@@ -928,5 +945,40 @@ section .media1280 {
     }
     .main-reference-container img {
         width: 22vw;
+    }
+    /* 푸터 */
+    .common-footer .footer-logo{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .common-footer .footer-logo img {
+    /* margin-top: ; */
+    max-width : 100px;
+    padding-top: 2vw;
+    }
+    .common-footer .copyright {
+        font-size: 10px;
+        word-break: keep-all;
+    }
+    .common-footer .footer-logo span {
+        line-height: 26px;
+        display: block;
+    }
+    .common-footer .footer-left, .common-footer .footer-right {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .common-footer .footer-text{ 
+        max-width: 768px;
+        margin-top: 3vw;
+        gap:2vw;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        word-break:break-all;
+    } 
+    .common-footer .footer-text span{
+        display: block;
     }
 }

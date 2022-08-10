@@ -638,7 +638,7 @@ section .media1280 {
     
     section {
         margin: 0 auto; 
-        padding-top: 15vw;
+        padding-top: 10vw;
         padding-bottom: 15vw;
     }
     .all-margin {
@@ -711,8 +711,8 @@ section .media1280 {
     .main-news-container .news-text {
         font-size: 15px;
         font-weight: 500;
-        margin-top: 1.5vw;
-        margin-bottom: 2.4vw;
+        margin-top: 1.4vw;
+        margin-bottom: 1.4vw;
     }
     .main-news-container .news-date {
         font-size: 13px;
@@ -807,6 +807,9 @@ section .media1280 {
     }
     .main-reference-container .w14 {
         width: 14vw;
+    }
+    .main-reference-container .ref-logo-wrap {
+        margin-left: 1vw;
     }
 }
 

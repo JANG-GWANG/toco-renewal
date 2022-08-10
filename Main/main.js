@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    // 슬릭 슬라이더 옵션
     $('.slick-header-wrap').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -12,8 +12,11 @@ $(document).ready(function(){
         prevArrow: $('#prev-arrow'),
         nextArrow: $('#next-arrow')
     });
-
-
+    //  슬릭 멈추기
+    $('#stop-btn').click(function(){
+        $('.slick-header-wrap').slick('slickPause');
+    });
+    //   앱카드 애니메이션
     $(".service-card").on({
         "mouseover":function(){
             $(this).children(".card-show").css({'transform':'translate(-70px, -100px)', 'opacity':'0', 'transition':'0.35s', 'pointer-events':'none'});

@@ -578,7 +578,6 @@ section .media1280 {
         margin-bottom: 3vw;
         margin-right: 2vw;
         padding-left: 0;
-        /* padding-right: 0; */
         border: 0;
     }
     /* 프로젝트 섹션 */
@@ -655,6 +654,7 @@ section .media1280 {
         margin-right: 3rem;
     }
 }
+
 /* 미디어 쿼리 768 - 태블릿 ---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
     /* 메인 전체 */
@@ -776,7 +776,7 @@ section .media1280 {
     }
     /* 서비스 섹션 - 오른쪽 */
     .main-service-container .service-img-wrap2 {
-        margin-top: 10rem;
+        margin-top: 25vw;
         margin-left: 4vw;
     }
     .main-service-container .service-card {
@@ -863,7 +863,6 @@ section .media1280 {
     .main-news-container, .project, .service, .reference  {
         max-width: 420px; 
     }
-  
     .main-title {
         font-size: 22px;
         line-height: 33px;
@@ -911,12 +910,17 @@ section .media1280 {
         width: 12px;
     }
     /* 뉴스 */
+    .main-news-container .news-contents {
+        margin-bottom: 3vw;
+        margin-right: 0;
+    }
     .main-news-container .news-img-wrap {
         border-radius: 10px;
     }
     .main-news-container .news-img {
         border-radius: 10px;
     }
+
     .main-news-container .news-text {
         font-size: 14px;
         font-weight: 400;

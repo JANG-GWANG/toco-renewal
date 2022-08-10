@@ -422,7 +422,7 @@
      display: flex;
     justify-content: center;
     align-items: center;
-    width: 11.1%;
+    width: 160px;
     margin: 0 auto 140px;
     background: #184B9F 0% 0% no-repeat padding-box;
     color: white;
@@ -482,7 +482,7 @@
   content: "";
   position: absolute;
   bottom: 100%;
-  left: 49.9%;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 1px;
@@ -495,7 +495,7 @@ h2{
 }
 
 .jojic {
-  width: 55.5%;
+  width: 154px;
   height: 34px;
   margin: 0 auto;
   background: white;
@@ -620,7 +620,6 @@ h2{
      color: #000;
      font-weight: 700;
      text-align: right;
-     line-height: 5em;
      width: 93px;
      vertical-align:middle;
 }
@@ -632,7 +631,7 @@ h2{
      color: #959595;
      font-size: 20px;
      font-weight: 400;
-     height: 7.5rem;
+     height: 6.5rem;
     line-height: 1.4;
     display: flex;
     align-items: center;
@@ -649,7 +648,7 @@ display: inline-block;
      color: #959595;
      font-size: 20px;
      font-weight: 400;
-     height: 7.5rem;
+     height: 6.5rem;
     line-height: 1.4;
     display: flex;
     align-items: center;
@@ -772,7 +771,7 @@ display: inline-block;
   .jojic-wrapper li ul li{
     padding-left: 0;
     padding-top: 3%;
-    width: 187px;
+    width: 204px;
   }
   .jojic-wrapper li ul{
     margin-left: 15%;
@@ -848,58 +847,8 @@ display: inline-block;
     width: 150px;
     margin: 0 auto 80px;
   }
-  .dapyo::before {
-  height: 40px;
-}
   
-  .jojic-wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .jojic-wrapper::before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: 25%;
-    width: 50%;
-    height: 1px;
-    background: rgba(0, 0, 0, 0.5);
-  }
- 
-  .jojic-wrapper li ul{
-    margin-left: 15%;
-  }
-
-  .jojic-wrapper li ul:first-of-type{
-    padding-top: 5%;
-  }
-  
-  .jojic-wrapper > li::before{
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 1px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .jojic-wrapper > .ho::before{
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 0px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  .dapyo, .jojic{
+  .jojic{
     width: 144px;
   }
 
@@ -970,7 +919,7 @@ display: inline-block;
     width: 144px;
     }
     .jojic-wrapper li ul li{
-    width: 80%;
+    width: 84%;
   }
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1050,6 +999,11 @@ margin-bottom: 10%;
     font-size: 28px;
   }
 
+  .dapyo{
+    height: 10vw;
+    width: 140px;
+  }
+
   .section .title2{
     font-size: 14px;
   }
@@ -1065,7 +1019,7 @@ margin-bottom: 10%;
   }
 
   .jojic-wrapper li ul li{
-    padding-left: 5%;
+    padding-left: 8%;
   font-size: 4vw;
   }
   /* ----------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1354,11 +1308,11 @@ margin-bottom: 10%;
           <li class="ho wow fadeInBig">
             <h2 class="jojic rectangle wow fadeInDownBig">디자인부</h2>
             <ul class="wow fadeInDown" data-wow-delay="1.1s">
-              <li>유저 Needs 분석</li>
-              <li>고객 수요 확인</li>
-              <li>BM 설계/기획</li>
-              <li>사업화 전략 수집</li>
-              <li>사업계획서 작성</li>
+              <li>디자인 트랜드 분석</li>
+              <li>브랜드 디자인</li>
+              <li>웹사이트 디자인</li>
+              <li>모바일 앱 디자인</li>
+              <li>상품개발 디자인</li>
           </ul>
           </li>
           <li class="ho wow fadeInLeftBig">
@@ -1537,7 +1491,7 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
       $('.box img').slice(0,4).show();
    }
   });
-  
+
   $(window).resize(function() {
    if($(window).width() < 480){
       $('.box img').slice(1,4).hide();

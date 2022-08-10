@@ -493,7 +493,7 @@ section .media1280 {
         padding-left: 55px;
     }
     .main-news-container .news-contents:nth-child(2n){
-        padding-right: 0;
+        padding-right: 2vw;
     }
     /* 프로젝트 */
     .main-project-container lottie-player {
@@ -655,7 +655,6 @@ section .media1280 {
         margin-right: 3rem;
     }
 }
-
 /* 미디어 쿼리 768 - 태블릿 ---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
     /* 메인 전체 */

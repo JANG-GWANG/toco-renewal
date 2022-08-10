@@ -448,7 +448,7 @@ section .media1280 {
 }
 
 
-/* 미디어 쿼리 1440 - PC */
+/* 미디어 쿼리 1440 - PC ---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1440px) {
     /* 메인 섹션 전체 */
     .all-margin {
@@ -520,7 +520,7 @@ section .media1280 {
 }
 
 
-/* 미디어 쿼리 1280 - PC */
+/* 미디어 쿼리 1280 - PC ---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1280px) {
     /* 메인 전체 */
     .all-margin {
@@ -632,14 +632,14 @@ section .media1280 {
     }
 }
 
-/* 미디어 쿼리 768 - 태블릿 */
+/* 미디어 쿼리 768 - 태블릿 ---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
     /* 메인 전체 */
     
     section {
         margin: 0 auto; 
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 15vw;
+        padding-bottom: 15vw;
     }
     .all-margin {
         margin-left: 4vw;
@@ -665,7 +665,8 @@ section .media1280 {
         font-weight: 600;
         line-height: 35px;
     }
-
+    /* 네비바 */
+    header #gon {padding: 0px; width:100% }
     /* 헤더 텍스트 */
     .main-header .head-box img{
         height: 700px;
@@ -715,7 +716,9 @@ section .media1280 {
     }
     .main-news-container .news-date {
         font-size: 13px;
-        color : #AAAAAA;
+    }
+    .main-news-container .news-contents {
+        margin-bottom: 4vw;
     }
     /* 프로젝트 섹션 */
     .main-project-container .media1280 {
@@ -807,12 +810,12 @@ section .media1280 {
     }
 }
 
-/* 미디어 쿼리 430 - 모바일*/
+/* 미디어 쿼리 430 - 모바일---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 430px) {
     /* 메인 전체 */
     section {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
     }
     .all-margin {
         margin-left: 5vw;
@@ -821,13 +824,21 @@ section .media1280 {
     .main-news-container, .project, .service, .reference  {
         max-width: 420px; 
     }
+  
+    .main-title {
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .sub-title {
+        font-size: 13px;
+        margin-bottom: 8vw;
+        line-height: 17px;
+    }
     .sub-text {
         font-size: 16px;
         line-height: 27px;
-        line-height: 31px;
+        line-height: 24px;
     }
-    /* 네비바 */
-        header #gon {padding: 5px; }
     /* 헤더 텍스트 */
     .main-header .head-box img{
         height: 600px;
@@ -867,6 +878,15 @@ section .media1280 {
     .main-news-container .news-img {
         border-radius: 10px;
     }
+    .main-news-container .news-text {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+    .main-news-container .news-date {
+        font-size: 12px;
+    }
     /* 프로젝트 섹션 */
     .main-project-container .project-img1 {
         border-radius: 10px;
@@ -901,8 +921,11 @@ section .media1280 {
         line-height: 28px;
     }
     /* 레퍼런스 섹션 */
+    .main-reference-container .ref-logo-wrap {
+        margin-left: 2vw;
+    }
     .main-reference-container .ref-logo {
-        width: 27.5vw;
+        width: 26.5vw;
         height: 13vw;
         margin: 1vw;
     }

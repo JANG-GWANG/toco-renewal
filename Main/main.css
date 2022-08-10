@@ -718,6 +718,8 @@ section .media1280 {
     /* 뉴스 (새소식) 섹션 */
     .main-news-container .news-contents {
         width: 40vw;
+        margin-bottom: 3vw;
+        margin-right: 0;
     }
     .main-news-container .news-img-wrap {
         width: 40vw;

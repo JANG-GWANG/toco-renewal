@@ -4,7 +4,7 @@ html body{
     font-family:'Noto Sans KR'; 
 }
 /* 네비바 */
-header a {text-decoration: none; cursor: pointer; }
+/* header a {text-decoration: none; cursor: pointer; }
 header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 20%; height: 30px;}
 header >a  {position:fixed; display: flex; right: 10%; top:25px; width: 50px; z-index: 100; }
 header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
@@ -23,10 +23,39 @@ header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
 .close{opacity: 0; display: none;}
 .more{opacity: 1;}
 
-/* 현재페이지 글자색 및 밑줄 */
 header #gon nav > ul > li > a > p:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F;  border-radius: 20px; }
 header #gon nav > ul > li > a > p:after {width: 50%;} 
-header #gon nav > ul > li .here{color:#184B9F;}
+header #gon nav > ul > li .here{color:#184B9F;} */
+
+/* 네비바 */
+header a {text-decoration: none; cursor: pointer; }
+header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 11%; height: 30px;}
+header >div >a  {position:fixed; display: flex; right: 12%; top:25px; width: 50px; z-index: 100; }
+header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; height: 80px; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
+header #gon #main-nav {padding-top: 5px; padding-bottom: 5px; text-align: end; padding-right: 7%;}
+header #gon nav + div {position:absolute; left: 0; top:80px; width: 100%;height: 296px; background: rgba(24, 75, 159, .9); transition: all 0.5s; z-index: -1;}
+header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
+header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
+header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
+header #gon nav > ul > li:hover > a:after{ width: 50%;}
+header #gon nav > ul > li:hover > a{ color: #184B9F;}
+header #gon nav > ul ul {padding-top: 30px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
+header #gon nav > ul ul li{line-height: 2; padding-left: 0px; }
+header #gon nav > ul ul li:hover > a{color:#DBDBDB;} 
+header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
+header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
+
+.close{opacity: 0; display: none;}
+header #gon nav > ul > li .menu{ display:none;}
+.more{opacity: 1;}
+.won{max-width: 1440px;
+margin: 0 auto;}
+.wall{
+        height: 5000px;
+        width: 100%;
+        background-color: burlywood;
+    }
+
 
 /* 정보마당 배너 */
 .header-title-bg {
@@ -417,10 +446,33 @@ font-weight:500;
     
 }
 
+/* 1024px */
+@media screen and (max-width: 1024px){
+    header #gon{padding: 0 5%;}
+    header #gon #main-nav{text-align: center; display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: baseline;align-content: stretch;}
+    header #gon nav > ul > li .dpdl{opacity: 0; width: 100px; pointer-events : none;}
+    header #gon nav > ul > li .menu{ display:block; color: white; border-bottom: 1px solid white; line-height: 2;}
+    header #gon nav > ul ul >a{text-align: center; }
+    header #gon nav > ul ul a{ font-size: 17px;}
+    header #gon nav > ul ul{width: 83px; padding-left:6vw ; text-align: center;}
+}
 
 /* 모바일 모드 */
 /* 768px */
-@media screen and (max-width:768px){     
+@media screen and (max-width:768px){    
+    /* 네비바 */
+    header .logo {position: fixed; left: -15px; top: 15px; z-index: 100; margin-left: 11%; height: 20px;}
+    header >div >a  {position:fixed; display: flex; right: 1%; top:15px; width: 50px; z-index: 100; height: 20px;}
+    header #gon nav > ul ul >a{height: 60px; }
+    header #gon {height: 50px;}
+    header #gon nav + div{top: 50px; height: 230px;}
+    header #gon nav > ul ul{padding-top: 0;}
+    header #gon nav > ul ul a{ font-size: 13px;}
+    header #gon nav > ul > li > a{height: 55px;}
+    
+
+
+    /* resoft-news 본문 */
     .resoft-news{
         padding-top:10vw;      
     }

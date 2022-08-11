@@ -23,10 +23,10 @@
     const newsCont = $('.news-cont');
     const saveButton = $('.saveButton');
     const loadButton = $('.loadButton');
-    function buttonSet(x,y,z){
-        newsCont.hide(); 
-        saveButton.hide();
-        newsCont.slice(x,y).show();  
+    // function buttonSet(x,y,z){
+    //     newsCont.hide(); 
+    //     saveButton.hide();
+    //     newsCont.slice(x,y).show();  
     //     if(z<=768){
     //        let z='firstLoad'
     //     }else if(768<z<=1024){
@@ -35,7 +35,7 @@
     //        let z='thirdLoad'
     //     }else{z=''};
     //     loadButton.addClass(z); 
-     }
+    // }
     if(window.matchMedia("screen and (max-width: 768px)").matches){
         
         $(function(){
@@ -43,7 +43,7 @@
             saveButton.hide();
             newsCont.slice(0,4).show();  
             loadButton.addClass('firstLoad');    
-            buttonSet(0,4,768);
+            // buttonSet(0,4,768);
             $('.btn-group-vertical>.btn-group:not(:first-child)>.btn, .btn-group-vertical>.btn~.btn').css({'border-top-left-radius':'100%','border-top-right-radius':'100%'})                   
         });
     }else if(window.matchMedia("screen and (max-width: 1024px)").matches){
@@ -51,7 +51,7 @@
             newsCont.hide(); 
             newsCont.slice(0,6).show(); 
             loadButton.addClass('secondLoad');
-            buttonSet(0,6,1024);
+            // buttonSet(0,6,1024);
             saveButton.addClass('thirdSave');
         });   
     }else if(window.matchMedia("screen and (max-width: 1920px)").matches){
@@ -59,7 +59,7 @@
             newsCont.hide(); 
             newsCont.slice(0,8).show(); 
             loadButton.addClass('thirdLoad');
-            buttonSet(0,8,1920);
+            // buttonSet(0,8,1920);
             saveButton.addClass('secondSave');          
         });       
     }else{

@@ -396,7 +396,7 @@ margin: 0 auto;}
     /* 에코스 */
     .ecoce-title, .ecoce-wrap{display: none;}
     .mobile-ecoce{display: block;}
-    #content-ecoce{max-width: 1000px; width: 75vw; /*border: 1px solid red;*/}
+    #content-ecoce{max-width: 1000px; width: 85vw; /*border: 1px solid red;*/}
     .mobile-ecoce .m-ecoce-title p:nth-child(1){
         font-size: 35px;
         font-weight: bold;
@@ -486,7 +486,7 @@ margin: 0 auto;}
 
     /* 모아두 */
     .moado-bg{height: 100%; /*border: 1px solid red;*/}
-    #content-moado-wrap{max-width: 1000px; width: 75vw; /*border: 1px solid red;*/}
+    #content-moado-wrap{max-width: 1000px; width: 85vw; /*border: 1px solid red;*/}
     #content-moado-wrap .moado-title, .moado-wrap{display: none;}
 
     .mobile-moado-wrap{
@@ -568,7 +568,7 @@ margin: 0 auto;}
     }
     /* etc */
     #content-etc{
-        max-width: 1000px; width: 75vw; /*border: 1px solid red;*/
+        max-width: 1000px; width: 85vw; /*border: 1px solid red;*/
     }
     .etc-title p:nth-child(1){font-size: 35px;}
     .etc-title p:nth-child(2){font-size: 15px;}

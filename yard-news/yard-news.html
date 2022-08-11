@@ -1,53 +1,70 @@
 <!DOCTYPE html>
-<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resoft</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="../reset.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>       
+    <link rel="stylesheet" href="../animate.css">
+    <link rel="stylesheet" href="../magic.css">
     <link rel="stylesheet" href="./style.css">
-    <script src="https://code.jquery.com/jquery-latest.js"></script>  
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">     
-</head>
+    <link rel="shortcut icon" href="../img/toco-common/favicon.png" type="image/x-icon" />
+    <script src="../wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+ </head>
 
 <body>
     <!-- navi bar -->
     <header id="header">
+        <div class="won">
         <a class="logo" href="../index.html"><img src="../img/toco-common/logo-Resoft.svg" alt="로고"></a>
         <div id="gon">
         <nav>
             <ul id="main-nav">
-                <li><a href="../Company2/Company2.html">회사소개</a>
+                <li><a class="dpdl" href="../Company2/Company2.html">회사소개</a>
                     <ul class="so close">
-                    <li><a href="../Company2/Company2.html">REsoft소개</a></li>
-                    <li><a href="../Company2/Company2.html">연혁</a></li>
-                    <li><a href="../Company2/Company2.html">조직도</a></li>
-                    <li><a href="../Company2/Company2.html">특허&인증</a></li>
-                    <li><a href="../Company2/Company2.html">오시는 길</a></li>
-                </ul>
-                <li><a href="../Business/business.html">사업현황</a>
-                    <ul class="so close">
-                    <li><a href="../Business/business.html">ECOCE</a></li>
-                    <li><a href="../Business/business.html">moaDo</a></li>
-                    <li><a href="../Business/business.html">Etc</a></li>
+                        <li><a class="menu" href="../Company2/Company2.html">회사소개</a></li>
+                        <li><a href="../Company2/Company2.html">REsoft소개</a></li>
+                        <li><a href="../Company2/Company2.html">연혁</a></li>
+                        <li><a href="../Company2/Company2.html#organ">조직도</a></li>
+                        <li><a href="../Company2/Company2.html#certi">특허&인증</a></li>
+                        <li><a href="../Company2/Company2.html#direc">오시는 길</a></li>
+                    </ul>
+            </li>
+                <li><a class="dpdl" href="../Business/business.html">사업현황</a>
+                  
+                <ul class="so close">
+                    <li><a class="menu" href="../Business/business.html">사업현황</a></li>
+                    <li><a href="../Business/business.html#content-ecoce">ECOCE</a></li>
+                    <li><a href="../Business/business.html#content-moado">moaDo</a></li>
+                    <li><a href="../Business/business.html#content-etc">Etc</a></li>
                 </ul>
             </li>
-                <li><a href="../yard/yard.html">정보마당</a>
-                    <ul class="so close">
-                    <li><a href="../yard/yard.html">REsoft소식</a></li>
+                    <li><a class="dpdl" href="../Yard/yard.html">정보마당</a>
+                    
+                <ul class="so close">
+                    <li><a class="menu" href="../Yard/yard.html">정보마당</a></li>
+                    <li><a href="../yard-news/yard-news.html">REsoft소식</a></li>
                 </ul>
                 </li>
             </ul>
         </nav>  
         <div class="so close"></div>
     </div>
-         <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt=""></a>     
-    </header>      
-         
-    <div class="top_back"></div>
-    <div class="top">
-        <p>정보마당</p>
-    </div>          
+         <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
+        </div>
+    </header>   
+
+
+    <!-- 헤더배너 -->
+    <div class="header-title-bg">
+    <div class="title-bg-color"><p>정보마당</p></div>     
+    </div>    
+
  
 
 <section class="resoft-news">
@@ -118,5 +135,6 @@
     </div>   
 </footer>
 <script src="./script.js"></script>
+
 </body>
 </html>

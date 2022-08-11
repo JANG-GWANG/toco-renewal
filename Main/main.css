@@ -99,6 +99,18 @@ section .media1280 {
     padding: 1rem;
     cursor: pointer;
 }
+/* 헤더 - 플레이버튼 클릭 */
+.main-header .slick-button-wrap > div {
+    position: relative;
+    width: 50px;
+    height: 53px;
+}
+.main-header #play-btn {
+    position: absolute; 
+    left: 0;
+    top: 0;
+    display: none;
+}
 /* 새로운 소식 (뉴스) 섹션 */
 
 .main-news-container {

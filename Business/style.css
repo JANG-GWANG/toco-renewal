@@ -156,7 +156,7 @@ margin: 0 auto;}
 .ecoce-right p:nth-child(1){
     font-size: 30px; font-weight: bold; line-height: 44px;
     margin-bottom: 18%;
-    margin-top: 54px;
+    margin-top: 45px;
 }
 .ecoce-right p:nth-child(3){
     font-size: 22px; font-weight: bold; line-height: 32px;
@@ -381,7 +381,7 @@ margin: 0 auto;}
     /* 에코스 */
     #content-ecoce{max-width: 1072px;}
     /* .ecoce-title p:nth-child(1), .ecoce-title p:nth-child(2){text-align: center;} */
-    .ecoce-right p:nth-child(1){font-size: 27px; margin-bottom: 40px;} 
+    .ecoce-right p:nth-child(1){font-size: 27px; margin-bottom: 50px;} 
     .ecoce-right p:nth-child(3){font-size: 20px;}
     
 

@@ -591,6 +591,7 @@ margin: 0 auto;}
     .nav-lnb .lnb-menu .mobile-menu li{margin-top: 13px;} */
 
     /* 에코스 */
+    #content-ecoce{padding-top: 10vw;}
     .m-ecoce-wrap .ecoce-text{font-size: 24px;}
     .m-ecoce-wrap .ecoce-img-bg{width: 95%;}
     .m-ecoce-wrap .ecoce-appstore .google-store{height: 50px;}
@@ -599,10 +600,12 @@ margin: 0 auto;}
     .m-ecoce-wrap .ecoce-appstore .google-store span{height: 40px; line-height: 20px;}
 
     /* 모아두 */
+    .moado-bg{padding-top: 10vw;}
     .mobile-moado-wrap .moado-top p{font-size: 24px;}
     .mobile-moado-wrap .moado-link a{right: 7%; bottom: 40%;}
 
     /* etc */
+    #content-etc{padding: 10vw 0 10vw 0;}
     .etc-projects .etc-project-img{max-width: 170px; width: 90%;}    
 
 }

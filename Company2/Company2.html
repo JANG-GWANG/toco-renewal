@@ -16,6 +16,9 @@
     <script>new WOW().init();</script>
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c878f6eac0a2c4a708e717a953b9ac76"></script>
     <style>
+      *{
+            scroll-behavior: smooth;
+      }
         body{
             font-family:'Noto Sans KR';
         }
@@ -25,13 +28,13 @@ header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left:
 header >div >a  {position:fixed; display: flex; right: 12%; top:25px; width: 50px; z-index: 100; }
 header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; height: 80px; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
 header #gon #main-nav {padding-top: 5px; padding-bottom: 5px; text-align: end; padding-right: 7%;}
-header #gon nav + div {position:absolute; left: 0; top:80px; width: 100%;height: 296px; background: rgba(24, 75, 159, .9); transition: all 0.5s; z-index: -1;}
+header #gon nav + div {position:absolute; left: 0; top:80px; width: 100%;height: 300px; background: rgba(24, 75, 159, .9);  z-index: -1;}
 header #gon nav > ul >li {display: inline-block; position: relative; font-weight: 700; font-size: 20px;}
 header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
 header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
 header #gon nav > ul > li:hover > a:after{ width: 50%;}
 header #gon nav > ul > li:hover > a{ color: #184B9F;}
-header #gon nav > ul ul {padding-top: 30px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
+header #gon nav > ul ul {padding-top: 30px; position: absolute; width: 100%; text-align: left; height: 230px; padding-left: 40px; font-size: 18px; font-weight: 400;}
 header #gon nav > ul ul li{line-height: 2; padding-left: 0px; }
 header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
 header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
@@ -187,7 +190,7 @@ header #gon nav > ul > li .here{color:#184B9F;}
 
 .top_back{
     background: rgba(0, 0, 0, 0.3);
-     height: 377px;
+     height: 380px;
      position:relative;
      z-index: 5;
 }
@@ -199,7 +202,7 @@ header #gon nav > ul > li .here{color:#184B9F;}
      display: flex;
      justify-content: center;
      align-items: center;
-     top: 77px;
+     top: 80px;
      background-size: cover;
 }
  .top > p{
@@ -1123,8 +1126,8 @@ margin-bottom: 10%;
             <li><a class="dpdl here" href="../Company2/Company2.html">회사소개</a>
                 <ul class="so close">
                     <li><a class="menu" href="../Company2/Company2.html">회사소개</a></li>
-                    <li><a href="../Company2/Company2.html">REsoft소개</a></li>
-                    <li><a href="../Company2/Company2.html">연혁</a></li>
+                    <li><a href="../Company2/Company2.html#intro">REsoft소개</a></li>
+                    <li><a href="../Company2/Company2.html#history">연혁</a></li>
                     <li><a href="../Company2/Company2.html#organ">조직도</a></li>
                     <li><a href="../Company2/Company2.html#certi">특허&인증</a></li>
                     <li><a href="../Company2/Company2.html#direc">오시는 길</a></li>
@@ -1214,22 +1217,23 @@ margin-bottom: 10%;
   // });
 
   $(document).ready(function(){
-    //  네비바 햄버거
+    const menu = '.so';
+    const fadeOut = 'magictime fadeOut';
+    const fadeIn = 'magictime fadeIn';
+    const more = 'more';
+    const close = 'close';
     $('.ham').click(function() {
-        if($('.so').hasClass('more'))
-    $('.so').addClass('magictime fadeOut');
-    else if($('.so').hasClass('close'))
-    $('.so').removeClass('magictime fadeOut');
+        if($(menu).hasClass(more)){
+    $(menu).addClass(fadeOut);
+    setTimeout(function() { $(menu).addClass(close).removeClass(more);}, 500);
+        }
+    else if($(menu).hasClass(close))
+    $(menu).removeClass(fadeOut);
+    $(menu).addClass(fadeIn);
+    $(menu).addClass(more).removeClass(close);
     });
     // 
-    $('.ham').click(function(){
-        if($('.so').hasClass('close')){
-            $('.so').addClass('magictime fadeIn');
-            $('.so').addClass('more').removeClass('close');
-        }else if($('.so').hasClass('more')){
-            setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
-        }
-    });
+
 });
 
 </script>
@@ -1239,7 +1243,7 @@ margin-bottom: 10%;
        <p style="font-size: 40px; font-weight: bold;">회사소개</p>
     </div>
 
-  <div class="section">
+  <div class="section" id="intro">
             <p class="title">REsoft 소개</p>
             <p class="title2">ABOUT US</p>
     
@@ -1283,7 +1287,7 @@ margin-bottom: 10%;
     
     <!-- 연혁 -->
     <div class="backg">
-    <div class="section">
+    <div class="section" id="history">
         <p class="title">연혁</p>
         <p class="title2">HISTORY</p>
     
@@ -1406,8 +1410,8 @@ margin-bottom: 10%;
   </div>
 
 
-<div class="section" >
-    <p class="title" id="organ">조직도</p>
+<div class="section" id="organ" >
+    <p class="title">조직도</p>
     <p class="title2">ORGANIZATION</p>
 
     <div class="con">
@@ -1466,8 +1470,8 @@ margin-bottom: 10%;
 </div>
 
 <div class="backg">
-<div class="section" style="padding-bottom: 0px;">
-    <p class="title" id="certi">특허&인증</p>
+<div class="section" id="certi" style="padding-bottom: 0px;">
+    <p class="title">특허&인증</p>
     <p class="title2">CERTIFICATION & PATENT</p>
     <span class="box">
       <img class="wow fadeIn" src="../img/toco-img2/company-patent2.jpg" alt="" >
@@ -1489,8 +1493,8 @@ margin-bottom: 10%;
 </div>
 </div>
 
-<div class="section">
-    <p class="title" id="direc">오시는길</p>
+<div class="section" id="direc">
+    <p class="title">오시는길</p>
     <p class="title2"> DIRECTIONS</p>
     <div class="wow fadeIn" id="map"></div>
     <script>
@@ -1561,68 +1565,63 @@ var container = document.getElementById('map'); //지도를 담을 영역의 DOM
       </div>
 </footer>        
 <script>
-  $(document).ready(function(){
+$(document).ready(function(){
+  const more = 'more';
+  const close = 'close';
     if(window.matchMedia("screen and (max-width: 768px)").matches)
-    $(function () {
-     $('.box img').hide();        
-     $('.box img').slice(0,4).show();
-    });
+      $(function () {
+      $('.box img').hide();        
+      $('.box img').slice(0,4).show();
+      });
     if(window.matchMedia("screen and (max-width: 480px)").matches)
-    $(function () {
-     $('.box img').hide();        
-     $('.box img').slice(0,1).show();
-    });
+      $(function () {
+      $('.box img').hide();        
+      $('.box img').slice(0,1).show();
+      });
     
-     $('.arrow').click(function (){
-       if($('.up').hasClass('more')){
-     $('.up').addClass('close').removeClass('more');
-     if(window.matchMedia("screen and (max-width: 480px)").matches)
-     {
-      $('.box img').slice(1,10).hide();
-      var location = document.querySelector('#certi').offsetTop;
-      $('html,body').animate({scrollTop:location},800);
-     }else
-     {
-     $('.box img').slice(4,10).hide();
-     var location = document.querySelector('#certi').offsetTop;
-     $('html,body').animate({scrollTop:location},800);
-     }
+    $('.arrow').click(function (){
+       if($('.up').hasClass(more)){
+          $('.up').addClass(close).removeClass(more);
+          if(window.matchMedia("screen and (max-width: 480px)").matches)
+          {
+            $('.box img').slice(1,10).hide();
+            let location = document.querySelector('#certi').offsetTop;
+            $('html,body').animate({scrollTop:location},0);
+          }else
+          {
+            $('.box img').slice(4,10).hide();
+            let location = document.querySelector('#certi').offsetTop;
+            $('html,body').animate({scrollTop:location},0);
+          }
        }
-     else if($('.up').hasClass('close')){
-     $('.up').removeClass('close').addClass('more');
-
-     if(window.matchMedia("screen and (max-width: 480px)").matches)
-      $('.box img').slice(1,10).show();
-      else
-     $('.box img').slice(4,10).show();
-     }
+       else if($('.up').hasClass(close)){
+          $('.up').removeClass(close).addClass(more);
+          if(window.matchMedia("screen and (max-width: 480px)").matches)
+            $('.box img').slice(1,10).show();
+          else
+            $('.box img').slice(4,10).show();
+      }
     });
-
-    $(window).resize(function() {
-   if($(window).width() > 768){
-      $(".arrow").css('display',"none");
-      $('.box img').slice(0,10).show();
-   }else
-   $(".arrow").css('display',"block");
-  });
 
   $(window).resize(function() {
+    if($(window).width() > 768){
+        $(".arrow").css('display',"none");
+        $('.box img').slice(0,10).show();
+    }else
+        $(".arrow").css('display',"block");
+ 
    if($(window).width() < 768){
       $('.box img').slice(4,10).hide();
-     $('.up').addClass('close').removeClass('more');
+      $('.up').addClass(close).removeClass(more);
    }
-  });
 
-  $(window).resize(function() {
    if($(window).width() > 480){
       $('.box img').slice(0,4).show();
    }
-  });
 
-  $(window).resize(function() {
    if($(window).width() < 480){
       $('.box img').slice(1,4).hide();
-      $('.up').addClass('close').removeClass('more');
+      $('.up').addClass(close).removeClass(more);
    }
   });
 });

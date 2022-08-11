@@ -373,24 +373,25 @@ margin: 0 auto;}
     #content-ecoce{width: 85vw;}
     #content-moado-wrap{width: 85vw;}
     #content-etc{width: 85vw;}
+    .moado-bg{height: 50vw;}
 }
 
 /* ---------- 1280px ---------- */
 @media screen and (max-width:1280px) {
     /* 에코스 */
-    #content-ecoce{max-width: 1000px;}
+    #content-ecoce{max-width: 1072px;}
     /* .ecoce-title p:nth-child(1), .ecoce-title p:nth-child(2){text-align: center;} */
     .ecoce-right p:nth-child(1){font-size: 27px; margin-bottom: 40px;} 
     .ecoce-right p:nth-child(3){font-size: 20px;}
     
 
     /* 모아두 */
-    #content-moado-wrap{max-width: 1000px;}
+    #content-moado-wrap{max-width: 1072px;}
     /* .moado-title p:nth-child(1), .moado-title p:nth-child(2){text-align: center;} */
     .moado-right p:nth-child(1){font-size: 27px;}
 
     /* etc */
-    #content-etc{max-width: 1000px;}
+    #content-etc{max-width: 1072px;}
     /* .etc-title p:nth-child(1), .etc-title p:nth-child(2){text-align: center;} */
 }
 

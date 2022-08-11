@@ -206,7 +206,7 @@ margin: 0 auto;}
 /* ---------- 모아두 ---------- */
 .moado-bg{
     width: 100%;
-    height: 52vw;
+    height: 46vw;
     background:
       linear-gradient(180deg, rgba(255,255,255,1), rgba(255,0,0,0) 100%),
       linear-gradient(30deg, #339be14c, rgba(0,255,0,0) 30.71%),
@@ -214,14 +214,16 @@ margin: 0 auto;}
     /* 모아두 중간이미지 배치 및 우선순위 설정(네비바를 가리지 않도록) */
     position: relative;
     z-index: -1;
+    padding-top: 120px;
     /* border: 1px solid red; */
 }
-#content-moado{
+#content-moado-wrap{
+    position: relative;
     max-width: 1440px;
     width: 75vw;
     height: 100%;
     margin: 0 auto;
-    padding-top: 120px;
+    /* padding-top: 120px; */
 }
 .moado-wrap{
     display: flex;
@@ -256,10 +258,10 @@ margin: 0 auto;}
     /* padding: 30px 0 0 240px; */
 }
 .moado-middle{
-    max-width: 690px;
-    width: 36%;
+    max-width: 680px;
+    width: 50%;
     position: absolute;
-    left: 38%;
+    left: 33%;
     bottom: 0;
     z-index: 1;
 }
@@ -276,13 +278,13 @@ margin: 0 auto;}
 .moado-right p:nth-child(1){
     font-size: 30px; font-weight: bold; line-height: 44px;
     text-align: right;
-    padding-bottom: 5vw;
+    padding-bottom: 10%;
     max-height: 140px;
     height: 100%;
 }
 .moado-right .moado-logo{
     width: 68%;
-    margin-bottom:5vw;
+    margin-bottom:10%;
 }
 .moado-right .moado-link{
     display: flex;
@@ -363,7 +365,7 @@ margin: 0 auto;}
 /* ==================== 사업현황 페이지 미디어쿼리 작성 ==================== */
 
 @media screen and (min-width:1920px) {
-    .moado-bg{max-height: 999px;}
+    .moado-bg{max-height: 883px;}
     /* .moado-right{max-height: px;} */
 }
 
@@ -377,8 +379,7 @@ margin: 0 auto;}
     
 
     /* 모아두 */
-    .moado-bg{height: 58vw;}
-    #content-moado{max-width: 1000px; width: 78.125vw;}
+    #content-moado-wrap{max-width: 1000px; width: 78.125vw;}
     /* .moado-title p:nth-child(1), .moado-title p:nth-child(2){text-align: center;} */
     .moado-right p:nth-child(1){font-size: 27px;}
 
@@ -483,8 +484,8 @@ margin: 0 auto;}
 
     /* 모아두 */
     .moado-bg{height: 100%; /*border: 1px solid red;*/}
-    #content-moado{max-width: 1000px; width: 75vw; /*border: 1px solid red;*/}
-    #content-moado .moado-title, .moado-wrap{display: none;}
+    #content-moado-wrap{max-width: 1000px; width: 75vw; /*border: 1px solid red;*/}
+    #content-moado-wrap .moado-title, .moado-wrap{display: none;}
 
     .mobile-moado-wrap{
         display: flex;

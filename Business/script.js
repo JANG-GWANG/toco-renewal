@@ -66,7 +66,7 @@ $(function(){
         
         // 반응형 웹 구현 옵션
         responsive: [
-            {   // 화면크기 1768px 일때
+            {   // 화면크기 1600px 일때
                 breakpoint: 1600,
                 settings: {slidesToShow: 4}
             },
@@ -107,3 +107,4 @@ $(function(){
 //         }
 //     });
 // });
+

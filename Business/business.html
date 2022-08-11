@@ -23,61 +23,66 @@
 
 </head>
 <body>
-    <header>
-        <!-- <div class="header-bg"><div class="bg-color"></div></div> -->
-        <!-- 네비게이션바 -->
-        <nav class="page-nav-gnb">
-            <div class="page-gnb-wrap">
-                <!-- 로고 -->
-                <a href="../index.html">
-                    <img id="page-main-logo" src="../img/toco-common/logo-Resoft.svg" alt="resoft_logo">
-                </a>
+    <header id="header">
+        <div class="won">
+        <a class="logo" href="../index.html"><img src="../img/toco-common/logo-Resoft.svg" alt="로고"></a>
+        <div id="gon">
+        <nav>
+            <ul id="main-nav">
+                <li><a class="dpdl" href="../Company2/Company2.html">회사소개</a>
+                    <ul class="so close">
+                        <li><a class="menu" href="../Company2/Company2.html">회사소개</a></li>
+                        <li><a href="../Company2/Company2.html">REsoft소개</a></li>
+                        <li><a href="../Company2/Company2.html">연혁</a></li>
+                        <li><a href="../Company2/Company2.html#organ">조직도</a></li>
+                        <li><a href="../Company2/Company2.html#certi">특허&인증</a></li>
+                        <li><a href="../Company2/Company2.html#direc">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a class="dpdl here" href="../Business/business.html">사업현황</a>
+                  
+                <ul class="so close">
+                    <li><a class="menu" href="../Business/business.html">사업현황</a></li>
+                    <li><a href="../Business/business.html#content-ecoce">ECOCE</a></li>
+                    <li><a href="../Business/business.html#content-moado">moaDo</a></li>
+                    <li><a href="../Business/business.html#content-etc">Etc</a></li>
+                </ul>
+                </li>
+                <li><a class="dpdl" href="../Yard/yard.html" onclick="return false">정보마당</a>
+                    
+                <ul class="so close">
+                    <li><a class="menu" href="../Yard/yard.html">정보마당</a></li>
+                    <li><a href="../yard-news/yard-news.html">REsoft소식</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>  
+        <div class="so close"></div>
+    </div>
+         <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
+        </div>
+    </header> 
 
-                <!-- 메뉴 -->
-                <div class="menu">
-                    <span class="menu-wrap">
-                        <a href="../Company2/Company2.html">회사소개</a>
-                    </span>
-                    <span class="menu-wrap">
-                        <a href="../Business/business.html">사업현황</a>
-                    </span>
-                    <span class="menu-wrap">
-                        <a href="../Yard/yard.html">정보마당</a>
-                    </span>
-                </div>
-            </div>
-
-            <!-- 메뉴더보기 아이콘-->
-            <input type="checkbox" id="page-menuicon">
-            <label for="page-menuicon">
-                <span class="menuicon-color"></span>
-                <span class="menuicon-color"></span>
-                <span class="menuicon-color"></span>
-            </label>
-            <div class="nav-lnb close">
-                <div class="lnb-menu">
-                    <ul class="company-intro mobile-menu">
-                        <li class="mobile-menuTitle">회사소개</li>
-                        <li><a class="page-menu-text" href="../Company2/Company2.html">REsoft소개</a></li>
-                        <li><a class="page-menu-text" href="../Company2/Company2.html">연혁</a></li>
-                        <li><a class="page-menu-text" href="../Company2/Company2.html">조직도</a></li>
-                        <li><a class="page-menu-text" href="../Company2/Company2.html">특허&인증</a></li>
-                        <li><a class="page-menu-text" href="../Company2/Company2.html">오시는 길</a></li>
-                    </ul>
-                    <ul class="business-status mobile-menu">
-                        <li class="mobile-menuTitle">사업현황</li>
-                        <li><a class="page-menu-text" href="../Business/business.html#content-ecoce">ECOCE</a></li>
-                        <li><a class="page-menu-text" href="../Business/business.html#content-moado">moaDo</a></li>
-                        <li><a class="page-menu-text" href="../Business/business.html#content-etc">Etc</a></li>
-                    </ul>
-                    <ul class="information-yard mobile-menu">
-                        <li class="mobile-menuTitle">정보마당</li>
-                        <li><a class="page-menu-text" href="../Yard/yard.html">REsoft소식</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <script>
+        $(document).ready(function(){
+            //  네비바 햄버거
+            $('.ham').click(function() {
+                if($('.so').hasClass('more'))
+            $('.so').addClass('magictime fadeOut');
+            else if($('.so').hasClass('close'))
+            $('.so').removeClass('magictime fadeOut');
+            });
+            // 
+            $('.ham').click(function(){
+                if($('.so').hasClass('close')){
+                    $('.so').addClass('magictime fadeIn');
+                    $('.so').addClass('more').removeClass('close');
+                }else if($('.so').hasClass('more')){
+                    setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
+                }
+            });
+        });
+    </script>
 
     <!-- 사업현황 헤더 영역 -->
     <div class="header-title-bg">
@@ -214,7 +219,7 @@
                 <div><img class="etc-project-img" src="../img/toco-img3/business-ETC3.png" alt=""></div>
                 <div><img class="etc-project-img" src="../img/toco-img3/business-ETC4.png" alt=""></div>
                 <div><img class="etc-project-img" src="../img/toco-img3/business-ETC5.png" alt=""></div>
-                <div><img class="etc-project-img" src="../img/toco-img3/business-ETC5.png" alt=""></div>
+                <div><img class="etc-project-img" src="../img/toco-img3/business-ETC2.png" alt=""></div>
             </div>
         </div>
     </div>
@@ -244,27 +249,6 @@
 
 
 
-<script>
-    $(document).ready(function(){
-        $('.ham').click(function () {
-            if($('.so').hasClass('more'))
-            $('.so').addClass('magictime fadeOut');
-            else if($('.so').hasClass('close'))
-            $('.so').removeClass('magictime fadeOut');
-        });
-    });
-
-    $(document).ready(function(){
-        $('.ham').click(function(){
-            if($('.so').hasClass('close')){
-                $('.so').addClass('magictime fadeIn');
-                $('.so').addClass('more').removeClass('close');
-            }else if($('.so').hasClass('more')){
-                setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
-            }
-        });
-    });
-</script>
 
 <!-- js 파일 연결 -->
 <script src="./script.js"></script>

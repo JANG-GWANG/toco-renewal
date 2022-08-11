@@ -594,16 +594,22 @@ margin: 0 auto;}
 
     /* 에코스 */
     #content-ecoce{padding-top: 10vw;}
+    .mobile-ecoce .m-ecoce-title p:nth-child(1){font-size: 28px; line-height: 42px;}
+    .mobile-ecoce .m-ecoce-title p:nth-child(2){font-size: 14px;}
     .m-ecoce-wrap .ecoce-text{font-size: 24px;}
     .m-ecoce-wrap .ecoce-img-bg{width: 95%;}
 
     /* 모아두 */
     .moado-bg{padding-top: 10vw;}
+    .mobile-moado-wrap .mobile-moado-title p:nth-child(1){font-size: 28px; line-height: 42px;}
+    .mobile-moado-wrap .mobile-moado-title p:nth-child(2){font-size: 14px;}
     .mobile-moado-wrap .moado-top p{font-size: 24px;}
     .mobile-moado-wrap .moado-link a{right: 7%; bottom: 40%;}
 
     /* etc */
     #content-etc{padding: 10vw 0 10vw 0;}
+    .etc-title p:nth-child(1){font-size: 28px; line-height: 42px;}
+    .etc-title p:nth-child(2){font-size: 14px;}
     .etc-projects .etc-project-img{max-width: 170px; width: 90%;}    
 
 }
@@ -646,12 +652,14 @@ margin: 0 auto;}
     .mobile-ecoce .m-ecoce-title p:nth-child(1), 
     .mobile-moado-wrap .mobile-moado-title p:nth-child(1),
     .etc-title p:nth-child(1){
-        font-size: 28px;
+        font-size: 22px;
+        line-height: 33px;
     }
     .mobile-ecoce .m-ecoce-title p:nth-child(2),
     .mobile-moado-wrap .mobile-moado-title p:nth-child(2),
     .etc-title p:nth-child(2){
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 17px;
     }
     .m-ecoce-wrap .ecoce-text{display: none;}
     .phone-ecoce-text{display: block; font-size:16px; font-weight: bold; line-height: 28px; width: 100%; text-align: center; margin-top: 15%;}

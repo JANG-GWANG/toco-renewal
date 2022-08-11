@@ -8,7 +8,9 @@ html body{margin:0 auto;}
 
 /* ==================== 헤더 ==================== */
 
-/* 네비바 */header a {text-decoration: none; cursor: pointer; }
+/* 네비바 */
+header{position: absolute; z-index: 100;}
+header a {text-decoration: none; cursor: pointer; }
 header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 11%; height: 30px;}
 header >div >a  {position:fixed; display: flex; right: 12%; top:25px; width: 50px; z-index: 100; }
 header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; height: 80px; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}

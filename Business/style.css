@@ -15,7 +15,7 @@ header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left:
 header >div >a  {position:fixed; display: flex; right: 12%; top:25px; width: 50px; z-index: 100; }
 header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; height: 80px; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
 header #gon #main-nav {padding-top: 5px; padding-bottom: 5px; text-align: end; padding-right: 7%;}
-header #gon nav + div {position:absolute; left: 0; top:80px; width: 100%;height: 296px; background: rgba(24, 75, 159, .9); transition: all 0.5s; z-index: -1;}
+header #gon nav + div {position:absolute; left: 0; top:80px; width: 100%;height: 296px; background: rgba(24, 75, 159, .9); z-index: -1;}
 header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
 header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
 header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
@@ -574,13 +574,16 @@ margin: 0 auto;}
 
 /* ---------- 768px ---------- */
 @media screen and (max-width:768px) {
-    .menu{opacity: 0; transition: all .25s;}
+    .header-title-bg {margin-top: 50px; height: 230px;}
+    .header-title-bg .title-bg-color p{height: 230px; line-height: 230px;}
+
+    /* .menu{opacity: 0; transition: all .25s;}
     .nav-lnb .lnb-menu{margin-top: 0;}
     .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle {
         display: inline-block; width: 67px; text-align: center; font-size: 18px; font-weight: 700; margin-bottom: 5px; padding-bottom: 8px; color: #fff; border-bottom: 2px solid #E9E9E9;
     }
     .nav-lnb .lnb-menu .mobile-menu{margin-left: 10px;}
-    .nav-lnb .lnb-menu .mobile-menu li{margin-top: 13px;}
+    .nav-lnb .lnb-menu .mobile-menu li{margin-top: 13px;} */
 
     /* 에코스 */
     .m-ecoce-wrap .ecoce-text{font-size: 24px;}
@@ -663,11 +666,11 @@ margin: 0 auto;}
 
 
 /* 모바일용 메뉴 display none */
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
     .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle{
         display: none;
     }
-}
+} */
 
 
 

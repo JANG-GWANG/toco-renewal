@@ -33,13 +33,13 @@
                 <li><a class="dpdl" href="../Company2/Company2.html">회사소개</a>
                     <ul class="so close">
                         <li><a class="menu" href="../Company2/Company2.html">회사소개</a></li>
-                        <li><a href="../Company2/Company2.html">REsoft소개</a></li>
-                        <li><a href="../Company2/Company2.html">연혁</a></li>
+                        <li><a href="../Company2/Company2.html#intro">REsoft소개</a></li>
+                        <li><a href="../Company2/Company2.html#history">연혁</a></li>
                         <li><a href="../Company2/Company2.html#organ">조직도</a></li>
                         <li><a href="../Company2/Company2.html#certi">특허&인증</a></li>
                         <li><a href="../Company2/Company2.html#direc">오시는 길</a></li>
                     </ul>
-                </li>
+            </li>
                 <li><a class="dpdl here" href="./business.html">사업현황</a>
                   
                 <ul class="so close">
@@ -48,8 +48,8 @@
                     <li><a href="./business.html#content-moado">moaDo</a></li>
                     <li><a href="./business.html#content-etc">Etc</a></li>
                 </ul>
-                </li>
-                <li><a class="dpdl" href="../Yard/yard.html">정보마당</a>
+            </li>
+                    <li><a class="dpdl dhdl" href="../Yard/yard.html">정보마당</a>
                     
                 <ul class="so close">
                     <li><a class="menu" href="../Yard/yard.html">정보마당</a></li>
@@ -59,36 +59,35 @@
             </ul>
         </nav>  
         <div class="so close"></div>
+        <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
     </div>
-         <a class="ham"><img src="../img/toco-common/company_N_busines_N_yard-menu.svg" alt="" ></a>        
         </div>
-    </header> 
+    </header>   
+    <div class="top_back" style="width:100%"></div>
+    <div class="top">
+       <p>사업현황</p>
+    </div>
 
     <script>
         $(document).ready(function(){
-            //  네비바 햄버거
-            $('.ham').click(function() {
-                if($('.so').hasClass('more'))
-            $('.so').addClass('magictime fadeOut');
-            else if($('.so').hasClass('close'))
-            $('.so').removeClass('magictime fadeOut');
-            });
-            // 
-            $('.ham').click(function(){
-                if($('.so').hasClass('close')){
-                    $('.so').addClass('magictime fadeIn');
-                    $('.so').addClass('more').removeClass('close');
-                }else if($('.so').hasClass('more')){
-                    setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
-                }
-            });
-        });
+           //  네비바 햄버거
+           $('.ham').click(function() {
+               if($('.so').hasClass('more'))
+           $('.so').addClass('magictime fadeOut');
+           else if($('.so').hasClass('close'))
+           $('.so').removeClass('magictime fadeOut');
+           });
+           // 
+           $('.ham').click(function(){
+               if($('.so').hasClass('close')){
+                   $('.so').addClass('magictime fadeIn');
+                   $('.so').addClass('more').removeClass('close');
+               }else if($('.so').hasClass('more')){
+                   setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
+               }
+           });
+       });
     </script>
-
-    <!-- 사업현황 헤더 영역 -->
-    <div class="header-title-bg">
-        <div class="title-bg-color"><p>사업현황</p></div>
-    </div>
 
     <div class="business-contents">
         <!-- 에코스 -->
@@ -228,26 +227,26 @@
     </div>
 
 
-    <!-- 푸터 제민님 -->
-    <footer class="footer">
+    <!-- 푸터1 -->
+    <footer class="common-footer">
         <div class="footer-wrap">
-            <div class="footer-top">
-                <img class="footer-logo" src="../img/toco-common/logo-Resoft.svg"  alt="리소프트 로고 이미지">
+            <div class="footer-logo">
+                <img class="" src="../img/toco-common/logo-Resoft.svg" alt="리소프트 로고 이미지">
                 <span class="copyright">ⓒ RESOFT CO.LTD. ALL Rights Reserved.</span>
             </div>
             <div class="footer-text">
                 <div class="footer-left">                        
-                    <p><span class="spanWrap">상호 : (주)리소프트</span></p>                    
-                    <p><span class="spanWrap">사업자등록번호 : 722-81-02219</span></p>
-                    <p><span class="spanWrap">주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</span></p>   
+                    <p>상호 : (주)리소프트</p>                    
+                    <p>사업자등록번호 : 722-81-02219</p>
+                    <p>주소 : (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</p>   
                 </div> 
                 <div class="footer-right">
-                    <p><span class="spanWrap">대표이사 : 오유나  개인정보책임자 : 이현지</span></p> 
-                    <p><span class="spanWrap">전화 : (053) 475-2110 </span><span class="spanWrap">팩스 : (0504) 257-5966</span><span class="spanWrap"> 이메일 : call@resoft.kr</span></p>       
+                    <p>대표이사 : 오유나 <span>개인정보책임자 : 이현지</span></p> 
+                    <p>전화 : (053) 475-2110 <span>팩스 : (0504) 257-5966 </span><span>이메일 : call@resoft.kr</span></p>       
                 </div>
             </div>
-        </div>   
-    </footer>      
+        </div>
+    </footer>
 
 
 

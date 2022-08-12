@@ -7,54 +7,321 @@
 html body{margin:0 auto;}
 
 /* ==================== 헤더 ==================== */
-
+/* 바디 */
+html body{    
+    margin:0 auto;
+    font-family:'Noto Sans KR'; 
+}
 /* 네비바 */
-header{position: absolute; z-index: 100;}
-header a {text-decoration: none; cursor: pointer; }
-header .logo {position: fixed; left: 30px; top: 25px; z-index: 100; margin-left: 11%; height: 30px;}
-header >div >a  {position:fixed; display: flex; right: 12%; top:25px; width: 50px; z-index: 100; }
-header #gon {position: fixed; left: 0; top: 0; padding: 0px 232px 0px 5px; width: 100%; box-sizing: border-box; height: 80px; background: #fff; z-index: 10; border-bottom: 1px solid #DBDBDB;}
-header #gon #main-nav {padding-top: 5px; padding-bottom: 5px; text-align: end; padding-right: 7%;}
-header #gon nav + div {position:absolute; left: 0; top:80px; width: 100%;height: 300px; background: rgba(24, 75, 159, .9); z-index: -1;}
-header #gon nav > ul >li {display: inline-block; position: relative; font-weight: bold; font-size: 20px;}
-header #gon nav > ul > li > a{display: block; position:relative; width:160px; height: 70px; font-size: 20px; color: #000; line-height: 70px; text-decoration: none; top: 0px; z-index: 10; text-align: center; }
-header #gon nav > ul > li > a:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F; transition: all 0.5s; border-radius: 20px; }
-header #gon nav > ul > li:hover > a:after{ width: 50%;}
-header #gon nav > ul > li:hover > a{ color: #184B9F;}
-header #gon nav > ul ul {padding-top: 30px; position: absolute; width: 100%; text-align: left; height: 230px; transition: all 0.5s; padding-left: 40px; font-size: 18px; font-weight: 400;}
-header #gon nav > ul ul li{line-height: 2; padding-left: 0px; }
-header #gon nav > ul ul li:hover > a{color:#DBDBDB;} 
-header #gon nav > ul ul a {font-size: 20px; color: white; z-index: 10;}
-header #gon nav > ul ul a:hover :after {left: 0; width: 100%; }
+#header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background: #fff;
+    z-index: 100;
+    border-bottom: 1px solid #dbdbdb;
+}
 
-header #gon nav > ul > li > .here:after {content: ""; position: absolute; bottom: 10px; left: 40px; width: 0; height: 6px; background: #184B9F;  border-radius: 20px; width: 50%; }
-header #gon nav > ul > li .here{color:#184B9F;}
+header a {
+    text-decoration: none;
+    cursor: pointer
+}
 
-.close{opacity: 0; display: none;}
-header #gon nav > ul > li .menu{ display:none;}
-.more{opacity: 1;}
-.won{max-width: 1440px;
-margin: 0 auto;}
+header .logo {
+    position: fixed;
+    top: 25px;
+    z-index: 100;
+    height: 30px
+}
 
+header #gon .ham {display: flex; justify-content: end; z-index: 200;}
 
+header #gon .ham img{
+    position: absolute; 
+    top: 25px;
+}
+
+header>div>a {
+    position: fixed;
+    display: flex;
+    width: 50px;
+}
+
+header #gon {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 80px;
+    background: #fff;
+    z-index: 10;
+}
+
+header #gon #main-nav {
+    padding-top: 5px;
+    text-align: end;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header #gon nav+div {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 300px;
+    background: rgba(24, 75, 159, .9);
+    z-index: -1
+}
+
+header #gon nav>ul>li {
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    font-size: 20px
+}
+
+header #gon nav>ul>li>a {
+    display: block;
+    position: relative;
+    width: 160px;
+    height: 70px;
+    font-size: 20px;
+    color: #000;
+    line-height: 70px;
+    text-decoration: none;
+    top: 0;
+    z-index: 10;
+    text-align: center
+}
+
+header #gon nav>ul>li>a:after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    width: 0;
+    height: 6px;
+    background: #184b9f;
+    transition: all .5s;
+    border-radius: 20px
+}
+
+header #gon nav>ul>li:hover>a:after {
+    width: 50%
+}
+
+header #gon nav>ul>li a:hover {
+    color: #184b9f
+}
+
+header #gon nav>ul ul {
+    padding-top: 30px;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    height: 230px;
+    padding-left: 40px;
+    font-size: 18px;
+    font-weight: 400
+}
+
+header #gon nav>ul ul li {
+    line-height: 2;
+    padding-left: 0
+}
+
+header #gon nav>ul ul a {
+    font-size: 20px;
+    color: #fff;
+    z-index: 10
+}
+
+header #gon nav>ul ul a:hover :after {
+    left: 0;
+    width: 100%
+}
+
+header #gon nav>ul ul li:hover>a {
+    color: #dbdbdb
+}
+.dhdl{        
+    margin-right: 100px; 
+}
+.close {
+    opacity: 0;
+    display: none
+}
+
+header #gon nav>ul>li .menu {
+    display: none
+}
+
+.more {
+    opacity: 1
+}
+
+.won {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+header #gon nav>ul>li>.here:after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    width: 0;
+    height: 6px;
+    background: #184b9f;
+    border-radius: 20px;
+    width: 50%
+}
+
+header #gon nav>ul>li .here {
+    color: #184b9f
+}
+
+.top_back {
+    background: rgba(0, 0, 0, .3);
+    height: 380px;
+    position: relative;
+    z-index: 5
+}
+
+.top {
+    background: url(../img/toco-img3/business-header.png) no-repeat center;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    background-size: cover
+}
+.top>p{
+    text-align: center;
+    position: absolute;
+    height: 40px;
+    font-size: 40px;
+    color: #fff;
+    z-index: 5;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1440px){
+header .logo {
+        margin-left: 7.5vw;
+    }
+
+    header #gon{
+        width: 85vw;
+    }
+}
     @media screen and (max-width: 1024px){
-        header #gon{padding: 0 5%;}
-        header #gon #main-nav{text-align: center; display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;align-items: baseline;align-content: stretch;}
-        header #gon nav > ul > li .dpdl{opacity: 0; width: 100px; pointer-events : none;}
-        header #gon nav > ul > li .menu{ display:block; color: white; border-bottom: 1px solid white; line-height: 2;}
-        header #gon nav > ul ul >a{text-align: center; }
-        header #gon nav > ul ul a{ font-size: 17px;}
-        header #gon nav > ul ul{width: 83px; padding-left:6vw ; text-align: center;}
+        .dpdl{
+        margin-right: 0;
+    }
+
+    header #gon #main-nav {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+        align-content: stretch
+    }
+
+    header #gon nav>ul>li .dpdl {
+        opacity: 0;
+        width: 100px;
+        pointer-events: none
+    }
+
+    header #gon nav>ul>li .menu {
+        display: block;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        line-height: 2
+    }
+
+    header #gon nav>ul ul>a {
+        text-align: center
+    }
+
+    header #gon nav>ul ul a {
+        font-size: 17px
+    }
+
+    header #gon nav>ul ul {
+        width: 83px;
+        padding-left: 2vw;
+        text-align: center
+    }
     }
     @media screen and (max-width: 768px){
-        header .logo {position: fixed; left: -15px; top: 15px; z-index: 100; margin-left: 11%; height: 20px;}
-    header >div >a  {position:fixed; display: flex; right: 1%; top:15px; width: 50px; z-index: 100; height: 20px;}
-    header #gon nav > ul ul >a{height: 60px; }
-    header #gon {height: 50px;}
-    header #gon nav + div{top: 50px; height: 230px;}
-    header #gon nav > ul ul{padding-top: 0;}
-    header #gon nav > ul ul a{ font-size: 13px;}
-    header #gon nav > ul > li > a{height: 55px;}
+        header .logo {
+        position: fixed;
+        left: -15px;
+        top: 15px;
+        z-index: 100;
+        margin-left: 9%;
+        height: 20px
+    }
+    header #gon .ham img{
+        height: 20px;
+        top: 15px;
+    }
+
+    header>div>a {
+        position: fixed;
+        display: flex;
+        right: 1%;
+        top: 15px;
+        width: 50px;
+        z-index: 100;
+        height: 20px
+    }
+
+    header #gon nav>ul ul>a {
+        height: 60px
+    }
+
+    #header{
+        height: 50px;
+    } 
+    header #gon {
+        height: 50px
+    }
+
+    header #gon nav+div {
+        top: 50px;
+        height: 230px
+    }
+
+    header #gon nav>ul ul {
+        padding-top: 0
+    }
+
+    header #gon nav>ul ul a {
+        font-size: 13px
+    }
+
+    header #gon nav>ul>li>a {
+        height: 55px
+    }
+
+    
+    .top {
+        top: 50px;
+        height: 229px
+    }
+
+    .top_back {
+        height: 279px
+    }
     }
 
 
@@ -63,27 +330,6 @@ margin: 0 auto;}
 
 
 /* ==================== business 파트(전유진) ==================== */
-/* ==================== 사업현황 헤더 영역 ==================== */
-.header-title-bg {
-    width: 100%;
-    height: 300px;
-    background: url(../img/toco-img3/business-header.png) center center no-repeat;
-    background-size: cover;
-    background-blend-mode:hard-light;
-    margin-top: 80px;
-}
-.header-title-bg .title-bg-color{
-    background-color: rgba(0, 0, 0, 0.3);
-    
-}
-.header-title-bg .title-bg-color p{
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 300px;
-}
-
 /* ==================== 사업현황 컨텐츠 영역 시작 ==================== */
 .business-contents{
     position: relative;
@@ -361,6 +607,49 @@ margin: 0 auto;}
     /* background-color: yellow; */
 }
 
+/* 푸터 */
+.common-footer{
+    width:100%;
+    min-height: 250px;
+    height: 100%;
+    background: #E9E9E9;    
+    display: table;
+}
+.footer-wrap { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1440px;
+    width: 85vw;
+    min-height: 190px;
+    margin: 30px auto;
+    /* border: 1px solid red; */
+}
+.footer-logo {
+    /* margin: 0 auto; */
+    max-width: 1440px;
+}
+.footer-text{ 
+    /* margin: 0 auto; */
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 2vw;
+    color:#9E9E9E;
+}      
+.copyright{
+    color:#9E9E9E;
+    font-weight:600;
+}      
+.footer-left,.footer-right{
+    line-height:1.5rem;
+    flex:1;
+}
 
 /* ==================== 사업현황 페이지 미디어쿼리 작성 ==================== */
 
@@ -374,25 +663,24 @@ margin: 0 auto;}
     #content-moado-wrap{width: 85vw;}
     #content-etc{width: 85vw;}
     .moado-bg{height: 50vw;}
+
 }
 
 /* ---------- 1280px ---------- */
 @media screen and (max-width:1280px) {
     /* 에코스 */
     #content-ecoce{max-width: 1072px;}
-    /* .ecoce-title p:nth-child(1), .ecoce-title p:nth-child(2){text-align: center;} */
     .ecoce-right p:nth-child(1){font-size: 27px; margin-bottom: 50px;} 
     .ecoce-right p:nth-child(3){font-size: 20px;}
     
 
     /* 모아두 */
     #content-moado-wrap{max-width: 1072px;}
-    /* .moado-title p:nth-child(1), .moado-title p:nth-child(2){text-align: center;} */
     .moado-right p:nth-child(1){font-size: 27px;}
 
     /* etc */
     #content-etc{max-width: 1072px;}
-    /* .etc-title p:nth-child(1), .etc-title p:nth-child(2){text-align: center;} */
+
 }
 
 
@@ -586,14 +874,6 @@ margin: 0 auto;}
     .header-title-bg {margin-top: 50px; height: 230px;}
     .header-title-bg .title-bg-color p{height: 230px; line-height: 230px;}
 
-    /* .menu{opacity: 0; transition: all .25s;}
-    .nav-lnb .lnb-menu{margin-top: 0;}
-    .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle {
-        display: inline-block; width: 67px; text-align: center; font-size: 18px; font-weight: 700; margin-bottom: 5px; padding-bottom: 8px; color: #fff; border-bottom: 2px solid #E9E9E9;
-    }
-    .nav-lnb .lnb-menu .mobile-menu{margin-left: 10px;}
-    .nav-lnb .lnb-menu .mobile-menu li{margin-top: 13px;} */
-
     /* 에코스 */
     #content-ecoce{padding-top: 10vw;}
     .mobile-ecoce .m-ecoce-title p:nth-child(1){font-size: 28px; line-height: 42px;}
@@ -614,6 +894,24 @@ margin: 0 auto;}
     .etc-title p:nth-child(2){font-size: 14px;}
     .etc-projects .etc-project-img{max-width: 170px; width: 90%;}    
 
+    /* 푸터 */
+    .common-footer .footer-logo img {
+        /* margin-top: ; */
+        max-width : 128px;
+    }
+    .common-footer .copyright {
+        font-size: 13px;
+        color: #9E9E9E;
+    }
+    .common-footer .footer-left, .common-footer .footer-right {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .common-footer .footer-text{ 
+        max-width: 768px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 
@@ -675,167 +973,36 @@ margin: 0 auto;}
     .m-ecoce-wrap .ecoce-appstore .google-store img{width: 18px; padding: 8px 8px 8px 13px;}
     .m-ecoce-wrap .ecoce-appstore .google-store span{height: 28px; line-height: 14px;}
 
-}
-
-
-
-
-
-
-
-
-
-
-/* 모바일용 메뉴 display none */
-/* @media screen and (min-width:768px) {
-    .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle{
-        display: none;
+    /* 푸터 */
+    .common-footer .footer-logo img {
+    /* margin-top: ; */
+    max-width : 100px;
+    padding-top: 2vw;
     }
-} */
-
-
-
-
-
-
-/* #a0f3ed #ff5a93 */
-
-
-
-
-.footer{    
-    width:100%;   
-    background: #E9E9E9;    
-    display: flex;
-    justify-content: center;
-    align-items: center;      
-}
-
-.footer-wrap {    
-    display: flex; 
-    justify-content: left;
-    flex-direction: column;
-    padding:3% 4%; 
-}
-.footer-wrap .footer-left{
-    width:40%;
-}
-.footer-wrap .footer-right{
-    width:50%;
-}
-.footer-text{     
-    margin-top: 30px;
-    display: flex;
-    gap: 7%;
-    color:#9e9e9e;
-    
-}
-.footer-text .spanWrap{
-    margin-left:2%;
-    line-height: 25px;
-}
-.footer-text .spanWrap:first-child{
-    margin-left:0;
-}
-
-.footer .copyright{
-    color:#9E9E9E;
-    font-weight:600;
-}      
-
-
-
-/*미디어쿼리 */
-
-/* 1440 이상 */
- @media screen and (min-width:1440px){
-    /* 이미지 크기 고정 */
-     .news-cont .news-img-wrap{
-        width:580px;
-        
-        height:300px;
+    .common-footer .copyright {
+        font-size: 10px;
+        word-break: keep-all;
+    }
+    .common-footer .footer-logo span {
+        line-height: 26px;
+        display: block;
+    }
+    .common-footer .footer-left, .common-footer .footer-right {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .common-footer .footer-text{ 
+        max-width: 768px;
+        gap:2vw;
+        flex-direction: column;
+        justify-content: space-between;
+        word-break:break-all;
     } 
- }
+    .common-footer .footer-text span{
+        display: block;
+    }
 
-/* 태블릿 모드 */
-
-/* 1280px */
-@media screen and (max-width:1280px){
-    /* 푸터 배열 */
-    .footer-text .footer-right .spanWrap{
-        display:block;
-        margin-left:0;
-    }    
-    
 }
 
-/* 1024px */
-  @media screen and (max-width:1024px){
-    .news-box-wrapper #news-box{
-        justify-content: center;
-    }
-    /* REsoft 소식 글씨 중앙정렬 */
-    .resoft-news .news-title-wrap{
-        text-align:center;
-        margin:5% 0 0 0;
-    }
-    /* 푸터 문단 크기 지정 */
-    .footer-wrap .footer-left{
-        width:50%;
-    }
-    
-} 
 
 
-/* 모바일 모드 */
-/* 768px */
-@media screen and (max-width:768px){     
-
-    /* 모바일 모드일때 푸터 배치변경 */    
-
-    .footer-wrap{        
-        padding-top:5%;
-        word-break: break-all; 
-        word-wrap:break-word;
-        background-size:cover;
-        margin-left:5%;
-    }
-    .footer-wrap .footer-top .copyright{
-        display:block;
-    }
-    .footer-wrap .footer-text{
-        display:block;           
-        margin-left:0;     
-    }
-    .footer-wrap .footer-right{
-        margin-top:5%;
-    }
-    .footer-wrap .footer-left, .footer-wrap .footer-right{
-        width:100%;
-    }
-    .footer-wrap .footer-text .spanWrap{
-        display:block;                
-        margin-left:0;
-    }       
-   
-} 
-
-/* 430px */
-@media screen and (max-width:430px){
-    .news-box-wrapper #news-box{
-        width:80%; 
-        justify-content: center;
-        text-align:center; 
-        margin:0 auto;
-    }
-    .news-box-wrapper #news-box .news-cont{        
-        width:80%;
-    }
-    .news-box-wrapper #news-box .news-cont .news-img-wrap{
-        width:100%;
-        height:12rem;
-    }
-    .news-box-wrapper #news-box .news-cont:nth-child(2n-1){
-        margin:0;
-    }  
-}

@@ -1,5 +1,58 @@
+ $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('#gon').addClass('active');
+            const logo = document.querySelector('.logo img');
+            logo.src = "./img/toco-common/logo-Resoft.svg"
+            const ham = document.querySelector('.ham img');
+            ham.src = "./img/toco-common/company_N_busines_N_yard-menu.svg";
+            $("#header").css('background',"white");
+            $(".dpdl").css('color',"black");
+        }else{
+            if($('.so').hasClass('close')){
+                $('#gon').removeClass('active');
+                const logo = document.querySelector('.logo img');
+                logo.src = "./img/toco-common/logo-Resoft-white.png"
+                const ham = document.querySelector('.ham img');
+                ham.src = "./img/toco-img1/icon-menu.svg"
+                $(".dpdl").css('color',"white");
+                $("#header").css('background',"transparent");
+            }
+        }
+    });
 
 $(document).ready(function(){
+    
+    //  네비바 햄버거
+    $('.ham').click(function() {
+        if($('.so').hasClass('more'))
+        {
+            $('.so').addClass('magictime fadeOut');
+            setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
+            if($(window).scrollTop()==0){
+                $('#gon').removeClass('active');
+                const logo = document.querySelector('.logo img');
+                logo.src = "./img/toco-common/logo-Resoft-white.png"
+                const ham = document.querySelector('.ham img');
+                ham.src = "./img/toco-img1/icon-menu.svg"
+                $(".dpdl").css('color',"white");
+                $("#header").css('background',"transparent");
+            }
+        }
+        else if($('.so').hasClass('close'))
+        {
+            $('.so').removeClass('magictime fadeOut');
+            $('.so').addClass('magictime fadeIn');
+            $('.so').addClass('more').removeClass('close');
+            $('#gon').addClass('active');
+            const logo = document.querySelector('.logo img');
+            logo.src = "./img/toco-common/logo-Resoft.svg"
+            const ham = document.querySelector('.ham img');
+            ham.src = "./img/toco-common/company_N_busines_N_yard-menu.svg"
+            $("#header").css('background',"white");
+            $(".dpdl").css('color',"black");
+        }
+    });
+    
     $('.slick-header-wrap').slick({
         slidesToShow: 1,
         slidesToScroll: 1,

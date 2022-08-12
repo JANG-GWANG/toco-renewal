@@ -51,26 +51,32 @@ section .media1280 {
     border-bottom: 1px solid #dbdbdb;
     transition: background .5s;
 }
+
 header a {
     text-decoration: none;
     cursor: pointer
 }
+
 header .logo {
     position: fixed;
     top: 25px;
     z-index: 100;
     height: 30px
 }
+
 header #gon .ham {display: flex; justify-content: end; z-index: 200;}
+
 header #gon .ham img{
     position: absolute; 
     top: 25px;
 }
+
 header>div>a {
     position: fixed;
     display: flex;
     width: 50px;
 }
+
 header #gon {
     max-width: 1440px;
     margin: 0 auto;
@@ -78,12 +84,14 @@ header #gon {
     height: 80px;
     z-index: 10;
 }
+
 header #gon #main-nav {
     padding-top: 5px;
     text-align: end;
     max-width: 1440px;
     margin: 0 auto;
 }
+
 header #gon nav+div {
     position: absolute;
     left: 0;
@@ -93,12 +101,14 @@ header #gon nav+div {
     background: rgba(24, 75, 159, .9);
     z-index: -1
 }
+
 header #gon nav>ul>li {
     display: inline-block;
     position: relative;
     font-weight: 700;
     font-size: 20px
 }
+
 header #gon nav>ul>li>a {
     display: block;
     position: relative;
@@ -112,6 +122,7 @@ header #gon nav>ul>li>a {
     z-index: 10;
     text-align: center
 }
+
 header .active nav>ul>li>a:after {
     content: "";
     position: absolute;
@@ -123,13 +134,16 @@ header .active nav>ul>li>a:after {
     transition: all .5s;
     border-radius: 20px
 }
+
 header .active nav>ul>li>a:hover:after {
     width: 50%
 }
+
 header #gon nav>ul>li a:hover {
     color: #184b9f !important;
     transition: .5s;
 }
+
 header #gon nav>ul ul {
     padding-top: 30px;
     position: absolute;
@@ -140,19 +154,23 @@ header #gon nav>ul ul {
     font-size: 18px;
     font-weight: 400
 }
+
 header #gon nav>ul ul li {
     line-height: 2;
     padding-left: 0
 }
+
 header #gon nav>ul ul a {
     font-size: 20px;
     color: #fff;
     z-index: 10
 }
+
 header #gon nav>ul ul a:hover :after {
     left: 0;
     width: 100%
 }
+
 header #gon nav>ul ul li:hover>a {
     color: #dbdbdb !important;
 }
@@ -163,22 +181,20 @@ header #gon nav>ul ul li:hover>a {
     opacity: 0;
     display: none
 }
+
 header #gon nav>ul>li .menu {
     display: none
 }
+
 .more {
     opacity: 1
 }
+
 .won {
     max-width: 1440px;
     margin: 0 auto;
     height: 80px;
 }
-.wall{
-        height: 5000px;
-        width: 100%;
-        background-color: burlywood;
-    }
 
 /* 헤더 */
 .main-header {
@@ -814,7 +830,7 @@ header #gon nav>ul>li .menu {
 }
 /* 1024p-------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 1024px){ 
-        .dpdl{
+    .dpdl{
         margin-right: 0;
     }
 
@@ -909,37 +925,6 @@ header #gon nav>ul>li .menu {
     header #gon nav>ul>li>a {
         height: 55px
     }
-    /* 메인 전체 */
-    section {
-        padding-top: 10vw;
-        padding-bottom: 10vw;
-    }
-    .all-margin {
-        margin-left: 4vw;
-        margin-right: 4vw;
-    }
-    .main-header .header-wrap {
-        max-width: 700px;
-    }
-    .main-news-container, .project, .service, .reference  {
-        max-width: 700px;
-    }
-    .main-title {
-        font-size: 28px;
-        line-height: 42px;
-    }
-    .sub-title {
-        font-size: 14px;
-        margin-bottom: 50px;
-        line-height: 26px;
-    }
-    .sub-text {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 35px;
-    }
-    /* 네비바 */
-    header #gon {padding: 0px; width:100% }
     /* 헤더 텍스트 */
     .main-header .head-box img{
         height: 700px;

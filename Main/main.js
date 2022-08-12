@@ -77,15 +77,17 @@ $(document).ready(function(){
         $("#stop-btn").css("display","block");
     });
 
-    // 앱 카드 애니메이션
+   // 앱 카드 애니메이션
     $(".service-card").on({
         "mouseover":function(){
             $(this).children(".card-show").css({'transform':'translate(-70px, -100px)', 'opacity':'0', 'transition':'0.35s', 'pointer-events':'none'});
             $(this).children(".card-hide").css({'transform':'translate(0, 0)', 'opacity':'1', 'transition':'0.35s', 'pointer-events':'none'});
+            $(this).css({'transform': 'scale(1.07)', 'transition': '0.25s'});
         },
         "mouseout":function(){
             $(this).children(".card-show").css({'transform':'translate(0,0)', 'opacity':'1', 'transition':'0.35s', 'pointer-events':'none'});
             $(this).children(".card-hide").css({'transform':'translate(70px, 100px)', 'opacity':'0', 'transition':'0.35s', 'pointer-events':'none'});
+            $(this).css({'transform': 'scale(1)', 'transition': '0.25s'});
         }
     });
 });  

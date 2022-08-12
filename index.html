@@ -60,31 +60,6 @@
         </div>
     </header>    
     
-    <script>
-    $(window).on('scroll',function(){
-        if($(window).scrollTop()){
-            $('#gon').addClass('active');
-            const logo = document.querySelector('.logo img');
-            logo.src = "./img/toco-common/logo-Resoft.svg"
-            const ham = document.querySelector('.ham img');
-            ham.src = "./img/toco-common/company_N_busines_N_yard-menu.svg";
-            $("#header").css('background',"white");
-            $(".dpdl").css('color',"black");
-        }else{
-            if($('.so').hasClass('close')){
-                $('#gon').removeClass('active');
-                const logo = document.querySelector('.logo img');
-                logo.src = "./img/toco-common/logo-Resoft-white.png"
-                const ham = document.querySelector('.ham img');
-                ham.src = "./img/toco-img1/icon-menu.svg"
-                $(".dpdl").css('color',"white");
-                $("#header").css('background',"transparent");
-            }
-        }
-    });
-
-    </script>
-    
     <!-- 헤더 -->
     <header class="main-header">
     <div class="slick-header-wrap">

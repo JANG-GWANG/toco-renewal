@@ -48,12 +48,19 @@ margin: 0 auto;}
     header #gon nav > ul ul{padding-top: 0;}
     header #gon nav > ul ul a{ font-size: 13px;}
     header #gon nav > ul > li > a{height: 55px;}
-
-    body .header-title-bg{margin-top:50px; }
-    header #gon nav + div{height:300px;}
+    .header-title-bg{
+        height:229px;
+        margin-top:51px;
+    }
+    .title-bg-color{        
+        top:50px;
+        height:230px;
+    }
+    .header-title-bg .title-bg-color p{
+        line-height:229px;
+    }
     body .resoft-news {display: block; justify-content: center;}
     .resoft-news .yard-news-right{max-width:768px;}
-    
     }
 
 /* 배너 */
@@ -248,7 +255,7 @@ hr{
 
 /* 다음글 버튼 */
 .after-button{
-    right:32px;
+    right:16px;
     cursor:pointer;
     background-color: white;
     position: relative;

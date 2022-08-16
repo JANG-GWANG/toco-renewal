@@ -872,6 +872,35 @@ header #gon nav>ul>li .menu {
 
 /* 미디어 쿼리 768 - 태블릿 ---------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
+	/* 메인 전체 */
+    section {
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+    .all-margin {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    .main-header .header-wrap {
+        max-width: 700px;
+    }
+    .main-news-container, .project, .service, .reference  {
+        max-width: 700px;
+    }
+    .main-title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .sub-title {
+        font-size: 14px;
+        margin-bottom: 50px;
+        line-height: 26px;
+    }
+    .sub-text {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 35px;
+    }
     /* 네비 */
     header .logo {
         position: fixed;

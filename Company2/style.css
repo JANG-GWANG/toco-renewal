@@ -896,6 +896,10 @@ h2 {
         text-align: center
     }
 
+    .top>p{
+        font-size: 35px;
+    }
+    
     .section .title {
         font-size: 35px
     }

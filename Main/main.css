@@ -4,7 +4,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-a {  text-decoration: none; }
+a {  text-decoration: none; color: #000}
 /* 메인 전체 섹션 */
 section { 
     margin: 0 auto; 
@@ -41,6 +41,8 @@ section .media1280 {
     font-weight: 700;
     line-height: 45px;
 }
+#load{width:100%;height:100%;top:0;left:0;position:fixed;display:block;opacity:1;background:#fff;z-index:299;text-align:center}
+#load>img{position:absolute;top:50%;left:50%;z-index:300}
 /* 네비바 */
 #header{
     width: 100%;
@@ -336,6 +338,9 @@ header #gon nav>ul>li .menu {
 .main-news-container .news-contents:hover .news-img {
     transform: scale(1.2);
     filter: brightness(50%); 
+}
+.main-news-container .news-contents:hover .news-text {
+    color: #184B9F;
 }
 .main-news-container .news-contents:hover {
     cursor: pointer;

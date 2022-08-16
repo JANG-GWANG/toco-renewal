@@ -1,4 +1,8 @@
- $(window).on('scroll',function(){
+$(window).load(function() {
+    $('#load').hide();
+  });
+
+$(window).on('scroll',function(){
         if($(window).scrollTop()){
             $('#gon').addClass('active');
             const logo = document.querySelector('.logo img');

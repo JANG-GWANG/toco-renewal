@@ -521,28 +521,6 @@ html *{
 
 /* 태블릿 모드 */
 
-/* 1280px */
-@media screen and (max-width:1280px){
-   
-
-    .news-title, .top>p{
-        font-size:35px;
-    }
-    .sub-title{
-        font-size:15px;
-    }
-      
-     /* 푸터 */
-    .footer-logo, .footer-text{
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-    /* 푸터 문단 크기 지정 */
-    .footer-wrap .footer-left{
-        width:50%;
-    }
-    
-}
 
 /* 1024px */
 @media screen and (max-width: 1024px){
@@ -586,6 +564,23 @@ html *{
         padding-left: 2vw;
         text-align: center
     }
+    .news-title, .top>p{
+        font-size:35px;
+    }
+    .sub-title{
+        font-size:15px;
+    }
+      
+     /* 푸터 */
+    .footer-logo, .footer-text{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    /* 푸터 문단 크기 지정 */
+    .footer-wrap .footer-left{
+        width:50%;
+    }
+
     }
 
 /* 모바일 모드 */
@@ -658,9 +653,15 @@ html *{
     .news-title-wrap{
         margin-top:10vw;
     }  
-    .news-title, .top>p{
+    .news-title{
         font-size :28px;
         line-height :42px;
+    }
+    .news-title-wrap .news-title{
+       margin-bottom:0;
+    } 
+    .top>p{
+        font-size:28px;
     }
     .sub-title{
         font-size:14px;
@@ -702,9 +703,9 @@ html *{
 
 /* 430px */
 @media screen and (max-width:430px){
-    /*.resoft-news{
-         padding-top:10vw;       
-    }*/
+    .top>p{
+        font-size:22px;
+    }   
     .news-title{
         font-size:22px;
         line-height:33px;

@@ -1,4 +1,6 @@
-
+$(window).load(function() {
+  $('#load').hide();
+});
  $(document).ready(function(){
   
 //  네비바 햄버거

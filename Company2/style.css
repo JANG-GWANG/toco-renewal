@@ -1167,7 +1167,8 @@ h2 {
 
     .dapyo {
         height: 10vw;
-        width: 140px
+        width: 140px;
+        font-size: 5.5vw;
     }
 
     .section .title2 {

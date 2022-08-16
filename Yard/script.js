@@ -19,7 +19,7 @@
     });
 
 
-    //  페이지 동작시 콘텐츠 갯수 및 클래스 지정
+//  페이지 동작시 콘텐츠 갯수 및 클래스 지정
     const newsCont = $('.news-cont');
     const saveButton = $('.saveButton');
     const loadButton = $('.loadButton');

@@ -204,8 +204,10 @@ header #gon nav>ul>li .here {
     position: absolute;
     height: 40px;
     font-size: 40px;
+    font-weight:bold;
     color: #fff;
     z-index: 5;
+    margin-bottom:0;
 }
 
 
@@ -523,7 +525,7 @@ html *{
 @media screen and (max-width:1280px){
    
 
-    .news-title{
+    .news-title, .top>p{
         font-size:35px;
     }
     .sub-title{
@@ -656,7 +658,7 @@ html *{
     .news-title-wrap{
         margin-top:10vw;
     }  
-    .news-title{
+    .news-title, .top>p{
         font-size :28px;
         line-height :42px;
     }

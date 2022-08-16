@@ -1,3 +1,7 @@
+$(window).load(function() {
+  $('#load').hide();
+});
+
 $(document).ready(function(){
     const more = 'more';
     const close = 'close';

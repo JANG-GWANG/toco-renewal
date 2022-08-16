@@ -197,6 +197,7 @@ header #gon nav>ul>li .here {
 .top>p {
     text-align: center;
     position: absolute;
+    height: 40px;
     font-size: 40px;
     font-weight: 700;
     color: #fff;
@@ -806,7 +807,8 @@ h2 {
     .jojic-wrapper li ul li {
         padding-left: 0;
         padding-top: 3%;
-        width: 204px
+        width: 204px;
+        line-height: 1.5;
     }
 
     .jojic-wrapper li ul {

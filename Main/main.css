@@ -299,6 +299,9 @@ header #gon nav>ul>li .menu {
     padding-left: 30px;
     /* border: solid 1px red; */
 }
+.main-news-container .news-contents:hover .main-news-container .news-text{
+	color: #184B9F;
+}
 .main-news-container .news-contents:first-child {
     border-left: 0;
     padding-left: 0;

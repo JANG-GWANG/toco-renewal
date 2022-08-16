@@ -1,3 +1,7 @@
+$(window).load(function() {
+  $('#load').hide();
+});
+
 // 메인페이지 메뉴더보기 클릭시 디자인 변경
 $('#menuicon').on('click', function() {
     if ( $(this).prop('checked') ) {

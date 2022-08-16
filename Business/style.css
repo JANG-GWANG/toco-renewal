@@ -687,6 +687,7 @@ header .logo {
 
 /* ---------- 1024px ---------- */
 @media screen and (max-width:1024px) {
+    .top>p{font-size: 35px;}
     .header-title-bg .title-bg-color p{font-size: 35px;}
     /* 에코스 */
     .ecoce-title, .ecoce-wrap{display: none;}
@@ -871,6 +872,7 @@ header .logo {
 
 /* ---------- 768px ---------- */
 @media screen and (max-width:768px) {
+    .top>p{font-size: 28px;}
     .header-title-bg {margin-top: 50px; height: 230px;}
     .header-title-bg .title-bg-color p{height: 230px; line-height: 230px;}
 
@@ -949,6 +951,9 @@ header .logo {
 
 /* ---------- 430px ---------- */
 @media screen and (max-width:430px) {
+    .top>p{
+        font-size: 22px;
+    }
     .mobile-ecoce .m-ecoce-title p:nth-child(1), 
     .mobile-moado-wrap .mobile-moado-title p:nth-child(1),
     .etc-title p:nth-child(1){

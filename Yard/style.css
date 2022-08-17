@@ -4,10 +4,6 @@ html body{
     font-family:'Noto Sans KR'; 
     scroll-behavior: smooth;
 }
-
-#load{width:100%;height:100%;top:0;left:0;position:fixed;display:block;opacity:1;background:#fff;z-index:299;text-align:center}
-#load>img{position:absolute;top:50%;left:50%;z-index:300}
-
 /* 네비바 */
 #header{
     width: 100%;
@@ -359,16 +355,23 @@ header #gon nav>ul>li .here {
     display:block;
     margin:5% 0 10% 0;     
 }
-.loadButton,.saveButton{
-    display:initial;
+.loadButton{
+    width:200px;
+    height:73px;
+    border:1px solid #9e9e9e;
+    border-radius:43px;
     background:transparent;
-    cursor:pointer;
-    border:1px solid #9e9e9e; 
-    border-radius:43px;    
-    height:73px;    
+    text-align:center;
+    margin-top:2.5vw;
+    margin-bottom:5.8vw;
     font-size:20px;   
 }   
-.arrow-box{
+.loadButton:hover{
+    background-color:#184B9F;
+    color:#fff;
+}
+
+/* .arrow-box{
     width:100%;
     position:relative;
     overflow:hidden;   
@@ -382,12 +385,12 @@ header #gon nav>ul>li .here {
     right:0; 
     margin:auto;
     height:50%;
-}
-.button-wrap .loadButton:hover,.button-wrap .saveButton:hover, .button-wrap .btn-check:checked+.btn:hover{
+} */
+/* .button-wrap .loadButton:hover,.button-wrap .saveButton:hover, .button-wrap .btn-check:checked+.btn:hover{
     color:#ffffff;
     background-color:#184B9F; 
     --bs-btn-bg:#184b9f;           
-}
+} */
 
 
 /* 부트스트랩 기능 수정 */
@@ -399,7 +402,7 @@ html *{
 } 
 
 
- .button-wrap{
+ /* .button-wrap{
     width: 10%;
     height:73px;
 }  
@@ -429,25 +432,25 @@ html *{
 } 
 .news-box-wrapper .btn-group-vertical>.btn-group:not(:first-child),.news-box-wrapper .btn-group-vertical>.btn:not(:first-child) {
      margin-top: 0; 
-} 
+}  */
 
 /* 클릭시 배경색변경 제거 */
 
 /*, .button-wrap .btn:active */
-.button-wrap .btn-check:active+.btn, .button-wrap .btn-check:checked+.btn, .button-wrap .btn.active,.button-wrap .btn.show{
+/* .button-wrap .btn-check:active+.btn, .button-wrap .btn-check:checked+.btn, .button-wrap .btn.active,.button-wrap .btn.show{
     color:#184B9F;
     background-color:#ffffff;
     border-color: #184B9F;
-} 
+}  */
 
 /* 클릭시 박스쉐도우 제거 */
-.button-wrap .btn-check:focus+.btn, .btn:focus{
+/* .button-wrap .btn-check:focus+.btn, .btn:focus{
     box-shadow:none;
-}
+} */
 /* 푸터 p간의 간격 제거 */
-.footer-left p, .footer-right p{
+/* .footer-left p, .footer-right p{
     margin-bottom:0;
-}
+} */
 
 /*------------------------푸터---------------*/
 
@@ -511,9 +514,7 @@ html *{
     .news-cont .news-img-wrap .news-img{
         width:100%;
     }
-      .loadButton,.saveButton{
-        height:5vw;
-    }  
+       
 
     /* 푸터 */
     .footer-logo, .footer-text{
@@ -575,6 +576,9 @@ html *{
         font-size:15px;
     }
       
+    .news-cont .news-img-wrap,.news-cont .news-img-wrap .news-img{
+        border-radius:15px;
+    }
      /* 푸터 */
     .footer-logo, .footer-text{
         margin-left: 3rem;
@@ -680,8 +684,19 @@ html *{
     }
     
     .news-cont .news-cont-day{
-        font-size:13px;        
+        font-size:13px;     
+
     }
+    
+    .news-cont .news-img-wrap,.news-cont .news-img-wrap .news-img{
+        border-radius:12px;
+    }
+    .loadButton,.saveButton{
+        width:150px;
+        height:54.75px;
+        font-size:16px;
+        border-radius:30px;
+    }   
     /* 모바일 모드일때 푸터 배치변경 */    
 
       /* 푸터 */

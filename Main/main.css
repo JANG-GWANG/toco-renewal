@@ -1189,6 +1189,7 @@ header #gon nav>ul>li .menu {
     .main-news-container .news-contents {
         margin-bottom: 4.5vw;
         margin-right: 0;
+	padding-right: 20px;
     }
     .main-news-container .news-img-wrap {
         border-radius: 10px;

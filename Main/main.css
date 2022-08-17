@@ -276,7 +276,7 @@ header #gon nav>ul>li .menu {
     font-size: 18px;
     font-weight: 600;
     margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -755,7 +755,7 @@ header #gon nav>ul>li .menu {
         margin-right: 0;
     }
     .main-news-container .news-contents {
-        margin-bottom: 3vw;
+        margin-bottom: 35px;
         margin-right: 2vw;
         padding-left: 0;
         border: 0;

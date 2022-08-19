@@ -20,13 +20,15 @@
 
 $(function(){
     const newsCont = $('.news-cont');
+    const thirdPoint = document.getElementById('thirdPoint');
    
     newsCont.hide();
     newsCont.slice(0,6).show();
     $(".loadButton").click(function(){
         newsCont.slice(6,10).show();
         $(".loadButton").hide();
-        $(".news-cont:last-child").css("margin-bottom","5.8vw")        
+        $(".news-cont:last-child").css("margin-bottom","5.8vw");
+        window.scrollBy({top: thirdPoint.getBoundingClientRect().top-100,behavior:'smooth'});        
     })
     
 });

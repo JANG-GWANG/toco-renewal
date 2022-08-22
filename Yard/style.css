@@ -546,14 +546,9 @@ html *{
 
  /* 1440px 이하 */
  @media screen and (max-width:1440px){
-     header .logo {
+      header .logo {
         width:85vw;
-    }  
-
-    header #gon{
-        width: 85vw;
-    }
-  
+    }    
 
     /* 이미지 크기 고정 */
       .news-cont .news-img-wrap{

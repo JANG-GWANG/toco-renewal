@@ -8,7 +8,7 @@
     else if($('.so').hasClass('close'))
     $('.so').removeClass('magictime fadeOut');
     });
-    // 
+    
     $('.ham').click(function(){
         if($('.so').hasClass('close')){
             $('.so').addClass('magictime fadeIn');
@@ -32,13 +32,13 @@ $(function(){
     })
     
 });
-$('header #gon nav>ul ul a').click(function() {
+// $('header #gon nav>ul ul a').click(function() {
 
-    $('.so').addClass(fadeOut);
+//     $('.so').addClass(fadeOut);
 
-    setTimeout(function() { $('.so').addClass(close).removeClass(more);}, 500);
+//     setTimeout(function() { $('.so').addClass(close).removeClass(more);}, 500);
 
-  });
+//   });
 
 
 //  페이지 동작시 콘텐츠 갯수 및 클래스 지정

@@ -406,7 +406,9 @@ html *{
  div ol,div ul{
     padding:0;
 } 
-
+body h1{
+    margin-bottom:0;
+}
 
  /* .button-wrap{
     width: 10%;

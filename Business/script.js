@@ -40,6 +40,9 @@ $('#page-menuicon').on('click', function() {
     }
 });
 
+// 로딩
+$(window).load(function() {
+$('#load').hide(); }); 
 
 
 // 사업현황페이지 슬릭슬라이더

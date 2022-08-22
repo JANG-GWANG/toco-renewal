@@ -511,9 +511,9 @@ html *{
  /* 1440px 이하 */
  @media screen and (max-width:1440px){
    
-    .won{
+    /* .won{
         width: 85vw;
-    }
+    } */
     header #gon{
         width: 85vw;
     }

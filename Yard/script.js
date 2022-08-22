@@ -1,11 +1,10 @@
 
+
  $(document).ready(function(){
-     
-     
-$(window).load(function() {
-    $('#load').hide();
-  });
-     
+    
+    $(window).load(function() {
+        $('#load').hide();
+      });
     //  네비바 햄버거
         $('.ham').click(function() {
             if($('.so').hasClass('more'))

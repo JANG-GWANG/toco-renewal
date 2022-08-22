@@ -468,10 +468,6 @@ hr{
 
 }
 @media screen and (max-width: 1440px){
-    header .logo {
-            margin-left: 7.5vw;
-        }
-    
         header #gon{
             width: 85vw;
         }

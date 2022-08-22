@@ -21,11 +21,9 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-        <div id="load">
-        <img src="../img/toco-common/loading.gif" alt="loading">
-    </div>
     <header id="header">
         <div class="won">
         <a class="logo" href="../index.html"><img src="../img/toco-common/logo-Resoft.svg" alt="로고"></a>
@@ -70,26 +68,6 @@
        <p>사업현황</p>
     </div>
 
-    <script>
-        $(document).ready(function(){
-           //  네비바 햄버거
-           $('.ham').click(function() {
-               if($('.so').hasClass('more'))
-           $('.so').addClass('magictime fadeOut');
-           else if($('.so').hasClass('close'))
-           $('.so').removeClass('magictime fadeOut');
-           });
-           // 
-           $('.ham').click(function(){
-               if($('.so').hasClass('close')){
-                   $('.so').addClass('magictime fadeIn');
-                   $('.so').addClass('more').removeClass('close');
-               }else if($('.so').hasClass('more')){
-                   setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
-               }
-           });
-       });
-    </script>
 
     <div class="business-contents">
         <!-- 에코스 -->

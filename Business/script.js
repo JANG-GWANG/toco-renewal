@@ -1,35 +1,27 @@
-$(window).load(function() {
-  $('#load').hide();
+$(document).ready(function(){
+    //  네비바 햄버거
+    $('.ham').click(function() {
+        if($('.so').hasClass('more'))
+    $('.so').addClass('magictime fadeOut');
+    else if($('.so').hasClass('close'))
+    $('.so').removeClass('magictime fadeOut');
+    });
+    // 
+    $('.ham').click(function(){
+        if($('.so').hasClass('close')){
+            $('.so').addClass('magictime fadeIn');
+            $('.so').addClass('more').removeClass('close');
+        }else if($('.so').hasClass('more')){
+            setTimeout(function() { $('.so').addClass('close').removeClass('more');}, 500);
+        }
+    });
+    
+    $('header #gon nav>ul ul a').click(function() {
+         $('.so').addClass('magictime fadeOut');
+         setTimeout(function() { $('.so').addClass(close).removeClass(more);}, 500);
+    });
 });
 
-// 메인페이지 메뉴더보기 클릭시 디자인 변경
-$('#menuicon').on('click', function() {
-    if ( $(this).prop('checked') ) {
-        // 메뉴더보기 열릴 때
-        $('.nav-gnb').css({'background-color':'#fff', 'border-bottom':'1px solid #E9E9E9', 'box-sizing':"border-box"});
-        $('.menu-text').css({'color':'#000'});
-        $('.menuicon').css({'background-color':'#000'});
-        $('.menuicon-color').css({'background-color':'#000'});
-        document.getElementById("main-logo").src="./img/toco-common/logo-Resoft.svg";
-        $('.menu-text').hover(function(){
-            $(this).css('color','#184B9F');
-        }, function(){
-            $(this).css('color','#000');
-        });
-    } else {
-        // 메뉴더보기 닫힌 후
-        $('.nav-gnb').css({'background-color':'','border-bottom':'','transition':''});
-        $('.menu-text').css({'color':''});
-        $('.menuicon').css({'background-color':''});
-        $('.menuicon-color').css({'background-color':'', 'transition':'all .35s'});
-        document.getElementById("main-logo").src="./img/toco-common/logo-Resoft-white.png";
-        $('.menu-text').hover(function(){
-            $(this).css('color','#184B9F');
-        }, function(){
-            $(this).css('color','#fff');
-        });
-    }
-});
 
 
 
@@ -91,24 +83,4 @@ $(function(){
     });
 });
 
-
-
-// $(document).ready(function(){
-//     $('#page-menuicon').click(function () {
-//         if($('.nav-lnb').hasClass('more'))
-//     $('.nav-lnb').addClass('magictime slideDownReturn');
-//     else if($('.nav-lnb').hasClass('close'))
-//     $('.nav-lnb').removeClass('magictime slideDownReturn');
-// });
-//      });
-// $(document).ready(function(){
-//     $('#page-menuicon').click(function(){
-//         if($('.nav-lnb').hasClass('close')){
-//             $('.nav-lnb').addClass('magictime slideDown');
-//             $('.nav-lnb').addClass('more').removeClass('close');
-//         }else if($('.nav-lnb').hasClass('more')){
-//             setTimeout(function(){$('.nav-lnb').addClass('close').removeClass('more');}, 500);
-//         }
-//     });
-// });
 

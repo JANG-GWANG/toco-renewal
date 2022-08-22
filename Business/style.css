@@ -6,8 +6,6 @@
 
 html body{margin:0 auto;}
 
-#load{width:100%;height:100%;top:0;left:0;position:fixed;display:block;opacity:1;background:#fff;z-index:299;text-align:center}
-#load>img{position:absolute;top:50%;left:50%;z-index:300}
 /* ==================== 헤더 ==================== */
 /* 바디 */
 html body{    
@@ -23,7 +21,10 @@ html body{
     z-index: 100;
     border-bottom: 1px solid #dbdbdb;
 }
-
+/* .won{
+    max-width: 1440px;
+    width: 85vw;
+} */
 header a {
     text-decoration: none;
     cursor: pointer
@@ -164,6 +165,7 @@ header #gon nav>ul>li .menu {
 
 .won {
     max-width: 1440px;
+    width: 75vw;
     margin: 0 auto;
     height: 80px;
 }
@@ -213,13 +215,10 @@ header #gon nav>ul>li .here {
 }
 
 @media screen and (max-width: 1440px){
-header .logo {
-        margin-left: 7.5vw;
-    }
-
     header #gon{
         width: 85vw;
     }
+    .won{width: 85vw;}
 }
     @media screen and (max-width: 1024px){
         .dpdl{
@@ -324,8 +323,7 @@ header .logo {
     .top_back {
         height: 279px
     }
-    }
-
+}
 
 
 
@@ -366,7 +364,7 @@ header .logo {
 }
 .ecoce-title p:nth-child(2){
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 26px;
     text-align: left;
     color: #C8C8C8;

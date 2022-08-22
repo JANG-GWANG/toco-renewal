@@ -233,12 +233,12 @@ header #gon nav>ul>li .here {
     margin:120px 0 0 0;
 }
 
-.news-title{
+.resoft-news .news-title{
     font-size:40px;     
     font-weight:bold;
     line-height:58px;
 }        
-.sub-title{
+.resoft-news .sub-title{
     margin-bottom:3rem;
     font-weight:400;
     font-size:18px;
@@ -406,9 +406,13 @@ html *{
  div ol,div ul{
     padding:0;
 } 
+.footer-left p, .footer-right p{
+    margin-bottom:0;
+}
 body h1{
     margin-bottom:0;
 }
+
 
  /* .button-wrap{
     width: 10%;
@@ -456,9 +460,9 @@ body h1{
     box-shadow:none;
 } */
 /* 푸터 p간의 간격 제거 */
-.footer-left p, .footer-right p{
+/* .footer-left p, .footer-right p{
     margin-bottom:0;
-} 
+} */
 
 /*------------------------푸터---------------*/
 

@@ -361,7 +361,7 @@ header #gon nav>ul>li .here {
 }
 .ecoce-title p:nth-child(2){
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 26px;
     text-align: left;
     color: #C8C8C8;

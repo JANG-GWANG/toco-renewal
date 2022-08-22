@@ -64,21 +64,25 @@ $(document).ready(function(){
      }
     });
   
-    $(document).ready(function(){
       const menu = '.so';
       const fadeOut = 'magictime fadeOut';
       const fadeIn = 'magictime fadeIn';
-      const more = 'more';
-      const close = 'close';
+
       $('.ham').click(function() {
           if($(menu).hasClass(more)){
       $(menu).addClass(fadeOut);
       setTimeout(function() { $(menu).addClass(close).removeClass(more);}, 500);
           }
       else if($(menu).hasClass(close))
+      {
       $(menu).removeClass(fadeOut);
       $(menu).addClass(fadeIn);
       $(menu).addClass(more).removeClass(close);
+      }
+
+      $('header #gon nav>ul ul a').click(function() {
+        $(menu).addClass(fadeOut);
+        setTimeout(function() { $(menu).addClass(close).removeClass(more);}, 500);
       });
     });
   });

@@ -361,7 +361,7 @@ header #gon nav>ul>li .here {
 }
 .ecoce-title p:nth-child(2){
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 26px;
     text-align: left;
     color: #C8C8C8;
@@ -484,7 +484,7 @@ header #gon nav>ul>li .here {
 }
 .moado-title p:nth-child(2){
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 26px;
     text-align: left;
     color: #C8C8C8;
@@ -579,7 +579,7 @@ header #gon nav>ul>li .here {
 }
 .etc-title p:nth-child(2){
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 26px;
     text-align: left;
     color: #C8C8C8;
@@ -693,7 +693,6 @@ header #gon nav>ul>li .here {
     }
     .mobile-ecoce .m-ecoce-title p:nth-child(2){
         font-size: 15px;
-        font-weight: bold;
         line-height: 26px;
         /* text-align: center; */
         color: #C8C8C8;
@@ -792,7 +791,6 @@ header #gon nav>ul>li .here {
     }
     .mobile-moado-wrap .mobile-moado-title p:nth-child(2){
         font-size: 15px;
-        font-weight: bold;
         line-height: 26px;
         /* text-align: center; */
         color: #C8C8C8;

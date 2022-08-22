@@ -454,9 +454,9 @@ html *{
     box-shadow:none;
 } */
 /* 푸터 p간의 간격 제거 */
-/* .footer-left p, .footer-right p{
+.footer-left p, .footer-right p{
     margin-bottom:0;
-} */
+} 
 
 /*------------------------푸터---------------*/
 

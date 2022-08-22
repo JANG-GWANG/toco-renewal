@@ -621,7 +621,7 @@ header #gon nav>ul>li .here {
     justify-content: center;
     align-items: flex-start;
     max-width: 1440px;
-    width: 85vw;
+    width: 75vw;
     min-height: 190px;
     margin: 30px auto;
     /* border: 1px solid red; */
@@ -663,6 +663,7 @@ header #gon nav>ul>li .here {
     #content-moado-wrap{width: 85vw;}
     #content-etc{width: 85vw;}
     .moado-bg{height: 50vw;}
+    .footer-wrap{width: 85vw;}
 
 }
 

@@ -32,6 +32,13 @@ $(function(){
     })
     
 });
+$('header #gon nav>ul ul a').click(function() {
+
+    $('.so').addClass(fadeOut);
+
+    setTimeout(function() { $('.so').addClass(close).removeClass(more);}, 500);
+
+  });
 
 
 //  페이지 동작시 콘텐츠 갯수 및 클래스 지정

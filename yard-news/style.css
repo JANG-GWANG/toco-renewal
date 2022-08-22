@@ -158,6 +158,7 @@ header #gon nav>ul>li .menu {
 
 .won {
     max-width: 1440px;
+    width: 85vw;
     margin: 0 auto;
     height: 80px;
 }
@@ -208,13 +209,12 @@ header #gon nav>ul>li .here {
     font-size: 40px;
 
     color: #fff;
-
     z-index: 5;
     font-weight: bold;
 }
 .resoft-news{
     max-width: 1440px;
-    width:75vw;
+    width:85vw;
     height: 100%;
     display:flex;
     flex-wrap:wrap;
@@ -234,7 +234,7 @@ header #gon nav>ul>li .here {
 }
 
 .yard-news-right{
-    width:75%;
+    width:75%;f7
     text-align:left;
     /* padding-top:15%;    */
 }

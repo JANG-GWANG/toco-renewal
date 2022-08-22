@@ -165,7 +165,7 @@ header #gon nav>ul>li .menu {
 
 .won {
     max-width: 1440px;
-    width: 75vw;
+    width: 85vw;
     margin: 0 auto;
     height: 80px;
 }
@@ -214,12 +214,7 @@ header #gon nav>ul>li .here {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1440px){
-    header #gon{
-        width: 85vw;
-    }
-    .won{width: 85vw;}
-}
+
     @media screen and (max-width: 1024px){
         .dpdl{
         margin-right: 0;
@@ -342,7 +337,7 @@ header #gon nav>ul>li .here {
     position: relative;
     z-index: 10;
     max-width: 1440px;
-    width: 75vw;
+    width: 85vw;
     height: 100%;
     margin: 0 auto;
     padding-top: 120px;
@@ -466,7 +461,7 @@ header #gon nav>ul>li .here {
 #content-moado-wrap{
     position: relative;
     max-width: 1440px;
-    width: 75vw;
+    width: 85vw;
     height: 100%;
     margin: 0 auto;
     /* padding-top: 120px; */
@@ -560,7 +555,7 @@ header #gon nav>ul>li .here {
     position: relative;
     z-index: -1;
     max-width: 1440px;
-    width: 75vw;
+    width: 85vw;
     height: 100%;
     margin: 0 auto;
     padding: 120px 0 120px 0;
@@ -621,7 +616,7 @@ header #gon nav>ul>li .here {
     justify-content: center;
     align-items: flex-start;
     max-width: 1440px;
-    width: 75vw;
+    width: 85vw;
     min-height: 190px;
     margin: 30px auto;
     /* border: 1px solid red; */
@@ -659,12 +654,7 @@ header #gon nav>ul>li .here {
 }
 
 @media screen and (max-width:1440px) {
-    #content-ecoce{width: 85vw;}
-    #content-moado-wrap{width: 85vw;}
-    #content-etc{width: 85vw;}
     .moado-bg{height: 50vw;}
-    .footer-wrap{width: 85vw;}
-
 }
 
 /* ---------- 1280px ---------- */

@@ -235,7 +235,7 @@ header #gon nav>ul>li .here {
     font-size:40px;     
     font-weight:bold;
     line-height:58px;
-    margin:0 auto;
+    margin:0;
     width:75vw;
 }        
 .sub-title{
@@ -245,7 +245,7 @@ header #gon nav>ul>li .here {
     font-size:18px;
     line-height:26px;
     color: #c8c8c8;
-    margin: 0 auto 3rem auto;
+    margin-bottom:3rem;
 } 
 
 

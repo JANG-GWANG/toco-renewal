@@ -862,7 +862,6 @@ header #gon nav>ul>li .menu {
     header #gon nav>ul>li .dpdl {
         opacity: 0;
         width: 100px;
-        pointer-events: none;
     }
 
     header #gon nav>ul>li .menu {

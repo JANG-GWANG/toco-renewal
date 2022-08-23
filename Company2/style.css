@@ -864,7 +864,7 @@ h2 {
     header #gon nav>ul>li .dpdl {
         opacity: 0;
         width: 100px;
-        pointer-events: none
+        z-index:-1
     }
 
     header #gon nav>ul>li .menu {

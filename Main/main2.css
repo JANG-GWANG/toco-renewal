@@ -100,8 +100,7 @@ header #gon nav+div {
     width: 100%;
     height: 300px;
     background: rgba(24, 75, 159, .9);
-    z-index: -1;	
-    backdrop-filter: blur(5px);
+    z-index: -1
 }
 
 header #gon nav>ul>li {
@@ -303,8 +302,8 @@ header #gon nav>ul>li .menu {
 .main-news-container .news-contents {
     width: 300px;
     border-left: solid 1px #e9e9e9;
-    padding-right: 22px;
-    padding-left: 22px;
+    padding-right: 19.5px;
+    padding-left: 19.5px;
     /* border: solid 1px red; */
 }
 .main-news-container .news-contents:hover .main-news-container .news-text{
@@ -608,20 +607,25 @@ header #gon nav>ul>li .menu {
     visibility: hidden;
 }
 
-/* 푸터 */
 .common-footer{
     width:100%;
     height: 250px;
     background: #E9E9E9;    
-    display: table;
+    /* display: table; */
 }
 .footer-wrap { 
-    display: table-cell;
-    vertical-align:middle;
+    /* display: table-cell; */
+    /* vertical-align:middle; */
+    /* margin-top: 6vw; */
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
 .footer-logo {
     margin: 0 auto;
     max-width: 1440px;
+}
+.footer-logo img {
+    margin-top: 45px;
 }
 .footer-text{ 
     margin: 0 auto;
@@ -719,9 +723,7 @@ header #gon nav>ul>li .menu {
         display: none;
     }
     /* 푸터 */
-    .footer-logo, .footer-text{
-        margin-left: 3rem;
-    }
+   
 }
 
 
@@ -839,10 +841,7 @@ header #gon nav>ul>li .menu {
     }
 
     /* 푸터 */
-    .footer-logo, .footer-text{
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
+
 }
 /* 1024p-------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 1024px){ 

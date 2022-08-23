@@ -235,7 +235,7 @@ header #gon nav>ul>li .here {
     header #gon nav>ul>li .dpdl {
         opacity: 0;
         width: 100px;
-        pointer-events: none
+        z-index:-1
     }
 
     header #gon nav>ul>li .menu {
@@ -565,8 +565,6 @@ header #gon nav>ul>li .here {
     flex-direction: column;
     /* 수직 정렬 */
     justify-content: center;
-    /* 왼쪽 정렬 */
-    align-items: left;
     /* 확인 */
     flex-wrap: nowrap;
     /* border: 1px solid red; */
@@ -813,7 +811,6 @@ header #gon nav>ul>li .here {
         height: 100%;
         margin: 0 auto;
         display: flex;
-        flex-direction: center;
         margin-bottom: 10%;
         gap: 2%;
         /* border: 1px solid red; */
@@ -825,7 +822,6 @@ header #gon nav>ul>li .here {
         width: 40%;
         display: flex;
         flex-direction: column;
-        flex-direction: center;
         align-items: center;
         gap: 30%;
     }

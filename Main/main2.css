@@ -1079,7 +1079,10 @@ header #gon nav>ul>li .menu {
         font-size: 13px;
     }
     .main-news-container .news-contents {
-        margin-bottom: 4vw;
+        margin-bottom: 3vw;
+        margin-right: 2.5vw;
+        padding-left: 0;
+        border: 0;
     }
     /* 프로젝트 섹션 */
     .main-project-container .media1280 {

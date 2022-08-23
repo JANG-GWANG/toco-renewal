@@ -1150,28 +1150,35 @@ header #gon nav>ul>li .menu {
     }
       /* 레퍼런스 섹션 */
     .main-reference-container .ref-logo {
-        width: 25.5vw;
-        height: 11.5vw;
+        width: 24vw;
+        height: 10.5vw;
         margin: 1vw;
     }
     .main-reference-container img {
-        width: 22vw;
+        width: 19vw;
+        height:5.5vw;
     }
     .main-reference-container .resize {
-        height: 9vw;
+        height: 7.5vw;
     }
     .main-reference-container .w18 {
-        width: 18vw;
+        width: 17vw;
     }
     .main-reference-container .h8 {
-        height: 8vw;
+        height: 7vw;
+    }
+    .main-reference-container .h5 {
+        height: 2.5vw;
+    }
+    .main-reference-container .h6 {
+        height: 4vw;
     }
     .main-reference-container .wh18-8 {
-        width: 18vw;
-        height: 8vw;
+        width: 16vw;
+        height: 7vw;
     }
     .main-reference-container .w14 {
-        width: 14vw;
+        width: 12.5vw;
     }
     .main-reference-container .ref-logo-wrap {
         margin-left: 1.2vw;
@@ -1194,7 +1201,7 @@ header #gon nav>ul>li .menu {
         margin-top: 3vw;
         flex-direction: column;
         justify-content: space-between;
-    } 
+    }
 }
 
 /* 미디어 쿼리 430 - 모바일---------------------------------------------------------------------------------------------*/

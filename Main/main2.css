@@ -1334,13 +1334,14 @@ header #gon nav>ul>li .menu {
     .main-reference-container img {
         width: 22vw;
     }
+	
     /* 푸터 */
-    .common-footer .footer-logo{
+	
+    /* .common-footer .footer-logo{
         margin-left: 2rem;
         margin-right: 2rem;
     }
     .common-footer .footer-logo img {
-    /* margin-top: ; */
     max-width : 100px;
     padding-top: 2vw;
     }
@@ -1364,6 +1365,34 @@ header #gon nav>ul>li .menu {
         justify-content: space-between;
         margin-left: 2rem;
         margin-right: 2rem;
+        word-break:break-all;
+    } 
+    .common-footer .footer-text span{
+        display: block;
+    } */
+    	
+    .common-footer .footer-logo img {
+    /* margin-top: ; */
+    max-width : 100px;
+    padding-top: 2vw;
+    }
+    .common-footer .copyright {
+        font-size: 10px;
+        word-break: keep-all;
+    }
+    .common-footer .footer-logo span {
+        line-height: 26px;
+        display: block;
+    }
+    .common-footer .footer-left, .common-footer .footer-right {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .common-footer .footer-text{ 
+        max-width: 768px;
+        gap:2vw;
+        flex-direction: column;
+        justify-content: space-between;
         word-break:break-all;
     } 
     .common-footer .footer-text span{

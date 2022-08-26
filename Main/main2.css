@@ -263,14 +263,13 @@ header #gon nav>ul>li .menu {
 /* 헤더 - 플레이버튼 클릭 */
 .main-header .slick-button-wrap > div {
     position: relative;
-    padding-right: 46px;
     height: 53px;
 }
 .main-header #play-btn {
-    position: absolute; 
-    left: 0;
-    top: 0;
     display: none;
+}
+.main-header #stop-btn, .main-header #play-btn {
+    width: 18px;
 }
 /* 새로운 소식 (뉴스) 섹션 */
 
@@ -1053,6 +1052,10 @@ header #gon nav>ul>li .menu {
     .main-header .slick-button-wrap #stop-btn{
         width: 12px;
         margin-top: 2px;
+    }
+	 .main-header #play-btn, .main-header #stop-btn{
+        width: 14px;
+        margin-top: 1px;
     }
     /* 뉴스 (새소식) 섹션 */
     .main-news-container .news-contents {

@@ -263,7 +263,7 @@ header #gon nav>ul>li .menu {
 /* 헤더 - 플레이버튼 클릭 */
 .main-header .slick-button-wrap > div {
     position: relative;
-    width: 50px;
+    padding-right: 46px;
     height: 53px;
 }
 .main-header #play-btn {
